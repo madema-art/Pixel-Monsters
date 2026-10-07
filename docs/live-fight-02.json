@@ -1,0 +1,797 @@
+{
+	"finish_time": 91.1999999999974,
+	"hits": [
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 14,
+			"event_ms": 3.851,
+			"move": "right_punch",
+			"query_ms": 0.146,
+			"region": "right_shoulder",
+			"remaining": 986,
+			"structure_ms": 1.233,
+			"time": 11.47,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 15,
+			"event_ms": 3.056,
+			"move": "heavy_hook",
+			"query_ms": 0.152,
+			"region": "head",
+			"remaining": 985,
+			"structure_ms": 1.089,
+			"time": 13.5,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 9,
+			"event_ms": 2.911,
+			"move": "left_punch",
+			"query_ms": 0.13,
+			"region": "left_shoulder",
+			"remaining": 977,
+			"structure_ms": 1.061,
+			"time": 15.2,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 15,
+			"event_ms": 2.987,
+			"move": "heavy_hook",
+			"query_ms": 0.19,
+			"region": "chest",
+			"remaining": 962,
+			"structure_ms": 1.06,
+			"time": 19.97,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 7,
+			"event_ms": 3.059,
+			"move": "kick",
+			"query_ms": 0.182,
+			"region": "right_shin",
+			"remaining": 978,
+			"structure_ms": 1.101,
+			"time": 22.63,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 11,
+			"event_ms": 2.979,
+			"move": "kick",
+			"query_ms": 0.209,
+			"region": "abdomen",
+			"remaining": 951,
+			"structure_ms": 1.035,
+			"time": 24.73,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 15,
+			"event_ms": 3.149,
+			"move": "heavy_hook",
+			"query_ms": 0.209,
+			"region": "chest",
+			"remaining": 963,
+			"structure_ms": 1.074,
+			"time": 26.77,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 5,
+			"event_ms": 2.857,
+			"move": "kick",
+			"query_ms": 0.209,
+			"region": "left_shin",
+			"remaining": 946,
+			"structure_ms": 1.022,
+			"time": 29.93,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 8,
+			"event_ms": 2.96,
+			"move": "right_punch",
+			"query_ms": 0.109,
+			"region": "left_shoulder",
+			"remaining": 955,
+			"structure_ms": 1.081,
+			"time": 30.87,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 22,
+			"event_ms": 2.918,
+			"move": "heavy_hook",
+			"query_ms": 0.192,
+			"region": "chest",
+			"remaining": 933,
+			"structure_ms": 1.01,
+			"time": 35.4,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 4,
+			"event_ms": 2.783,
+			"move": "right_punch",
+			"query_ms": 0.091,
+			"region": "abdomen",
+			"remaining": 942,
+			"structure_ms": 1.048,
+			"time": 38.27,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 5,
+			"event_ms": 2.705,
+			"move": "left_punch",
+			"query_ms": 0.091,
+			"region": "chest",
+			"remaining": 928,
+			"structure_ms": 1.016,
+			"time": 39.87,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 8,
+			"event_ms": 2.795,
+			"move": "left_punch",
+			"query_ms": 0.135,
+			"region": "left_shoulder",
+			"remaining": 934,
+			"structure_ms": 1.019,
+			"time": 41.77,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 18,
+			"event_ms": 2.948,
+			"move": "kick",
+			"query_ms": 0.185,
+			"region": "right_shin",
+			"remaining": 910,
+			"structure_ms": 1.06,
+			"time": 43.77,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 14,
+			"event_ms": 2.74,
+			"move": "kick",
+			"query_ms": 0.18,
+			"region": "right_thigh",
+			"remaining": 896,
+			"structure_ms": 0.974,
+			"time": 47.97,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 10,
+			"event_ms": 2.82,
+			"move": "kick",
+			"query_ms": 0.181,
+			"region": "right_shin",
+			"remaining": 924,
+			"structure_ms": 1.01,
+			"time": 50.3,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 15,
+			"event_ms": 2.784,
+			"move": "right_punch",
+			"query_ms": 0.142,
+			"region": "left_shoulder",
+			"remaining": 881,
+			"structure_ms": 0.978,
+			"time": 51.87,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 37,
+			"event_ms": 2.964,
+			"move": "heavy_hook",
+			"query_ms": 0.226,
+			"region": "head",
+			"remaining": 887,
+			"structure_ms": 0.997,
+			"time": 54.6,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 25,
+			"event_ms": 2.858,
+			"move": "heavy_hook",
+			"query_ms": 0.25,
+			"region": "left_shoulder",
+			"remaining": 856,
+			"structure_ms": 0.952,
+			"time": 57.0,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 8,
+			"event_ms": 2.669,
+			"move": "right_punch",
+			"query_ms": 0.084,
+			"region": "right_shoulder",
+			"remaining": 879,
+			"structure_ms": 1.001,
+			"time": 58.73,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 8,
+			"event_ms": 2.598,
+			"move": "left_punch",
+			"query_ms": 0.1,
+			"region": "head",
+			"remaining": 848,
+			"structure_ms": 0.946,
+			"time": 60.93,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 12,
+			"event_ms": 2.747,
+			"move": "kick",
+			"query_ms": 0.193,
+			"region": "left_shin",
+			"remaining": 867,
+			"structure_ms": 0.96,
+			"time": 62.9,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 3,
+			"event_ms": 2.661,
+			"move": "right_punch",
+			"query_ms": 0.21,
+			"region": "right_shoulder",
+			"remaining": 845,
+			"structure_ms": 0.963,
+			"time": 64.5,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 44,
+			"event_ms": 3.091,
+			"move": "heavy_hook",
+			"query_ms": 0.387,
+			"region": "left_shoulder",
+			"remaining": 823,
+			"structure_ms": 0.96,
+			"time": 67.1,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 12,
+			"event_ms": 2.868,
+			"move": "right_punch",
+			"query_ms": 0.213,
+			"region": "left_shoulder",
+			"remaining": 833,
+			"structure_ms": 0.968,
+			"time": 68.87,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 10,
+			"event_ms": 2.614,
+			"move": "left_punch",
+			"query_ms": 0.161,
+			"region": "head",
+			"remaining": 823,
+			"structure_ms": 0.959,
+			"time": 73.0,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 6,
+			"event_ms": 2.81,
+			"move": "left_punch",
+			"query_ms": 0.184,
+			"region": "chest",
+			"remaining": 817,
+			"structure_ms": 0.921,
+			"time": 75.77,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 72,
+			"direct": 25,
+			"event_ms": 3.968,
+			"move": "heavy_hook",
+			"query_ms": 0.238,
+			"region": "right_shoulder",
+			"remaining": 726,
+			"structure_ms": 2.292,
+			"time": 76.8,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 15,
+			"event_ms": 2.787,
+			"move": "kick",
+			"query_ms": 0.163,
+			"region": "right_shin",
+			"remaining": 802,
+			"structure_ms": 0.947,
+			"time": 79.63,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 19,
+			"event_ms": 2.392,
+			"move": "left_punch",
+			"query_ms": 0.187,
+			"region": "head",
+			"remaining": 707,
+			"structure_ms": 0.829,
+			"time": 81.53,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 79,
+			"direct": 27,
+			"event_ms": 3.971,
+			"move": "heavy_hook",
+			"query_ms": 0.27,
+			"region": "right_shoulder",
+			"remaining": 696,
+			"structure_ms": 2.261,
+			"time": 83.77,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 55,
+			"direct": 36,
+			"event_ms": 3.575,
+			"move": "kick",
+			"query_ms": 0.204,
+			"region": "right_thigh",
+			"remaining": 616,
+			"structure_ms": 2.003,
+			"time": 85.87,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 30,
+			"event_ms": 2.538,
+			"move": "heavy_hook",
+			"query_ms": 0.283,
+			"region": "right_thigh",
+			"remaining": 666,
+			"structure_ms": 0.8,
+			"time": 89.13,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 45,
+			"event_ms": 2.569,
+			"move": "heavy_hook",
+			"query_ms": 0.324,
+			"region": "left_shoulder",
+			"remaining": 571,
+			"structure_ms": 0.703,
+			"time": 91.2,
+			"victim": "COLOSSUS"
+		}
+	],
+	"snapshot": {
+		"active_debris": 0,
+		"ai_ms": 0.025,
+		"collision_bodies": 193,
+		"finished": true,
+		"fps": 1256.0,
+		"frame_ms": 4.574,
+		"monsters": [
+			{
+				"animation_ms": 0.074,
+				"arms": [
+					false,
+					true
+				],
+				"commands": 20,
+				"cubes": 666,
+				"defeated": false,
+				"hits": 18,
+				"legs": [
+					"HEALTHY",
+					"COMPROMISED"
+				],
+				"motor_ms": 0.034,
+				"name": "TITAN",
+				"reason": "",
+				"speed": 0.616258741258741,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.8
+			},
+			{
+				"animation_ms": 0.056,
+				"arms": [
+					false,
+					true
+				],
+				"commands": 19,
+				"cubes": 0,
+				"defeated": true,
+				"hits": 16,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.021,
+				"name": "COLOSSUS",
+				"reason": "NECK CONNECTION FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.703
+			}
+		],
+		"physics_ms": 0.72,
+		"rubble": 0,
+		"seed": 617,
+		"sweep_ms": 0.003,
+		"time": 280.1,
+		"winner": "TITAN"
+	},
+	"stages": {
+		"25_percent": {
+			"active_debris": 125,
+			"ai_ms": 0.023,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 1146.0,
+			"frame_ms": 5.132,
+			"monsters": [
+				{
+					"animation_ms": 0.072,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 18,
+					"cubes": 696,
+					"defeated": false,
+					"hits": 16,
+					"legs": [
+						"HEALTHY",
+						"DAMAGED"
+					],
+					"motor_ms": 0.035,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.704545454545455,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 2.261
+				},
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 18,
+					"cubes": 707,
+					"defeated": false,
+					"hits": 15,
+					"legs": [
+						"HEALTHY",
+						"DAMAGED"
+					],
+					"motor_ms": 0.03,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 0.761363636363636,
+					"state": "HEAVY HOOK · COMMIT",
+					"structure_ms": 0.829
+				}
+			],
+			"physics_ms": 2.868,
+			"rubble": 472,
+			"seed": 617,
+			"sweep_ms": 5.89,
+			"time": 83.8,
+			"winner": ""
+		},
+		"50_percent": {
+			"active_debris": 192,
+			"ai_ms": 0.025,
+			"collision_bodies": 193,
+			"finished": true,
+			"fps": 1166.0,
+			"frame_ms": 5.156,
+			"monsters": [
+				{
+					"animation_ms": 0.075,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 20,
+					"cubes": 666,
+					"defeated": false,
+					"hits": 18,
+					"legs": [
+						"HEALTHY",
+						"COMPROMISED"
+					],
+					"motor_ms": 0.036,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.616258741258741,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.8
+				},
+				{
+					"animation_ms": 0.056,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 19,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 16,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.021,
+					"name": "COLOSSUS",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.703
+				}
+			],
+			"physics_ms": 5.568,
+			"rubble": 1142,
+			"seed": 617,
+			"sweep_ms": 0.003,
+			"time": 93.0,
+			"winner": "TITAN"
+		},
+		"aftermath": {
+			"active_debris": 181,
+			"ai_ms": 0.025,
+			"collision_bodies": 193,
+			"finished": true,
+			"fps": 1180.0,
+			"frame_ms": 5.196,
+			"monsters": [
+				{
+					"animation_ms": 0.072,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 20,
+					"cubes": 666,
+					"defeated": false,
+					"hits": 18,
+					"legs": [
+						"HEALTHY",
+						"COMPROMISED"
+					],
+					"motor_ms": 0.034,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.616258741258741,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.8
+				},
+				{
+					"animation_ms": 0.056,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 19,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 16,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.021,
+					"name": "COLOSSUS",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.703
+				}
+			],
+			"physics_ms": 9.793,
+			"rubble": 1153,
+			"seed": 617,
+			"sweep_ms": 0.003,
+			"time": 94.2,
+			"winner": "TITAN"
+		},
+		"pristine": {
+			"active_debris": 0,
+			"ai_ms": 0.017,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 60.0,
+			"frame_ms": 15.812,
+			"monsters": [
+				{
+					"animation_ms": 0.065,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.045,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "HEAVY HOOK · FOLLOW-THROUGH",
+					"structure_ms": 1.081
+				},
+				{
+					"animation_ms": 0.066,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.026,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 1.118
+				}
+			],
+			"physics_ms": 6.074,
+			"rubble": 0,
+			"seed": 617,
+			"sweep_ms": 0.003,
+			"time": 0.0,
+			"winner": ""
+		},
+		"severe": {
+			"active_debris": 192,
+			"ai_ms": 0.025,
+			"collision_bodies": 193,
+			"finished": true,
+			"fps": 1166.0,
+			"frame_ms": 5.156,
+			"monsters": [
+				{
+					"animation_ms": 0.075,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 20,
+					"cubes": 666,
+					"defeated": false,
+					"hits": 18,
+					"legs": [
+						"HEALTHY",
+						"COMPROMISED"
+					],
+					"motor_ms": 0.036,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.616258741258741,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.8
+				},
+				{
+					"animation_ms": 0.056,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 19,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 16,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.021,
+					"name": "COLOSSUS",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.703
+				}
+			],
+			"physics_ms": 5.568,
+			"rubble": 1142,
+			"seed": 617,
+			"sweep_ms": 0.003,
+			"time": 93.0,
+			"winner": "TITAN"
+		}
+	}
+}

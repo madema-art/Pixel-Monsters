@@ -1,0 +1,91 @@
+{
+  "window_title": "Pixel Monsters",
+  "launched_via_bat": "D:\\Pixel Monsters\\Play Pixel Monsters.bat",
+  "build_hashes": [
+    {
+      "Path": "D:\\Pixel Monsters\\Pixel Monsters.exe",
+      "Hash": "A04472EA3A8A400C6BB8AF5128AF6E5227A46C28217F5EFDBFAC9CA51525AAE3"
+    },
+    {
+      "Path": "D:\\Pixel Monsters\\Pixel Monsters.pck",
+      "Hash": "3687780B7AF2A70FD530D94E769E4AFC45D289BFEE0B16D55FA1B43B6439A26B"
+    }
+  ],
+  "remaining_cubes": [
+    0,
+    466
+  ],
+  "complete_rendered_fights": 5,
+  "version": "0.2.0.0",
+  "launch": {
+    "arguments": [],
+    "debug_build": false,
+    "executable": "D:/Pixel Monsters/Pixel Monsters.exe",
+    "snapshot": {
+      "active_debris": 0,
+      "ai_ms": 0.0,
+      "collision_bodies": 193,
+      "finished": false,
+      "fps": 1.0,
+      "frame_ms": 0.0,
+      "monsters": [
+        {
+          "animation_ms": 0.057,
+          "arms": [
+            false,
+            false
+          ],
+          "commands": 0,
+          "cubes": 1000,
+          "defeated": false,
+          "hits": 0,
+          "legs": [
+            "HEALTHY",
+            "HEALTHY"
+          ],
+          "motor_ms": 0.0,
+          "name": "TITAN",
+          "reason": "",
+          "speed": 1.0,
+          "state": "STANDOFF",
+          "structure_ms": 0.0
+        },
+        {
+          "animation_ms": 0.054,
+          "arms": [
+            false,
+            false
+          ],
+          "commands": 0,
+          "cubes": 1000,
+          "defeated": false,
+          "hits": 0,
+          "legs": [
+            "HEALTHY",
+            "HEALTHY"
+          ],
+          "motor_ms": 0.0,
+          "name": "COLOSSUS",
+          "reason": "",
+          "speed": 1.0,
+          "state": "STANDOFF",
+          "structure_ms": 0.0
+        }
+      ],
+      "physics_ms": 0.0,
+      "rubble": 0,
+      "seed": 1094818,
+      "sweep_ms": 0.0,
+      "time": 0.0,
+      "winner": ""
+    }
+  },
+  "complete_headless_fights": 36,
+  "combat_checks_passed": 20,
+  "finish_time": 171.083333333362,
+  "process_command_line": "\"D:\\Pixel Monsters\\Pixel Monsters.exe\" ",
+  "retained_rubble": 1534,
+  "core_tests_passed": 6,
+  "winner": "COLOSSUS",
+  "gameplay_checkpoint": "62d7b71"
+}

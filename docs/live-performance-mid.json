@@ -1,0 +1,64 @@
+{
+	"fps": 1424.62713431823,
+	"mean_ai_ms": 0.0325634494040658,
+	"mean_process_ms": 0.930577237672353,
+	"mean_rig_ms": 0.138708576770274,
+	"snapshot": {
+		"active_debris": 10,
+		"ai_ms": 0.018,
+		"collision_bodies": 193,
+		"finished": false,
+		"fps": 1372.0,
+		"frame_ms": 0.945,
+		"monsters": [
+			{
+				"animation_ms": 0.078,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 41,
+				"cubes": 363,
+				"defeated": false,
+				"hits": 36,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.035,
+				"name": "TITAN",
+				"reason": "",
+				"speed": 0.12,
+				"state": "LEFT PUNCH · WIND-UP",
+				"structure_ms": 1.031
+			},
+			{
+				"animation_ms": 0.058,
+				"arms": [
+					true,
+					true
+				],
+				"commands": 39,
+				"cubes": 231,
+				"defeated": false,
+				"hits": 27,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.019,
+				"name": "COLOSSUS",
+				"reason": "",
+				"speed": 0.12,
+				"state": "BODY DRIVE · RECOVER",
+				"structure_ms": 0.752
+			}
+		],
+		"physics_ms": 3.813,
+		"rubble": 1210,
+		"seed": 1401443,
+		"sweep_ms": 0.004,
+		"time": 175.2,
+		"winner": ""
+	}
+}

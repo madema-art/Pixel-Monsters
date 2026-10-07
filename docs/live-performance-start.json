@@ -1,0 +1,61 @@
+{
+	"fps": 1051.48859803469,
+	"snapshot": {
+		"active_debris": 0,
+		"ai_ms": 0.02,
+		"collision_bodies": 193,
+		"finished": false,
+		"fps": 1111.0,
+		"frame_ms": 5.134,
+		"monsters": [
+			{
+				"animation_ms": 0.071,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.034,
+				"name": "TITAN",
+				"reason": "",
+				"speed": 1.0,
+				"state": "CLOSING DISTANCE",
+				"structure_ms": 1.081
+			},
+			{
+				"animation_ms": 0.055,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.02,
+				"name": "COLOSSUS",
+				"reason": "",
+				"speed": 1.0,
+				"state": "CLOSING DISTANCE",
+				"structure_ms": 1.118
+			}
+		],
+		"physics_ms": 0.826,
+		"rubble": 0,
+		"seed": 617,
+		"sweep_ms": 0.003,
+		"time": 2.9,
+		"winner": ""
+	}
+}

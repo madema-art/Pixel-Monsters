@@ -1,0 +1,226 @@
+{
+	"checks": 20,
+	"failed": 0,
+	"results": [
+		{
+			"check": "Two pristine 1000 cube monsters",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Natural opening standoff",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Both arm losses are nonfatal",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Missing arms cannot punch or hook",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Armless anatomy supports kick",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Armless anatomy supports headbutt",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Armless anatomy supports body_charge",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Armless AI actively inflicts real damage",
+			"evidence": {
+				"hits": 14,
+				"snapshot": {
+					"active_debris": 192,
+					"ai_ms": 0.014,
+					"collision_bodies": 193,
+					"finished": false,
+					"fps": 12.0,
+					"frame_ms": 94.705,
+					"monsters": [
+						{
+							"animation_ms": 0.046,
+							"arms": [
+								true,
+								true
+							],
+							"commands": 17,
+							"cubes": 380,
+							"defeated": false,
+							"hits": 14,
+							"legs": [
+								"LOST",
+								"DAMAGED"
+							],
+							"motor_ms": 0.014,
+							"name": "TITAN",
+							"reason": "",
+							"speed": 0.246153846153846,
+							"state": "STAGGERED",
+							"structure_ms": 0.497
+						},
+						{
+							"animation_ms": 0.044,
+							"arms": [
+								false,
+								false
+							],
+							"commands": 17,
+							"cubes": 746,
+							"defeated": false,
+							"hits": 15,
+							"legs": [
+								"DAMAGED",
+								"LOST"
+							],
+							"motor_ms": 0.016,
+							"name": "COLOSSUS",
+							"reason": "",
+							"speed": 0.232727272727273,
+							"state": "HEADBUTT · RECOVER",
+							"structure_ms": 0.787
+						}
+					],
+					"physics_ms": 1.783,
+					"rubble": 682,
+					"seed": 8801,
+					"sweep_ms": 0.003,
+					"time": 82.0,
+					"winner": ""
+				}
+			},
+			"passed": true
+		},
+		{
+			"check": "One leg lost without instant defeat",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Leg loss reduces locomotion speed",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "One leg loss changes visible stance",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "No limbs still alive, kicks unavailable",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Grounded limbless creature still connects body/head attacks",
+			"evidence": {
+				"hits": 12,
+				"snapshot": {
+					"active_debris": 192,
+					"ai_ms": 0.015,
+					"collision_bodies": 193,
+					"finished": true,
+					"fps": 16.0,
+					"frame_ms": 76.293,
+					"monsters": [
+						{
+							"animation_ms": 0.051,
+							"arms": [
+								true,
+								true
+							],
+							"commands": 15,
+							"cubes": 226,
+							"defeated": true,
+							"hits": 12,
+							"legs": [
+								"LOST",
+								"LOST"
+							],
+							"motor_ms": 0.017,
+							"name": "TITAN",
+							"reason": "HEAD DESTROYED",
+							"speed": 0.12,
+							"state": "COLLAPSING",
+							"structure_ms": 0.347
+						},
+						{
+							"animation_ms": 0.046,
+							"arms": [
+								false,
+								false
+							],
+							"commands": 15,
+							"cubes": 776,
+							"defeated": false,
+							"hits": 12,
+							"legs": [
+								"COMPROMISED",
+								"COMPROMISED"
+							],
+							"motor_ms": 0.025,
+							"name": "COLOSSUS",
+							"reason": "",
+							"speed": 0.307692307692308,
+							"state": "VICTORIOUS",
+							"structure_ms": 0.862
+						}
+					],
+					"physics_ms": 2.468,
+					"rubble": 806,
+					"seed": 8803,
+					"sweep_ms": 1.796,
+					"time": 73.9,
+					"winner": "COLOSSUS"
+				}
+			},
+			"passed": true
+		},
+		{
+			"check": "Essential structural loss causes defeat",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Loser collapses into rubble, winner remains",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Collapse respects physical debris budget",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Reset restores exact anatomy and clears debris",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Loss of selected arm cancels committed hook even if other arm survives",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Shared command interface rejects a missing selected arm",
+			"evidence": {},
+			"passed": true
+		},
+		{
+			"check": "Loss of selected leg cancels committed kick",
+			"evidence": {},
+			"passed": true
+		}
+	]
+}
