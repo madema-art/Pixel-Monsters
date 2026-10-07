@@ -33,3 +33,7 @@ Godot.exe --headless --path . --export-release "Windows Desktop" "D:\Pixel Monst
 Inspect first: current uncompleted validation/balance issues in `docs/handoff/CURRENT_STATE.md`, exact scope in `PROMPT_4.txt`, latest matrix artifacts, rig anchors vs posed geometry, and Blender tooling assumptions. Preserve destruction, actual geometry contact, debris limits, adaptive music, observer controls, and the director instead of casually rewriting proven systems. Do not assume local MCP, Windows paths, audio-generation tools, or installed builds exist in cloud execution.
 
 GitHub was unavailable at local handoff: no remote, no authenticated Git Credential Manager GitHub account, no gh executable, and no GH_TOKEN/GITHUB_TOKEN. Publish this branch to a PRIVATE Pixel-Monsters repository before starting Cloud Claude. No CI was added during this preservation task.
+
+## Roster build-out (tournament, 16 entrants)
+
+See `docs/handoff/ROSTER_BUILD.md` and `docs/ROSTER.md`. Procedural body pipeline: `tools/roster/` (`python tools/roster/compile_roster.py`). Checks: `tests/roster_validation.gd`, `tests/roster_matrix.gd`. The visual overhaul (`docs/handoff/VISUAL_REVIEW.md`) is accepted; do not undo it. Visuals and balance of the roster still need local review.

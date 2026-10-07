@@ -52,3 +52,10 @@ States per cube: 0 attached, 1 loose/recoverable, 2 shattered. Cubes knocked off
 - Serpent/Blob/Eyeball are geometry-rigged approximations; segments are rigid slabs, so tight bends show seams.
 - Sound reuses the existing cues; no new audio, adaptive score untouched.
 - Blender hooks: replace spec volumes with exported Blender volumes; keep region names and rig anchors.
+
+## Test results (cloud, Godot 4.7.2 headless)
+
+- Regression: import clean; destruction 6/6; combat 20/20; archetype 47/47; presentation 20/20; `compile_creatures.py` reproduces the three Milestone 4 bodies.
+- `roster_validation`: 207/207 (exact 1,000 cubes, allocation, connectivity, ranged set == 8, ranged limits, localized damage, anatomy-gated attacks, Skeleton regen/shatter/cap, Army 10x100, Dragon wings/flight, Tarantula progressive legs, Rider 1,000 split + lance loss, Anaconda serpent, Blob).
+- `roster_matrix` (32 fights, 2 per entrant): all 32 finish (shortest 21 s, longest 331 s); longest gap between connecting hits 38 s (one fight over the Milestone 4 30 s bar); average headless sim cost 0.7-1.9 ms per 60 Hz step, worst single step ~60 ms (Army/Wizard during multi-hit events). In that sample `rolling_crush`, `trample`, `waddle_charge` and `wing_buffet` never connected; `dive_attack` was fixed afterwards (verified separately). Wins are uneven (Blob 4, Dragon/Wizard/Demon/Ape 1): balance is NOT tuned.
+- Matrix JSON in `docs/roster-matrix.json` predates the last dragon tuning commit.

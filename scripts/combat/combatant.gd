@@ -264,7 +264,7 @@ func update_motor(dt: float) -> void:
 	if rig_type!="biped":
 		stance_height=float(archetype.rig.get("stance_y",-0.6))-clampf(0.7-speed,0,0.7)*float(archetype.rig.get("sag",1.5))
 	if flight!=null:
-		flight.diving=attack_motion.running and attack_motion.profile.get("trajectory","")=="charge" and flight.state=="FLYING"
+		flight.diving=attack_motion.running and attack_motion.profile.get("trajectory","") in ["charge","leap"] and flight.state=="FLYING"
 		flight.update(dt,self)
 		stance_height+=flight.altitude
 	var hop := 0.0
