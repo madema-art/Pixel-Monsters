@@ -37,7 +37,7 @@ def dark_knight_rider():
         rig_multi={"pivot":[0,12,1],"chains":chains,"head_region":"rider_head",
                    "gait":{"step_seconds":0.38,"threshold":1.9,"max_simultaneous":2,"lift":1.0},
                    "parts":[{"regions":["rider_torso","rider_head","rider_arms"],"pivot":[0,17,1],"lean_gain":0.25},{"regions":["horse_head","horse_neck"],"pivot":[0,15,-6],"recoil":0.1}],
-                   "weapons":[{"regions":["lance"],"tip":[3.6,19.9,-22.0],"thrust":[0,0,-1],"length":4.5,"effector":"lance_tip"}],"attack_lean":0.08},
+                   "weapons":[{"regions":["lance"],"pivot":[3.5,19.2,-1.0],"tip":[3.6,19.9,-22.0],"thrust":[0,0,-1],"length":4.5,"effector":"lance_tip"}],"attack_lean":0.08},
         aliases={"head":"rider_head","chest":"horse_body"}, target_regions=["horse_body","horse_chest","rider_torso","rider_head","horse_neck","leg_fl","leg_fr","leg_hl","leg_hr"],
         limbs=limbs, locomotion={"type":"legs","legs":leg_ids,"power":1.1},
         fatal=[{"regions":["rider"],"fraction":0.22,"reason":"RIDER DESTROYED"},{"regions":["horse_core"],"fraction":0.22,"reason":"WARHORSE COLLAPSED"}],
@@ -109,14 +109,14 @@ def army_of_ten():
         return live_all, regions, 1.0
     live, regions, _ = custom()
     rest = custom.rest
-    limbs = [{"id":f"u{i}","regions":[f"u{i}_body",f"u{i}_arms",f"u{i}_legs"],"kind":"unit","fail":0.3} for i in range(10)]
+    limbs = [{"id":f"u{i}","regions":[f"u{i}_body",f"u{i}_arms",f"u{i}_legs"],"kind":"unit","fail":0.22} for i in range(10)]
     def build():
         return live, regions, 1.0
     return dict(id="army_of_ten", name="ARMY OF 10", kind="swarm", palette="8a8f9a", rig_type="swarm", regions=regions, custom_build=build, expect_components=10,
         rig={"stance_y":-0.6},
         limbs=limbs, locomotion={"type":"swarm"},
         fatal=[{"limb_kind":"unit","max_alive":0,"reason":"ALL UNITS DESTROYED"}],
-        special={"swarm":{"units":10,"speed":5.4,"ring_radius":3.9,"climb_height":13.0,"strike_interval":1.5,"strike_radius":1.0,"strike_force":4.0,"rest":rest}},
+        special={"swarm":{"units":10,"speed":5.4,"ring_radius":3.9,"climb_height":13.0,"strike_interval":0.9,"strike_radius":1.9,"strike_force":6.0,"rest":rest}},
         look={"skin":"8a8f9a","limb":"6a707c","joint":"3a3f4a","head":"b8a48a","accent":"c0463a","interior":"3a1a1a","glow":"ffd070","face":False,"tones":{}},
         behavior={"speed":5.4,"min_separation":2.0,"preferred_range":5.0,"crush_radius":1.5},
         attacks={"swarm_pummel":{"base":"custom","label":"SWARM PUMMEL","weight":1.0,"range":8.0,"force":4,"radius":1.0,"effector":"torso","wind":0.5}},

@@ -196,7 +196,7 @@ func tick_archetype(dt: float, body: CombatMonster, opponent: CombatMonster, bat
 		body.state="RECOVERING FOOTING"
 	if body.attack_motion.running:
 		body.state=body.attack_motion.profile.label+" · "+body.attack_motion.phase
-	elif body.cooldown<=0 and body.stagger<=.25 and absf(angle_difference(body.rotation.y,facing))<.3:
+	elif body.cooldown<=0 and body.stagger<=.25 and absf(angle_difference(body.rotation.y,facing))<(.3 if opponent.rig_type!="swarm" else 3.2):
 		var charge_ready := mode=="BUILD CHARGE" and distance>=15
 		var move := choose_archetype_move(body,distance,charge_ready)
 		if move!="" and (tactic_age<=0 or mode=="FLANK" or charge_ready or distance<preferred-1.5):

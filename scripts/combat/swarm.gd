@@ -40,6 +40,14 @@ func nearest_point(from: Vector3) -> Vector3:
 			best=u.pos
 	return best if best_d<INF else body.global_position
 
+# Heavy feet landing on a unit crush it (and whatever is under the heel).
+func stomp(point: Vector3, radius: float) -> void:
+	for u in units:
+		if not u.alive: continue
+		var planar := Vector2(u.pos.x-point.x,u.pos.z-point.z).length()
+		if planar<=radius and u.pos.y<4.0:
+			body.damage(Vector3(u.pos.x,body.global_position.y+3.0,u.pos.z),radius*0.9,Vector3.DOWN*6.0)
+
 func sync_alive() -> void:
 	for u in units:
 		var id := "u%d" % u.id
@@ -67,7 +75,7 @@ func update(dt: float, owner_body: CombatMonster) -> void:
 			u.state="CELEBRATE" if opponent!=null and opponent.defeated else "RALLY"
 			continue
 		var foe := opponent.position
-		var ring_radius: float=float(data.get("ring_radius",3.9))*u.jitter
+		var ring_radius: float=(float(data.get("ring_radius",3.9))+opponent.behavior("body_radius",0.0))*u.jitter
 		var slot := foe+Vector3(cos(u.ring+owner_body.clock*0.15),0,sin(u.ring+owner_body.clock*0.15))*ring_radius
 		var to_slot: Vector3=slot-u.pos
 		to_slot.y=0
@@ -98,7 +106,9 @@ func update(dt: float, owner_body: CombatMonster) -> void:
 			var point := opponent.region_target(region)
 			if not opponent.region_centers.has(region): point=opponent.region_target("chest")
 			var toward: Vector3=(point-u.pos).normalized()
+			opponent.light_hit=true
 			var report := opponent.damage(point,float(data.get("strike_radius",1.0)),toward*float(data.get("strike_force",4.0)))
+			opponent.light_hit=false
 			if report.direct>0:
 				strike_count+=1
 				var battle: Node3D=owner_body.get_parent()
@@ -108,8 +118,7 @@ func update(dt: float, owner_body: CombatMonster) -> void:
 	# Destabilisation: enough climbers slow and unbalance the host.
 	if climbers>=3 and opponent!=null and not opponent.defeated:
 		opponent.status["web"]=0.4
-		opponent.status["web_slow"]=clampf(0.9-0.07*climbers,0.35,0.9)
-		if climbers>=6: opponent.stagger=maxf(opponent.stagger,0.25)
+		opponent.status["web_slow"]=clampf(0.92-0.05*climbers,0.5,0.92)
 	# Entrant root follows the surviving centroid so AI, camera and separation see one body.
 	if alive>0:
 		var c := Vector3.ZERO

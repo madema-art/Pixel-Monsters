@@ -42,6 +42,9 @@ const FACE_STEPS := [Vector3i(1,0,0),Vector3i(-1,0,0),Vector3i(0,1,0),Vector3i(0
 const Look = preload("res://scripts/cinema/look.gd")
 const Archetypes = preload("res://scripts/combat/archetypes.gd")
 
+func regions_has(region: String) -> bool:
+	return structure.intact_counts.has(region)
+
 func rig_point(key: String, fallback: Vector3, side: String="") -> Vector3:
 	if archetype.is_empty() or not archetype.rig.has(key): return fallback
 	var p: Array=archetype.rig[key]
@@ -75,6 +78,10 @@ func reset_body() -> void:
 	if not authored_look: palette={"interior":tint.darkened(.78),"glow":Color("fff0b1")}
 	cell_ids.clear()
 	for i in cubes.size(): cell_ids[cubes[i].cell]=i
+	for i in cubes.size():
+		var neighbours := PackedInt32Array()
+		for step in FACE_STEPS: neighbours.append(cell_ids.get(cubes[i].cell+step,-1))
+		cubes[i].neighbours=neighbours
 	wound_count=-1
 	var head_y: int=(26 if archetype.is_empty() else roundi(archetype.rig.get("head",[0,26,0])[1]))
 	rig_type=String(archetype.get("rig_type","biped"))
@@ -149,8 +156,7 @@ func update_wound_look() -> void:
 	for c in cubes:
 		if not c.alive: continue
 		var dead := 0
-		for step in FACE_STEPS:
-			var neighbour: int=cell_ids.get(c.cell+step,-1)
+		for neighbour in c.neighbours:
 			if neighbour>=0 and not cubes[neighbour].alive: dead+=1
 		if dead==0: continue
 		c.wound=minf(1.0,0.45+0.2*dead)

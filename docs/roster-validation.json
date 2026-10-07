@@ -1,0 +1,833 @@
+{
+	"checks": [
+		{
+			"check": "giant_ape: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_ape: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: definition file present",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: unique cells",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile/fire_breath: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "fire_reptile/tail_sweep: unavailable once tail is destroyed",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: definition file present",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: unique cells",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon/aerial_fire: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon/tail_strike: unavailable once tail is destroyed",
+			"passed": true
+		},
+		{
+			"check": "flying_dragon/wing_buffet: unavailable once right_wing is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_robot/rocket_fist: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_robot: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_skeleton: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: definition file present",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: unique cells",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "diaper_baby: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: definition file present",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: unique cells",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: connected structure (10 component)",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "army_of_ten: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: definition file present",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: unique cells",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard/arcane_bolt: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard/telekinetic_blast: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard/meteor: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "pointy_hat_wizard: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "blob: definition file present",
+			"passed": true
+		},
+		{
+			"check": "blob: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "blob: unique cells",
+			"passed": true
+		},
+		{
+			"check": "blob: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "blob: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "blob: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "blob: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "blob: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "blob: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "blob/shove: unavailable once pseud_r is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_mantis: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: definition file present",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: unique cells",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus/boulder_throw: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "stone_colossus: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: definition file present",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: unique cells",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast/gaze_beam: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast/tentacle_strike: unavailable once tent_ar is destroyed",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast/tentacle_lash: unavailable once tent_al is destroyed",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast/tentacle_grab: unavailable once tent_ar is destroyed",
+			"passed": true
+		},
+		{
+			"check": "eyeball_beast/gaze_beam: unavailable once gaze is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula/web_spray: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula/leg_strike: unavailable once leg_fr is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula/leg_jab: unavailable once leg_fl is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_tarantula/leg_sweep: unavailable once leg_fr is destroyed",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: definition file present",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: unique cells",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider/lance_thrust: unavailable once lance is destroyed",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider/lance_charge: unavailable once lance is destroyed",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider/horse_kick: unavailable once leg_hr is destroyed",
+			"passed": true
+		},
+		{
+			"check": "dark_knight_rider/mounted_strike: unavailable once lance is destroyed",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: definition file present",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: unique cells",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon/fireball: ranged attack is limited (wind-up, recovery, cooldown)",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "shadow_flame_demon: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: definition file present",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: unique cells",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: body allocation matches authored data",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: connected structure (1 component)",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: distinct attack identity (>=5 attacks)",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: ranged designation matches roster brief",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: localized damage removes real cubes",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda: cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda/bite: unavailable once head is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda/lunge: unavailable once head is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda/constrict: unavailable once head is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda/body_sweep: unavailable once seg_05 is destroyed",
+			"passed": true
+		},
+		{
+			"check": "giant_anaconda/tail_whip: unavailable once tail_1 is destroyed",
+			"passed": true
+		},
+		{
+			"check": "exactly eight entrants have ranged capability",
+			"passed": true
+		},
+		{
+			"check": "ape: armless loses arm vocabulary but keeps kicks, tackles and headbutts",
+			"passed": true
+		},
+		{
+			"check": "robot: rocket fist available when healthy",
+			"passed": true
+		},
+		{
+			"check": "robot: rocket fist unavailable while the fist is away",
+			"passed": true
+		},
+		{
+			"check": "reptile: breath available healthy",
+			"passed": true
+		},
+		{
+			"check": "reptile: no fire breath without head/neck",
+			"passed": true
+		},
+		{
+			"check": "reptile: tail sweep disappears with the tail",
+			"passed": true
+		},
+		{
+			"check": "eyeball: eye damage degrades beam quality without being lethal",
+			"passed": true
+		},
+		{
+			"check": "eyeball: beam unavailable once the eye is gone",
+			"passed": true
+		},
+		{
+			"check": "skeleton: has reassembly module",
+			"passed": true
+		},
+		{
+			"check": "skeleton: struck cubes become recoverable loose bone",
+			"passed": true
+		},
+		{
+			"check": "skeleton: smashing loose bone shatters it permanently",
+			"passed": true
+		},
+		{
+			"check": "skeleton: loose pixels return and shattered pixels never do",
+			"passed": true
+		},
+		{
+			"check": "skeleton: never exceeds 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "skeleton: joint loss disables function while disconnected",
+			"passed": true
+		},
+		{
+			"check": "skeleton: reassembly restores mobility",
+			"passed": true
+		},
+		{
+			"check": "army: ten separate bodies",
+			"passed": true
+		},
+		{
+			"check": "army: each unit is exactly 100 cubes (total 1,000)",
+			"passed": true
+		},
+		{
+			"check": "army: individual member can die",
+			"passed": true
+		},
+		{
+			"check": "army: all members dead is fatal",
+			"passed": true
+		},
+		{
+			"check": "dragon: flight state present and can take off healthy",
+			"passed": true
+		},
+		{
+			"check": "dragon: takes off with healthy wings",
+			"passed": true
+		},
+		{
+			"check": "dragon: damaged wing reduces lift",
+			"passed": true
+		},
+		{
+			"check": "dragon: destroyed wings ground the dragon",
+			"passed": true
+		},
+		{
+			"check": "dragon: airborne dragon can dive and cannot claw",
+			"passed": true
+		},
+		{
+			"check": "tarantula: leg loss progressively reduces speed",
+			"passed": true
+		},
+		{
+			"check": "rider: horse + rider + lance share exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "rider: lance charge available with lance",
+			"passed": true
+		},
+		{
+			"check": "rider: losing the lance removes lance attacks but keeps trample",
+			"passed": true
+		},
+		{
+			"check": "anaconda: serpent architecture with no biped rig",
+			"passed": true
+		},
+		{
+			"check": "anaconda: continuous segment chain",
+			"passed": true
+		},
+		{
+			"check": "anaconda: body damage reduces mobility",
+			"passed": true
+		},
+		{
+			"check": "blob: damage excavates mass permanently (no regeneration)",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

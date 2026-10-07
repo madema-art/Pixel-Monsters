@@ -164,6 +164,7 @@ func simulate_step(dt: float) -> void:
 		if previous_step!="" and fighter.stepping=="" and not fighter.defeated:
 			var other: CombatMonster=monsters[1-monsters.find(fighter)]
 			if other.regen!=null: other.regen.shatter_near(fighter.feet[previous_step],2.6)
+			if other.rig_type=="swarm" and other.swarm!=null: other.swarm.stomp(fighter.feet[previous_step],3.0)
 			sound.footfall(fighter.feet[previous_step])
 			effects.burst(fighter.feet[previous_step]+Vector3.UP*.15,0,true)
 			camera.impulse(fighter.feet[previous_step],.018)

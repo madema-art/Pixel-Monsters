@@ -42,6 +42,7 @@ var hold_profile := {}
 var hold_move := ""
 var hold_side := ""
 var knock_decay := 1.2
+var light_hit := false
 var hop_offset := 0.0
 var swarm: SwarmUnits
 var opponent: CombatMonster
@@ -383,7 +384,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 	if rig_type=="swarm" and swarm!=null: swarm.before_damage(contact,radius)
 	var result := super.damage(contact,radius,force)
 	if rig_type=="swarm" and swarm!=null: swarm.after_damage(self)
-	if result.direct>0:
+	if result.direct>0 and not light_hit:
 		stagger=maxf(stagger,0.45+radius*0.12)
 		head_recoil=1.0 if to_local(contact).y>21 else 0.3
 		var planar := Vector3(force.x,0,force.z)
@@ -391,6 +392,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 		if attack_motion.running and attack_motion.phase=="WIND-UP" and radius>2.2:
 			attack_motion.cancel()
 			cooldown=1.0
+	if result.direct>0:
 		var reason := structure.fatal_reason()
 		if reason!="": defeat(reason)
 	return result

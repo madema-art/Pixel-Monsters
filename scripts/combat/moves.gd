@@ -38,7 +38,10 @@ static func available(body: PixelMonster, move: String, ignore_cooldown: bool=fa
 	if not ignore_cooldown and profile(body,move).get("requires_free",false) and (body.held_by!=null or body.hold_target!=null): return false
 	if (body.reassembling and not ignore_cooldown) or not needs_met(body,profile(body,move)): return false
 	var limb: String=profile(body,move).get("limb","")
-	if limb=="custom" or limb=="ranged": return true
+	if limb=="custom": return true
+	if limb=="ranged":
+		var arm_side: String=profile(body,move).get("side","")
+		return arm_side=="" or functional_arm(body,arm_side)
 	if limb=="arm": return functional_arm(body,"left") or functional_arm(body,"right")
 	if limb=="leg": return body.structure.leg_quality("left")>0.45 or body.structure.leg_quality("right")>0.45
 	if limb=="head": return body.structure.material("head")>body.structure.threshold("head",.25,30) and body.structure.material("neck")>body.structure.threshold("neck",.17,4)
@@ -51,6 +54,7 @@ static func functional_arm(body: PixelMonster, side: String) -> bool:
 
 static func side_for(body: PixelMonster, move: String, rng: RandomNumberGenerator) -> String:
 	var base: String=profile(body,move).get("base",move)
+	if base=="ranged": return profile(body,move).get("side","")
 	if base=="left_punch": return "left"
 	if base=="right_punch": return "right"
 	if base=="heavy_hook":

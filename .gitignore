@@ -5,3 +5,6 @@ docs/**/*.import
 
 art/**/*.blend1
 art/**/*.blend2
+
+__pycache__/
+*.pyc

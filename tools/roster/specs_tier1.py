@@ -25,7 +25,7 @@ def giant_ape():
         pelvis=(0,10.6,0,3.6,1.8,2.4), abdomen=(0,13.8,-0.4,3.4,2.4,2.3), chest=(0,18.4,-0.9,6.8,4.3,3.7),
         neck=(0,22.0,-2.0,2.4,1.4,2.2), head=(0,23.6,-3.4,3.2,2.9,2.9),
         sh_x=7.4, sh_y=20.2, sh_r=(2.9,2.7,2.5), elbow=(9.6,14.4,-1.8), wrist=(10.0,8.6,-3.0), fist=(10.2,5.8,-3.4,3.2,2.7,2.9),
-        ua_r=2.5, fa_r=2.7, lean=0.1)
+        ua_r=2.5, fa_r=2.7, lean=-0.08)
     rig["idle_hand"] = [8.8, 9.0, -5.2]
     return finish_biped(R, rig, id="giant_ape", slim=0.86, name="GIANT APE", kind="brawler", palette="4a3d36",
         look={"skin":"4a3d36","limb":"3f332d","joint":"2a211d","head":"45372f","accent":"b79a7a","interior":"2a1612","glow":"ffb347"},
@@ -46,7 +46,7 @@ def giant_ape():
 def stone_colossus():
     R, rig = biped.build(boxy=True, hip_x=3.6, hip_y=8.6, knee_y=5.0, thigh_r=3.2, shin_r=2.8, foot_w=3.2, foot_l=3.6, foot_z=-1.0,
         pelvis=(0,9.6,0,5.2,1.8,3.4), abdomen=(0,13.0,0,4.8,2.0,3.2), chest=(0,18.4,-0.2,8.0,3.8,4.2),
-        neck=(0,22.0,-0.4,2.0,0.8,2.0), head=(0,23.9,-1.0,2.6,2.0,2.4), boxy_head=True,
+        neck=(0,22.0,-0.4,2.4,0.9,2.4), head=(0,24.2,-1.0,3.4,2.8,3.2), boxy_head=True,
         sh_x=10.2, sh_y=19.6, sh_r=(3.6,3.4,3.3), elbow=(12.0,13.8,-0.8), wrist=(12.4,8.8,-1.8), fist=(12.6,6.2,-2.2,3.8,3.2,3.4),
         ua_r=3.0, fa_r=3.2)
     def moss(live):

@@ -45,7 +45,7 @@ def eyeball_beast():
         limbs=limbs, locomotion={"type":"legs","legs":["tent_fl","tent_fr","tent_bl","tent_br"],"power":1.15},
         fatal=[{"regions":["sclera","eye","pupil"],"fraction":0.3,"reason":"EYE DESTROYED"}],
         look={"skin":"d8cfae","limb":"8a3a6a","joint":"5a2244","head":"d8cfae","accent":"c23a3a","interior":"4a1a2a","glow":"ff9a2a","face":False,"tones":{"eye":"head","pupil":"joint","crown":"limb","tent_fl_u":"limb","tent_fr_u":"limb"}},
-        behavior={"speed":2.5,"acceleration":1.3,"turn_rate":0.75,"turn_acceleration":1.0,"step_seconds":0.6,"preferred_range":12.0,"retreat":0.4,"circle":1.9,"reposition_interval":4.0,"reposition_seconds":2.6,"crush_radius":3.2},
+        behavior={"speed":2.5,"acceleration":1.3,"turn_rate":0.75,"turn_acceleration":1.0,"step_seconds":0.6,"preferred_range":11.0,"retreat":0.3,"circle":1.3,"reposition_interval":6.0,"reposition_seconds":2.4,"crush_radius":3.2},
         attacks={
           "tentacle_strike":{"base":"custom","label":"TENTACLE STRIKE","weight":2.0,"range":16.0,"force":18,"radius":1.9,"effector":"tent_ar","trajectory":"straight","needs":{"tent_ar":0.4},"wind":0.7,"recover":1.1,"sound_pitch":1.1},
           "tentacle_lash":{"base":"custom","label":"TENTACLE LASH","weight":1.8,"range":16.0,"force":17,"radius":1.9,"effector":"tent_al","trajectory":"hook","needs":{"tent_al":0.4},"wind":0.7,"recover":1.1,"sound_pitch":1.1},
@@ -155,7 +155,7 @@ def flying_dragon():
     R, rig = biped.build(hip_x=2.6, hip_y=11.0, knee_dx=0.2, knee_y=7.0, knee_z=-1.6, thigh_r=2.0, shin_r=1.35, foot_w=1.6, foot_l=3.0, foot_z=-1.6,
         pelvis=(0,12.0,1.0,3.0,1.9,3.0), abdomen=(0,15.2,0.2,2.9,2.4,2.8), chest=(0,19.4,-0.6,3.8,3.4,3.2),
         neck=(0,23.6,-2.8,1.6,2.2,1.6), head=(0,26.2,-5.8,2.3,1.9,3.8),
-        sh_x=4.0, sh_y=20.6, sh_r=(1.5,1.5,1.5), elbow=(4.8,17.6,-2.2), wrist=(4.8,15.4,-4.2), fist=(4.8,14.4,-5.0,1.3,1.1,1.6), ua_r=1.1, fa_r=1.0, lean=0.1)
+        sh_x=4.0, sh_y=20.6, sh_r=(1.5,1.5,1.5), elbow=(4.8,17.6,-2.2), wrist=(4.8,15.4,-4.2), fist=(4.8,14.4,-5.0,1.3,1.1,1.6), ua_r=1.1, fa_r=1.0, lean=-0.07)
     R["tail_1"] = {"major":"tail","vols":[E(0,12.0,5.2,2.4,2.2,3.4)]}
     R["tail_2"] = {"major":"tail","vols":[E(0,10.4,9.6,1.9,1.8,3.0)]}
     R["tail_3"] = {"major":"tail","vols":[E(0,8.4,13.6,1.5,1.4,2.8)]}

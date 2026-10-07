@@ -293,7 +293,9 @@ func step_stream(stream: Dictionary, dt: float) -> bool:
 		if not contact.is_empty():
 			stream_ticks+=1
 			var radius: float=float(profile.get("tick_radius",1.5))*(0.7+0.3*q)
+			target.light_hit=true
 			var report := target.damage(contact.point,radius,direction*float(profile.get("force",9.0)))
+			target.light_hit=false
 			if report.direct>0 and (stream_ticks%3==0):
 				battle.on_impact(shooter,target,stream.move,contact.point,report,float(profile.get("force",9.0)))
 			elif report.direct>0:

@@ -108,7 +108,23 @@ func apply(body: Node3D) -> void:
 		var thrust := v3(weapon.thrust)*float(weapon.get("length",5.0))
 		var amount := 0.0
 		if attack.running and attack.profile.get("effector","")==weapon.effector: amount=clampf(attack.reach,-0.25,1.0)
-		var weapon_t: Transform3D=transforms.get(weapon.regions[0],body_t)*Transform3D(Basis.IDENTITY,thrust*amount)
+		var aim_basis := Basis.IDENTITY
+		var weapon_pivot := v3(weapon.pivot) if weapon.has("pivot") else Vector3.ZERO
+		var shift := thrust*amount
+		if attack.running and attack.profile.get("effector","")==weapon.effector and weapon.has("pivot"):
+			# The mounted weapon swings toward its target (bounded) and its contact point travels through it,
+			# so a lance can find a smaller opponent instead of only sweeping its far tip.
+			var aim_local: Vector3=body.to_local(attack.aim)
+			var yaw := clampf(atan2(-aim_local.x,-aim_local.z),-0.38,0.38)
+			var pitch := clampf(atan2(aim_local.y-weapon_pivot.y,maxf(1.0,-aim_local.z)),-0.25,0.2)
+			aim_basis=Basis(Vector3.UP,yaw)*Basis(Vector3.RIGHT,pitch)
+			var tip_rest := v3(weapon.tip)
+			var tip_len := weapon_pivot.distance_to(tip_rest)
+			var travel := float(weapon.get("length",5.0))
+			var hit_len := minf((aim_local-weapon_pivot).length()+0.8,tip_len+travel)
+			var reach_len := lerpf(hit_len-travel,hit_len,clampf(attack.reach,-0.25,1.0))
+			shift=v3(weapon.thrust).normalized()*(reach_len-tip_len)
+		var weapon_t: Transform3D=transforms.get(weapon.regions[0],body_t)*Transform3D(aim_basis,weapon_pivot-aim_basis*weapon_pivot)*Transform3D(Basis.IDENTITY,shift)
 		for region in weapon.regions: transforms[region]=weapon_t
 		effectors[weapon.effector]=body.to_global(weapon_t*v3(weapon.tip))
 	# Chains.
