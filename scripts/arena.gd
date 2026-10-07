@@ -41,6 +41,12 @@ func _ready() -> void:
 	add_child(ground)
 	box(Vector3(0,0.015,0),Vector3(24,0.03,160),Color("242b30"))
 	box(Vector3(0,0.035,16),Vector3(160,0.03,8),Color("242b30"))
+	for side in [-1,1]:
+		box(Vector3(side*15.5,0.10,0),Vector3(3,0.2,150),Color("687074"))
+		box(Vector3(side*17.1,0.18,32),Vector3(0.3,0.36,85),Color("959487"))
+		box(Vector3(side*19,0.7,25),Vector3(0.8,1.4,0.65),Color("52636b"))
+		box(Vector3(side*17.5,1.5,21),Vector3(0.08,3,0.08),Color("7b8586"))
+		box(Vector3(side*17.5,2.6,21),Vector3(0.7,0.7,0.08),Color("9f4d35"))
 	for z in range(-75,80,6):
 		box(Vector3(0,0.04,z),Vector3(0.15,0.02,2),Color("b4ada0"))
 	for s in [-1,1]:
@@ -52,7 +58,7 @@ func _ready() -> void:
 		for j in 9:
 			var x: float=s*(28+(j%3)*14)
 			var z: float=-58+floor(j/3.0)*36
-			var h: float=3+(j*7)%7
+			var h: float=3+(j*5)%7
 			box(Vector3(x,h/2,z),Vector3(9,h,12),Color("536068").darkened(j*0.015))
 			box(Vector3(x,h+0.2,z),Vector3(9.4,0.4,12.4),Color("3c484e"))
 			for floor_id in int(h/1.5):

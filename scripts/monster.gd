@@ -16,6 +16,14 @@ var last_detached := 0
 var reaction := 0.0
 var home := Vector3.ZERO
 var crouch := 0.0
+var render_ids := {}
+var dynamic_pose := false
+var animation_ms := 0.0
+var structure_ms := 0.0
+var pose_transforms := {}
+var pose_index_ready := false
+var region_centers := {}
+var support_height := 10.0
 
 func initialize(color: Color, debris_manager: Node3D) -> void:
 	tint = color
@@ -26,6 +34,10 @@ func initialize(color: Color, debris_manager: Node3D) -> void:
 func reset_body() -> void:
 	for child in get_children(): child.queue_free()
 	renders.clear()
+	render_ids.clear()
+	pose_transforms.clear()
+	region_centers.clear()
+	pose_index_ready=false
 	grid.clear()
 	cubes = BodyLayout.generate()
 	var material := StandardMaterial3D.new()
@@ -44,35 +56,78 @@ func reset_body() -> void:
 		if c.region == "head" and c.cell.y == 26 and c.cell.z <= -1 and absi(c.cell.x)==1:
 			c.color = Color("fff0b1")
 		grid[c.cell] = i
-		if not renders.has(c.major):
+		var render_key: String=c.region if dynamic_pose else c.major
+		if not renders.has(render_key):
 			var instance := MultiMeshInstance3D.new()
-			instance.name = c.major
+			instance.name = render_key
 			instance.multimesh = MultiMesh.new()
 			instance.multimesh.transform_format = MultiMesh.TRANSFORM_3D
 			instance.multimesh.use_colors = true
 			instance.multimesh.mesh = mesh
 			add_child(instance)
-			renders[c.major] = instance
+			renders[render_key] = instance
 	structure.build(cubes)
 	rebuild()
 	reaction = 0
 	last_query_ms=0
 	last_event_ms=0
+	structure_ms=0
 	last_direct_ids.clear()
 	last_detached=0
 	position = home
 
 func rebuild() -> void:
+	region_centers.clear()
+	var region_counts := {}
+	var grouped_ids := {}
+	support_height=100.0
+	for key in renders: grouped_ids[key]=[]
+	for id in cubes.size():
+		var c: Dictionary=cubes[id]
+		if c.alive:
+			if c.major=="torso": support_height=minf(support_height,c.position.y-BodyLayout.CUBE_SIZE*0.5)
+			grouped_ids[c.region if dynamic_pose else c.major].append(id)
+			region_centers[c.region]=region_centers.get(c.region,Vector3.ZERO)+c.position
+			region_counts[c.region]=region_counts.get(c.region,0)+1
+	for region in region_centers: region_centers[region]/=region_counts[region]
 	for major in renders:
 		var mm: MultiMesh = renders[major].multimesh
-		var ids: Array[int] = []
-		for i in cubes.size():
-			if cubes[i].alive and cubes[i].major == major: ids.append(i)
+		var ids: Array=grouped_ids[major]
 		mm.instance_count = ids.size()
+		render_ids[major]=ids
 		for slot in ids.size():
 			var c: Dictionary = cubes[ids[slot]]
-			mm.set_instance_transform(slot,Transform3D(c.pose_basis,c.pose))
+			mm.set_instance_transform(slot,Transform3D(Basis.IDENTITY,c.position) if dynamic_pose else Transform3D(c.pose_basis,c.pose))
 			mm.set_instance_color(slot,c.color)
+	if dynamic_pose: pose_index_ready=false
+
+func update_pose_index() -> void:
+	grid.clear()
+	for i in cubes.size():
+		if not cubes[i].alive: continue
+		var pose: Transform3D=pose_transforms.get(cubes[i].region,Transform3D.IDENTITY)
+		cubes[i].pose=pose*cubes[i].position
+		cubes[i].pose_basis=pose.basis
+		var cell := Vector3i(cubes[i].pose.floor())
+		if not grid.has(cell): grid[cell]=[]
+		grid[cell].append(i)
+	pose_index_ready=true
+
+func ensure_pose_index() -> void:
+	if dynamic_pose and not pose_index_ready: update_pose_index()
+
+func sync_pose() -> void:
+	if dynamic_pose:
+		for region in renders: renders[region].transform=pose_transforms.get(region,Transform3D.IDENTITY)
+		pose_index_ready=false
+		return
+	for major in renders:
+		var ids: Array=render_ids[major]
+		var mm: MultiMesh=renders[major].multimesh
+		for slot in ids.size():
+			var c: Dictionary=cubes[ids[slot]]
+			mm.set_instance_transform(slot,Transform3D(c.pose_basis,c.pose))
+	if dynamic_pose: update_pose_index()
 
 func alive_count() -> int:
 	var count := 0
@@ -81,6 +136,8 @@ func alive_count() -> int:
 	return count
 
 func region_target(region: String) -> Vector3:
+	if dynamic_pose:
+		return to_global(pose_transforms.get(region,Transform3D.IDENTITY)*region_centers.get(region,Vector3(0,18,0)))
 	var sum := Vector3.ZERO
 	var count := 0
 	for c in cubes:
@@ -92,14 +149,18 @@ func region_target(region: String) -> Vector3:
 # Swept sphere against actual surviving cube AABBs, in body space.
 # No broad-phase body collider can register a hit inside an existing cavity.
 func sweep(from: Vector3, to: Vector3, radius: float=0.0) -> Dictionary:
+	ensure_pose_index()
 	var a := to_local(from)
 	var b := to_local(to)
 	var direction := b-a
+	var margin := Vector3.ONE*(BodyLayout.CUBE_SIZE*0.5+radius)*sqrt(3.0)
+	var broadphase := AABB(a.min(b)-margin,a.max(b)-a.min(b)+margin*2)
 	var best := 2.0
 	var hit_id := -1
 	for i in cubes.size():
 		var c: Dictionary = cubes[i]
 		if not c.alive: continue
+		if not broadphase.has_point(c.pose): continue
 		var extent := Vector3.ONE*(BodyLayout.CUBE_SIZE*0.5+radius)
 		var inverse: Basis=c.pose_basis.inverse()
 		var ray_a: Vector3=inverse*(a-c.pose)
@@ -131,6 +192,7 @@ func sweep(from: Vector3, to: Vector3, radius: float=0.0) -> Dictionary:
 	return {"point":to_global(surface),"center":center,"id":hit_id,"cube_center":cube_center,"t":best}
 
 func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
+	ensure_pose_index()
 	var started := Time.get_ticks_usec()
 	var local := to_local(contact)
 	last_direct_ids.clear()
@@ -143,17 +205,21 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 			for z in range(origin.z-bounds,origin.z+bounds+1):
 				var cell := Vector3i(x,y,z)
 				if not grid.has(cell): continue
-				var id: int = grid[cell]
-				var c: Dictionary = cubes[id]
-				if c.alive and c.pose.distance_squared_to(local)<=radius*radius:
-					last_direct_ids.append(id)
+				var ids: Array=grid[cell] if dynamic_pose else [grid[cell]]
+				for id in ids:
+					var c: Dictionary = cubes[id]
+					if c.alive and c.pose.distance_squared_to(local)<=radius*radius:
+						last_direct_ids.append(id)
 	last_query_ms = (Time.get_ticks_usec()-started)/1000.0
 	for id in last_direct_ids: remove_cube(id,contact,force)
+	var structural_start := Time.get_ticks_usec()
 	for arm in structure.failures(cubes):
 		for i in cubes.size():
 			if cubes[i].alive and cubes[i].major==arm:
 				remove_cube(i,contact,force*0.35)
 				last_detached+=1
+	if last_detached>0: structure.refresh(cubes)
+	structure_ms=(Time.get_ticks_usec()-structural_start)/1000.0
 	rebuild()
 	last_contact = contact
 	reaction = 0.5

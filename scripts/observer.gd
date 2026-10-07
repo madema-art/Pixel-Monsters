@@ -8,6 +8,7 @@ var target_yaw := 0.0
 var target_pitch := 0.0
 var shake := 0.0
 var looking := false
+var cruise_speed := 12.0
 
 func _ready() -> void:
 	process_mode=Node.PROCESS_MODE_ALWAYS
@@ -32,6 +33,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and event.keycode==KEY_ESCAPE:
 		looking=false
 		Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
+	if event is InputEventKey and event.pressed and not event.echo:
+		if event.keycode in [KEY_EQUAL,KEY_KP_ADD]: cruise_speed=minf(80,cruise_speed*1.3)
+		if event.keycode in [KEY_MINUS,KEY_KP_SUBTRACT]: cruise_speed=maxf(2,cruise_speed/1.3)
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index==MOUSE_BUTTON_WHEEL_UP: fov=clampf(fov-3,30,85)
 		if event.button_index==MOUSE_BUTTON_WHEEL_DOWN: fov=clampf(fov+3,30,85)
@@ -45,8 +49,8 @@ func _process(_dt: float) -> void:
 	pitch=lerpf(pitch,target_pitch,1-exp(-12*dt))
 	var move := Vector3(float(Input.is_physical_key_pressed(KEY_D))-float(Input.is_physical_key_pressed(KEY_A)),0,float(Input.is_physical_key_pressed(KEY_S))-float(Input.is_physical_key_pressed(KEY_W)))
 	move=Basis(Vector3.UP,yaw)*move
-	move.y=float(Input.is_physical_key_pressed(KEY_SPACE))-float(Input.is_physical_key_pressed(KEY_CTRL))
-	var speed := 35.0 if Input.is_physical_key_pressed(KEY_SHIFT) else 12.0
+	move.y=float(Input.is_physical_key_pressed(KEY_Z))-float(Input.is_physical_key_pressed(KEY_X) or Input.is_physical_key_pressed(KEY_CTRL))
+	var speed := cruise_speed*2.9 if Input.is_physical_key_pressed(KEY_SHIFT) else cruise_speed
 	velocity=velocity.lerp(move.normalized()*speed,1-exp(-8*dt))
 	position+=velocity*dt
 	position.y=maxf(position.y,0.6)

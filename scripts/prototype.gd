@@ -95,7 +95,7 @@ func build_hud() -> void:
 	canvas.add_child(bottom)
 	metrics=label(bottom,"",14,Color("bed0d1"))
 	label(bottom,"WASD fly  ·  Q/E yaw  ·  Hold RMB + mouse look  ·  Shift boost",15)
-	label(bottom,"Space/Ctrl rise/drop  ·  Wheel zoom  ·  F3 diagnostics",15)
+	label(bottom,"Z/X rise/drop  ·  Wheel zoom  ·  F3 diagnostics",15)
 	select_region("head")
 
 func select_region(region: String) -> void:
