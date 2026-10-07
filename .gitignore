@@ -2,3 +2,6 @@
 .godot/
 /android/
 docs/**/*.import
+
+art/**/*.blend1
+art/**/*.blend2

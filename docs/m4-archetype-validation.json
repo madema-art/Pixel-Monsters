@@ -1,0 +1,193 @@
+{
+	"checks": [
+		{
+			"check": "gorgeblock exact visible 1000",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock exact rendered cube count",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock unique cells",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock authored regional allocation",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock connected body",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock proportional healthy mobility",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock distinct authored vocabulary",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock actual local damage",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock persistent cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock support failure reduces pursuit",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock leg loss preserves vital structure",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock arm loss disables arm vocabulary",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock armless primary alternatives",
+			"passed": true
+		},
+		{
+			"check": "gorgeblock armless loss remains nonfatal",
+			"passed": true
+		},
+		{
+			"check": "needlemantle exact visible 1000",
+			"passed": true
+		},
+		{
+			"check": "needlemantle exact rendered cube count",
+			"passed": true
+		},
+		{
+			"check": "needlemantle unique cells",
+			"passed": true
+		},
+		{
+			"check": "needlemantle authored regional allocation",
+			"passed": true
+		},
+		{
+			"check": "needlemantle connected body",
+			"passed": true
+		},
+		{
+			"check": "needlemantle proportional healthy mobility",
+			"passed": true
+		},
+		{
+			"check": "needlemantle distinct authored vocabulary",
+			"passed": true
+		},
+		{
+			"check": "needlemantle actual local damage",
+			"passed": true
+		},
+		{
+			"check": "needlemantle persistent cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "needlemantle support failure reduces pursuit",
+			"passed": true
+		},
+		{
+			"check": "needlemantle leg loss preserves vital structure",
+			"passed": true
+		},
+		{
+			"check": "needlemantle arm loss disables arm vocabulary",
+			"passed": true
+		},
+		{
+			"check": "needlemantle armless primary alternatives",
+			"passed": true
+		},
+		{
+			"check": "needlemantle armless loss remains nonfatal",
+			"passed": true
+		},
+		{
+			"check": "bastion exact visible 1000",
+			"passed": true
+		},
+		{
+			"check": "bastion exact rendered cube count",
+			"passed": true
+		},
+		{
+			"check": "bastion unique cells",
+			"passed": true
+		},
+		{
+			"check": "bastion authored regional allocation",
+			"passed": true
+		},
+		{
+			"check": "bastion connected body",
+			"passed": true
+		},
+		{
+			"check": "bastion proportional healthy mobility",
+			"passed": true
+		},
+		{
+			"check": "bastion distinct authored vocabulary",
+			"passed": true
+		},
+		{
+			"check": "bastion actual local damage",
+			"passed": true
+		},
+		{
+			"check": "bastion persistent cavity cannot refill",
+			"passed": true
+		},
+		{
+			"check": "bastion support failure reduces pursuit",
+			"passed": true
+		},
+		{
+			"check": "bastion leg loss preserves vital structure",
+			"passed": true
+		},
+		{
+			"check": "bastion arm loss disables arm vocabulary",
+			"passed": true
+		},
+		{
+			"check": "bastion armless primary alternatives",
+			"passed": true
+		},
+		{
+			"check": "bastion armless loss remains nonfatal",
+			"passed": true
+		},
+		{
+			"check": "Healthy longarm deliberately preserves range",
+			"passed": true
+		},
+		{
+			"check": "Arm loss contracts longarm preferred range",
+			"passed": true
+		},
+		{
+			"check": "Charge unavailable point blank",
+			"passed": true
+		},
+		{
+			"check": "Charge available after creating distance",
+			"passed": true
+		},
+		{
+			"check": "No mirror matches on random launch",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

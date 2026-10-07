@@ -1,3 +1,7 @@
+# Cloud development handoff
+
+Read [CLAUDE.md](CLAUDE.md) and [docs/handoff](docs/handoff/) first. Milestone 4 is preserved but incomplete; the installed game remains Milestone 3. Continue `codex/milestone-04-archetypes`.
+
 # Pixel Monsters
 
 Godot 4.7.2 autonomous giant-monster observer game. The default scene is `scenes/battle.tscn`: two pristine 1,000-cube monsters fight without combat input.

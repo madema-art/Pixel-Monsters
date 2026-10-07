@@ -23,7 +23,7 @@ func run() -> void:
 	battle=load("res://scenes/battle.tscn").instantiate()
 	root.add_child(battle)
 	battle.set_physics_process(false)
-	battle.restart(211)
+	battle.restart(211,[],true)
 	await process_frame
 	check("Exactly 1000 cubes in each cinematic body",battle.monsters[0].alive_count()==1000 and battle.monsters[1].alive_count()==1000)
 	check("Director enabled on launch",battle.camera.director_enabled)

@@ -1,0 +1,118 @@
+{
+	"arguments": [
+		"--scene",
+		"res://tests/archetype_rendered_suite.tscn"
+	],
+	"debug_build": true,
+	"executable": "D:/Godot/Godot.exe",
+	"snapshot": {
+		"active_debris": 0,
+		"ai_ms": 0.087,
+		"audio_events": 0,
+		"audio_ms": 0.034,
+		"collision_bodies": 193,
+		"coverage": 629.05932628848,
+		"debris_script_ms": 0.576,
+		"director": true,
+		"director_ms": 0.046,
+		"finished": false,
+		"fps": 737.0,
+		"frame_ms": 14.871,
+		"gpu_ms": 0.677999973297119,
+		"impact_tiers": [
+			0,
+			0,
+			0
+		],
+		"midpoint_path": 0.0,
+		"midpoint_span": [
+			0.0,
+			0.0
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.088,
+				"archetype": "needlemantle",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"movement": {
+					"distance": 0.0,
+					"lateral_distance": 0.0,
+					"max_displacement": 0.0,
+					"pursuit_distance": 0.0,
+					"retreat_distance": 0.0,
+					"stationary_seconds": 0.0,
+					"zones": []
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					0.0,
+					0.0,
+					-24.0
+				],
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			},
+			{
+				"animation_ms": 0.084,
+				"archetype": "gorgeblock",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"movement": {
+					"distance": 0.0,
+					"lateral_distance": 0.0,
+					"max_displacement": 0.0,
+					"pursuit_distance": 0.0,
+					"retreat_distance": 0.0,
+					"stationary_seconds": 0.0,
+					"zones": []
+				},
+				"name": "GORGEBLOCK",
+				"position": [
+					0.0,
+					0.0,
+					24.0
+				],
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			}
+		],
+		"music": "opening",
+		"physics_ms": 1.762,
+		"render_cpu_ms": 0.303000003099442,
+		"rubble": 0,
+		"seed": 617,
+		"shot": "ESTABLISHING",
+		"sweep_ms": 0.004,
+		"time": 0.0,
+		"vfx_events": 0,
+		"vfx_ms": 0.032,
+		"winner": ""
+	}
+}

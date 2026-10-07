@@ -1,5 +1,12 @@
 extends Node3D
 
+const Archetypes = preload("res://scripts/combat/archetypes.gd")
+var movement := []
+var midpoint_min := Vector3.ZERO
+var midpoint_max := Vector3.ZERO
+var midpoint_path := 0.0
+var last_midpoint := Vector3.ZERO
+
 var arena: MiniatureArena
 var effects: Node3D
 var music: Node
@@ -74,11 +81,19 @@ func _ready() -> void:
 	add_child(music)
 	build_hud()
 	restart()
-	if OS.get_environment("PIXEL_MONSTERS_VERIFY_DIR")!="" and OS.get_environment("PIXEL_MONSTERS_VERIFY_SEED")!="": restart(int(OS.get_environment("PIXEL_MONSTERS_VERIFY_SEED")))
+	var forced: Array=[]
+	var matchup_text := OS.get_environment("PIXEL_MONSTERS_MATCHUP")
+	for argument in OS.get_cmdline_user_args():
+		if argument.begins_with("--matchup="): matchup_text=argument.trim_prefix("--matchup=")
+	if matchup_text!="":
+		var names := matchup_text.split(",")
+		if names.size()==2 and names[0] in Archetypes.IDS and names[1] in Archetypes.IDS: forced=[names[0],names[1]]
+	var verify_seed := int(OS.get_environment("PIXEL_MONSTERS_VERIFY_SEED"))
+	if not forced.is_empty() or verify_seed!=0: restart(verify_seed,forced)
 	print("PIXEL MONSTERS / AUTONOMOUS BATTLE: 1000 + 1000 cubes. Seed ",battle_seed)
 	if OS.get_environment("PIXEL_MONSTERS_VERIFY_DIR")!="": add_child(load("res://scripts/combat/runtime_probe.gd").new())
 
-func restart(seed_value: int=0) -> void:
+func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	paused=false
 	get_tree().paused=false
 	Engine.time_scale=1
@@ -99,14 +114,34 @@ func restart(seed_value: int=0) -> void:
 	collapse_seen.clear()
 	tier_counts=[0,0,0]
 	show_notice("V director / free camera · F1 controls · H hide interface")
-	for fighter in monsters:
+	var chosen := matchup.duplicate()
+	if chosen.is_empty() and not legacy:
+		var random := RandomNumberGenerator.new()
+		random.seed=battle_seed
+		var first := random.randi_range(0,2)
+		chosen=[Archetypes.IDS[first],Archetypes.IDS[(first+random.randi_range(1,2))%3]]
+	movement.clear()
+	for i in 2: monsters[i].name="Combatant_"+str(i)
+	for i in 2:
+		var fighter: CombatMonster=monsters[i]
+		fighter.archetype={} if legacy else Archetypes.definition(chosen[i])
+		fighter.name=("TITAN" if i==0 else "COLOSSUS") if legacy else fighter.archetype.name
+		fighter.tint=(Color("117982") if i==0 else Color("b34524")) if legacy else Color(fighter.archetype.palette)
+		fighter.home=Vector3(-20 if i==0 else 20,0,0) if legacy else Vector3(0,0,-24 if i==0 else 24)
+		fighter.spawn_yaw=(-PI/2 if i==0 else PI/2) if legacy else (PI if i==0 else 0.0)
+		movement.append({"distance":0.0,"stationary_seconds":0.0,"pursuit_distance":0.0,"retreat_distance":0.0,"lateral_distance":0.0,"zones":[],"max_displacement":0.0})
 		fighter.reset_body()
 		fighter.reset_motion()
 	brains[0].initialize(battle_seed,{"aggression":0.87,"hook":1.7,"kick":0.65,"evade":0.18})
 	brains[1].initialize(battle_seed+997,{"aggression":0.78,"hook":0.85,"kick":1.6,"evade":0.28})
+	last_midpoint=(monsters[0].position+monsters[1].position)*.5
+	midpoint_min=last_midpoint
+	midpoint_max=last_midpoint
+	midpoint_path=0
 	stages["pristine"]=snapshot()
 
 func simulate_step(dt: float) -> void:
+	var before := [monsters[0].position,monsters[1].position]
 	elapsed+=dt
 	tick_index+=1
 	for i in 2: brains[i].tick(dt,monsters[i],monsters[1-i],self)
@@ -130,6 +165,22 @@ func simulate_step(dt: float) -> void:
 		var correction := delta.normalized()*(minimum-delta.length())*0.5
 		monsters[0].position-=correction
 		monsters[1].position+=correction
+	for i in 2:
+		var traveled: float=Vector2(monsters[i].position.x-before[i].x,monsters[i].position.z-before[i].z).length()
+		var stats: Dictionary=movement[i]
+		stats.distance+=traveled
+		stats.max_displacement=maxf(stats.max_displacement,Vector2(monsters[i].position.x-monsters[i].home.x,monsters[i].position.z-monsters[i].home.z).length())
+		if not finished and traveled<.15*dt: stats.stationary_seconds+=dt
+		if monsters[i].state=="PURSUING": stats.pursuit_distance+=traveled
+		if monsters[i].state in ["BUILD CHARGE","GIVE GROUND","MAINTAINING RANGE"]: stats.retreat_distance+=traveled
+		if monsters[i].state=="FLANK": stats.lateral_distance+=traveled
+		var zone: String=arena.zone(monsters[i].position)
+		if not stats.zones.has(zone): stats.zones.append(zone)
+	var middle: Vector3=(monsters[0].position+monsters[1].position)*.5
+	midpoint_path+=Vector2(middle.x-last_midpoint.x,middle.z-last_midpoint.z).length()
+	last_midpoint=middle
+	midpoint_min=midpoint_min.min(middle)
+	midpoint_max=midpoint_max.max(middle)
 	for fighter in monsters: fighter.update_pose()
 	var begin := Time.get_ticks_usec()
 	for i in 2:
@@ -161,7 +212,7 @@ func on_impact(attacker: CombatMonster, victim: CombatMonster, move: String, at:
 	var removed: int=report.direct+report.detached
 	var tier := 2 if report.detached>45 or removed>85 else 1 if power>=20 or removed>30 else 0
 	tier_counts[tier]+=1
-	sound.impact(at,power,removed,move,tier,report.detached>45)
+	sound.impact(at,power,removed,MonsterMoves.profile(attacker,move).get("base",move),tier,report.detached>45,float(MonsterMoves.profile(attacker,move).get("sound_pitch",1.0)))
 	if victim.stagger>0.1: sound.stagger(victim.position)
 	var direction: Vector3=(victim.region_target("chest")-attacker.region_target("chest")).normalized()
 	effects.burst(at,tier,false,(direction+Vector3.UP*.6).normalized())
@@ -176,8 +227,8 @@ func on_impact(attacker: CombatMonster, victim: CombatMonster, move: String, at:
 func snapshot() -> Dictionary:
 	var bodies: Array[Dictionary]=[]
 	for fighter in monsters:
-		bodies.append({"name":str(fighter.name),"cubes":fighter.alive_count(),"state":fighter.state,"arms":[fighter.structure.disabled.left_arm,fighter.structure.disabled.right_arm],"legs":[fighter.structure.leg_state("left"),fighter.structure.leg_state("right")],"speed":fighter.speed_factor(),"commands":fighter.commands,"hits":fighter.connected_hits,"animation_ms":fighter.animation_ms,"motor_ms":fighter.motor_ms,"structure_ms":fighter.structure_ms,"defeated":fighter.defeated,"reason":fighter.defeat_reason})
-	return {"time":snappedf(elapsed,0.1),"seed":battle_seed,"finished":finished,"winner":winner,"fps":Engine.get_frames_per_second(),"frame_ms":Performance.get_monitor(Performance.TIME_PROCESS)*1000,"physics_ms":Performance.get_monitor(Performance.TIME_PHYSICS_PROCESS)*1000,"gpu_ms":RenderingServer.viewport_get_measured_render_time_gpu(get_viewport().get_viewport_rid()),"render_cpu_ms":RenderingServer.viewport_get_measured_render_time_cpu(get_viewport().get_viewport_rid()),"active_debris":debris.active.size(),"rubble":debris.rubble.size(),"collision_bodies":debris.max_physical+1,"debris_script_ms":debris.physics_script_ms,"ai_ms":brains[0].think_ms+brains[1].think_ms,"sweep_ms":sweep_ms,"monsters":bodies,"director_ms":camera.director.cost_ms,"shot":camera.director.shot,"director":camera.director_enabled,"coverage":camera.director.coverage(camera.position,camera.position-camera.global_basis.z*30,camera.fov),"vfx_ms":effects.cost_ms,"vfx_events":effects.events,"audio_ms":sound.cost_ms+music.cost_ms,"audio_events":sound.events,"music":music.STATES[maxi(0,music.state)],"impact_tiers":tier_counts.duplicate()}
+		bodies.append({"name":str(fighter.name),"archetype":fighter.archetype.get("id","legacy"),"position":[fighter.position.x,fighter.position.y,fighter.position.z],"movement":movement[monsters.find(fighter)].duplicate(true),"cubes":fighter.alive_count(),"state":fighter.state,"arms":[fighter.structure.disabled.left_arm,fighter.structure.disabled.right_arm],"legs":[fighter.structure.leg_state("left"),fighter.structure.leg_state("right")],"speed":fighter.speed_factor(),"commands":fighter.commands,"hits":fighter.connected_hits,"generation_ms":fighter.generation_ms,"animation_ms":fighter.animation_ms,"motor_ms":fighter.motor_ms,"structure_ms":fighter.structure_ms,"defeated":fighter.defeated,"reason":fighter.defeat_reason})
+	return {"midpoint_path":midpoint_path,"midpoint_span":[midpoint_max.x-midpoint_min.x,midpoint_max.z-midpoint_min.z],"time":snappedf(elapsed,0.1),"seed":battle_seed,"finished":finished,"winner":winner,"fps":Engine.get_frames_per_second(),"frame_ms":Performance.get_monitor(Performance.TIME_PROCESS)*1000,"physics_ms":Performance.get_monitor(Performance.TIME_PHYSICS_PROCESS)*1000,"gpu_ms":RenderingServer.viewport_get_measured_render_time_gpu(get_viewport().get_viewport_rid()),"render_cpu_ms":RenderingServer.viewport_get_measured_render_time_cpu(get_viewport().get_viewport_rid()),"active_debris":debris.active.size(),"rubble":debris.rubble.size(),"collision_bodies":debris.max_physical+1,"debris_script_ms":debris.physics_script_ms,"ai_ms":brains[0].think_ms+brains[1].think_ms,"navigation_ms":brains[0].navigation_ms+brains[1].navigation_ms,"sweep_ms":sweep_ms,"monsters":bodies,"director_ms":camera.director.cost_ms,"shot":camera.director.shot,"director":camera.director_enabled,"coverage":camera.director.coverage(camera.position,camera.position-camera.global_basis.z*30,camera.fov),"vfx_ms":effects.cost_ms,"vfx_events":effects.events,"audio_ms":sound.cost_ms+music.cost_ms,"audio_events":sound.events,"music":music.STATES[maxi(0,music.state)],"impact_tiers":tier_counts.duplicate()}
 
 func text_label(parent: Node, text: String, size: int) -> Label:
 	var item := Label.new()
@@ -215,7 +266,7 @@ func _process(_dt: float) -> void:
 	hud.visible=not hud_off
 	header.modulate.a=clampf(1.0-(elapsed-3)/3,0,1)
 	caption.modulate.a=header.modulate.a
-	caption.text="TITAN  /  COLOSSUS"
+	caption.text=str(monsters[0].name)+"  /  "+str(monsters[1].name)
 	if finished:
 		caption.text="%s REMAINS · R new fight" % winner
 		caption.modulate.a=clampf(1-(elapsed-finish_time-7)/5,0,1)
@@ -224,7 +275,7 @@ func _process(_dt: float) -> void:
 		controls.text="WASD fly · Q/E yaw · RMB look · Z/X rise/drop · Shift boost · +/- speed · Wheel lens\nV director · C home · Space pause · L slow motion · R new fight · M music · K shake · H HUD · F1 help · F3 diagnostics"
 	metrics.visible=diagnostics
 	if diagnostics:
-		metrics.text="%.1fs · seed %d · %d FPS · debris %d/%d\nTITAN %d · %s\nCOLOSSUS %d · %s\nAI %.3fms · rig %.2fms · contact %.2fms\n%s · score %s · TAB target %s · 1/2 arms · 3 leg · 4 core · F hook" % [elapsed,battle_seed,Engine.get_frames_per_second(),debris.active.size(),debris.max_physical,monsters[0].alive_count(),monsters[0].state,monsters[1].alive_count(),monsters[1].state,brains[0].think_ms+brains[1].think_ms,monsters[0].animation_ms+monsters[1].animation_ms,sweep_ms,camera.director.shot,music.STATES[maxi(0,music.state)],monsters[debug_target].name]
+		metrics.text="%.1fs · seed %d · %d FPS · debris %d/%d\n%s %d · %s\n%s %d · %s\nAI %.3fms · rig %.2fms · contact %.2fms\n%s · score %s · TAB target %s · 1/2 arms · 3 leg · 4 core · F hook" % [elapsed,battle_seed,Engine.get_frames_per_second(),debris.active.size(),debris.max_physical,monsters[0].name,monsters[0].alive_count(),monsters[0].state,monsters[1].name,monsters[1].alive_count(),monsters[1].state,brains[0].think_ms+brains[1].think_ms,monsters[0].animation_ms+monsters[1].animation_ms,sweep_ms,camera.director.shot,music.STATES[maxi(0,music.state)],monsters[debug_target].name]
 
 func _unhandled_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo: return

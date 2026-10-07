@@ -1,0 +1,8123 @@
+[
+	{
+		"active_debris": 192,
+		"ai_ms": 0.219,
+		"audio_events": 267,
+		"audio_ms": 0.053,
+		"collision_bodies": 193,
+		"coverage": 0.581247060547472,
+		"debris_script_ms": 2.117,
+		"director": true,
+		"director_ms": 0.041,
+		"duration": 130.599999999996,
+		"finished": true,
+		"fps": 17.0,
+		"frame_ms": 98.455,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 2.859,
+				"move": "long_jab",
+				"query_ms": 0.113,
+				"region": "chest",
+				"remaining": 991,
+				"structure_ms": 1.085,
+				"time": 12.05,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.833,
+				"move": "body_shot",
+				"query_ms": 0.064,
+				"region": "chest",
+				"remaining": 984,
+				"structure_ms": 1.001,
+				"time": 13.3,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.752,
+				"move": "pendulum",
+				"query_ms": 0.157,
+				"region": "left_thigh",
+				"remaining": 966,
+				"structure_ms": 0.974,
+				"time": 15.75,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 3.0,
+				"move": "crush_hook",
+				"query_ms": 0.124,
+				"region": "right_shoulder",
+				"remaining": 964,
+				"structure_ms": 1.079,
+				"time": 17.88,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.739,
+				"move": "rake_backhand",
+				"query_ms": 0.194,
+				"region": "head",
+				"remaining": 955,
+				"structure_ms": 0.963,
+				"time": 20.15,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.667,
+				"move": "rake_backhand",
+				"query_ms": 0.186,
+				"region": "head",
+				"remaining": 948,
+				"structure_ms": 0.973,
+				"time": 24.72,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 29,
+				"event_ms": 2.721,
+				"move": "crush_hook",
+				"query_ms": 0.163,
+				"region": "chest",
+				"remaining": 935,
+				"structure_ms": 0.948,
+				"time": 28.98,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.616,
+				"move": "lance_straight",
+				"query_ms": 0.096,
+				"region": "head",
+				"remaining": 942,
+				"structure_ms": 0.964,
+				"time": 31.33,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.561,
+				"move": "lance_straight",
+				"query_ms": 0.077,
+				"region": "left_thigh",
+				"remaining": 936,
+				"structure_ms": 0.985,
+				"time": 34.78,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.582,
+				"move": "long_jab",
+				"query_ms": 0.066,
+				"region": "left_thigh",
+				"remaining": 930,
+				"structure_ms": 1.0,
+				"time": 39.03,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.61,
+				"move": "heel_kick",
+				"query_ms": 0.147,
+				"region": "right_shin",
+				"remaining": 922,
+				"structure_ms": 0.965,
+				"time": 42.7,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.843,
+				"move": "rake_backhand",
+				"query_ms": 0.156,
+				"region": "head",
+				"remaining": 914,
+				"structure_ms": 1.108,
+				"time": 47.08,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.496,
+				"move": "lance_straight",
+				"query_ms": 0.073,
+				"region": "left_thigh",
+				"remaining": 906,
+				"structure_ms": 0.968,
+				"time": 51.05,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.53,
+				"move": "lance_straight",
+				"query_ms": 0.103,
+				"region": "abdomen",
+				"remaining": 894,
+				"structure_ms": 0.921,
+				"time": 54.75,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.661,
+				"move": "crush_hook",
+				"query_ms": 0.121,
+				"region": "left_shoulder",
+				"remaining": 914,
+				"structure_ms": 0.927,
+				"time": 55.97,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.502,
+				"move": "long_jab",
+				"query_ms": 0.088,
+				"region": "head",
+				"remaining": 888,
+				"structure_ms": 0.924,
+				"time": 59.73,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 2.682,
+				"move": "pendulum",
+				"query_ms": 0.177,
+				"region": "left_shoulder",
+				"remaining": 870,
+				"structure_ms": 0.92,
+				"time": 63.53,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 15,
+				"event_ms": 3.325,
+				"move": "pendulum",
+				"query_ms": 0.112,
+				"region": "right_shoulder",
+				"remaining": 855,
+				"structure_ms": 1.013,
+				"time": 68.1,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.586,
+				"move": "long_jab",
+				"query_ms": 0.177,
+				"region": "left_shoulder",
+				"remaining": 843,
+				"structure_ms": 0.913,
+				"time": 72.13,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 40,
+				"event_ms": 2.876,
+				"move": "crush_hook",
+				"query_ms": 0.219,
+				"region": "chest",
+				"remaining": 874,
+				"structure_ms": 0.898,
+				"time": 74.4,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 2.56,
+				"move": "rake_backhand",
+				"query_ms": 0.179,
+				"region": "left_shoulder",
+				"remaining": 823,
+				"structure_ms": 0.879,
+				"time": 76.53,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 2.401,
+				"move": "body_shot",
+				"query_ms": 0.099,
+				"region": "left_shoulder",
+				"remaining": 869,
+				"structure_ms": 0.893,
+				"time": 80.03,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 2.654,
+				"move": "long_jab",
+				"query_ms": 0.151,
+				"region": "chest",
+				"remaining": 814,
+				"structure_ms": 0.86,
+				"time": 81.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 10,
+				"event_ms": 2.623,
+				"move": "body_shot",
+				"query_ms": 0.128,
+				"region": "left_shoulder",
+				"remaining": 859,
+				"structure_ms": 0.935,
+				"time": 83.48,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.599,
+				"move": "rake_backhand",
+				"query_ms": 0.165,
+				"region": "right_shoulder",
+				"remaining": 798,
+				"structure_ms": 0.861,
+				"time": 85.8,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.406,
+				"move": "long_jab",
+				"query_ms": 0.142,
+				"region": "left_thigh",
+				"remaining": 790,
+				"structure_ms": 0.846,
+				"time": 89.83,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 118,
+				"direct": 21,
+				"event_ms": 4.265,
+				"move": "rake_backhand",
+				"query_ms": 0.127,
+				"region": "right_shoulder",
+				"remaining": 651,
+				"structure_ms": 2.847,
+				"time": 93.65,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 29,
+				"event_ms": 2.192,
+				"move": "heel_kick",
+				"query_ms": 0.15,
+				"region": "left_shin",
+				"remaining": 622,
+				"structure_ms": 0.717,
+				"time": 98.03,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.151,
+				"move": "pendulum",
+				"query_ms": 0.216,
+				"region": "head",
+				"remaining": 597,
+				"structure_ms": 0.688,
+				"time": 102.07,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 38,
+				"event_ms": 2.061,
+				"move": "rake_backhand",
+				"query_ms": 0.143,
+				"region": "left_shoulder",
+				"remaining": 559,
+				"structure_ms": 0.634,
+				"time": 106.63,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.008,
+				"move": "long_jab",
+				"query_ms": 0.12,
+				"region": "abdomen",
+				"remaining": 545,
+				"structure_ms": 0.667,
+				"time": 110.55,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 2.708,
+				"move": "crush_hook",
+				"query_ms": 0.21,
+				"region": "left_shoulder",
+				"remaining": 839,
+				"structure_ms": 0.911,
+				"time": 112.38,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 1.784,
+				"move": "long_jab",
+				"query_ms": 0.142,
+				"region": "left_thigh",
+				"remaining": 534,
+				"structure_ms": 0.614,
+				"time": 113.92,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 50,
+				"direct": 20,
+				"event_ms": 2.983,
+				"move": "heel_kick",
+				"query_ms": 0.144,
+				"region": "left_thigh",
+				"remaining": 464,
+				"structure_ms": 1.811,
+				"time": 117.63,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 54,
+				"event_ms": 2.827,
+				"move": "crush_hook",
+				"query_ms": 0.231,
+				"region": "left_thigh",
+				"remaining": 785,
+				"structure_ms": 0.841,
+				"time": 122.08,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 1.6,
+				"move": "rake_backhand",
+				"query_ms": 0.108,
+				"region": "head",
+				"remaining": 456,
+				"structure_ms": 0.566,
+				"time": 126.18,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 32,
+				"event_ms": 1.865,
+				"move": "pendulum",
+				"query_ms": 0.173,
+				"region": "left_shoulder",
+				"remaining": 424,
+				"structure_ms": 0.576,
+				"time": 130.6,
+				"victim": "GORGEBLOCK"
+			}
+		],
+		"impact_tiers": [
+			23,
+			12,
+			2
+		],
+		"longest_contact_gap": 4.57,
+		"midpoint_path": 84.5370073194354,
+		"midpoint_span": [
+			14.4766273498535,
+			56.387246131897
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.063,
+				"archetype": "gorgeblock",
+				"arms": [
+					false,
+					true
+				],
+				"commands": 19,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 8.196,
+				"hits": 9,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.055,
+				"movement": {
+					"distance": 117.486140353101,
+					"lateral_distance": 17.2989482670091,
+					"max_displacement": 77.8573226928711,
+					"pursuit_distance": 45.4679788354551,
+					"retreat_distance": 8.632627697516,
+					"stationary_seconds": 16.7500000000003,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION",
+						"CIVIC PLAZA",
+						"WATERFRONT APPROACH"
+					]
+				},
+				"name": "GORGEBLOCK",
+				"position": [
+					-8.00498104095459,
+					1.68805730342865,
+					48.7812080383301
+				],
+				"reason": "NECK CONNECTION FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.576
+			},
+			{
+				"animation_ms": 0.059,
+				"archetype": "needlemantle",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 31,
+				"cubes": 785,
+				"defeated": false,
+				"generation_ms": 8.393,
+				"hits": 28,
+				"legs": [
+					"HEALTHY",
+					"COMPROMISED"
+				],
+				"motor_ms": 0.026,
+				"movement": {
+					"distance": 110.955244972669,
+					"lateral_distance": 0.0,
+					"max_displacement": 41.6511459350586,
+					"pursuit_distance": 5.61573967058212,
+					"retreat_distance": 29.4844452489633,
+					"stationary_seconds": 8.68333333333334,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"WATERFRONT APPROACH"
+					]
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					-9.57943439483643,
+					-0.662500023841858,
+					59.5756454467773
+				],
+				"reason": "",
+				"speed": 0.675,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.841
+			}
+		],
+		"music": "mid",
+		"navigation_ms": 0.002,
+		"passed": true,
+		"peak_animation_ms": 0.258,
+		"peak_contact_ms": 6.743,
+		"physics_ms": 1.875,
+		"render_cpu_ms": 0.0,
+		"rubble": 1023,
+		"seed": 10661,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.066,
+				"audio_events": 209,
+				"audio_ms": 0.047,
+				"collision_bodies": 193,
+				"coverage": 0.523163124620437,
+				"debris_script_ms": 0.658,
+				"director": true,
+				"director_ms": 0.046,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 105.092,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					20,
+					7,
+					1
+				],
+				"midpoint_path": 68.6503387477933,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.065,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 13,
+						"cubes": 622,
+						"defeated": false,
+						"generation_ms": 8.196,
+						"hits": 7,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.065,
+						"movement": {
+							"distance": 100.109221717297,
+							"lateral_distance": 16.9895810936578,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 41.1055760438321,
+							"retreat_distance": 4.98289468450821,
+							"stationary_seconds": 8.76666666666668,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-10.2787170410156,
+							-0.600000023841858,
+							52.1348037719727
+						],
+						"reason": "",
+						"speed": 0.661764705882353,
+						"state": "CRUSHING HOOK · WIND-UP",
+						"structure_ms": 0.717
+					},
+					{
+						"animation_ms": 0.059,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 23,
+						"cubes": 859,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 21,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.041,
+						"movement": {
+							"distance": 92.9272540783932,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 5.47516947612166,
+							"retreat_distance": 28.1190374104772,
+							"stationary_seconds": 4.78333333333332,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-16.4927940368652,
+							-0.600000023841858,
+							57.9343910217285
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "LONG HEEL · COMMIT",
+						"structure_ms": 0.935
+					}
+				],
+				"music": "early",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.488,
+				"render_cpu_ms": 0.0,
+				"rubble": 327,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 4.799,
+				"time": 98.0,
+				"vfx_events": 150,
+				"vfx_ms": 0.012,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.219,
+				"audio_events": 267,
+				"audio_ms": 0.249,
+				"collision_bodies": 193,
+				"coverage": 0.58087863603888,
+				"debris_script_ms": 1.047,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 17.0,
+				"frame_ms": 98.455,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					23,
+					12,
+					2
+				],
+				"midpoint_path": 84.5370073194354,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 19,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.196,
+						"hits": 9,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.055,
+						"movement": {
+							"distance": 117.486140353101,
+							"lateral_distance": 17.2989482670091,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 45.4679788354551,
+							"retreat_distance": 8.632627697516,
+							"stationary_seconds": 16.7500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-8.00498104095459,
+							1.37076461315155,
+							48.7812080383301
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.576
+					},
+					{
+						"animation_ms": 0.066,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 31,
+						"cubes": 785,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 28,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.03,
+						"movement": {
+							"distance": 110.955244972669,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 5.61573967058212,
+							"retreat_distance": 29.4844452489633,
+							"stationary_seconds": 8.68333333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-9.57943439483643,
+							-0.662500023841858,
+							59.5756454467773
+						],
+						"reason": "",
+						"speed": 0.675,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.841
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.875,
+				"render_cpu_ms": 0.0,
+				"rubble": 1023,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 132.4,
+				"vfx_events": 183,
+				"vfx_ms": 0.011,
+				"winner": "NEEDLEMANTLE"
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.219,
+				"audio_events": 267,
+				"audio_ms": 0.053,
+				"collision_bodies": 193,
+				"coverage": 0.581247060547472,
+				"debris_script_ms": 2.117,
+				"director": true,
+				"director_ms": 0.041,
+				"finished": true,
+				"fps": 17.0,
+				"frame_ms": 98.455,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					23,
+					12,
+					2
+				],
+				"midpoint_path": 84.5370073194354,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 19,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.196,
+						"hits": 9,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.055,
+						"movement": {
+							"distance": 117.486140353101,
+							"lateral_distance": 17.2989482670091,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 45.4679788354551,
+							"retreat_distance": 8.632627697516,
+							"stationary_seconds": 16.7500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-8.00498104095459,
+							1.64544498920441,
+							48.7812080383301
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.576
+					},
+					{
+						"animation_ms": 0.059,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 31,
+						"cubes": 785,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 28,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 110.955244972669,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 5.61573967058212,
+							"retreat_distance": 29.4844452489633,
+							"stationary_seconds": 8.68333333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-9.57943439483643,
+							-0.662500023841858,
+							59.5756454467773
+						],
+						"reason": "",
+						"speed": 0.675,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.841
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.875,
+				"render_cpu_ms": 0.0,
+				"rubble": 1023,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 133.6,
+				"vfx_events": 183,
+				"vfx_ms": 0.011,
+				"winner": "NEEDLEMANTLE"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.219,
+				"audio_events": 267,
+				"audio_ms": 0.249,
+				"collision_bodies": 193,
+				"coverage": 0.58087863603888,
+				"debris_script_ms": 1.047,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 17.0,
+				"frame_ms": 98.455,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					23,
+					12,
+					2
+				],
+				"midpoint_path": 84.5370073194354,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 19,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.196,
+						"hits": 9,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.055,
+						"movement": {
+							"distance": 117.486140353101,
+							"lateral_distance": 17.2989482670091,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 45.4679788354551,
+							"retreat_distance": 8.632627697516,
+							"stationary_seconds": 16.7500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-8.00498104095459,
+							1.37076461315155,
+							48.7812080383301
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.576
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 31,
+						"cubes": 785,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 28,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.025,
+						"movement": {
+							"distance": 110.955244972669,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 5.61573967058212,
+							"retreat_distance": 29.4844452489633,
+							"stationary_seconds": 8.68333333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-9.57943439483643,
+							-0.662500023841858,
+							59.5756454467773
+						],
+						"reason": "",
+						"speed": 0.675,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.841
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.875,
+				"render_cpu_ms": 0.0,
+				"rubble": 1023,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 132.4,
+				"vfx_events": 183,
+				"vfx_ms": 0.011,
+				"winner": "NEEDLEMANTLE"
+			},
+			"large_debris": {
+				"active_debris": 192,
+				"ai_ms": 0.152,
+				"audio_events": 201,
+				"audio_ms": 0.061,
+				"collision_bodies": 193,
+				"coverage": 0.519257767288575,
+				"debris_script_ms": 0.425,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 78.49,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					19,
+					7,
+					1
+				],
+				"midpoint_path": 67.2667686577988,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 12,
+						"cubes": 651,
+						"defeated": false,
+						"generation_ms": 8.196,
+						"hits": 7,
+						"legs": [
+							"HEALTHY",
+							"DAMAGED"
+						],
+						"motor_ms": 0.039,
+						"movement": {
+							"distance": 95.3257185278471,
+							"lateral_distance": 16.9895810936578,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 39.1883677591104,
+							"retreat_distance": 4.50829614486429,
+							"stationary_seconds": 8.5,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-8.5496940612793,
+							-0.600000023841858,
+							51.0994873046875
+						],
+						"reason": "",
+						"speed": 0.882352941176471,
+						"state": "GIVE GROUND",
+						"structure_ms": 2.847
+					},
+					{
+						"animation_ms": 0.058,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 22,
+						"cubes": 859,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 20,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.061,
+						"movement": {
+							"distance": 88.7547483252783,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 4.83809661865234,
+							"retreat_distance": 28.1190374104772,
+							"stationary_seconds": 4.48333333333332,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-19.4888706207275,
+							-0.600000023841858,
+							60.8091316223145
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "RAKING BACKHAND · WIND-UP",
+						"structure_ms": 0.935
+					}
+				],
+				"music": "early",
+				"navigation_ms": 0.002,
+				"physics_ms": 0.992,
+				"render_cpu_ms": 0.0,
+				"rubble": 298,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 1.197,
+				"time": 93.6,
+				"vfx_events": 144,
+				"vfx_ms": 0.003,
+				"winner": ""
+			},
+			"limb_loss": {
+				"active_debris": 192,
+				"ai_ms": 0.152,
+				"audio_events": 201,
+				"audio_ms": 0.061,
+				"collision_bodies": 193,
+				"coverage": 0.519257767288575,
+				"debris_script_ms": 0.425,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 78.49,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					19,
+					7,
+					1
+				],
+				"midpoint_path": 67.2667686577988,
+				"midpoint_span": [
+					14.4766273498535,
+					56.387246131897
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 12,
+						"cubes": 651,
+						"defeated": false,
+						"generation_ms": 8.196,
+						"hits": 7,
+						"legs": [
+							"HEALTHY",
+							"DAMAGED"
+						],
+						"motor_ms": 0.039,
+						"movement": {
+							"distance": 95.3257185278471,
+							"lateral_distance": 16.9895810936578,
+							"max_displacement": 77.8573226928711,
+							"pursuit_distance": 39.1883677591104,
+							"retreat_distance": 4.50829614486429,
+							"stationary_seconds": 8.5,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-8.5496940612793,
+							-0.600000023841858,
+							51.0994873046875
+						],
+						"reason": "",
+						"speed": 0.882352941176471,
+						"state": "GIVE GROUND",
+						"structure_ms": 2.847
+					},
+					{
+						"animation_ms": 0.058,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 22,
+						"cubes": 859,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 20,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.061,
+						"movement": {
+							"distance": 88.7547483252783,
+							"lateral_distance": 0.0,
+							"max_displacement": 41.6511459350586,
+							"pursuit_distance": 4.83809661865234,
+							"retreat_distance": 28.1190374104772,
+							"stationary_seconds": 4.48333333333332,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-19.4888706207275,
+							-0.600000023841858,
+							60.8091316223145
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "RAKING BACKHAND · WIND-UP",
+						"structure_ms": 0.935
+					}
+				],
+				"music": "early",
+				"navigation_ms": 0.002,
+				"physics_ms": 0.992,
+				"render_cpu_ms": 0.0,
+				"rubble": 298,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 1.197,
+				"time": 93.6,
+				"vfx_events": 144,
+				"vfx_ms": 0.003,
+				"winner": ""
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.0,
+				"audio_events": 0,
+				"audio_ms": 0.0,
+				"collision_bodies": 193,
+				"coverage": 0.961651721988052,
+				"debris_script_ms": 0.0,
+				"director": true,
+				"director_ms": 0.0,
+				"finished": false,
+				"fps": 1.0,
+				"frame_ms": 0.0,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.074,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.196,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.074,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.393,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.0,
+				"physics_ms": 0.0,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 10661,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.0,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.0,
+				"winner": ""
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 134.6,
+		"vfx_events": 183,
+		"vfx_ms": 0.011,
+		"wall_seconds": 4.664031,
+		"winner": "NEEDLEMANTLE"
+	},
+	{
+		"active_debris": 192,
+		"ai_ms": 0.052,
+		"audio_events": 286,
+		"audio_ms": 0.042,
+		"collision_bodies": 193,
+		"coverage": 0.673930044044074,
+		"debris_script_ms": 2.361,
+		"director": true,
+		"director_ms": 0.042,
+		"duration": 142.550000000006,
+		"finished": true,
+		"fps": 19.0,
+		"frame_ms": 62.195,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.71,
+				"move": "lance_straight",
+				"query_ms": 0.111,
+				"region": "chest",
+				"remaining": 986,
+				"structure_ms": 1.007,
+				"time": 11.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.801,
+				"move": "crush_hook",
+				"query_ms": 0.144,
+				"region": "left_shoulder",
+				"remaining": 976,
+				"structure_ms": 0.968,
+				"time": 13.87,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.929,
+				"move": "rake_backhand",
+				"query_ms": 0.213,
+				"region": "left_thigh",
+				"remaining": 979,
+				"structure_ms": 1.012,
+				"time": 15.68,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.663,
+				"move": "lance_straight",
+				"query_ms": 0.089,
+				"region": "head",
+				"remaining": 972,
+				"structure_ms": 1.004,
+				"time": 20.13,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 4,
+				"event_ms": 2.609,
+				"move": "long_jab",
+				"query_ms": 0.09,
+				"region": "left_thigh",
+				"remaining": 968,
+				"structure_ms": 0.98,
+				"time": 23.77,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 2.675,
+				"move": "crush_hook",
+				"query_ms": 0.143,
+				"region": "left_shoulder",
+				"remaining": 959,
+				"structure_ms": 0.968,
+				"time": 24.93,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.636,
+				"move": "pendulum",
+				"query_ms": 0.134,
+				"region": "left_thigh",
+				"remaining": 955,
+				"structure_ms": 0.964,
+				"time": 27.83,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.621,
+				"move": "pile_hammer",
+				"query_ms": 0.144,
+				"region": "left_shoulder",
+				"remaining": 946,
+				"structure_ms": 0.955,
+				"time": 30.22,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 2.688,
+				"move": "long_jab",
+				"query_ms": 0.113,
+				"region": "chest",
+				"remaining": 946,
+				"structure_ms": 0.956,
+				"time": 32.1,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.682,
+				"move": "crush_hook",
+				"query_ms": 0.099,
+				"region": "right_shoulder",
+				"remaining": 920,
+				"structure_ms": 0.936,
+				"time": 35.33,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.563,
+				"move": "lance_straight",
+				"query_ms": 0.108,
+				"region": "head",
+				"remaining": 938,
+				"structure_ms": 0.955,
+				"time": 37.47,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 4,
+				"event_ms": 2.518,
+				"move": "lance_straight",
+				"query_ms": 0.076,
+				"region": "head",
+				"remaining": 934,
+				"structure_ms": 0.962,
+				"time": 40.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.511,
+				"move": "crush_hook",
+				"query_ms": 0.11,
+				"region": "right_shoulder",
+				"remaining": 904,
+				"structure_ms": 0.913,
+				"time": 41.55,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.692,
+				"move": "long_jab",
+				"query_ms": 0.081,
+				"region": "head",
+				"remaining": 927,
+				"structure_ms": 0.946,
+				"time": 44.67,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.723,
+				"move": "short_kick",
+				"query_ms": 0.167,
+				"region": "left_thigh",
+				"remaining": 892,
+				"structure_ms": 0.991,
+				"time": 46.33,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.676,
+				"move": "rake_backhand",
+				"query_ms": 0.182,
+				"region": "head",
+				"remaining": 915,
+				"structure_ms": 0.963,
+				"time": 48.3,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.545,
+				"move": "body_shot",
+				"query_ms": 0.132,
+				"region": "left_shoulder",
+				"remaining": 880,
+				"structure_ms": 0.897,
+				"time": 49.9,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.769,
+				"move": "pendulum",
+				"query_ms": 0.165,
+				"region": "right_thigh",
+				"remaining": 894,
+				"structure_ms": 0.925,
+				"time": 52.8,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.667,
+				"move": "heel_kick",
+				"query_ms": 0.168,
+				"region": "left_thigh",
+				"remaining": 873,
+				"structure_ms": 0.905,
+				"time": 57.4,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.548,
+				"move": "long_jab",
+				"query_ms": 0.097,
+				"region": "chest",
+				"remaining": 866,
+				"structure_ms": 0.894,
+				"time": 61.35,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.538,
+				"move": "lance_straight",
+				"query_ms": 0.18,
+				"region": "abdomen",
+				"remaining": 860,
+				"structure_ms": 0.89,
+				"time": 64.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 83,
+				"direct": 33,
+				"event_ms": 4.282,
+				"move": "crush_hook",
+				"query_ms": 0.199,
+				"region": "left_shoulder",
+				"remaining": 764,
+				"structure_ms": 2.568,
+				"time": 66.45,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.587,
+				"move": "lance_straight",
+				"query_ms": 0.174,
+				"region": "abdomen",
+				"remaining": 847,
+				"structure_ms": 0.884,
+				"time": 69.37,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 36,
+				"event_ms": 2.522,
+				"move": "pile_hammer",
+				"query_ms": 0.19,
+				"region": "chest",
+				"remaining": 728,
+				"structure_ms": 0.769,
+				"time": 72.75,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.638,
+				"move": "rake_backhand",
+				"query_ms": 0.172,
+				"region": "chest",
+				"remaining": 822,
+				"structure_ms": 0.887,
+				"time": 78.05,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 27,
+				"event_ms": 2.54,
+				"move": "crush_hook",
+				"query_ms": 0.207,
+				"region": "chest",
+				"remaining": 701,
+				"structure_ms": 0.833,
+				"time": 81.65,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 22,
+				"event_ms": 2.499,
+				"move": "lance_straight",
+				"query_ms": 0.153,
+				"region": "head",
+				"remaining": 800,
+				"structure_ms": 0.848,
+				"time": 83.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 19,
+				"event_ms": 2.161,
+				"move": "crush_hook",
+				"query_ms": 0.157,
+				"region": "chest",
+				"remaining": 682,
+				"structure_ms": 0.727,
+				"time": 86.77,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 15,
+				"event_ms": 2.354,
+				"move": "rake_backhand",
+				"query_ms": 0.128,
+				"region": "head",
+				"remaining": 785,
+				"structure_ms": 0.833,
+				"time": 89.15,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.031,
+				"move": "body_shot",
+				"query_ms": 0.096,
+				"region": "right_shoulder",
+				"remaining": 675,
+				"structure_ms": 0.754,
+				"time": 90.8,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.277,
+				"move": "lance_straight",
+				"query_ms": 0.129,
+				"region": "head",
+				"remaining": 779,
+				"structure_ms": 0.824,
+				"time": 93.27,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.009,
+				"move": "body_shot",
+				"query_ms": 0.1,
+				"region": "abdomen",
+				"remaining": 669,
+				"structure_ms": 0.749,
+				"time": 94.72,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.527,
+				"move": "heel_kick",
+				"query_ms": 0.159,
+				"region": "abdomen",
+				"remaining": 753,
+				"structure_ms": 0.855,
+				"time": 96.93,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.412,
+				"move": "heel_kick",
+				"query_ms": 0.147,
+				"region": "left_shin",
+				"remaining": 737,
+				"structure_ms": 0.855,
+				"time": 100.88,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 32,
+				"event_ms": 2.231,
+				"move": "crush_hook",
+				"query_ms": 0.184,
+				"region": "chest",
+				"remaining": 637,
+				"structure_ms": 0.715,
+				"time": 103.63,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 40,
+				"direct": 18,
+				"event_ms": 3.58,
+				"move": "heel_kick",
+				"query_ms": 0.126,
+				"region": "left_thigh",
+				"remaining": 679,
+				"structure_ms": 2.122,
+				"time": 105.72,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 54,
+				"event_ms": 2.462,
+				"move": "crush_hook",
+				"query_ms": 0.229,
+				"region": "right_thigh",
+				"remaining": 583,
+				"structure_ms": 0.691,
+				"time": 108.57,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.197,
+				"move": "heel_kick",
+				"query_ms": 0.162,
+				"region": "abdomen",
+				"remaining": 666,
+				"structure_ms": 0.743,
+				"time": 110.77,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 106,
+				"direct": 25,
+				"event_ms": 3.508,
+				"move": "crush_hook",
+				"query_ms": 0.189,
+				"region": "left_thigh",
+				"remaining": 452,
+				"structure_ms": 2.284,
+				"time": 114.28,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 29,
+				"event_ms": 2.19,
+				"move": "heel_kick",
+				"query_ms": 0.153,
+				"region": "abdomen",
+				"remaining": 637,
+				"structure_ms": 0.715,
+				"time": 116.82,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.117,
+				"move": "heel_kick",
+				"query_ms": 0.152,
+				"region": "abdomen",
+				"remaining": 616,
+				"structure_ms": 0.707,
+				"time": 120.73,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 1.471,
+				"move": "body_shot",
+				"query_ms": 0.105,
+				"region": "right_shoulder",
+				"remaining": 447,
+				"structure_ms": 0.537,
+				"time": 123.77,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 1.972,
+				"move": "heel_kick",
+				"query_ms": 0.117,
+				"region": "right_shin",
+				"remaining": 599,
+				"structure_ms": 0.693,
+				"time": 126.12,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 1.934,
+				"move": "heel_kick",
+				"query_ms": 0.143,
+				"region": "abdomen",
+				"remaining": 583,
+				"structure_ms": 0.66,
+				"time": 130.3,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 30,
+				"direct": 37,
+				"event_ms": 2.995,
+				"move": "heel_kick",
+				"query_ms": 0.138,
+				"region": "right_thigh",
+				"remaining": 516,
+				"structure_ms": 1.638,
+				"time": 134.25,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 1.817,
+				"move": "heel_kick",
+				"query_ms": 0.121,
+				"region": "abdomen",
+				"remaining": 491,
+				"structure_ms": 0.581,
+				"time": 138.47,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 1.742,
+				"move": "heel_kick",
+				"query_ms": 0.148,
+				"region": "chest",
+				"remaining": 471,
+				"structure_ms": 0.581,
+				"time": 142.55,
+				"victim": "GORGEBLOCK"
+			}
+		],
+		"impact_tiers": [
+			31,
+			14,
+			2
+		],
+		"longest_contact_gap": 5.3,
+		"midpoint_path": 81.4127266779351,
+		"midpoint_span": [
+			17.1209602355957,
+			57.4399375915527
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.058,
+				"archetype": "needlemantle",
+				"arms": [
+					true,
+					false
+				],
+				"commands": 36,
+				"cubes": 447,
+				"defeated": false,
+				"generation_ms": 7.95,
+				"hits": 30,
+				"legs": [
+					"LOST",
+					"HEALTHY"
+				],
+				"motor_ms": 0.022,
+				"movement": {
+					"distance": 108.514157250447,
+					"lateral_distance": 0.0,
+					"max_displacement": 42.4028816223145,
+					"pursuit_distance": 6.18662010278786,
+					"retreat_distance": 27.4239016952924,
+					"stationary_seconds": 18.0500000000003,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION",
+						"WAREHOUSE GATES"
+					]
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					-15.7653512954712,
+					-3.5,
+					-56.8336029052734
+				],
+				"reason": "",
+				"speed": 0.315555555555556,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.537
+			},
+			{
+				"animation_ms": 0.071,
+				"archetype": "gorgeblock",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 25,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 8.021,
+				"hits": 17,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.043,
+				"movement": {
+					"distance": 106.279012453921,
+					"lateral_distance": 17.0213706069626,
+					"max_displacement": 79.121955871582,
+					"pursuit_distance": 31.937671668682,
+					"retreat_distance": 4.75497341388837,
+					"stationary_seconds": 30.1999999999996,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"INDUSTRIAL AVENUE",
+						"WAREHOUSE GATES"
+					]
+				},
+				"name": "GORGEBLOCK",
+				"position": [
+					-7.95757102966309,
+					1.68201661109924,
+					-51.7244720458984
+				],
+				"reason": "TORSO STRUCTURE FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.581
+			}
+		],
+		"music": "severe",
+		"navigation_ms": 0.002,
+		"passed": true,
+		"peak_animation_ms": 0.394,
+		"peak_contact_ms": 6.269,
+		"physics_ms": 2.191,
+		"render_cpu_ms": 0.0,
+		"rubble": 1361,
+		"seed": 16993,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.213,
+				"audio_events": 199,
+				"audio_ms": 0.045,
+				"collision_bodies": 193,
+				"coverage": 0.524722091340738,
+				"debris_script_ms": 0.73,
+				"director": true,
+				"director_ms": 0.047,
+				"finished": false,
+				"fps": 18.0,
+				"frame_ms": 74.183,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					17,
+					10,
+					1
+				],
+				"midpoint_path": 60.9273762833618,
+				"midpoint_span": [
+					13.8302392959595,
+					55.1473007202148
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 21,
+						"cubes": 682,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 17,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.059,
+						"movement": {
+							"distance": 81.1200497505561,
+							"lateral_distance": 0.0,
+							"max_displacement": 39.1438255310059,
+							"pursuit_distance": 4.69500350952148,
+							"retreat_distance": 27.2494891746901,
+							"stationary_seconds": 4.06666666666666,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-16.2663021087646,
+							-0.600000023841858,
+							-59.3364295959473
+						],
+						"reason": "",
+						"speed": 0.944444444444444,
+						"state": "TURNING INTO AVENUE",
+						"structure_ms": 0.727
+					},
+					{
+						"animation_ms": 0.058,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 13,
+						"cubes": 800,
+						"defeated": false,
+						"generation_ms": 8.021,
+						"hits": 11,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.058,
+						"movement": {
+							"distance": 84.4447083165032,
+							"lateral_distance": 16.1998881255277,
+							"max_displacement": 75.7711944580078,
+							"pursuit_distance": 29.2092930949293,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 6.76666666666665,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-11.3941764831543,
+							-0.600000023841858,
+							-50.9095916748047
+						],
+						"reason": "",
+						"speed": 0.735294117647059,
+						"state": "CRUSHING HOOK · WIND-UP",
+						"structure_ms": 0.848
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.003,
+				"physics_ms": 1.444,
+				"render_cpu_ms": 0.0,
+				"rubble": 326,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 3.405,
+				"time": 86.8,
+				"vfx_events": 140,
+				"vfx_ms": 0.011,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.051,
+				"audio_events": 276,
+				"audio_ms": 0.051,
+				"collision_bodies": 193,
+				"coverage": 0.695951455674555,
+				"debris_script_ms": 1.192,
+				"director": true,
+				"director_ms": 0.05,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 62.195,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					29,
+					14,
+					2
+				],
+				"midpoint_path": 79.2725908252642,
+				"midpoint_span": [
+					17.1209602355957,
+					57.4399375915527
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.062,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 34,
+						"cubes": 447,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 28,
+						"legs": [
+							"LOST",
+							"HEALTHY"
+						],
+						"motor_ms": 0.04,
+						"movement": {
+							"distance": 106.41188193221,
+							"lateral_distance": 0.0,
+							"max_displacement": 42.4028816223145,
+							"pursuit_distance": 6.18662010278786,
+							"retreat_distance": 27.4239016952924,
+							"stationary_seconds": 14.3000000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-17.1747913360596,
+							-3.5,
+							-58.1805000305176
+						],
+						"reason": "",
+						"speed": 0.315555555555556,
+						"state": "LONG HEEL · WIND-UP",
+						"structure_ms": 0.537
+					},
+					{
+						"animation_ms": 0.056,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 23,
+						"cubes": 516,
+						"defeated": false,
+						"generation_ms": 8.021,
+						"hits": 17,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.018,
+						"movement": {
+							"distance": 103.746826820254,
+							"lateral_distance": 17.0213706069626,
+							"max_displacement": 79.121955871582,
+							"pursuit_distance": 31.7088366684911,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 24.6999999999999,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-9.65848922729492,
+							-3.5,
+							-52.8995971679688
+						],
+						"reason": "",
+						"speed": 0.12,
+						"state": "STALKING",
+						"structure_ms": 1.638
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 2.191,
+				"render_cpu_ms": 0.0,
+				"rubble": 845,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 4.085,
+				"time": 134.2,
+				"vfx_events": 177,
+				"vfx_ms": 0.009,
+				"winner": ""
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.052,
+				"audio_events": 286,
+				"audio_ms": 0.042,
+				"collision_bodies": 193,
+				"coverage": 0.673930044044074,
+				"debris_script_ms": 2.361,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 19.0,
+				"frame_ms": 62.195,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					31,
+					14,
+					2
+				],
+				"midpoint_path": 81.4127266779351,
+				"midpoint_span": [
+					17.1209602355957,
+					57.4399375915527
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 36,
+						"cubes": 447,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 30,
+						"legs": [
+							"LOST",
+							"HEALTHY"
+						],
+						"motor_ms": 0.025,
+						"movement": {
+							"distance": 108.514157250447,
+							"lateral_distance": 0.0,
+							"max_displacement": 42.4028816223145,
+							"pursuit_distance": 6.18662010278786,
+							"retreat_distance": 27.4239016952924,
+							"stationary_seconds": 18.0500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7653512954712,
+							-3.5,
+							-56.8336029052734
+						],
+						"reason": "",
+						"speed": 0.315555555555556,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.537
+					},
+					{
+						"animation_ms": 0.071,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 25,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.021,
+						"hits": 17,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.043,
+						"movement": {
+							"distance": 106.279012453921,
+							"lateral_distance": 17.0213706069626,
+							"max_displacement": 79.121955871582,
+							"pursuit_distance": 31.937671668682,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 30.1999999999996,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-7.95757102966309,
+							1.61785280704498,
+							-51.7244720458984
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.581
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 2.191,
+				"render_cpu_ms": 0.0,
+				"rubble": 1361,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 145.6,
+				"vfx_events": 181,
+				"vfx_ms": 0.013,
+				"winner": "NEEDLEMANTLE"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.052,
+				"audio_events": 286,
+				"audio_ms": 0.214,
+				"collision_bodies": 193,
+				"coverage": 0.672670307180212,
+				"debris_script_ms": 1.337,
+				"director": true,
+				"director_ms": 0.041,
+				"finished": true,
+				"fps": 19.0,
+				"frame_ms": 62.195,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					31,
+					14,
+					2
+				],
+				"midpoint_path": 81.4127266779351,
+				"midpoint_span": [
+					17.1209602355957,
+					57.4399375915527
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.059,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 36,
+						"cubes": 447,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 30,
+						"legs": [
+							"LOST",
+							"HEALTHY"
+						],
+						"motor_ms": 0.022,
+						"movement": {
+							"distance": 108.514157250447,
+							"lateral_distance": 0.0,
+							"max_displacement": 42.4028816223145,
+							"pursuit_distance": 6.18662010278786,
+							"retreat_distance": 27.4239016952924,
+							"stationary_seconds": 18.0500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7653512954712,
+							-3.5,
+							-56.8336029052734
+						],
+						"reason": "",
+						"speed": 0.315555555555556,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.537
+					},
+					{
+						"animation_ms": 0.071,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 25,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.021,
+						"hits": 17,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.043,
+						"movement": {
+							"distance": 106.279012453921,
+							"lateral_distance": 17.0213706069626,
+							"max_displacement": 79.121955871582,
+							"pursuit_distance": 31.937671668682,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 30.1999999999996,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-7.95757102966309,
+							1.20424783229828,
+							-51.7244720458984
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.581
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 2.191,
+				"render_cpu_ms": 0.0,
+				"rubble": 1361,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 144.4,
+				"vfx_events": 181,
+				"vfx_ms": 0.013,
+				"winner": "NEEDLEMANTLE"
+			},
+			"large_debris": {
+				"active_debris": 192,
+				"ai_ms": 0.068,
+				"audio_events": 153,
+				"audio_ms": 0.056,
+				"collision_bodies": 193,
+				"coverage": 0.552630283652642,
+				"debris_script_ms": 0.305,
+				"director": true,
+				"director_ms": 0.024,
+				"finished": false,
+				"fps": 18.0,
+				"frame_ms": 78.026,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					14,
+					7,
+					1
+				],
+				"midpoint_path": 43.64660479335,
+				"midpoint_span": [
+					7.46463203430176,
+					39.7486038208008
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 15,
+						"cubes": 764,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 14,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.048,
+						"movement": {
+							"distance": 62.5437827464266,
+							"lateral_distance": 0.0,
+							"max_displacement": 23.0421123504639,
+							"pursuit_distance": 4.69500350952148,
+							"retreat_distance": 20.4509891308844,
+							"stationary_seconds": 2.53333333333333,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-9.98242855072021,
+							-0.600000023841858,
+							-44.7675247192383
+						],
+						"reason": "",
+						"speed": 0.944444444444444,
+						"state": "LANCE STRAIGHT · RECOVER",
+						"structure_ms": 2.568
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 10,
+						"cubes": 860,
+						"defeated": false,
+						"generation_ms": 8.021,
+						"hits": 8,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.059,
+						"movement": {
+							"distance": 66.4124274904971,
+							"lateral_distance": 14.2822143314406,
+							"max_displacement": 58.9376487731934,
+							"pursuit_distance": 21.9188902291935,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 5.11666666666665,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-4.94683599472046,
+							-0.600000023841858,
+							-34.729679107666
+						],
+						"reason": "",
+						"speed": 0.735294117647059,
+						"state": "CRUSHING HOOK · COMMIT",
+						"structure_ms": 0.89
+					}
+				],
+				"music": "early",
+				"navigation_ms": 0.0,
+				"physics_ms": 0.966,
+				"render_cpu_ms": 0.0,
+				"rubble": 184,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 1.237,
+				"time": 66.4,
+				"vfx_events": 107,
+				"vfx_ms": 0.003,
+				"winner": ""
+			},
+			"limb_loss": {
+				"active_debris": 192,
+				"ai_ms": 0.068,
+				"audio_events": 153,
+				"audio_ms": 0.056,
+				"collision_bodies": 193,
+				"coverage": 0.552630283652642,
+				"debris_script_ms": 0.305,
+				"director": true,
+				"director_ms": 0.024,
+				"finished": false,
+				"fps": 18.0,
+				"frame_ms": 78.026,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					14,
+					7,
+					1
+				],
+				"midpoint_path": 43.64660479335,
+				"midpoint_span": [
+					7.46463203430176,
+					39.7486038208008
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.063,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 15,
+						"cubes": 764,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 14,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.048,
+						"movement": {
+							"distance": 62.5437827464266,
+							"lateral_distance": 0.0,
+							"max_displacement": 23.0421123504639,
+							"pursuit_distance": 4.69500350952148,
+							"retreat_distance": 20.4509891308844,
+							"stationary_seconds": 2.53333333333333,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-9.98242855072021,
+							-0.600000023841858,
+							-44.7675247192383
+						],
+						"reason": "",
+						"speed": 0.944444444444444,
+						"state": "LANCE STRAIGHT · RECOVER",
+						"structure_ms": 2.568
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 10,
+						"cubes": 860,
+						"defeated": false,
+						"generation_ms": 8.021,
+						"hits": 8,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.059,
+						"movement": {
+							"distance": 66.4124274904971,
+							"lateral_distance": 14.2822143314406,
+							"max_displacement": 58.9376487731934,
+							"pursuit_distance": 21.9188902291935,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 5.11666666666665,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-4.94683599472046,
+							-0.600000023841858,
+							-34.729679107666
+						],
+						"reason": "",
+						"speed": 0.735294117647059,
+						"state": "CRUSHING HOOK · COMMIT",
+						"structure_ms": 0.89
+					}
+				],
+				"music": "early",
+				"navigation_ms": 0.0,
+				"physics_ms": 0.966,
+				"render_cpu_ms": 0.0,
+				"rubble": 184,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 1.237,
+				"time": 66.4,
+				"vfx_events": 107,
+				"vfx_ms": 0.003,
+				"winner": ""
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.219,
+				"audio_events": 0,
+				"audio_ms": 0.053,
+				"collision_bodies": 193,
+				"coverage": 3.03603535102278,
+				"debris_script_ms": 2.117,
+				"director": true,
+				"director_ms": 0.041,
+				"finished": false,
+				"fps": 17.0,
+				"frame_ms": 98.455,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.081,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.073,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.021,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.875,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.011,
+				"winner": ""
+			},
+			"severe": {
+				"active_debris": 192,
+				"ai_ms": 0.052,
+				"audio_events": 286,
+				"audio_ms": 0.214,
+				"collision_bodies": 193,
+				"coverage": 0.672670307180212,
+				"debris_script_ms": 1.337,
+				"director": true,
+				"director_ms": 0.041,
+				"finished": true,
+				"fps": 19.0,
+				"frame_ms": 62.195,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					31,
+					14,
+					2
+				],
+				"midpoint_path": 81.4127266779351,
+				"midpoint_span": [
+					17.1209602355957,
+					57.4399375915527
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.071,
+						"archetype": "needlemantle",
+						"arms": [
+							true,
+							false
+						],
+						"commands": 36,
+						"cubes": 447,
+						"defeated": false,
+						"generation_ms": 7.95,
+						"hits": 30,
+						"legs": [
+							"LOST",
+							"HEALTHY"
+						],
+						"motor_ms": 0.022,
+						"movement": {
+							"distance": 108.514157250447,
+							"lateral_distance": 0.0,
+							"max_displacement": 42.4028816223145,
+							"pursuit_distance": 6.18662010278786,
+							"retreat_distance": 27.4239016952924,
+							"stationary_seconds": 18.0500000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7653512954712,
+							-3.5,
+							-56.8336029052734
+						],
+						"reason": "",
+						"speed": 0.315555555555556,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.537
+					},
+					{
+						"animation_ms": 0.071,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 25,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.021,
+						"hits": 17,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.043,
+						"movement": {
+							"distance": 106.279012453921,
+							"lateral_distance": 17.0213706069626,
+							"max_displacement": 79.121955871582,
+							"pursuit_distance": 31.937671668682,
+							"retreat_distance": 4.75497341388837,
+							"stationary_seconds": 30.1999999999996,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							-7.95757102966309,
+							1.20424783229828,
+							-51.7244720458984
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.581
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 2.191,
+				"render_cpu_ms": 0.0,
+				"rubble": 1361,
+				"seed": 16993,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 144.4,
+				"vfx_events": 181,
+				"vfx_ms": 0.013,
+				"winner": "NEEDLEMANTLE"
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 146.6,
+		"vfx_events": 181,
+		"vfx_ms": 0.013,
+		"wall_seconds": 5.129644,
+		"winner": "NEEDLEMANTLE"
+	},
+	{
+		"active_debris": 192,
+		"ai_ms": 0.059,
+		"audio_events": 303,
+		"audio_ms": 0.053,
+		"collision_bodies": 193,
+		"coverage": 0.692687898049474,
+		"debris_script_ms": 3.682,
+		"director": true,
+		"director_ms": 0.053,
+		"duration": 135.833333333334,
+		"finished": true,
+		"fps": 18.0,
+		"frame_ms": 129.188,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.694,
+				"move": "lance_straight",
+				"query_ms": 0.104,
+				"region": "chest",
+				"remaining": 993,
+				"structure_ms": 1.003,
+				"time": 11.98,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 27,
+				"event_ms": 2.797,
+				"move": "skull_crash",
+				"query_ms": 0.116,
+				"region": "chest",
+				"remaining": 973,
+				"structure_ms": 1.03,
+				"time": 13.7,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.671,
+				"move": "long_jab",
+				"query_ms": 0.058,
+				"region": "chest",
+				"remaining": 982,
+				"structure_ms": 1.017,
+				"time": 15.2,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.572,
+				"move": "long_jab",
+				"query_ms": 0.067,
+				"region": "abdomen",
+				"remaining": 976,
+				"structure_ms": 0.987,
+				"time": 18.7,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 10,
+				"event_ms": 2.967,
+				"move": "pendulum",
+				"query_ms": 0.214,
+				"region": "right_shoulder",
+				"remaining": 966,
+				"structure_ms": 1.068,
+				"time": 23.37,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 40,
+				"event_ms": 2.885,
+				"move": "rake_backhand",
+				"query_ms": 0.221,
+				"region": "left_shoulder",
+				"remaining": 926,
+				"structure_ms": 1.012,
+				"time": 27.85,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.789,
+				"move": "rake_backhand",
+				"query_ms": 0.18,
+				"region": "neck",
+				"remaining": 918,
+				"structure_ms": 0.933,
+				"time": 32.33,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 2.642,
+				"move": "shoulder_check",
+				"query_ms": 0.159,
+				"region": "chest",
+				"remaining": 964,
+				"structure_ms": 0.964,
+				"time": 35.13,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 2.498,
+				"move": "lance_straight",
+				"query_ms": 0.104,
+				"region": "left_shoulder",
+				"remaining": 913,
+				"structure_ms": 0.941,
+				"time": 36.55,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.565,
+				"move": "heel_kick",
+				"query_ms": 0.161,
+				"region": "left_thigh",
+				"remaining": 905,
+				"structure_ms": 0.952,
+				"time": 40.28,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.607,
+				"move": "ram_charge",
+				"query_ms": 0.1,
+				"region": "chest",
+				"remaining": 952,
+				"structure_ms": 0.957,
+				"time": 44.45,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 4,
+				"event_ms": 2.698,
+				"move": "long_jab",
+				"query_ms": 0.065,
+				"region": "right_shoulder",
+				"remaining": 901,
+				"structure_ms": 0.941,
+				"time": 46.28,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.8,
+				"move": "skull_crash",
+				"query_ms": 0.099,
+				"region": "chest",
+				"remaining": 941,
+				"structure_ms": 1.031,
+				"time": 48.7,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.486,
+				"move": "lance_straight",
+				"query_ms": 0.07,
+				"region": "chest",
+				"remaining": 894,
+				"structure_ms": 0.933,
+				"time": 49.92,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.407,
+				"move": "long_jab",
+				"query_ms": 0.088,
+				"region": "head",
+				"remaining": 886,
+				"structure_ms": 0.915,
+				"time": 53.48,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.615,
+				"move": "rake_backhand",
+				"query_ms": 0.196,
+				"region": "right_shoulder",
+				"remaining": 872,
+				"structure_ms": 0.96,
+				"time": 57.3,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 27,
+				"event_ms": 2.83,
+				"move": "ram_charge",
+				"query_ms": 0.25,
+				"region": "chest",
+				"remaining": 914,
+				"structure_ms": 0.935,
+				"time": 60.07,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.568,
+				"move": "lance_straight",
+				"query_ms": 0.143,
+				"region": "chest",
+				"remaining": 865,
+				"structure_ms": 0.908,
+				"time": 61.85,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 23,
+				"event_ms": 2.64,
+				"move": "rake_backhand",
+				"query_ms": 0.191,
+				"region": "neck",
+				"remaining": 842,
+				"structure_ms": 0.925,
+				"time": 68.65,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 28,
+				"event_ms": 2.768,
+				"move": "ram_charge",
+				"query_ms": 0.223,
+				"region": "chest",
+				"remaining": 886,
+				"structure_ms": 0.909,
+				"time": 71.53,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.581,
+				"move": "heel_kick",
+				"query_ms": 0.2,
+				"region": "right_shin",
+				"remaining": 826,
+				"structure_ms": 0.888,
+				"time": 73.32,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 15,
+				"event_ms": 2.392,
+				"move": "long_jab",
+				"query_ms": 0.11,
+				"region": "chest",
+				"remaining": 811,
+				"structure_ms": 0.852,
+				"time": 77.07,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.858,
+				"move": "shoulder_check",
+				"query_ms": 0.185,
+				"region": "chest",
+				"remaining": 870,
+				"structure_ms": 1.021,
+				"time": 80.2,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 15,
+				"event_ms": 2.7,
+				"move": "heel_kick",
+				"query_ms": 0.145,
+				"region": "left_shin",
+				"remaining": 796,
+				"structure_ms": 0.954,
+				"time": 82.68,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.466,
+				"move": "lance_straight",
+				"query_ms": 0.16,
+				"region": "chest",
+				"remaining": 788,
+				"structure_ms": 0.923,
+				"time": 87.43,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 44,
+				"event_ms": 2.753,
+				"move": "ram_charge",
+				"query_ms": 0.16,
+				"region": "chest",
+				"remaining": 826,
+				"structure_ms": 0.867,
+				"time": 87.47,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 39,
+				"direct": 20,
+				"event_ms": 3.65,
+				"move": "pendulum",
+				"query_ms": 0.228,
+				"region": "left_shoulder",
+				"remaining": 729,
+				"structure_ms": 2.063,
+				"time": 91.43,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.557,
+				"move": "shoulder_check",
+				"query_ms": 0.149,
+				"region": "chest",
+				"remaining": 801,
+				"structure_ms": 0.878,
+				"time": 93.4,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 26,
+				"direct": 13,
+				"event_ms": 3.322,
+				"move": "pendulum",
+				"query_ms": 0.175,
+				"region": "chest",
+				"remaining": 690,
+				"structure_ms": 1.905,
+				"time": 95.75,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 32,
+				"event_ms": 2.361,
+				"move": "rake_backhand",
+				"query_ms": 0.173,
+				"region": "head",
+				"remaining": 658,
+				"structure_ms": 0.715,
+				"time": 100.17,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 4,
+				"event_ms": 2.07,
+				"move": "rake_backhand",
+				"query_ms": 0.134,
+				"region": "chest",
+				"remaining": 654,
+				"structure_ms": 0.754,
+				"time": 104.55,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.501,
+				"move": "long_jab",
+				"query_ms": 0.224,
+				"region": "head",
+				"remaining": 648,
+				"structure_ms": 0.952,
+				"time": 108.68,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 42,
+				"event_ms": 5.733,
+				"move": "ram_charge",
+				"query_ms": 0.513,
+				"region": "chest",
+				"remaining": 759,
+				"structure_ms": 1.8,
+				"time": 111.77,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 1.997,
+				"move": "lance_straight",
+				"query_ms": 0.154,
+				"region": "head",
+				"remaining": 637,
+				"structure_ms": 0.695,
+				"time": 114.12,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.052,
+				"move": "heel_kick",
+				"query_ms": 0.148,
+				"region": "left_thigh",
+				"remaining": 621,
+				"structure_ms": 0.693,
+				"time": 117.78,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.184,
+				"move": "skull_crash",
+				"query_ms": 0.121,
+				"region": "chest",
+				"remaining": 751,
+				"structure_ms": 0.793,
+				"time": 119.78,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 1.993,
+				"move": "lance_straight",
+				"query_ms": 0.151,
+				"region": "chest",
+				"remaining": 603,
+				"structure_ms": 0.673,
+				"time": 121.72,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.484,
+				"move": "pendulum",
+				"query_ms": 0.253,
+				"region": "chest",
+				"remaining": 582,
+				"structure_ms": 0.827,
+				"time": 125.83,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 23,
+				"event_ms": 2.275,
+				"move": "pendulum",
+				"query_ms": 0.219,
+				"region": "neck",
+				"remaining": 559,
+				"structure_ms": 0.765,
+				"time": 130.32,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 2.328,
+				"move": "ram_charge",
+				"query_ms": 0.174,
+				"region": "chest",
+				"remaining": 734,
+				"structure_ms": 0.811,
+				"time": 133.87,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 1.845,
+				"move": "rake_backhand",
+				"query_ms": 0.131,
+				"region": "head",
+				"remaining": 543,
+				"structure_ms": 0.637,
+				"time": 135.83,
+				"victim": "BASTION"
+			}
+		],
+		"impact_tiers": [
+			22,
+			19,
+			0
+		],
+		"longest_contact_gap": 6.8,
+		"midpoint_path": 118.594417382217,
+		"midpoint_span": [
+			24.3893230557442,
+			57.299971818924
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.059,
+				"archetype": "needlemantle",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 32,
+				"cubes": 734,
+				"defeated": false,
+				"generation_ms": 7.987,
+				"hits": 29,
+				"legs": [
+					"DAMAGED",
+					"DAMAGED"
+				],
+				"motor_ms": 0.026,
+				"movement": {
+					"distance": 129.061944193038,
+					"lateral_distance": 2.2321393629536,
+					"max_displacement": 43.2427444458008,
+					"pursuit_distance": 6.43300531990826,
+					"retreat_distance": 34.2186928773299,
+					"stationary_seconds": 10.2833333333334,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION",
+						"WAREHOUSE GATES"
+					]
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					22.7809753417969,
+					-0.771875023841858,
+					-60.0360946655273
+				],
+				"reason": "",
+				"speed": 0.63125,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.811
+			},
+			{
+				"animation_ms": 0.061,
+				"archetype": "bastion",
+				"arms": [
+					true,
+					true
+				],
+				"commands": 16,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 7.966,
+				"hits": 12,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.053,
+				"movement": {
+					"distance": 192.685265049543,
+					"lateral_distance": 8.60996246337891,
+					"max_displacement": 79.5514526367188,
+					"pursuit_distance": 18.6897966384422,
+					"retreat_distance": 44.0259344453807,
+					"stationary_seconds": 10.7166666666668,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"INDUSTRIAL AVENUE",
+						"WAREHOUSE GATES"
+					]
+				},
+				"name": "BASTION",
+				"position": [
+					15.6970682144165,
+					1.69368863105774,
+					-53.9874076843262
+				],
+				"reason": "NECK CONNECTION FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.637
+			}
+		],
+		"music": "mid",
+		"navigation_ms": 0.002,
+		"passed": true,
+		"peak_animation_ms": 0.329,
+		"peak_contact_ms": 9.4,
+		"physics_ms": 1.968,
+		"render_cpu_ms": 0.0,
+		"rubble": 1074,
+		"seed": 22091,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.069,
+				"audio_events": 223,
+				"audio_ms": 0.229,
+				"collision_bodies": 193,
+				"coverage": 0.576930893210488,
+				"debris_script_ms": 0.633,
+				"director": true,
+				"director_ms": 0.046,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 116.748,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					16,
+					13,
+					0
+				],
+				"midpoint_path": 90.8737120007609,
+				"midpoint_span": [
+					24.3893230557442,
+					56.1531631946564
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.064,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 22,
+						"cubes": 801,
+						"defeated": false,
+						"generation_ms": 7.987,
+						"hits": 20,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.059,
+						"movement": {
+							"distance": 105.479969347673,
+							"lateral_distance": 1.17106874473393,
+							"max_displacement": 38.5070571899414,
+							"pursuit_distance": 5.41583146713674,
+							"retreat_distance": 32.4279376557097,
+							"stationary_seconds": 5.23333333333332,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							13.671293258667,
+							-0.600000023841858,
+							-59.8857688903809
+						],
+						"reason": "",
+						"speed": 0.7,
+						"state": "TURNING INTO AVENUE",
+						"structure_ms": 0.878
+					},
+					{
+						"animation_ms": 0.067,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 11,
+						"cubes": 690,
+						"defeated": false,
+						"generation_ms": 7.966,
+						"hits": 9,
+						"legs": [
+							"COMPROMISED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.043,
+						"movement": {
+							"distance": 148.863984782468,
+							"lateral_distance": 8.60996246337891,
+							"max_displacement": 76.6827850341797,
+							"pursuit_distance": 14.4804901960306,
+							"retreat_distance": 32.7080998490565,
+							"stationary_seconds": 5.93333333333332,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							12.5968284606934,
+							-0.657291650772095,
+							-51.0025787353516
+						],
+						"reason": "",
+						"speed": 0.677083333333333,
+						"state": "SHOULDER CHECK · RECOVER",
+						"structure_ms": 1.905
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.034,
+				"render_cpu_ms": 0.0,
+				"rubble": 317,
+				"seed": 22091,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 4.628,
+				"time": 95.7,
+				"vfx_events": 161,
+				"vfx_ms": 0.011,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.059,
+				"audio_events": 303,
+				"audio_ms": 0.049,
+				"collision_bodies": 193,
+				"coverage": 0.697744490874858,
+				"debris_script_ms": 0.904,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 129.188,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					22,
+					19,
+					0
+				],
+				"midpoint_path": 118.594417382217,
+				"midpoint_span": [
+					24.3893230557442,
+					57.299971818924
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.082,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 32,
+						"cubes": 734,
+						"defeated": false,
+						"generation_ms": 7.987,
+						"hits": 29,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 129.061944193038,
+							"lateral_distance": 2.2321393629536,
+							"max_displacement": 43.2427444458008,
+							"pursuit_distance": 6.43300531990826,
+							"retreat_distance": 34.2186928773299,
+							"stationary_seconds": 10.2833333333334,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							22.7809753417969,
+							-0.771875023841858,
+							-60.0360946655273
+						],
+						"reason": "",
+						"speed": 0.63125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.811
+					},
+					{
+						"animation_ms": 0.061,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 16,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 7.966,
+						"hits": 12,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.053,
+						"movement": {
+							"distance": 192.685265049543,
+							"lateral_distance": 8.60996246337891,
+							"max_displacement": 79.5514526367188,
+							"pursuit_distance": 18.6897966384422,
+							"retreat_distance": 44.0259344453807,
+							"stationary_seconds": 10.7166666666668,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							15.6970682144165,
+							1.5260169506073,
+							-53.9874076843262
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.637
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.968,
+				"render_cpu_ms": 0.0,
+				"rubble": 1074,
+				"seed": 22091,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 137.7,
+				"vfx_events": 213,
+				"vfx_ms": 0.014,
+				"winner": "NEEDLEMANTLE"
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.059,
+				"audio_events": 303,
+				"audio_ms": 0.05,
+				"collision_bodies": 193,
+				"coverage": 0.694494354906854,
+				"debris_script_ms": 3.122,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 129.188,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					22,
+					19,
+					0
+				],
+				"midpoint_path": 118.594417382217,
+				"midpoint_span": [
+					24.3893230557442,
+					57.299971818924
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.061,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 32,
+						"cubes": 734,
+						"defeated": false,
+						"generation_ms": 7.987,
+						"hits": 29,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.029,
+						"movement": {
+							"distance": 129.061944193038,
+							"lateral_distance": 2.2321393629536,
+							"max_displacement": 43.2427444458008,
+							"pursuit_distance": 6.43300531990826,
+							"retreat_distance": 34.2186928773299,
+							"stationary_seconds": 10.2833333333334,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							22.7809753417969,
+							-0.771875023841858,
+							-60.0360946655273
+						],
+						"reason": "",
+						"speed": 0.63125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.811
+					},
+					{
+						"animation_ms": 0.061,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 16,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 7.966,
+						"hits": 12,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.053,
+						"movement": {
+							"distance": 192.685265049543,
+							"lateral_distance": 8.60996246337891,
+							"max_displacement": 79.5514526367188,
+							"pursuit_distance": 18.6897966384422,
+							"retreat_distance": 44.0259344453807,
+							"stationary_seconds": 10.7166666666668,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							15.6970682144165,
+							1.67117047309875,
+							-53.9874076843262
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.637
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.968,
+				"render_cpu_ms": 0.0,
+				"rubble": 1074,
+				"seed": 22091,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 138.8,
+				"vfx_events": 213,
+				"vfx_ms": 0.014,
+				"winner": "NEEDLEMANTLE"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.059,
+				"audio_events": 303,
+				"audio_ms": 0.049,
+				"collision_bodies": 193,
+				"coverage": 0.697744490874858,
+				"debris_script_ms": 0.904,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 129.188,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					22,
+					19,
+					0
+				],
+				"midpoint_path": 118.594417382217,
+				"midpoint_span": [
+					24.3893230557442,
+					57.299971818924
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.059,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 32,
+						"cubes": 734,
+						"defeated": false,
+						"generation_ms": 7.987,
+						"hits": 29,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 129.061944193038,
+							"lateral_distance": 2.2321393629536,
+							"max_displacement": 43.2427444458008,
+							"pursuit_distance": 6.43300531990826,
+							"retreat_distance": 34.2186928773299,
+							"stationary_seconds": 10.2833333333334,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							22.7809753417969,
+							-0.771875023841858,
+							-60.0360946655273
+						],
+						"reason": "",
+						"speed": 0.63125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.811
+					},
+					{
+						"animation_ms": 0.061,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 16,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 7.966,
+						"hits": 12,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.053,
+						"movement": {
+							"distance": 192.685265049543,
+							"lateral_distance": 8.60996246337891,
+							"max_displacement": 79.5514526367188,
+							"pursuit_distance": 18.6897966384422,
+							"retreat_distance": 44.0259344453807,
+							"stationary_seconds": 10.7166666666668,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE",
+								"WAREHOUSE GATES"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							15.6970682144165,
+							1.5260169506073,
+							-53.9874076843262
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.637
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.968,
+				"render_cpu_ms": 0.0,
+				"rubble": 1074,
+				"seed": 22091,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 137.7,
+				"vfx_events": 213,
+				"vfx_ms": 0.014,
+				"winner": "NEEDLEMANTLE"
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.052,
+				"audio_events": 0,
+				"audio_ms": 0.042,
+				"collision_bodies": 193,
+				"coverage": 2.10450849029406,
+				"debris_script_ms": 2.361,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 62.195,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.078,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 7.987,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.073,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 7.966,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "BASTION",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.002,
+				"physics_ms": 2.191,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 22091,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.013,
+				"winner": ""
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 139.8,
+		"vfx_events": 213,
+		"vfx_ms": 0.014,
+		"wall_seconds": 5.086451,
+		"winner": "NEEDLEMANTLE"
+	},
+	{
+		"active_debris": 192,
+		"ai_ms": 0.072,
+		"audio_events": 314,
+		"audio_ms": 0.059,
+		"collision_bodies": 193,
+		"coverage": 0.578746002726582,
+		"debris_script_ms": 1.802,
+		"director": true,
+		"director_ms": 0.045,
+		"duration": 135.183333333333,
+		"finished": true,
+		"fps": 18.0,
+		"frame_ms": 98.88,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.783,
+				"move": "rake_backhand",
+				"query_ms": 0.207,
+				"region": "neck",
+				"remaining": 987,
+				"structure_ms": 0.996,
+				"time": 12.68,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.658,
+				"move": "push_kick",
+				"query_ms": 0.086,
+				"region": "right_thigh",
+				"remaining": 994,
+				"structure_ms": 1.003,
+				"time": 14.4,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 2.835,
+				"move": "lance_straight",
+				"query_ms": 0.119,
+				"region": "chest",
+				"remaining": 982,
+				"structure_ms": 1.052,
+				"time": 16.97,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 3.591,
+				"move": "ram_charge",
+				"query_ms": 0.16,
+				"region": "chest",
+				"remaining": 982,
+				"structure_ms": 1.51,
+				"time": 22.62,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 34,
+				"event_ms": 4.163,
+				"move": "rake_backhand",
+				"query_ms": 0.285,
+				"region": "right_shoulder",
+				"remaining": 948,
+				"structure_ms": 1.168,
+				"time": 24.62,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 3.451,
+				"move": "shoulder_check",
+				"query_ms": 0.185,
+				"region": "chest",
+				"remaining": 971,
+				"structure_ms": 1.215,
+				"time": 26.78,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 3.442,
+				"move": "long_jab",
+				"query_ms": 0.062,
+				"region": "neck",
+				"remaining": 939,
+				"structure_ms": 0.976,
+				"time": 28.77,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.722,
+				"move": "rake_backhand",
+				"query_ms": 0.217,
+				"region": "chest",
+				"remaining": 927,
+				"structure_ms": 0.998,
+				"time": 32.85,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.959,
+				"move": "ram_charge",
+				"query_ms": 0.183,
+				"region": "chest",
+				"remaining": 947,
+				"structure_ms": 1.033,
+				"time": 36.08,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 3.097,
+				"move": "pendulum",
+				"query_ms": 0.13,
+				"region": "right_shoulder",
+				"remaining": 918,
+				"structure_ms": 1.1,
+				"time": 37.98,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 2.615,
+				"move": "lance_straight",
+				"query_ms": 0.087,
+				"region": "chest",
+				"remaining": 913,
+				"structure_ms": 0.997,
+				"time": 42.1,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.569,
+				"move": "push_kick",
+				"query_ms": 0.132,
+				"region": "abdomen",
+				"remaining": 941,
+				"structure_ms": 0.959,
+				"time": 43.97,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.827,
+				"move": "long_jab",
+				"query_ms": 0.097,
+				"region": "abdomen",
+				"remaining": 906,
+				"structure_ms": 1.104,
+				"time": 45.78,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.483,
+				"move": "long_jab",
+				"query_ms": 0.083,
+				"region": "head",
+				"remaining": 900,
+				"structure_ms": 0.938,
+				"time": 49.2,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 32,
+				"event_ms": 2.696,
+				"move": "ram_charge",
+				"query_ms": 0.195,
+				"region": "chest",
+				"remaining": 909,
+				"structure_ms": 0.939,
+				"time": 53.68,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 35,
+				"event_ms": 3.327,
+				"move": "rake_backhand",
+				"query_ms": 0.194,
+				"region": "head",
+				"remaining": 865,
+				"structure_ms": 1.094,
+				"time": 55.92,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 42,
+				"direct": 15,
+				"event_ms": 3.863,
+				"move": "pendulum",
+				"query_ms": 0.109,
+				"region": "chest",
+				"remaining": 808,
+				"structure_ms": 2.227,
+				"time": 60.8,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 4,
+				"event_ms": 2.333,
+				"move": "lance_straight",
+				"query_ms": 0.17,
+				"region": "chest",
+				"remaining": 804,
+				"structure_ms": 0.838,
+				"time": 65.1,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.766,
+				"move": "ram_charge",
+				"query_ms": 0.15,
+				"region": "chest",
+				"remaining": 885,
+				"structure_ms": 0.96,
+				"time": 65.27,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 2,
+				"event_ms": 2.286,
+				"move": "long_jab",
+				"query_ms": 0.112,
+				"region": "left_shoulder",
+				"remaining": 802,
+				"structure_ms": 0.849,
+				"time": 67.92,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 49,
+				"event_ms": 2.971,
+				"move": "skull_crash",
+				"query_ms": 0.165,
+				"region": "chest",
+				"remaining": 836,
+				"structure_ms": 0.907,
+				"time": 71.08,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 6,
+				"event_ms": 2.355,
+				"move": "long_jab",
+				"query_ms": 0.121,
+				"region": "neck",
+				"remaining": 796,
+				"structure_ms": 0.863,
+				"time": 71.17,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 2.505,
+				"move": "heel_kick",
+				"query_ms": 0.15,
+				"region": "right_thigh",
+				"remaining": 779,
+				"structure_ms": 0.82,
+				"time": 75.13,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.567,
+				"move": "ram_charge",
+				"query_ms": 0.158,
+				"region": "chest",
+				"remaining": 812,
+				"structure_ms": 0.871,
+				"time": 81.5,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 2.792,
+				"move": "rake_backhand",
+				"query_ms": 0.228,
+				"region": "left_shoulder",
+				"remaining": 762,
+				"structure_ms": 0.944,
+				"time": 81.58,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 31,
+				"event_ms": 2.766,
+				"move": "rake_backhand",
+				"query_ms": 0.194,
+				"region": "head",
+				"remaining": 731,
+				"structure_ms": 0.911,
+				"time": 85.7,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 10,
+				"event_ms": 2.612,
+				"move": "long_jab",
+				"query_ms": 0.212,
+				"region": "head",
+				"remaining": 721,
+				"structure_ms": 0.914,
+				"time": 89.85,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 2.52,
+				"move": "skull_crash",
+				"query_ms": 0.159,
+				"region": "chest",
+				"remaining": 794,
+				"structure_ms": 0.901,
+				"time": 90.6,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 17,
+				"event_ms": 2.237,
+				"move": "long_jab",
+				"query_ms": 0.16,
+				"region": "neck",
+				"remaining": 704,
+				"structure_ms": 0.76,
+				"time": 93.35,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.512,
+				"move": "push_kick",
+				"query_ms": 0.139,
+				"region": "right_shin",
+				"remaining": 769,
+				"structure_ms": 0.837,
+				"time": 94.93,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 2.067,
+				"move": "rake_backhand",
+				"query_ms": 0.109,
+				"region": "left_shoulder",
+				"remaining": 699,
+				"structure_ms": 0.783,
+				"time": 96.9,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.486,
+				"move": "pendulum",
+				"query_ms": 0.189,
+				"region": "head",
+				"remaining": 673,
+				"structure_ms": 0.786,
+				"time": 101.53,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 19,
+				"event_ms": 2.134,
+				"move": "heel_kick",
+				"query_ms": 0.158,
+				"region": "left_shin",
+				"remaining": 654,
+				"structure_ms": 0.728,
+				"time": 105.82,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.454,
+				"move": "shoulder_check",
+				"query_ms": 0.14,
+				"region": "chest",
+				"remaining": 755,
+				"structure_ms": 0.905,
+				"time": 108.15,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.189,
+				"move": "rake_backhand",
+				"query_ms": 0.173,
+				"region": "head",
+				"remaining": 630,
+				"structure_ms": 0.712,
+				"time": 109.93,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.152,
+				"move": "long_jab",
+				"query_ms": 0.127,
+				"region": "head",
+				"remaining": 617,
+				"structure_ms": 0.749,
+				"time": 114.1,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 12,
+				"event_ms": 2.215,
+				"move": "pendulum",
+				"query_ms": 0.174,
+				"region": "chest",
+				"remaining": 605,
+				"structure_ms": 0.755,
+				"time": 117.83,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.178,
+				"move": "push_kick",
+				"query_ms": 0.138,
+				"region": "right_thigh",
+				"remaining": 747,
+				"structure_ms": 0.798,
+				"time": 120.05,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.07,
+				"move": "long_jab",
+				"query_ms": 0.123,
+				"region": "abdomen",
+				"remaining": 591,
+				"structure_ms": 0.673,
+				"time": 122.1,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 27,
+				"event_ms": 2.004,
+				"move": "rake_backhand",
+				"query_ms": 0.118,
+				"region": "chest",
+				"remaining": 564,
+				"structure_ms": 0.663,
+				"time": 125.92,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 34,
+				"event_ms": 2.426,
+				"move": "ram_charge",
+				"query_ms": 0.209,
+				"region": "chest",
+				"remaining": 713,
+				"structure_ms": 0.773,
+				"time": 128.55,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.076,
+				"move": "heel_kick",
+				"query_ms": 0.143,
+				"region": "right_shin",
+				"remaining": 543,
+				"structure_ms": 0.642,
+				"time": 130.43,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.219,
+				"move": "skull_crash",
+				"query_ms": 0.139,
+				"region": "chest",
+				"remaining": 702,
+				"structure_ms": 0.818,
+				"time": 133.28,
+				"victim": "NEEDLEMANTLE"
+			},
+			{
+				"attacker": "NEEDLEMANTLE",
+				"detached": 0,
+				"direct": 22,
+				"event_ms": 2.189,
+				"move": "rake_backhand",
+				"query_ms": 0.115,
+				"region": "chest",
+				"remaining": 521,
+				"structure_ms": 0.615,
+				"time": 135.18,
+				"victim": "BASTION"
+			}
+		],
+		"impact_tiers": [
+			26,
+			18,
+			0
+		],
+		"longest_contact_gap": 6.37,
+		"midpoint_path": 119.715325473364,
+		"midpoint_span": [
+			21.6468534171581,
+			59.6144051551819
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.069,
+				"archetype": "bastion",
+				"arms": [
+					false,
+					true
+				],
+				"commands": 18,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 9.454,
+				"hits": 15,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.046,
+				"movement": {
+					"distance": 188.673137860271,
+					"lateral_distance": 0.0,
+					"max_displacement": 82.2522201538086,
+					"pursuit_distance": 19.7042598748812,
+					"retreat_distance": 46.8302047661273,
+					"stationary_seconds": 12.7833333333335,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION",
+						"CIVIC PLAZA",
+						"WATERFRONT APPROACH"
+					]
+				},
+				"name": "BASTION",
+				"position": [
+					-14.4244251251221,
+					1.69440627098084,
+					50.9093589782715
+				],
+				"reason": "TORSO STRUCTURE FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.615
+			},
+			{
+				"animation_ms": 0.06,
+				"archetype": "needlemantle",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 30,
+				"cubes": 702,
+				"defeated": false,
+				"generation_ms": 9.204,
+				"hits": 29,
+				"legs": [
+					"HEALTHY",
+					"COMPROMISED"
+				],
+				"motor_ms": 0.035,
+				"movement": {
+					"distance": 126.503526958397,
+					"lateral_distance": 0.0,
+					"max_displacement": 45.699104309082,
+					"pursuit_distance": 11.4600161881535,
+					"retreat_distance": 26.9244801038876,
+					"stationary_seconds": 10.0833333333334,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"WATERFRONT APPROACH"
+					]
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					-15.7375450134277,
+					-0.725000023841858,
+					59.309440612793
+				],
+				"reason": "",
+				"speed": 0.65,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.818
+			}
+		],
+		"music": "mid",
+		"navigation_ms": 0.001,
+		"passed": true,
+		"peak_animation_ms": 0.905,
+		"peak_contact_ms": 6.499,
+		"physics_ms": 1.863,
+		"render_cpu_ms": 0.0,
+		"rubble": 1106,
+		"seed": 24847,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.063,
+				"audio_events": 218,
+				"audio_ms": 0.228,
+				"collision_bodies": 193,
+				"coverage": 0.494050586744041,
+				"debris_script_ms": 0.882,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": false,
+				"fps": 17.0,
+				"frame_ms": 83.406,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					16,
+					13,
+					0
+				],
+				"midpoint_path": 90.0827941896423,
+				"midpoint_span": [
+					21.6468534171581,
+					59.6144051551819
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.062,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 11,
+						"cubes": 704,
+						"defeated": false,
+						"generation_ms": 9.454,
+						"hits": 10,
+						"legs": [
+							"HEALTHY",
+							"DAMAGED"
+						],
+						"motor_ms": 0.037,
+						"movement": {
+							"distance": 147.054120081782,
+							"lateral_distance": 0.0,
+							"max_displacement": 82.2522201538086,
+							"pursuit_distance": 13.1950778677128,
+							"retreat_distance": 34.2048375973245,
+							"stationary_seconds": 7.04999999999998,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							-17.9342918395996,
+							-0.600000023841858,
+							53.9697380065918
+						],
+						"reason": "",
+						"speed": 0.822916666666667,
+						"state": "STALKING",
+						"structure_ms": 0.76
+					},
+					{
+						"animation_ms": 0.058,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 20,
+						"cubes": 794,
+						"defeated": false,
+						"generation_ms": 9.204,
+						"hits": 19,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.054,
+						"movement": {
+							"distance": 100.000960448459,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.699104309082,
+							"pursuit_distance": 9.69375552324345,
+							"retreat_distance": 25.2529308814555,
+							"stationary_seconds": 5.46666666666665,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-23.4103736877441,
+							-0.600000023841858,
+							60.9784812927246
+						],
+						"reason": "",
+						"speed": 0.8375,
+						"state": "TURNING INTO AVENUE",
+						"structure_ms": 0.901
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.455,
+				"render_cpu_ms": 0.0,
+				"rubble": 310,
+				"seed": 24847,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 3.505,
+				"time": 93.3,
+				"vfx_events": 154,
+				"vfx_ms": 0.012,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.072,
+				"audio_events": 314,
+				"audio_ms": 0.245,
+				"collision_bodies": 193,
+				"coverage": 0.577377735294855,
+				"debris_script_ms": 0.885,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 98.88,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					26,
+					18,
+					0
+				],
+				"midpoint_path": 119.715325473364,
+				"midpoint_span": [
+					21.6468534171581,
+					59.6144051551819
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.069,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 18,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 9.454,
+						"hits": 15,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.046,
+						"movement": {
+							"distance": 188.673137860271,
+							"lateral_distance": 0.0,
+							"max_displacement": 82.2522201538086,
+							"pursuit_distance": 19.7042598748812,
+							"retreat_distance": 46.8302047661273,
+							"stationary_seconds": 12.7833333333335,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							-14.4244251251221,
+							1.54580271244049,
+							50.9093589782715
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.615
+					},
+					{
+						"animation_ms": 0.065,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 30,
+						"cubes": 702,
+						"defeated": false,
+						"generation_ms": 9.204,
+						"hits": 29,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.029,
+						"movement": {
+							"distance": 126.503526958397,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.699104309082,
+							"pursuit_distance": 11.4600161881535,
+							"retreat_distance": 26.9244801038876,
+							"stationary_seconds": 10.0833333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7375450134277,
+							-0.725000023841858,
+							59.309440612793
+						],
+						"reason": "",
+						"speed": 0.65,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.818
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.863,
+				"render_cpu_ms": 0.0,
+				"rubble": 1106,
+				"seed": 24847,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 137.0,
+				"vfx_events": 217,
+				"vfx_ms": 0.012,
+				"winner": "NEEDLEMANTLE"
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.072,
+				"audio_events": 314,
+				"audio_ms": 0.059,
+				"collision_bodies": 193,
+				"coverage": 0.578746002726582,
+				"debris_script_ms": 1.802,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 98.88,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					26,
+					18,
+					0
+				],
+				"midpoint_path": 119.715325473364,
+				"midpoint_span": [
+					21.6468534171581,
+					59.6144051551819
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.069,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 18,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 9.454,
+						"hits": 15,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.046,
+						"movement": {
+							"distance": 188.673137860271,
+							"lateral_distance": 0.0,
+							"max_displacement": 82.2522201538086,
+							"pursuit_distance": 19.7042598748812,
+							"retreat_distance": 46.8302047661273,
+							"stationary_seconds": 12.7833333333335,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							-14.4244251251221,
+							1.67444920539856,
+							50.9093589782715
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.615
+					},
+					{
+						"animation_ms": 0.06,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 30,
+						"cubes": 702,
+						"defeated": false,
+						"generation_ms": 9.204,
+						"hits": 29,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.027,
+						"movement": {
+							"distance": 126.503526958397,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.699104309082,
+							"pursuit_distance": 11.4600161881535,
+							"retreat_distance": 26.9244801038876,
+							"stationary_seconds": 10.0833333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7375450134277,
+							-0.725000023841858,
+							59.309440612793
+						],
+						"reason": "",
+						"speed": 0.65,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.818
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.863,
+				"render_cpu_ms": 0.0,
+				"rubble": 1106,
+				"seed": 24847,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 138.2,
+				"vfx_events": 217,
+				"vfx_ms": 0.012,
+				"winner": "NEEDLEMANTLE"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.072,
+				"audio_events": 314,
+				"audio_ms": 0.245,
+				"collision_bodies": 193,
+				"coverage": 0.577377735294855,
+				"debris_script_ms": 0.885,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 18.0,
+				"frame_ms": 98.88,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					26,
+					18,
+					0
+				],
+				"midpoint_path": 119.715325473364,
+				"midpoint_span": [
+					21.6468534171581,
+					59.6144051551819
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.069,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							true
+						],
+						"commands": 18,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 9.454,
+						"hits": 15,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.046,
+						"movement": {
+							"distance": 188.673137860271,
+							"lateral_distance": 0.0,
+							"max_displacement": 82.2522201538086,
+							"pursuit_distance": 19.7042598748812,
+							"retreat_distance": 46.8302047661273,
+							"stationary_seconds": 12.7833333333335,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION",
+								"CIVIC PLAZA",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							-14.4244251251221,
+							1.54580271244049,
+							50.9093589782715
+						],
+						"reason": "TORSO STRUCTURE FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.615
+					},
+					{
+						"animation_ms": 0.059,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 30,
+						"cubes": 702,
+						"defeated": false,
+						"generation_ms": 9.204,
+						"hits": 29,
+						"legs": [
+							"HEALTHY",
+							"COMPROMISED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 126.503526958397,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.699104309082,
+							"pursuit_distance": 11.4600161881535,
+							"retreat_distance": 26.9244801038876,
+							"stationary_seconds": 10.0833333333334,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"WATERFRONT APPROACH"
+							]
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							-15.7375450134277,
+							-0.725000023841858,
+							59.309440612793
+						],
+						"reason": "",
+						"speed": 0.65,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.818
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.863,
+				"render_cpu_ms": 0.0,
+				"rubble": 1106,
+				"seed": 24847,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 137.0,
+				"vfx_events": 217,
+				"vfx_ms": 0.012,
+				"winner": "NEEDLEMANTLE"
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.059,
+				"audio_events": 0,
+				"audio_ms": 0.053,
+				"collision_bodies": 193,
+				"coverage": 1.53068386733022,
+				"debris_script_ms": 3.682,
+				"director": true,
+				"director_ms": 0.053,
+				"finished": false,
+				"fps": 18.0,
+				"frame_ms": 129.188,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.081,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 9.454,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "BASTION",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.097,
+						"archetype": "needlemantle",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 9.204,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "NEEDLEMANTLE",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.968,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 24847,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.014,
+				"winner": ""
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 139.2,
+		"vfx_events": 217,
+		"vfx_ms": 0.012,
+		"wall_seconds": 5.362266,
+		"winner": "NEEDLEMANTLE"
+	},
+	{
+		"active_debris": 192,
+		"ai_ms": 0.051,
+		"audio_events": 291,
+		"audio_ms": 0.055,
+		"collision_bodies": 193,
+		"coverage": 0.440518267449259,
+		"debris_script_ms": 2.416,
+		"director": true,
+		"director_ms": 0.04,
+		"duration": 149.266666666678,
+		"finished": true,
+		"fps": 20.0,
+		"frame_ms": 89.719,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 2.822,
+				"move": "crush_hook",
+				"query_ms": 0.12,
+				"region": "neck",
+				"remaining": 982,
+				"structure_ms": 1.006,
+				"time": 13.73,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.819,
+				"move": "ram_charge",
+				"query_ms": 0.147,
+				"region": "chest",
+				"remaining": 974,
+				"structure_ms": 0.988,
+				"time": 21.08,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 2.675,
+				"move": "crush_hook",
+				"query_ms": 0.122,
+				"region": "right_shoulder",
+				"remaining": 962,
+				"structure_ms": 0.968,
+				"time": 23.23,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 3,
+				"event_ms": 2.517,
+				"move": "body_shot",
+				"query_ms": 0.053,
+				"region": "chest",
+				"remaining": 959,
+				"structure_ms": 0.97,
+				"time": 31.35,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 2.926,
+				"move": "shoulder_check",
+				"query_ms": 0.201,
+				"region": "chest",
+				"remaining": 967,
+				"structure_ms": 1.069,
+				"time": 31.43,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 30,
+				"event_ms": 2.922,
+				"move": "pile_hammer",
+				"query_ms": 0.203,
+				"region": "neck",
+				"remaining": 929,
+				"structure_ms": 1.012,
+				"time": 35.38,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 35,
+				"event_ms": 2.969,
+				"move": "crush_hook",
+				"query_ms": 0.218,
+				"region": "neck",
+				"remaining": 894,
+				"structure_ms": 1.002,
+				"time": 40.27,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 14,
+				"event_ms": 2.714,
+				"move": "crush_hook",
+				"query_ms": 0.144,
+				"region": "left_shoulder",
+				"remaining": 880,
+				"structure_ms": 1.009,
+				"time": 44.73,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 2.909,
+				"move": "push_kick",
+				"query_ms": 0.198,
+				"region": "left_thigh",
+				"remaining": 958,
+				"structure_ms": 1.071,
+				"time": 44.85,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 29,
+				"event_ms": 3.325,
+				"move": "skull_crash",
+				"query_ms": 0.279,
+				"region": "chest",
+				"remaining": 929,
+				"structure_ms": 1.14,
+				"time": 53.58,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 33,
+				"direct": 12,
+				"event_ms": 3.812,
+				"move": "crush_hook",
+				"query_ms": 0.096,
+				"region": "right_shoulder",
+				"remaining": 835,
+				"structure_ms": 2.216,
+				"time": 53.62,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 39,
+				"direct": 22,
+				"event_ms": 3.934,
+				"move": "crush_hook",
+				"query_ms": 0.224,
+				"region": "left_shoulder",
+				"remaining": 774,
+				"structure_ms": 2.158,
+				"time": 58.3,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 28,
+				"event_ms": 2.488,
+				"move": "crush_hook",
+				"query_ms": 0.245,
+				"region": "chest",
+				"remaining": 746,
+				"structure_ms": 0.785,
+				"time": 63.78,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 22,
+				"event_ms": 2.37,
+				"move": "shove",
+				"query_ms": 0.154,
+				"region": "chest",
+				"remaining": 724,
+				"structure_ms": 0.761,
+				"time": 68.12,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 10,
+				"event_ms": 2.708,
+				"move": "push_kick",
+				"query_ms": 0.166,
+				"region": "left_thigh",
+				"remaining": 919,
+				"structure_ms": 0.993,
+				"time": 70.73,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 38,
+				"event_ms": 2.422,
+				"move": "pile_hammer",
+				"query_ms": 0.235,
+				"region": "head",
+				"remaining": 686,
+				"structure_ms": 0.732,
+				"time": 73.4,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 41,
+				"event_ms": 2.967,
+				"move": "shoulder_check",
+				"query_ms": 0.203,
+				"region": "chest",
+				"remaining": 878,
+				"structure_ms": 0.93,
+				"time": 75.15,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.086,
+				"move": "body_shot",
+				"query_ms": 0.16,
+				"region": "head",
+				"remaining": 675,
+				"structure_ms": 0.729,
+				"time": 77.87,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 28,
+				"event_ms": 2.221,
+				"move": "crush_hook",
+				"query_ms": 0.192,
+				"region": "chest",
+				"remaining": 647,
+				"structure_ms": 0.706,
+				"time": 81.53,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 2.677,
+				"move": "skull_crash",
+				"query_ms": 0.122,
+				"region": "chest",
+				"remaining": 858,
+				"structure_ms": 0.928,
+				"time": 83.2,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.135,
+				"move": "short_kick",
+				"query_ms": 0.173,
+				"region": "left_shin",
+				"remaining": 621,
+				"structure_ms": 0.695,
+				"time": 86.0,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 8,
+				"event_ms": 2.488,
+				"move": "skull_crash",
+				"query_ms": 0.141,
+				"region": "chest",
+				"remaining": 850,
+				"structure_ms": 0.909,
+				"time": 87.65,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 40,
+				"event_ms": 2.449,
+				"move": "crush_hook",
+				"query_ms": 0.234,
+				"region": "chest",
+				"remaining": 581,
+				"structure_ms": 0.747,
+				"time": 90.25,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 40,
+				"event_ms": 2.7,
+				"move": "shoulder_check",
+				"query_ms": 0.186,
+				"region": "chest",
+				"remaining": 810,
+				"structure_ms": 0.858,
+				"time": 97.65,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 5,
+				"event_ms": 1.879,
+				"move": "shove",
+				"query_ms": 0.111,
+				"region": "chest",
+				"remaining": 576,
+				"structure_ms": 0.681,
+				"time": 99.48,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.537,
+				"move": "shoulder_check",
+				"query_ms": 0.178,
+				"region": "chest",
+				"remaining": 786,
+				"structure_ms": 0.826,
+				"time": 108.82,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 1.813,
+				"move": "body_shot",
+				"query_ms": 0.128,
+				"region": "abdomen",
+				"remaining": 567,
+				"structure_ms": 0.633,
+				"time": 110.78,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 38,
+				"event_ms": 2.027,
+				"move": "crush_hook",
+				"query_ms": 0.189,
+				"region": "chest",
+				"remaining": 529,
+				"structure_ms": 0.607,
+				"time": 119.93,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 1.847,
+				"move": "body_shot",
+				"query_ms": 0.148,
+				"region": "head",
+				"remaining": 508,
+				"structure_ms": 0.585,
+				"time": 124.07,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 1.763,
+				"move": "crush_hook",
+				"query_ms": 0.162,
+				"region": "head",
+				"remaining": 488,
+				"structure_ms": 0.569,
+				"time": 128.53,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 29,
+				"event_ms": 1.776,
+				"move": "crush_hook",
+				"query_ms": 0.179,
+				"region": "chest",
+				"remaining": 459,
+				"structure_ms": 0.542,
+				"time": 133.12,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 9,
+				"event_ms": 1.536,
+				"move": "body_shot",
+				"query_ms": 0.11,
+				"region": "neck",
+				"remaining": 450,
+				"structure_ms": 0.547,
+				"time": 137.42,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 19,
+				"event_ms": 2.581,
+				"move": "shoulder_check",
+				"query_ms": 0.17,
+				"region": "chest",
+				"remaining": 767,
+				"structure_ms": 0.853,
+				"time": 139.77,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 7,
+				"event_ms": 1.529,
+				"move": "shove",
+				"query_ms": 0.109,
+				"region": "chest",
+				"remaining": 443,
+				"structure_ms": 0.55,
+				"time": 141.42,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 63,
+				"event_ms": 2.088,
+				"move": "crush_hook",
+				"query_ms": 0.286,
+				"region": "head",
+				"remaining": 380,
+				"structure_ms": 0.495,
+				"time": 146.38,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 33,
+				"event_ms": 2.811,
+				"move": "ram_charge",
+				"query_ms": 0.356,
+				"region": "chest",
+				"remaining": 734,
+				"structure_ms": 0.855,
+				"time": 149.27,
+				"victim": "GORGEBLOCK"
+			}
+		],
+		"impact_tiers": [
+			8,
+			28,
+			0
+		],
+		"longest_contact_gap": 9.34,
+		"midpoint_path": 99.0188795368508,
+		"midpoint_span": [
+			22.2781715393066,
+			33.2648143768311
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.058,
+				"archetype": "bastion",
+				"arms": [
+					true,
+					true
+				],
+				"commands": 18,
+				"cubes": 380,
+				"defeated": false,
+				"generation_ms": 8.06,
+				"hits": 12,
+				"legs": [
+					"DAMAGED",
+					"HEALTHY"
+				],
+				"motor_ms": 0.035,
+				"movement": {
+					"distance": 158.815529493085,
+					"lateral_distance": 0.0,
+					"max_displacement": 45.8146171569824,
+					"pursuit_distance": 28.0208978920709,
+					"retreat_distance": 62.7828932820594,
+					"stationary_seconds": 16.7000000000003,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION"
+					]
+				},
+				"name": "BASTION",
+				"position": [
+					14.2701730728149,
+					-0.600000023841858,
+					-19.7551918029785
+				],
+				"reason": "",
+				"speed": 0.78125,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.495
+			},
+			{
+				"animation_ms": 0.064,
+				"archetype": "gorgeblock",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 29,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 8.214,
+				"hits": 24,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.034,
+				"movement": {
+					"distance": 112.046755750715,
+					"lateral_distance": 22.6145093225641,
+					"max_displacement": 40.4560623168945,
+					"pursuit_distance": 20.2677253251895,
+					"retreat_distance": 3.92147410765756,
+					"stationary_seconds": 37.3999999999992,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"INDUSTRIAL AVENUE"
+					]
+				},
+				"name": "GORGEBLOCK",
+				"position": [
+					17.241397857666,
+					1.69471764564514,
+					-12.5981864929199
+				],
+				"reason": "NECK CONNECTION FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.855
+			}
+		],
+		"music": "aftermath",
+		"navigation_ms": 0.002,
+		"passed": true,
+		"peak_animation_ms": 0.363,
+		"peak_contact_ms": 6.689,
+		"physics_ms": 4.653,
+		"render_cpu_ms": 0.0,
+		"rubble": 1428,
+		"seed": 33013,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.068,
+				"audio_events": 163,
+				"audio_ms": 0.049,
+				"collision_bodies": 193,
+				"coverage": 0.502942644283538,
+				"debris_script_ms": 0.683,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": false,
+				"fps": 19.0,
+				"frame_ms": 83.639,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					5,
+					16,
+					0
+				],
+				"midpoint_path": 49.727850921714,
+				"midpoint_span": [
+					22.1774444580078,
+					15.6600785255432
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.064,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 10,
+						"cubes": 621,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 7,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.04,
+						"movement": {
+							"distance": 89.0747909107777,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.8146171569824,
+							"pursuit_distance": 18.3685056514805,
+							"retreat_distance": 35.183362599626,
+							"stationary_seconds": 13.0000000000002,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							21.7620658874512,
+							-0.600000023841858,
+							13.3929109573364
+						],
+						"reason": "",
+						"speed": 0.78125,
+						"state": "MAINTAINING RANGE",
+						"structure_ms": 0.695
+					},
+					{
+						"animation_ms": 0.069,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 15,
+						"cubes": 858,
+						"defeated": false,
+						"generation_ms": 8.214,
+						"hits": 14,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.044,
+						"movement": {
+							"distance": 70.3012249733147,
+							"lateral_distance": 18.8030568574322,
+							"max_displacement": 20.3486747741699,
+							"pursuit_distance": 13.4509570891969,
+							"retreat_distance": 3.92147410765756,
+							"stationary_seconds": 22.7833333333333,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							13.3101291656494,
+							-0.600000023841858,
+							14.5075778961182
+						],
+						"reason": "",
+						"speed": 0.779411764705882,
+						"state": "GROUND BREAKER · COMMIT",
+						"structure_ms": 0.928
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.003,
+				"physics_ms": 1.462,
+				"render_cpu_ms": 0.0,
+				"rubble": 329,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 3.313,
+				"time": 86.0,
+				"vfx_events": 116,
+				"vfx_ms": 0.012,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.051,
+				"audio_events": 289,
+				"audio_ms": 0.055,
+				"collision_bodies": 193,
+				"coverage": 0.435367806475342,
+				"debris_script_ms": 1.641,
+				"director": true,
+				"director_ms": 0.044,
+				"finished": true,
+				"fps": 20.0,
+				"frame_ms": 64.45,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					8,
+					28,
+					0
+				],
+				"midpoint_path": 98.3642925735403,
+				"midpoint_span": [
+					22.2781715393066,
+					33.2648143768311
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.089,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 18,
+						"cubes": 380,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 12,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.035,
+						"movement": {
+							"distance": 157.506353155815,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.8146171569824,
+							"pursuit_distance": 28.0208978920709,
+							"retreat_distance": 62.7828932820594,
+							"stationary_seconds": 16.7000000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							13.8007726669312,
+							-0.600000023841858,
+							-20.9773235321045
+						],
+						"reason": "",
+						"speed": 0.78125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.495
+					},
+					{
+						"animation_ms": 0.064,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 29,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.214,
+						"hits": 24,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.034,
+						"movement": {
+							"distance": 112.046755750715,
+							"lateral_distance": 22.6145093225641,
+							"max_displacement": 40.4560623168945,
+							"pursuit_distance": 20.2677253251895,
+							"retreat_distance": 3.92147410765756,
+							"stationary_seconds": 37.3999999999992,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.241397857666,
+							1.55437660217285,
+							-12.5981864929199
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.855
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.838,
+				"render_cpu_ms": 0.0,
+				"rubble": 1428,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 151.1,
+				"vfx_events": 205,
+				"vfx_ms": 0.014,
+				"winner": "BASTION"
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.051,
+				"audio_events": 291,
+				"audio_ms": 1.527,
+				"collision_bodies": 193,
+				"coverage": 0.440567693108075,
+				"debris_script_ms": 2.939,
+				"director": true,
+				"director_ms": 0.077,
+				"finished": true,
+				"fps": 20.0,
+				"frame_ms": 64.45,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					8,
+					28,
+					0
+				],
+				"midpoint_path": 98.9405637154196,
+				"midpoint_span": [
+					22.2781715393066,
+					33.2648143768311
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.069,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 18,
+						"cubes": 380,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 12,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.036,
+						"movement": {
+							"distance": 158.658897901991,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.8146171569824,
+							"pursuit_distance": 28.0208978920709,
+							"retreat_distance": 62.7828932820594,
+							"stationary_seconds": 16.7000000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							14.2140130996704,
+							-0.600000023841858,
+							-19.9014091491699
+						],
+						"reason": "",
+						"speed": 0.78125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.495
+					},
+					{
+						"animation_ms": 0.064,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 29,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.214,
+						"hits": 24,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.034,
+						"movement": {
+							"distance": 112.046755750715,
+							"lateral_distance": 22.6145093225641,
+							"max_displacement": 40.4560623168945,
+							"pursuit_distance": 20.2677253251895,
+							"retreat_distance": 3.92147410765756,
+							"stationary_seconds": 37.3999999999992,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.241397857666,
+							1.67587018013,
+							-12.5981864929199
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.855
+					}
+				],
+				"music": "aftermath",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.838,
+				"render_cpu_ms": 0.0,
+				"rubble": 1428,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 152.3,
+				"vfx_events": 207,
+				"vfx_ms": 0.014,
+				"winner": "BASTION"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.051,
+				"audio_events": 289,
+				"audio_ms": 0.055,
+				"collision_bodies": 193,
+				"coverage": 0.435263193566843,
+				"debris_script_ms": 1.641,
+				"director": true,
+				"director_ms": 0.044,
+				"finished": true,
+				"fps": 20.0,
+				"frame_ms": 64.45,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					8,
+					28,
+					0
+				],
+				"midpoint_path": 98.3521761525262,
+				"midpoint_span": [
+					22.2781715393066,
+					33.2648143768311
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.059,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 18,
+						"cubes": 380,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 12,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.035,
+						"movement": {
+							"distance": 157.482120654651,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.8146171569824,
+							"pursuit_distance": 28.0208978920709,
+							"retreat_distance": 62.7828932820594,
+							"stationary_seconds": 16.7000000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							13.8007726669312,
+							-0.600000023841858,
+							-20.9773235321045
+						],
+						"reason": "",
+						"speed": 0.78125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.495
+					},
+					{
+						"animation_ms": 0.064,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 29,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.214,
+						"hits": 24,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.034,
+						"movement": {
+							"distance": 112.046755750715,
+							"lateral_distance": 22.6145093225641,
+							"max_displacement": 40.4560623168945,
+							"pursuit_distance": 20.2677253251895,
+							"retreat_distance": 3.92147410765756,
+							"stationary_seconds": 37.3999999999992,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.241397857666,
+							1.55437660217285,
+							-12.5981864929199
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.855
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.838,
+				"render_cpu_ms": 0.0,
+				"rubble": 1428,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 151.1,
+				"vfx_events": 205,
+				"vfx_ms": 0.014,
+				"winner": "BASTION"
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.072,
+				"audio_events": 0,
+				"audio_ms": 0.059,
+				"collision_bodies": 193,
+				"coverage": 3.43973437064566,
+				"debris_script_ms": 1.802,
+				"director": true,
+				"director_ms": 0.045,
+				"finished": false,
+				"fps": 18.0,
+				"frame_ms": 98.88,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.087,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "BASTION",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.078,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.214,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.863,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.012,
+				"winner": ""
+			},
+			"severe": {
+				"active_debris": 192,
+				"ai_ms": 0.051,
+				"audio_events": 289,
+				"audio_ms": 0.055,
+				"collision_bodies": 193,
+				"coverage": 0.435367806475342,
+				"debris_script_ms": 1.641,
+				"director": true,
+				"director_ms": 0.044,
+				"finished": true,
+				"fps": 20.0,
+				"frame_ms": 64.45,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					8,
+					28,
+					0
+				],
+				"midpoint_path": 98.3642925735403,
+				"midpoint_span": [
+					22.2781715393066,
+					33.2648143768311
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.089,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 18,
+						"cubes": 380,
+						"defeated": false,
+						"generation_ms": 8.06,
+						"hits": 12,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.035,
+						"movement": {
+							"distance": 157.506353155815,
+							"lateral_distance": 0.0,
+							"max_displacement": 45.8146171569824,
+							"pursuit_distance": 28.0208978920709,
+							"retreat_distance": 62.7828932820594,
+							"stationary_seconds": 16.7000000000003,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							13.8007726669312,
+							-0.600000023841858,
+							-20.9773235321045
+						],
+						"reason": "",
+						"speed": 0.78125,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.495
+					},
+					{
+						"animation_ms": 0.064,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 29,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.214,
+						"hits": 24,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.034,
+						"movement": {
+							"distance": 112.046755750715,
+							"lateral_distance": 22.6145093225641,
+							"max_displacement": 40.4560623168945,
+							"pursuit_distance": 20.2677253251895,
+							"retreat_distance": 3.92147410765756,
+							"stationary_seconds": 37.3999999999992,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.241397857666,
+							1.55437660217285,
+							-12.5981864929199
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.855
+					}
+				],
+				"music": "severe",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.838,
+				"render_cpu_ms": 0.0,
+				"rubble": 1428,
+				"seed": 33013,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 151.1,
+				"vfx_events": 205,
+				"vfx_ms": 0.014,
+				"winner": "BASTION"
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 153.3,
+		"vfx_events": 207,
+		"vfx_ms": 0.014,
+		"wall_seconds": 4.9684,
+		"winner": "BASTION"
+	},
+	{
+		"active_debris": 192,
+		"ai_ms": 0.049,
+		"audio_events": 223,
+		"audio_ms": 0.056,
+		"collision_bodies": 193,
+		"coverage": 0.460670354574281,
+		"debris_script_ms": 1.982,
+		"director": true,
+		"director_ms": 0.043,
+		"duration": 107.033333333329,
+		"finished": true,
+		"fps": 22.0,
+		"frame_ms": 60.606,
+		"gpu_ms": 0.0,
+		"hits": [
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 25,
+				"event_ms": 2.801,
+				"move": "crush_hook",
+				"query_ms": 0.162,
+				"region": "chest",
+				"remaining": 975,
+				"structure_ms": 0.991,
+				"time": 13.68,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.714,
+				"move": "push_kick",
+				"query_ms": 0.106,
+				"region": "left_shin",
+				"remaining": 987,
+				"structure_ms": 0.989,
+				"time": 13.95,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 26,
+				"event_ms": 2.795,
+				"move": "ram_charge",
+				"query_ms": 0.15,
+				"region": "chest",
+				"remaining": 961,
+				"structure_ms": 1.011,
+				"time": 21.55,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 2.834,
+				"move": "body_shot",
+				"query_ms": 0.079,
+				"region": "neck",
+				"remaining": 957,
+				"structure_ms": 1.064,
+				"time": 23.48,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.627,
+				"move": "crush_hook",
+				"query_ms": 0.099,
+				"region": "head",
+				"remaining": 946,
+				"structure_ms": 0.971,
+				"time": 27.38,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 2.763,
+				"move": "shoulder_check",
+				"query_ms": 0.203,
+				"region": "chest",
+				"remaining": 948,
+				"structure_ms": 0.977,
+				"time": 30.73,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 28,
+				"event_ms": 2.856,
+				"move": "ram_charge",
+				"query_ms": 0.173,
+				"region": "chest",
+				"remaining": 920,
+				"structure_ms": 1.004,
+				"time": 38.92,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 33,
+				"direct": 11,
+				"event_ms": 3.855,
+				"move": "pile_hammer",
+				"query_ms": 0.109,
+				"region": "chest",
+				"remaining": 902,
+				"structure_ms": 2.164,
+				"time": 41.13,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.52,
+				"move": "body_shot",
+				"query_ms": 0.132,
+				"region": "head",
+				"remaining": 891,
+				"structure_ms": 0.931,
+				"time": 45.45,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 18,
+				"event_ms": 2.761,
+				"move": "skull_crash",
+				"query_ms": 0.107,
+				"region": "chest",
+				"remaining": 902,
+				"structure_ms": 1.011,
+				"time": 47.33,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 22,
+				"event_ms": 2.702,
+				"move": "shove",
+				"query_ms": 0.21,
+				"region": "chest",
+				"remaining": 869,
+				"structure_ms": 0.918,
+				"time": 49.48,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 16,
+				"event_ms": 2.796,
+				"move": "skull_crash",
+				"query_ms": 0.152,
+				"region": "chest",
+				"remaining": 886,
+				"structure_ms": 0.995,
+				"time": 51.32,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 11,
+				"event_ms": 2.519,
+				"move": "body_shot",
+				"query_ms": 0.149,
+				"region": "abdomen",
+				"remaining": 858,
+				"structure_ms": 0.898,
+				"time": 53.97,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 32,
+				"direct": 48,
+				"event_ms": 3.998,
+				"move": "crush_hook",
+				"query_ms": 0.27,
+				"region": "chest",
+				"remaining": 778,
+				"structure_ms": 2.081,
+				"time": 58.05,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 24,
+				"event_ms": 2.718,
+				"move": "shoulder_check",
+				"query_ms": 0.174,
+				"region": "chest",
+				"remaining": 862,
+				"structure_ms": 0.93,
+				"time": 62.38,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 31,
+				"event_ms": 2.631,
+				"move": "pile_hammer",
+				"query_ms": 0.29,
+				"region": "chest",
+				"remaining": 747,
+				"structure_ms": 0.826,
+				"time": 65.17,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 53,
+				"event_ms": 2.65,
+				"move": "crush_hook",
+				"query_ms": 0.283,
+				"region": "neck",
+				"remaining": 694,
+				"structure_ms": 0.742,
+				"time": 69.93,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 15,
+				"event_ms": 2.537,
+				"move": "skull_crash",
+				"query_ms": 0.105,
+				"region": "chest",
+				"remaining": 847,
+				"structure_ms": 0.924,
+				"time": 74.03,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 10,
+				"event_ms": 2.071,
+				"move": "body_shot",
+				"query_ms": 0.136,
+				"region": "neck",
+				"remaining": 684,
+				"structure_ms": 0.727,
+				"time": 76.32,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 50,
+				"event_ms": 2.409,
+				"move": "pile_hammer",
+				"query_ms": 0.231,
+				"region": "chest",
+				"remaining": 634,
+				"structure_ms": 0.688,
+				"time": 80.55,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 20,
+				"event_ms": 2.552,
+				"move": "shoulder_check",
+				"query_ms": 0.173,
+				"region": "chest",
+				"remaining": 827,
+				"structure_ms": 0.871,
+				"time": 84.93,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 55,
+				"event_ms": 2.303,
+				"move": "crush_hook",
+				"query_ms": 0.198,
+				"region": "chest",
+				"remaining": 579,
+				"structure_ms": 0.657,
+				"time": 87.55,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 36,
+				"event_ms": 2.079,
+				"move": "crush_hook",
+				"query_ms": 0.208,
+				"region": "head",
+				"remaining": 543,
+				"structure_ms": 0.626,
+				"time": 92.0,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 13,
+				"event_ms": 1.75,
+				"move": "body_shot",
+				"query_ms": 0.144,
+				"region": "head",
+				"remaining": 530,
+				"structure_ms": 0.602,
+				"time": 96.35,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "BASTION",
+				"detached": 0,
+				"direct": 21,
+				"event_ms": 2.569,
+				"move": "push_kick",
+				"query_ms": 0.162,
+				"region": "left_thigh",
+				"remaining": 806,
+				"structure_ms": 0.873,
+				"time": 96.57,
+				"victim": "GORGEBLOCK"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 69,
+				"event_ms": 2.271,
+				"move": "crush_hook",
+				"query_ms": 0.207,
+				"region": "head",
+				"remaining": 461,
+				"structure_ms": 0.568,
+				"time": 100.12,
+				"victim": "BASTION"
+			},
+			{
+				"attacker": "GORGEBLOCK",
+				"detached": 0,
+				"direct": 38,
+				"event_ms": 1.829,
+				"move": "crush_hook",
+				"query_ms": 0.177,
+				"region": "head",
+				"remaining": 423,
+				"structure_ms": 0.525,
+				"time": 107.03,
+				"victim": "BASTION"
+			}
+		],
+		"impact_tiers": [
+			7,
+			20,
+			0
+		],
+		"longest_contact_gap": 8.19,
+		"midpoint_path": 75.9750560176617,
+		"midpoint_span": [
+			17.9790497422218,
+			29.2485227584839
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.064,
+				"archetype": "gorgeblock",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 20,
+				"cubes": 806,
+				"defeated": false,
+				"generation_ms": 8.185,
+				"hits": 17,
+				"legs": [
+					"DAMAGED",
+					"DAMAGED"
+				],
+				"motor_ms": 0.03,
+				"movement": {
+					"distance": 95.2152878972847,
+					"lateral_distance": 12.0924437618814,
+					"max_displacement": 35.1203689575195,
+					"pursuit_distance": 27.9228895320266,
+					"retreat_distance": 7.86527888674755,
+					"stationary_seconds": 21.0500000000001,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION"
+					]
+				},
+				"name": "GORGEBLOCK",
+				"position": [
+					17.298620223999,
+					-0.600000023841858,
+					6.56465673446655
+				],
+				"reason": "",
+				"speed": 0.706862745098039,
+				"state": "VICTORIOUS",
+				"structure_ms": 0.873
+			},
+			{
+				"animation_ms": 0.057,
+				"archetype": "bastion",
+				"arms": [
+					true,
+					true
+				],
+				"commands": 11,
+				"cubes": 0,
+				"defeated": true,
+				"generation_ms": 8.174,
+				"hits": 10,
+				"legs": [
+					"LOST",
+					"LOST"
+				],
+				"motor_ms": 0.041,
+				"movement": {
+					"distance": 126.515008983828,
+					"lateral_distance": 0.0,
+					"max_displacement": 39.8084983825684,
+					"pursuit_distance": 23.2796220577875,
+					"retreat_distance": 44.5089769767364,
+					"stationary_seconds": 12.1333333333335,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION",
+						"INDUSTRIAL AVENUE"
+					]
+				},
+				"name": "BASTION",
+				"position": [
+					17.6529350280762,
+					1.69484972953796,
+					15.7242441177368
+				],
+				"reason": "NECK CONNECTION FAILED",
+				"speed": 0.12,
+				"state": "COLLAPSING",
+				"structure_ms": 0.525
+			}
+		],
+		"music": "mid",
+		"navigation_ms": 0.001,
+		"passed": true,
+		"peak_animation_ms": 0.266,
+		"peak_contact_ms": 5.897,
+		"physics_ms": 1.867,
+		"render_cpu_ms": 0.0,
+		"rubble": 1002,
+		"seed": 44809,
+		"shot": "ESTABLISHING",
+		"stages": {
+			"25_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.132,
+				"audio_events": 162,
+				"audio_ms": 0.051,
+				"collision_bodies": 193,
+				"coverage": 0.51281469731456,
+				"debris_script_ms": 0.639,
+				"director": true,
+				"director_ms": 0.044,
+				"finished": false,
+				"fps": 21.0,
+				"frame_ms": 96.768,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					5,
+					15,
+					0
+				],
+				"midpoint_path": 54.2007102705829,
+				"midpoint_span": [
+					14.8889618515968,
+					19.1282563209534
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.065,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 14,
+						"cubes": 847,
+						"defeated": false,
+						"generation_ms": 8.185,
+						"hits": 12,
+						"legs": [
+							"DAMAGED",
+							"HEALTHY"
+						],
+						"motor_ms": 0.067,
+						"movement": {
+							"distance": 71.1234621774347,
+							"lateral_distance": 10.3636645027436,
+							"max_displacement": 20.1223640441895,
+							"pursuit_distance": 20.1651984187483,
+							"retreat_distance": 7.86527888674755,
+							"stationary_seconds": 18.1833333333336,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							11.2837743759155,
+							-0.600000023841858,
+							-11.1471214294434
+						],
+						"reason": "",
+						"speed": 0.883333333333333,
+						"state": "PILE HAMMER · COMMIT",
+						"structure_ms": 0.924
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 8,
+						"cubes": 634,
+						"defeated": false,
+						"generation_ms": 8.174,
+						"hits": 8,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.035,
+						"movement": {
+							"distance": 98.1119070074492,
+							"lateral_distance": 0.0,
+							"max_displacement": 39.8084983825684,
+							"pursuit_distance": 15.7298905968055,
+							"retreat_distance": 36.2520054666093,
+							"stationary_seconds": 9.40000000000005,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							17.8178730010986,
+							-0.600000023841858,
+							-2.33452391624451
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "BUILD CHARGE",
+						"structure_ms": 0.688
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.002,
+				"physics_ms": 1.109,
+				"render_cpu_ms": 0.0,
+				"rubble": 327,
+				"seed": 44809,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 3.642,
+				"time": 80.5,
+				"vfx_events": 117,
+				"vfx_ms": 0.011,
+				"winner": ""
+			},
+			"50_percent": {
+				"active_debris": 192,
+				"ai_ms": 0.049,
+				"audio_events": 223,
+				"audio_ms": 0.053,
+				"collision_bodies": 193,
+				"coverage": 0.461910578988639,
+				"debris_script_ms": 1.12,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 22.0,
+				"frame_ms": 60.606,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					7,
+					20,
+					0
+				],
+				"midpoint_path": 75.9750560176617,
+				"midpoint_span": [
+					17.9790497422218,
+					29.2485227584839
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.069,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 20,
+						"cubes": 806,
+						"defeated": false,
+						"generation_ms": 8.185,
+						"hits": 17,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 95.2152878972847,
+							"lateral_distance": 12.0924437618814,
+							"max_displacement": 35.1203689575195,
+							"pursuit_distance": 27.9228895320266,
+							"retreat_distance": 7.86527888674755,
+							"stationary_seconds": 21.0500000000001,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.298620223999,
+							-0.600000023841858,
+							6.56465673446655
+						],
+						"reason": "",
+						"speed": 0.706862745098039,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.873
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 11,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.174,
+						"hits": 10,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.041,
+						"movement": {
+							"distance": 126.515008983828,
+							"lateral_distance": 0.0,
+							"max_displacement": 39.8084983825684,
+							"pursuit_distance": 23.2796220577875,
+							"retreat_distance": 44.5089769767364,
+							"stationary_seconds": 12.1333333333335,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							17.6529350280762,
+							1.55437660217285,
+							15.7242441177368
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.525
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.867,
+				"render_cpu_ms": 0.0,
+				"rubble": 1002,
+				"seed": 44809,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.003,
+				"time": 108.8,
+				"vfx_events": 158,
+				"vfx_ms": 0.011,
+				"winner": "GORGEBLOCK"
+			},
+			"aftermath": {
+				"active_debris": 192,
+				"ai_ms": 0.049,
+				"audio_events": 223,
+				"audio_ms": 0.055,
+				"collision_bodies": 193,
+				"coverage": 0.460903553948205,
+				"debris_script_ms": 2.052,
+				"director": true,
+				"director_ms": 0.059,
+				"finished": true,
+				"fps": 22.0,
+				"frame_ms": 60.606,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					7,
+					20,
+					0
+				],
+				"midpoint_path": 75.9750560176617,
+				"midpoint_span": [
+					17.9790497422218,
+					29.2485227584839
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.058,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 20,
+						"cubes": 806,
+						"defeated": false,
+						"generation_ms": 8.185,
+						"hits": 17,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 95.2152878972847,
+							"lateral_distance": 12.0924437618814,
+							"max_displacement": 35.1203689575195,
+							"pursuit_distance": 27.9228895320266,
+							"retreat_distance": 7.86527888674755,
+							"stationary_seconds": 21.0500000000001,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.298620223999,
+							-0.600000023841858,
+							6.56465673446655
+						],
+						"reason": "",
+						"speed": 0.706862745098039,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.873
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 11,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.174,
+						"hits": 10,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.041,
+						"movement": {
+							"distance": 126.515008983828,
+							"lateral_distance": 0.0,
+							"max_displacement": 39.8084983825684,
+							"pursuit_distance": 23.2796220577875,
+							"retreat_distance": 44.5089769767364,
+							"stationary_seconds": 12.1333333333335,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							17.6529350280762,
+							1.67647337913513,
+							15.7242441177368
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.525
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.867,
+				"render_cpu_ms": 0.0,
+				"rubble": 1002,
+				"seed": 44809,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 110.0,
+				"vfx_events": 158,
+				"vfx_ms": 0.011,
+				"winner": "GORGEBLOCK"
+			},
+			"collapse": {
+				"active_debris": 192,
+				"ai_ms": 0.049,
+				"audio_events": 223,
+				"audio_ms": 0.053,
+				"collision_bodies": 193,
+				"coverage": 0.461910578988639,
+				"debris_script_ms": 1.12,
+				"director": true,
+				"director_ms": 0.042,
+				"finished": true,
+				"fps": 22.0,
+				"frame_ms": 60.606,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					7,
+					20,
+					0
+				],
+				"midpoint_path": 75.9750560176617,
+				"midpoint_span": [
+					17.9790497422218,
+					29.2485227584839
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.059,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 20,
+						"cubes": 806,
+						"defeated": false,
+						"generation_ms": 8.185,
+						"hits": 17,
+						"legs": [
+							"DAMAGED",
+							"DAMAGED"
+						],
+						"motor_ms": 0.026,
+						"movement": {
+							"distance": 95.2152878972847,
+							"lateral_distance": 12.0924437618814,
+							"max_displacement": 35.1203689575195,
+							"pursuit_distance": 27.9228895320266,
+							"retreat_distance": 7.86527888674755,
+							"stationary_seconds": 21.0500000000001,
+							"zones": [
+								"INDUSTRIAL AVENUE",
+								"CENTRAL INTERSECTION"
+							]
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							17.298620223999,
+							-0.600000023841858,
+							6.56465673446655
+						],
+						"reason": "",
+						"speed": 0.706862745098039,
+						"state": "VICTORIOUS",
+						"structure_ms": 0.873
+					},
+					{
+						"animation_ms": 0.057,
+						"archetype": "bastion",
+						"arms": [
+							true,
+							true
+						],
+						"commands": 11,
+						"cubes": 0,
+						"defeated": true,
+						"generation_ms": 8.174,
+						"hits": 10,
+						"legs": [
+							"LOST",
+							"LOST"
+						],
+						"motor_ms": 0.041,
+						"movement": {
+							"distance": 126.515008983828,
+							"lateral_distance": 0.0,
+							"max_displacement": 39.8084983825684,
+							"pursuit_distance": 23.2796220577875,
+							"retreat_distance": 44.5089769767364,
+							"stationary_seconds": 12.1333333333335,
+							"zones": [
+								"CIVIC PLAZA",
+								"CENTRAL INTERSECTION",
+								"INDUSTRIAL AVENUE"
+							]
+						},
+						"name": "BASTION",
+						"position": [
+							17.6529350280762,
+							1.55437660217285,
+							15.7242441177368
+						],
+						"reason": "NECK CONNECTION FAILED",
+						"speed": 0.12,
+						"state": "COLLAPSING",
+						"structure_ms": 0.525
+					}
+				],
+				"music": "mid",
+				"navigation_ms": 0.001,
+				"physics_ms": 1.867,
+				"render_cpu_ms": 0.0,
+				"rubble": 1002,
+				"seed": 44809,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 108.8,
+				"vfx_events": 158,
+				"vfx_ms": 0.011,
+				"winner": "GORGEBLOCK"
+			},
+			"pristine": {
+				"active_debris": 0,
+				"ai_ms": 0.051,
+				"audio_events": 0,
+				"audio_ms": 0.055,
+				"collision_bodies": 193,
+				"coverage": 0.800377305619143,
+				"debris_script_ms": 2.416,
+				"director": true,
+				"director_ms": 0.04,
+				"finished": false,
+				"fps": 20.0,
+				"frame_ms": 89.719,
+				"gpu_ms": 0.0,
+				"impact_tiers": [
+					0,
+					0,
+					0
+				],
+				"midpoint_path": 0.0,
+				"midpoint_span": [
+					0.0,
+					0.0
+				],
+				"monsters": [
+					{
+						"animation_ms": 0.077,
+						"archetype": "gorgeblock",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.185,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "GORGEBLOCK",
+						"position": [
+							0.0,
+							0.0,
+							-24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					},
+					{
+						"animation_ms": 0.079,
+						"archetype": "bastion",
+						"arms": [
+							false,
+							false
+						],
+						"commands": 0,
+						"cubes": 1000,
+						"defeated": false,
+						"generation_ms": 8.174,
+						"hits": 0,
+						"legs": [
+							"HEALTHY",
+							"HEALTHY"
+						],
+						"motor_ms": 0.0,
+						"movement": {
+							"distance": 0.0,
+							"lateral_distance": 0.0,
+							"max_displacement": 0.0,
+							"pursuit_distance": 0.0,
+							"retreat_distance": 0.0,
+							"stationary_seconds": 0.0,
+							"zones": []
+						},
+						"name": "BASTION",
+						"position": [
+							0.0,
+							0.0,
+							24.0
+						],
+						"reason": "",
+						"speed": 1.0,
+						"state": "STANDOFF",
+						"structure_ms": 0.0
+					}
+				],
+				"music": "opening",
+				"navigation_ms": 0.002,
+				"physics_ms": 4.653,
+				"render_cpu_ms": 0.0,
+				"rubble": 0,
+				"seed": 44809,
+				"shot": "ESTABLISHING",
+				"sweep_ms": 0.002,
+				"time": 0.0,
+				"vfx_events": 0,
+				"vfx_ms": 0.014,
+				"winner": ""
+			}
+		},
+		"sweep_ms": 0.002,
+		"time": 111.0,
+		"vfx_events": 158,
+		"vfx_ms": 0.011,
+		"wall_seconds": 3.482818,
+		"winner": "GORGEBLOCK"
+	}
+]

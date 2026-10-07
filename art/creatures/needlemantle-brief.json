@@ -1,0 +1,413 @@
+{
+  "id": "needlemantle",
+  "name": "NEEDLEMANTLE",
+  "kind": "longarm",
+  "palette": "446f86",
+  "allocation": {
+    "head": 80,
+    "neck": 20,
+    "chest": 128,
+    "abdomen": 54,
+    "pelvis": 62,
+    "left_shoulder": 20,
+    "left_upper_arm": 34,
+    "left_forearm": 56,
+    "left_fist": 26,
+    "left_thigh": 80,
+    "left_shin": 72,
+    "left_foot": 40,
+    "right_shoulder": 20,
+    "right_upper_arm": 34,
+    "right_forearm": 56,
+    "right_fist": 26,
+    "right_thigh": 80,
+    "right_shin": 72,
+    "right_foot": 40
+  },
+  "volumes": [
+    {
+      "region": "chest",
+      "center": [
+        0,
+        23,
+        0
+      ],
+      "radius": [
+        3.0,
+        2.9,
+        2.1
+      ]
+    },
+    {
+      "region": "abdomen",
+      "center": [
+        0,
+        18.5,
+        0
+      ],
+      "radius": [
+        2.1,
+        2.1,
+        1.8
+      ]
+    },
+    {
+      "region": "pelvis",
+      "center": [
+        0,
+        14.8,
+        0
+      ],
+      "radius": [
+        2.7,
+        1.6,
+        2
+      ]
+    },
+    {
+      "region": "neck",
+      "center": [
+        0,
+        28,
+        0
+      ],
+      "radius": [
+        1.0,
+        1.2,
+        1.3
+      ]
+    },
+    {
+      "region": "head",
+      "center": [
+        0,
+        31.5,
+        -0.3
+      ],
+      "radius": [
+        1.7,
+        2.6,
+        1.8
+      ]
+    },
+    {
+      "region": "left_shoulder",
+      "center": [
+        -4.2,
+        24,
+        0
+      ],
+      "radius": [
+        1.35,
+        1.6,
+        1.3
+      ]
+    },
+    {
+      "region": "left_upper_arm",
+      "center": [
+        -5.2,
+        20.3,
+        0
+      ],
+      "radius": [
+        1.0,
+        3.4,
+        1.1
+      ]
+    },
+    {
+      "region": "left_forearm",
+      "center": [
+        -6.2,
+        12.7,
+        -0.3
+      ],
+      "radius": [
+        1.2,
+        4,
+        1.2
+      ]
+    },
+    {
+      "region": "left_fist",
+      "center": [
+        -6.5,
+        8,
+        -0.8
+      ],
+      "radius": [
+        1.4,
+        1.25,
+        1.8
+      ]
+    },
+    {
+      "region": "left_thigh",
+      "center": [
+        -2.0,
+        10.7,
+        0
+      ],
+      "radius": [
+        1.6,
+        3.7,
+        1.8
+      ]
+    },
+    {
+      "region": "left_shin",
+      "center": [
+        -2.0,
+        5.8,
+        0
+      ],
+      "radius": [
+        1.3,
+        3.2,
+        1.6
+      ]
+    },
+    {
+      "region": "left_foot",
+      "center": [
+        -2.0,
+        1,
+        -1.3
+      ],
+      "radius": [
+        2.0,
+        0.9,
+        3
+      ]
+    },
+    {
+      "region": "right_shoulder",
+      "center": [
+        4.2,
+        24,
+        0
+      ],
+      "radius": [
+        1.35,
+        1.6,
+        1.3
+      ]
+    },
+    {
+      "region": "right_upper_arm",
+      "center": [
+        5.2,
+        20.3,
+        0
+      ],
+      "radius": [
+        1.0,
+        3.4,
+        1.1
+      ]
+    },
+    {
+      "region": "right_forearm",
+      "center": [
+        6.2,
+        12.7,
+        -0.3
+      ],
+      "radius": [
+        1.2,
+        4,
+        1.2
+      ]
+    },
+    {
+      "region": "right_fist",
+      "center": [
+        6.5,
+        8,
+        -0.8
+      ],
+      "radius": [
+        1.4,
+        1.25,
+        1.8
+      ]
+    },
+    {
+      "region": "right_thigh",
+      "center": [
+        2.0,
+        10.7,
+        0
+      ],
+      "radius": [
+        1.6,
+        3.7,
+        1.8
+      ]
+    },
+    {
+      "region": "right_shin",
+      "center": [
+        2.0,
+        5.8,
+        0
+      ],
+      "radius": [
+        1.3,
+        3.2,
+        1.6
+      ]
+    },
+    {
+      "region": "right_foot",
+      "center": [
+        2.0,
+        1,
+        -1.3
+      ],
+      "radius": [
+        2.0,
+        0.9,
+        3
+      ]
+    }
+  ],
+  "rig": {
+    "pivot": [
+      0,
+      14.8,
+      0
+    ],
+    "shoulder": [
+      4.2,
+      24,
+      0
+    ],
+    "elbow": [
+      5.7,
+      16.5,
+      0
+    ],
+    "hand": [
+      6.5,
+      8,
+      -0.8
+    ],
+    "hip": [
+      2,
+      14.8,
+      0
+    ],
+    "knee": [
+      2,
+      8.2,
+      0
+    ],
+    "foot": [
+      2,
+      1,
+      -1.3
+    ],
+    "idle_hand": [
+      6.5,
+      12.8,
+      -4
+    ],
+    "head": [
+      0,
+      31.5,
+      -2
+    ],
+    "head_pivot": [
+      0,
+      28,
+      0
+    ],
+    "torso": [
+      0,
+      23,
+      -2.1
+    ],
+    "guard": [
+      3,
+      29,
+      -4
+    ],
+    "stance_lean": 0.02
+  },
+  "behavior": {
+    "speed": 2.25,
+    "acceleration": 0.72,
+    "turn_rate": 0.36,
+    "turn_acceleration": 0.6,
+    "step_seconds": 1.05,
+    "balance": 0.8,
+    "preferred_range": 14.5,
+    "retreat": 0.95,
+    "circle": 0.8,
+    "pursuit": 0.9,
+    "aggression": 0.85,
+    "evade": 0.3,
+    "reposition_seconds": 4.8,
+    "reposition_interval": 7.8,
+    "charge_weight": 0.0,
+    "charge_distance": 18.0
+  },
+  "attacks": {
+    "lance_straight": {
+      "base": "right_punch",
+      "label": "LANCE STRAIGHT",
+      "weight": 2.2,
+      "range": 16.5,
+      "force": 15,
+      "radius": 1.75,
+      "trajectory": "straight"
+    },
+    "long_jab": {
+      "base": "left_punch",
+      "label": "RANGING JAB",
+      "weight": 1.7,
+      "range": 16,
+      "force": 13,
+      "radius": 1.65,
+      "trajectory": "straight"
+    },
+    "rake_backhand": {
+      "base": "heavy_hook",
+      "label": "RAKING BACKHAND",
+      "weight": 1.5,
+      "range": 15.8,
+      "force": 19,
+      "radius": 2.1,
+      "trajectory": "backhand"
+    },
+    "pendulum": {
+      "base": "heavy_hook",
+      "label": "PENDULUM SWEEP",
+      "weight": 1.1,
+      "range": 16,
+      "force": 20,
+      "radius": 2.3,
+      "trajectory": "hook"
+    },
+    "heel_kick": {
+      "base": "kick",
+      "label": "LONG HEEL",
+      "weight": 0.7,
+      "range": 13,
+      "force": 18,
+      "radius": 2.0,
+      "trajectory": "kick"
+    }
+  },
+  "weakpoints": {
+    "shoulder": 0.25,
+    "thigh": 0.21,
+    "shin": 0.16,
+    "foot": 0.17,
+    "neck": 0.17,
+    "head": 0.17,
+    "torso": 0.277
+  }
+}

@@ -28,6 +28,15 @@ func _process(_dt: float) -> void:
 		next_sample=battle.elapsed+1
 		history.append(battle.snapshot())
 		FileAccess.open(directory+"/runtime.json",FileAccess.WRITE).store_string(JSON.stringify({"samples":history,"hits":battle.hits,"stages":battle.stages,"finish_time":battle.finish_time,"director":battle.camera.director.history,"music":battle.music.history},"\t"))
+	for fighter in battle.monsters:
+		if fighter.attack_motion.running and fighter.attack_motion.profile.get("trajectory","")=="charge":
+			var key: String="charge-"+fighter.attack_motion.phase.to_lower().replace(" ","-")
+			if not captures.has(key): captures[key]=true; capture(key)
+		var zone: String=battle.arena.zone(fighter.position)
+		var key: String="zone-"+zone.to_lower().replace(" ","-")
+		if not captures.has(key) and battle.elapsed>18:
+			captures[key]=true
+			capture(key)
 	var total: int=battle.monsters[0].alive_count()+battle.monsters[1].alive_count()
 	for marker in [["25-percent",total<=1500],["50-percent",total<=1000],["opening",battle.elapsed>=0.6],["first-exchanges",battle.hits.size()>=3],["limb-loss",battle.monsters[0].structure.disabled.left_arm or battle.monsters[1].structure.disabled.left_arm],["severe",total<750 and not battle.finished],["collapse",battle.finished and battle.elapsed-battle.finish_time>0.8],["aftermath",battle.finished and battle.elapsed-battle.finish_time>4]]:
 		if marker[1] and not captures.has(marker[0]):

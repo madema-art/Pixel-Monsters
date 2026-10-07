@@ -71,7 +71,7 @@ func reset_motion() -> void:
 	stepping=""
 	next_foot="left"
 	for side in ["left","right"]:
-		feet[side]=to_global(Vector3(-2 if side=="left" else 2,1,-0.9))
+		feet[side]=to_global(rig_point("foot",Vector3(-2 if side=="left" else 2,1,-0.9),side))
 	rig.apply(self)
 
 func speed_factor() -> float:
@@ -88,17 +88,18 @@ func request_move(world_velocity: Vector3, facing: float) -> void:
 func request_attack(command: String, opponent: CombatMonster, region: String, side: String) -> bool:
 	if defeated or opponent.defeated or attack_motion.running or cooldown>0 or stagger>0.25: return false
 	if not MonsterMoves.available(self,command): return false
-	if MonsterMoves.MOVES[command].limb=="arm" and not MonsterMoves.functional_arm(self,side): return false
-	if MonsterMoves.MOVES[command].limb=="leg" and structure.leg_quality(side)<=0.45: return false
+	if MonsterMoves.profile(self,command).limb=="arm" and not MonsterMoves.functional_arm(self,side): return false
+	if MonsterMoves.profile(self,command).limb=="leg" and structure.leg_quality(side)<=0.45: return false
 	attack_motion.begin(self,opponent,command,region,side)
 	attack_history.append(command)
 	if attack_history.size()>4: attack_history.pop_front()
 	commands+=1
 	guarding=false
-	state=MonsterMoves.MOVES[command].label
+	state=MonsterMoves.profile(self,command).label
 	return true
 
 func effector(command: String, side: String) -> Vector3:
+	command=MonsterMoves.profile(self,command).get("base",command)
 	var key: String=side+"_leg" if command=="kick" else "head" if command=="headbutt" else "torso" if command=="body_charge" else side+"_arm"
 	return rig.effectors.get(key,to_global(Vector3(0,18,-2)))
 
@@ -130,22 +131,29 @@ func update_motor(dt: float) -> void:
 	var speed := speed_factor()
 	var desired := desired_velocity*speed
 	if stagger>0: desired*=0.15
-	if attack_motion.running: desired*=0.12
-	velocity=velocity.move_toward(desired,dt*0.85)
-	knock_velocity=knock_velocity.move_toward(Vector3.ZERO,dt*1.7)
+	if attack_motion.running: desired*=0.7 if attack_motion.phase=="RECOVER" and not archetype.is_empty() else 0.12
+	var acceleration := behavior("acceleration",.85)
+	if attack_motion.running and attack_motion.profile.get("trajectory","")=="charge" and attack_motion.phase=="COMMIT":
+		desired=attack_motion.charge_heading*attack_motion.profile.charge_speed*speed
+		acceleration=4.0
+	velocity=velocity.move_toward(desired,dt*acceleration)
+	knock_velocity=knock_velocity.move_toward(Vector3.ZERO,dt*(1.7 if archetype.is_empty() else 1.2))
 	position+=(velocity+knock_velocity)*dt
-	position.x=clampf(position.x,-24,24)
-	position.z=clampf(position.z,-16,16)
+	position.x=clampf(position.x,-24,24) if archetype.is_empty() else clampf(position.x,-24,24)
+	position.z=clampf(position.z,-16,16) if archetype.is_empty() else clampf(position.z,-72,72)
 	var yaw_delta := angle_difference(rotation.y,facing_target)
-	var wanted_turn := clampf(yaw_delta*0.8,-0.44,0.44)*maxf(speed,0.35)
+	var wanted_turn := clampf(yaw_delta*0.8,-behavior("turn_rate",.44),behavior("turn_rate",.44))*maxf(speed,0.35)
+	if not archetype.is_empty():
+		var outside_leg := structure.leg_quality("left" if wanted_turn>0 else "right")
+		wanted_turn*=.45+.55*outside_leg
 	if attack_motion.running and attack_motion.phase!="WIND-UP": wanted_turn*=0.15
-	angular_velocity=move_toward(angular_velocity,wanted_turn,dt*0.6)
+	angular_velocity=move_toward(angular_velocity,wanted_turn,dt*behavior("turn_acceleration",.6))
 	rotation.y+=angular_velocity*dt
 	var legs_lost := int(structure.disabled.left_leg)+int(structure.disabled.right_leg)
 	var stance_height := -0.6 if legs_lost==0 else -3.5 if legs_lost==1 else -support_height+0.4
 	if legs_lost==0: stance_height-=clampf(0.7-speed,0,0.7)*2.5
 	position.y=move_toward(position.y,stance_height,dt*1.9)
-	lean=lerpf(lean,clampf(stagger*0.15,0,0.18),1-exp(-5*dt))
+	lean=lerpf(lean,clampf(stagger*0.15,0,0.18)+float(archetype.rig.get("stance_lean",0)) if not archetype.is_empty() else clampf(stagger*0.15,0,0.18),1-exp(-5*dt))
 	sway=sin(clock*2.2)*0.012*velocity.length()+sin(clock*7)*stagger*0.025
 	bob=sin(clock*2.2)*0.08*velocity.length()+sin(clock*0.8)*0.025
 	update_feet(dt)
@@ -159,7 +167,7 @@ func update_motor(dt: float) -> void:
 func update_feet(dt: float) -> void:
 	if stepping!="":
 		step_age+=dt
-		var duration := 0.95+(1-speed_factor())*0.35
+		var duration := behavior("step_seconds",.95)+(1-speed_factor())*0.35
 		var t := clampf(step_age/duration,0,1)
 		feet[stepping]=step_start.lerp(step_goal,smoothstep(0,1,t))+Vector3.UP*sin(t*PI)*(0.8 if speed_factor()>0.6 else 0.35)
 		if t>=1:
@@ -167,10 +175,10 @@ func update_feet(dt: float) -> void:
 			next_foot="right" if stepping=="left" else "left"
 			stepping=""
 		return
-	if attack_motion.running and attack_motion.move=="kick": return
+	if attack_motion.running and attack_motion.profile.get("base",attack_motion.move)=="kick": return
 	for choice in [next_foot,"right" if next_foot=="left" else "left"]:
 		if structure.disabled[choice+"_leg"]: continue
-		var desired: Vector3=to_global(Vector3(-2 if choice=="left" else 2,1-position.y,-0.9))
+		var desired: Vector3=to_global(rig_point("foot",Vector3(-2 if choice=="left" else 2,1-position.y,-0.9),choice))
 		desired.y=1
 		if feet[choice].distance_to(desired)>1.3:
 			stepping=choice
@@ -191,7 +199,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 		stagger=maxf(stagger,0.45+radius*0.12)
 		head_recoil=1.0 if to_local(contact).y>21 else 0.3
 		var planar := Vector3(force.x,0,force.z)
-		knock_velocity+=planar.normalized()*clampf(radius*0.38,0.4,1.4)
+		knock_velocity+=planar.normalized()*clampf(radius*(.38 if archetype.is_empty() else .65),0.4,(1.4 if archetype.is_empty() else 2.7))
 		if attack_motion.running and attack_motion.phase=="WIND-UP" and radius>2.2:
 			attack_motion.cancel()
 			cooldown=1.0

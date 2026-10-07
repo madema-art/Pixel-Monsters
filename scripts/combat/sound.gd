@@ -33,10 +33,10 @@ func layer(at: Vector3, cue: String, volume: float, pitch: float=1.0) -> void:
 	player.play()
 	events+=1
 
-func impact(at: Vector3, power: float, removed: int, move: String="punch", tier: int=0, limb: bool=false) -> void:
+func impact(at: Vector3, power: float, removed: int, move: String="punch", tier: int=0, limb: bool=false, timbre: float=1.0) -> void:
 	var start := Time.get_ticks_usec()
 	var cue := "hook" if move.contains("hook") else "kick" if move.contains("kick") else "head" if move=="headbutt" else "body" if move.contains("body") else "punch"
-	layer(at,cue,-3 if tier==2 else -7 if tier==1 else -11)
+	layer(at,cue,-3 if tier==2 else -7 if tier==1 else -11,timbre)
 	layer(at,"fracture",-12+minf(removed/20.0,5),1.12 if power<16 else .96)
 	if removed>30: layer(at,"clatter",-19)
 	if tier==2: layer(at,"body",-15,.82)

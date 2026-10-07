@@ -1,0 +1,1268 @@
+PIXEL MONSTERS — PROMPT 4
+MONSTER ARCHETYPES, BLENDER CREATURE PIPELINE, AND ARENA-WIDE COMBAT
+
+Continue development of Pixel Monsters from the completed Milestone 3 checkpoint.
+
+DEVELOPMENT PROJECT:
+D:\Godot\Projects\Pixel-Monsters
+
+PLAYABLE BUILD:
+D:\Pixel Monsters
+
+CURRENT VERIFIED CHECKPOINT:
+Git commit: 77321a2
+
+CURRENT VERSION:
+Pixel Monsters 0.3.0.0
+
+Milestone 3 already established:
+
+- autonomous giant-monster fights
+- exactly 1,000 destructible cubes per pristine monster
+- localized physical destruction
+- permanent cavities
+- limb loss and combat adaptation
+- cinematic director camera
+- free observer camera
+- dusk lighting
+- city-scale environment
+- tiered impacts
+- layered sound
+- original adaptive score
+- strong performance
+- 6 destruction tests passed
+- 20 combat checks passed
+- 20 presentation checks passed
+- 6 rendered fights visually inspected
+- standalone median around 697 FPS at 1152×648
+- standalone Windows build launches through:
+  D:\Pixel Monsters\Play Pixel Monsters.bat
+
+Do not rebuild proven systems from scratch.
+
+Preserve Milestone 3 as a stable checkpoint.
+
+==================================================
+THE TWO PROBLEMS MILESTONE 4 MUST SOLVE
+==================================================
+
+After personally watching Milestone 3, two major shortcomings are immediately obvious:
+
+1. THE MONSTERS DO NOT MOVE AROUND THE ARENA ENOUGH.
+
+They tend to meet, plant themselves near one location, and exchange blows.
+
+The arena therefore feels like scenery rather than an active giant-monster battlefield.
+
+2. THE MONSTERS ARE TOO SIMILAR.
+
+They currently read as variations of essentially the same humanoid creature using largely the same combat language.
+
+Pixel Monsters needs creatures with strongly different silhouettes, proportions, movement personalities, preferred ranges, and attack styles.
+
+Milestone 4 should solve BOTH of these problems together.
+
+Different anatomy should lead naturally to different movement and combat behavior.
+
+==================================================
+CORE DESIGN PHILOSOPHY
+==================================================
+
+Pixel Monsters should begin developing a roster of strange, instantly recognizable giant fighters.
+
+Use the design spirit of vintage collectible wrestling-monster toys such as M.U.S.C.L.E. as a STARTING POINT FOR DESIGN THINKING ONLY.
+
+DO NOT:
+
+- reproduce any specific copyrighted M.U.S.C.L.E. character
+- copy recognizable individual toy designs
+- use M.U.S.C.L.E. names, logos, costumes, or exact silhouettes
+
+DO take inspiration from the broader philosophy:
+
+- exaggerated anatomy
+- bizarre proportions
+- readable silhouettes
+- wrestler-like physicality
+- creatures whose shape immediately suggests how they fight
+- strange humanoids that look memorable even in silhouette
+- compact, sculptural character design
+- fun physical archetypes taken completely seriously by the presentation
+
+We want ORIGINAL Pixel Monsters.
+
+==================================================
+1. BLENDER IS NOW AN EXPLICIT PART OF THE PIPELINE
+==================================================
+
+Milestones 1–3 allowed Blender but did not require it.
+
+Milestone 4 should actively use the working Blender MCP connection.
+
+Blender 5.2.1 LTS is connected and available.
+
+Godot AI MCP is also connected.
+
+Use the intended development loop:
+
+CODEX
+↕
+BLENDER
+↕
+GODOT
+
+Blender should now be used as a genuine creature-design and proportion-development tool.
+
+Do not merely open Blender once so the milestone can claim Blender was used.
+
+Use it meaningfully.
+
+==================================================
+2. WHAT BLENDER SHOULD BE USED FOR
+==================================================
+
+Use Blender for tasks such as:
+
+- creature proportion studies
+- silhouette design
+- body-mass distribution
+- exaggerated anatomy
+- head shapes
+- arm proportions
+- leg proportions
+- torso profiles
+- shoulder width
+- posture
+- pose studies
+- attack-pose reference
+- comparative lineup renders
+- turntable inspection
+- visual iteration
+
+Create actual visual prototypes of the new monster archetypes.
+
+Inspect them from multiple angles.
+
+Use rendered or viewport comparisons to decide whether they are visually distinct enough.
+
+If a monster still reads like "the same guy with longer arms," redesign it.
+
+==================================================
+3. BLENDER DOES NOT REPLACE THE DESTRUCTIBLE BODY SYSTEM
+==================================================
+
+The actual gameplay creatures must remain compatible with Pixel Monsters' existing destructible cube architecture.
+
+Each pristine monster still contains exactly:
+
+1,000 VISIBLE DESTRUCTIBLE BODY CUBES.
+
+Do not replace the cube creatures with conventional mesh characters.
+
+A good pipeline may resemble:
+
+Blender creature design
+→ proportion / volume reference
+→ conversion or procedural interpretation
+→ exactly-1,000-cube gameplay body
+→ Godot structural regions
+→ animation / locomotion
+→ combat
+→ destruction
+
+You may create tooling to assist this conversion.
+
+If a voxelization or body-generation step is useful, build it robustly and document it.
+
+The goal is for Blender to influence the creature's actual game silhouette, not just produce concept art that is ignored.
+
+==================================================
+4. EXACTLY 1,000 CUBES REMAINS A FUNDAMENTAL RULE
+==================================================
+
+Every intact monster should continue to use exactly 1,000 destructible body cubes.
+
+This rule now becomes even more interesting because archetypes should DISTRIBUTE those cubes differently.
+
+Examples:
+
+a brute may spend more cubes on:
+
+- shoulders
+- chest
+- fists
+- arms
+
+while spending fewer on:
+
+- lower legs
+- neck
+- head
+
+A kicking monster may invest heavily in:
+
+- thighs
+- calves
+- pelvis
+- feet
+
+A headbutting creature may invest heavily in:
+
+- skull
+- neck
+- shoulders
+
+Do not secretly balance monsters by simply giving one more total body cubes.
+
+Their strengths and vulnerabilities should emerge partly from WHERE the 1,000 cubes are invested.
+
+Document the exact regional cube distribution for every archetype.
+
+==================================================
+5. BUILD AT LEAST THREE DISTINCT MONSTER ARCHETYPES
+==================================================
+
+Create at least THREE genuinely distinct monster archetypes.
+
+They should not be simple recolors.
+
+The following are design seeds, not mandatory exact implementations.
+
+Use them as inspiration and improve them if you discover stronger designs.
+
+--------------------------------------------------
+ARCHETYPE A — THE BRUTE
+--------------------------------------------------
+
+Possible characteristics:
+
+- huge shoulders
+- enormous fists
+- thick torso
+- short neck
+- relatively compact legs
+- heavy forward posture
+
+Combat identity:
+
+- closes distance aggressively
+- devastating hooks
+- heavy straight punches
+- overhead clubbing strike if appropriate
+- shoves / body pressure
+- poor reach compared with long-limbed monster
+- reluctant to give ground
+
+Movement:
+
+- stalks forward
+- corners opponent
+- fewer lateral movements
+- strongly prefers close range
+
+Weakness:
+
+- may be vulnerable to leg damage or long-range harassment
+
+--------------------------------------------------
+ARCHETYPE B — THE LONGARM
+--------------------------------------------------
+
+Possible characteristics:
+
+- tall
+- leaner torso
+- disproportionately long arms
+- narrower shoulders
+- long reach
+- unusual silhouette
+
+Combat identity:
+
+- long straight punches
+- wide sweeping strikes
+- long-range hooks
+- possible two-handed hammer blow
+- tries to hit before opponent reaches close range
+
+Movement:
+
+- gives ground
+- circles more
+- attempts to maintain reach
+- backs away from brute pressure
+- repositions frequently
+
+Weakness:
+
+- thinner arm connections
+- less powerful at very close range
+
+--------------------------------------------------
+ARCHETYPE C — THE BULL / HEADBUTTER
+--------------------------------------------------
+
+Possible characteristics:
+
+- enormous head
+- thick neck
+- massive upper torso
+- comparatively smaller arms
+- powerful shoulders
+- forward-driving posture
+
+Combat identity:
+
+- headbutts
+- shoulder checks
+- short heavy punches
+- body charges
+- close-range collisions
+
+Movement:
+
+- may deliberately create distance
+- then charge
+- drives opponent backward
+- does not rely heavily on arms
+
+Important:
+
+losing one or both arms should NOT cripple this monster nearly as much as it would cripple the Brute.
+
+--------------------------------------------------
+
+You may replace or modify these archetypes if Blender experimentation produces better original creatures.
+
+The requirement is:
+
+THREE MONSTERS THAT LOOK DIFFERENT,
+MOVE DIFFERENTLY,
+AND FIGHT DIFFERENTLY.
+
+==================================================
+6. BODY SHAPE MUST DRIVE COMBAT
+==================================================
+
+Do not simply give the same skeleton three visual skins and assign different damage numbers.
+
+Monster anatomy should influence:
+
+- reach
+- attack selection
+- preferred fighting distance
+- locomotion
+- attack animation
+- balance
+- structural vulnerabilities
+- available attacks after limb loss
+- AI strategy
+
+Examples:
+
+long arms
+→ longer punch range
+
+huge head / neck
+→ powerful headbutts
+
+massive shoulders
+→ effective charges
+
+large legs
+→ stronger kicking game
+
+small arms
+→ less dependence on punching
+
+heavy torso
+→ harder to stagger but potentially top-heavy
+
+This principle should be encoded cleanly so future monsters can be created without rewriting the combat engine.
+
+==================================================
+7. CREATE A DATA-DRIVEN MONSTER ARCHETYPE SYSTEM
+==================================================
+
+Do not hardcode each monster into giant if/else trees.
+
+Create a clean archetype definition format.
+
+Useful properties may include:
+
+- body design reference
+- cube-region allocation
+- overall height
+- body proportions
+- movement speed
+- acceleration
+- turn rate
+- preferred distance
+- aggression
+- pursuit tendency
+- retreat tendency
+- circling tendency
+- attack weights
+- attack ranges
+- attack power
+- recovery tendencies
+- balance characteristics
+- structural weak points
+- limb importance
+- personality weights
+- charge behavior
+- available attack families
+
+The architecture should support adding future monsters primarily through:
+
+DATA
++
+BLENDER / BODY DESIGN
++
+ATTACK ASSETS
+
+rather than rewriting core AI.
+
+==================================================
+8. DIFFERENT ATTACK VOCABULARIES
+==================================================
+
+The monsters should no longer all fight from essentially the same move list.
+
+There may be shared universal attacks, but each archetype needs signature attacks.
+
+Examples:
+
+BRUTE:
+- crushing right hook
+- left body shot
+- heavy double-handed or overhead strike
+- shove
+
+LONGARM:
+- long straight
+- sweeping backhand
+- wide hook
+- hammer strike
+
+HEADBUTTER:
+- headbutt
+- shoulder charge
+- short hook
+- driving body strike
+
+Do not build twenty moves per creature.
+
+Approximately 4–6 meaningful options per archetype is enough for now.
+
+The purpose is differentiation.
+
+==================================================
+9. ARENA-WIDE MOVEMENT IS A PRIMARY GOAL
+==================================================
+
+The monsters currently remain too stationary.
+
+Fix this deliberately.
+
+A normal fight should MIGRATE through the environment.
+
+The monsters should:
+
+- advance
+- retreat
+- pursue
+- circle
+- reposition
+- create distance
+- close distance
+- move after knockback
+- chase a wounded opponent
+- avoid remaining rooted to one small patch of arena
+
+During a complete fight, it should be common for combat to move through multiple distinct portions of the arena.
+
+==================================================
+10. PREFERRED COMBAT RANGE
+==================================================
+
+Give different archetypes different desired ranges.
+
+For example:
+
+BRUTE:
+close range
+
+LONGARM:
+medium / long melee range
+
+HEADBUTTER:
+alternates between separation and explosive close-range entry
+
+This should naturally create movement.
+
+Example sequence:
+
+Brute advances.
+
+Longarm backs away and circles.
+
+Longarm lands a ranged punch.
+
+Brute continues pursuing.
+
+Longarm becomes cornered near buildings.
+
+They exchange.
+
+Longarm escapes sideways.
+
+Fight moves down another street.
+
+This is dramatically preferable to two monsters meeting in the middle and remaining there.
+
+==================================================
+11. RETREAT IS NOT COWARDICE
+==================================================
+
+Movement away from the opponent should be part of fighting.
+
+AI may deliberately retreat to:
+
+- restore preferred distance
+- escape a bad close-range matchup
+- create charge distance
+- reposition after limb damage
+- circle away from a damaged side
+- avoid being trapped near arena boundary
+
+Do not make every retreat long or passive.
+
+The monsters should still strongly desire combat.
+
+Movement should create better fighting, not long periods of avoidance.
+
+==================================================
+12. PURSUIT
+==================================================
+
+Aggressive monsters should actively pursue retreating opponents.
+
+Do not allow:
+
+Monster A backs away
+→ Monster B stands still
+→ fight stalls
+
+The pursuer should:
+
+- follow
+- cut distance
+- attempt to angle toward opponent
+- resume attacking
+
+Different archetypes may pursue differently.
+
+==================================================
+13. CIRCLING
+==================================================
+
+Add meaningful lateral movement.
+
+Do not create constant FPS-style strafing.
+
+Instead use occasional broad repositioning arcs.
+
+Monsters might circle to:
+
+- improve facing
+- avoid a damaged leg
+- maintain preferred distance
+- escape arena boundary
+- seek attack angle
+- avoid a charge
+
+Movement should remain slow and enormous.
+
+==================================================
+14. KNOCKBACK SHOULD HELP MOVE THE FIGHT
+==================================================
+
+Large impacts should sometimes displace opponents enough to shift the battle location.
+
+Do not turn monsters into lightweight projectiles.
+
+But a devastating hit may:
+
+- drive opponent several steps backward
+- force recovery movement
+- cause stagger retreat
+- redirect the engagement
+
+The aggressor should then decide whether to pursue.
+
+This can make heavy impacts alter the geography of the fight.
+
+==================================================
+15. CHARGE ATTACKS
+==================================================
+
+At least one archetype should demonstrate an attack that actively uses arena space.
+
+The headbutter/bull archetype is an ideal candidate.
+
+Possible sequence:
+
+AI decides it wants charge distance.
+
+→ backs away several meters
+
+→ turns/faces opponent
+
+→ brief preparation
+
+→ accelerates into a charge
+
+→ opponent may reposition or brace
+
+→ collision produces major impact
+
+This should feel deliberate.
+
+Do not trigger charges at point-blank range.
+
+==================================================
+16. DAMAGE SHOULD ALTER MOVEMENT STRATEGY
+==================================================
+
+Existing structural damage systems must interact with the new movement model.
+
+Examples:
+
+damaged right leg
+→ reduced turn strength toward one side
+
+severely damaged leg
+→ slower pursuit
+
+missing leg
+→ major mobility compromise
+
+lost arm
+→ preferred fighting distance may change
+
+Longarm loses one long arm
+→ may become much less effective at range and be forced into another behavior
+
+Headbutter loses both arms
+→ remains dangerous because its primary anatomy is still useful
+
+Do not treat structural damage merely as disabled attack buttons.
+
+It should change the fight spatially.
+
+==================================================
+17. COMBATANTS SHOULD NOTICE ARENA BOUNDARIES
+==================================================
+
+Prevent fights from degenerating at arena edges.
+
+Monsters near unusable boundaries should attempt to rotate or move back toward viable space.
+
+Do not use invisible-force-field behavior that looks artificial if avoidable.
+
+AI should prefer repositioning naturally.
+
+If necessary, use invisible arena guidance internally, but make behavior visually plausible.
+
+==================================================
+18. SIMPLE NAVIGATION, NOT A CHESS ENGINE
+==================================================
+
+Do not overcomplicate navigation.
+
+We do NOT need advanced tactical pathfinding through an entire city yet.
+
+The environment remains mostly open.
+
+Use simple robust navigation appropriate for enormous creatures.
+
+Avoid monsters getting caught on:
+
+- small props
+- curbs
+- decorative geometry
+- streetlights
+- minor scenery
+
+Large monsters should effectively ignore or step through small-scale navigation obstacles where appropriate.
+
+==================================================
+19. SHOW THE BATTLE'S PATH
+==================================================
+
+One of the visual rewards of arena movement should be that the battlefield tells the story of where the monsters fought.
+
+Existing detached cubes should naturally help.
+
+By late fight, the observer may see:
+
+- cube debris near opening exchange
+- another debris field farther down the street
+- damaged monster pieces near another location
+- final wreckage somewhere else
+
+Do not artificially paint a trail.
+
+Let the existing destruction system create one.
+
+==================================================
+20. DIRECTOR CAMERA MUST ADAPT TO MOVING FIGHTS
+==================================================
+
+The cinematic camera built in Milestone 3 must now cope with fights that travel significantly.
+
+Improve it where necessary.
+
+The director should:
+
+- reacquire moving combatants
+- anticipate pursuit
+- reframe charges
+- reposition when fight enters another area
+- avoid remaining behind at the old fight location
+- maintain useful composition during retreats
+- capture wide shots when monsters separate
+- tighten framing when they re-engage
+
+Arena movement should make the director BETTER, not break it.
+
+==================================================
+21. ENVIRONMENT SHOULD SUPPORT MOVEMENT
+==================================================
+
+Inspect the current city layout.
+
+Adjust it if necessary to create useful fighting spaces.
+
+We want:
+
+- broad streets
+- intersections
+- open plazas or industrial areas
+- routes between districts
+- recognizable landmarks
+
+Do not create narrow alleys where giant monsters constantly snag.
+
+The arena should support migration.
+
+Distinct zones are desirable.
+
+For example:
+
+- central intersection
+- warehouse district
+- plaza
+- waterfront/industrial edge
+- broad avenue
+
+Even simple geometry can create a sense of journey.
+
+==================================================
+22. MONSTER SELECTION FOR AUTONOMOUS FIGHTS
+==================================================
+
+Once the three archetypes are working, autonomous fights should no longer always use the same pair.
+
+At launch, select two combatants from the available roster.
+
+Avoid mirror matches by default for now unless intentionally testing them.
+
+Examples:
+
+Brute vs Longarm
+
+Longarm vs Headbutter
+
+Headbutter vs Brute
+
+Provide a developer method to force a specific matchup for testing.
+
+Normal observer mode may choose randomly.
+
+==================================================
+23. MONSTER VISUAL IDENTITY
+==================================================
+
+Color remains useful, but silhouette must carry identity.
+
+If all materials were temporarily gray, I should still be able to recognize which archetype I am looking at.
+
+Test this.
+
+Use Blender silhouette views or renders if useful.
+
+Do not rely solely on:
+
+red monster
+blue monster
+green monster
+
+Color supports identity.
+
+Shape creates identity.
+
+==================================================
+24. KEEP MATERIALS SIMPLE ENOUGH FOR DESTRUCTION
+==================================================
+
+Do not create elaborate material complexity that makes the individual cubes difficult to read.
+
+Cube structure must remain visually obvious.
+
+Damage cavities must remain readable.
+
+Consider modest variation such as:
+
+- slightly different roughness
+- subtle body-region variation
+- restrained accent colors
+- different base palettes
+
+but do not make them visually noisy.
+
+==================================================
+25. USE BLENDER ITERATIVELY
+==================================================
+
+For each new archetype:
+
+1. Create initial creature study in Blender.
+
+2. Inspect front, side, three-quarter, and silhouette.
+
+3. Export/reference the proportions into the Godot 1,000-cube body system.
+
+4. Run the creature in Godot.
+
+5. Observe it moving and fighting.
+
+6. Identify visual or animation weaknesses.
+
+7. Return to Blender where useful.
+
+8. Revise.
+
+9. Reintegrate.
+
+10. Repeat.
+
+Do not treat Blender as a one-way asset factory.
+
+Use the live two-application workflow we intentionally configured.
+
+==================================================
+26. CREATE DEVELOPMENT ARTIFACTS
+==================================================
+
+Preserve useful creature-design artifacts.
+
+For each archetype, save:
+
+- Blender source
+- useful reference renders
+- silhouette comparison
+- cube-distribution data
+- combat-archetype data
+- notes on design intent
+
+Organize them cleanly inside the Pixel Monsters project or asset-development structure.
+
+Do not scatter files randomly around the machine.
+
+==================================================
+27. PERFORMANCE
+==================================================
+
+Milestone 3 has enormous performance headroom.
+
+Do not sacrifice that carelessly, but visuals and behavioral richness matter.
+
+Profile:
+
+- new movement AI
+- navigation
+- new animation
+- archetype logic
+- Blender-derived body generation
+- director tracking
+- debris across a larger battlefield
+
+Specifically test fights where monsters travel far across the arena.
+
+Make sure old debris does not create an unexpected cumulative performance problem.
+
+==================================================
+28. RUN MATCHUP MATRICES
+==================================================
+
+Do not test only one matchup.
+
+At minimum run multiple complete fights of:
+
+BRUTE vs LONGARM
+
+LONGARM vs HEADBUTTER
+
+HEADBUTTER vs BRUTE
+
+Also reverse spawn sides where useful.
+
+Inspect for:
+
+- one archetype always winning
+- one archetype getting stuck
+- range advantage becoming unbeatable
+- charges never connecting
+- retreat loops
+- pursuit failures
+- monsters backing away forever
+- arena edge problems
+- identical-looking fights
+- signature attacks not being used
+- structural damage failing to alter strategy
+
+Do not obsess over perfect competitive balance yet.
+
+We want interesting matchups first.
+
+==================================================
+29. WATCH FOR MOVEMENT FAILURE MODES
+==================================================
+
+Specifically look for:
+
+- foot sliding
+- moonwalking
+- constant tiny rotations
+- twitching between movement decisions
+- monsters orbiting forever
+- backpedaling forever
+- monsters walking through each other
+- monsters constantly missing because both are moving
+- attacks locking monsters in place too long
+- fights always returning to exact center
+- movement looking human-sized rather than gigantic
+- sudden instantaneous facing changes
+
+Fix these through actual observation.
+
+==================================================
+30. KEEP MOVEMENT MASSIVE
+==================================================
+
+More movement does NOT mean faster movement.
+
+This is critical.
+
+We want:
+
+MORE GEOGRAPHICAL TRAVEL
+
+not:
+
+FASTER ARCADE CHARACTERS.
+
+The monsters should still feel colossal.
+
+They should cover more of the arena because their tactical behavior causes them to walk, pursue, retreat, circle, and reposition over the duration of the fight.
+
+Preserve:
+
+- inertia
+- acceleration
+- deliberate turning
+- committed footsteps
+- heavy stopping
+- physical follow-through
+
+==================================================
+31. SOUND SHOULD REFLECT ARCHETYPE
+==================================================
+
+Where inexpensive, begin giving archetypes subtle sonic identities.
+
+Examples:
+
+Brute:
+heavier low-frequency impacts
+
+Longarm:
+slightly sharper sweeping impacts
+
+Headbutter:
+massive skull/shoulder collision signature
+
+Do not completely redo Milestone 3 audio.
+
+Just make major signature moves audibly distinct.
+
+==================================================
+32. MUSIC SHOULD CONTINUE TO WORK
+==================================================
+
+Preserve the adaptive score.
+
+Do not rewrite it unless necessary.
+
+Ensure fight migration and new attack types still drive the existing intensity system sensibly.
+
+If a charge or catastrophic signature hit merits an event hook, integrate it tastefully.
+
+==================================================
+33. NO FULL CHARACTER SELECT SCREEN YET
+==================================================
+
+Do not build a polished character-selection interface.
+
+This remains observer-first.
+
+Random matchup selection plus developer forcing controls are sufficient.
+
+Menus can come later.
+
+==================================================
+34. DO NOT BUILD A HUGE ROSTER YET
+==================================================
+
+Three strong archetypes are more valuable than ten shallow ones.
+
+Do not begin mass-producing monsters.
+
+Prove that:
+
+- Blender design works
+- conversion works
+- the 1,000-cube constraint works across radically different shapes
+- unique anatomy drives unique combat
+- unique AI behavior creates different fights
+
+Then future milestones can expand the roster.
+
+==================================================
+35. DO NOT BUILD DESTRUCTIBLE CITY SYSTEMS YET
+==================================================
+
+The moving fight will make environmental destruction tempting.
+
+Resist turning this milestone into another giant system.
+
+Limited existing reactions are fine.
+
+Full building destruction remains future work.
+
+==================================================
+36. HUMAN OBSERVATION IS MANDATORY
+==================================================
+
+Automated tests are not enough.
+
+Codex must use Godot MCP to watch and inspect actual fights.
+
+Use Blender MCP to inspect creature designs.
+
+Capture screenshots/renders.
+
+Compare monsters directly.
+
+Observe whether fights actually travel.
+
+Do not declare success because a statistic says the monsters moved 100 meters.
+
+They must LOOK like they are fighting their way through the arena.
+
+==================================================
+37. MEASURE ARENA MOVEMENT
+==================================================
+
+In addition to visual inspection, instrument useful movement metrics.
+
+Possible measurements:
+
+- total distance traveled per monster
+- displacement from spawn
+- number of distinct arena zones entered
+- average fight radius
+- time spent stationary
+- pursuit distance
+- retreat distance
+
+Use metrics to detect obviously static fights.
+
+Do NOT optimize to arbitrary numbers at the expense of natural behavior.
+
+Metrics support visual judgment.
+
+They do not replace it.
+
+==================================================
+38. STANDALONE BUILD
+==================================================
+
+The development project remains:
+
+D:\Godot\Projects\Pixel-Monsters
+
+The playable build remains:
+
+D:\Pixel Monsters
+
+When Milestone 4 is ready:
+
+update:
+
+D:\Pixel Monsters\Pixel Monsters.exe
+
+and preserve:
+
+D:\Pixel Monsters\Play Pixel Monsters.bat
+
+The BAT must launch the latest exported standalone game directly.
+
+Test the BAT personally.
+
+Leave the normal game running for inspection if practical.
+
+==================================================
+39. SUCCESS CRITERIA
+==================================================
+
+Do not call Milestone 4 complete until all of the following are true:
+
+1. Milestone 3 combat, destruction, camera, audio, music, and presentation remain functional.
+
+2. Blender MCP has been used meaningfully in actual creature design.
+
+3. At least three original monster archetypes exist.
+
+4. Their silhouettes are clearly distinguishable without relying on color.
+
+5. Each pristine monster still contains exactly 1,000 body cubes.
+
+6. Each archetype has documented regional cube allocation.
+
+7. The Blender designs meaningfully influence the Godot destructible bodies.
+
+8. A reusable Blender-to-Pixel-Monsters creature workflow exists.
+
+9. The archetypes have visibly different proportions.
+
+10. They have different preferred combat ranges.
+
+11. They have different movement tendencies.
+
+12. They have meaningfully different attack vocabularies.
+
+13. Anatomy influences combat capabilities.
+
+14. Structural damage changes movement strategy as well as attack availability.
+
+15. Normal autonomous fights move through substantially more of the arena than Milestone 3.
+
+16. Monsters pursue retreating opponents.
+
+17. Monsters sometimes create or maintain distance intentionally.
+
+18. Lateral/circling movement occurs naturally.
+
+19. Movement remains slow, massive, and deliberate.
+
+20. At least one archetype uses arena space for a charge or comparable movement-based attack.
+
+21. The director camera successfully follows migrating fights.
+
+22. Arena boundaries do not commonly trap combat.
+
+23. Multiple arena zones can be used during one battle.
+
+24. Different matchups visibly produce different fight behavior.
+
+25. The same attack is not universally dominant across every archetype.
+
+26. Cube debris continues to mark the physical history of the fight.
+
+27. Performance remains strong.
+
+28. Multiple complete fights of every matchup have been tested.
+
+29. Multiple rendered fights have been visually inspected.
+
+30. Regression tests pass.
+
+31. The standalone export has been updated.
+
+32. Play Pixel Monsters.bat launches the new build directly.
+
+==================================================
+40. FINAL HANDOFF
+==================================================
+
+When Milestone 4 is genuinely complete, provide a concise development report containing:
+
+- all monster archetypes created
+- screenshots/renders of each
+- Blender files created
+- how Blender was actually used
+- Blender-to-Godot workflow
+- exact 1,000-cube distribution for each monster
+- silhouette/design rationale
+- movement personality for each monster
+- preferred combat range for each monster
+- complete attack list per archetype
+- signature attacks
+- AI differences
+- structural vulnerability differences
+- limb-loss behavioral differences
+- arena movement changes
+- movement metrics
+- arena-zone usage
+- matchup test results
+- rendered fights inspected
+- director-camera changes
+- performance measurements
+- major bugs discovered and fixed
+- remaining limitations
+- recommended Milestone 5 targets
+- Git checkpoint
+- standalone export status
+
+Do NOT begin Milestone 5.
+
+==================================================
+THE DEFINING TEST
+==================================================
+
+Milestone 4 succeeds if I can launch Pixel Monsters several times and immediately feel that I am watching DIFFERENT giant-monster movies.
+
+One fight might be:
+
+a squat massive brute relentlessly stalking a long-armed creature through city streets while the long-armed monster gives ground and lashes out from range.
+
+Another might be:
+
+a giant-headed creature deliberately backing away across an intersection, lowering itself, then charging forward and smashing its skull into the opponent.
+
+Another might become:
+
+a crippled monster limping away on a ruined leg while its opponent pursues it into another part of the arena.
+
+The monsters should no longer feel like:
+
+RED GUY versus BLUE GUY.
+
+They should feel like distinct creatures whose bodies determine how they fight.
+
+And the battle should no longer belong to one patch of pavement.
+
+It should travel.

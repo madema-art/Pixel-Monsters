@@ -1,0 +1,415 @@
+{
+  "id": "gorgeblock",
+  "name": "GORGEBLOCK",
+  "kind": "brute",
+  "palette": "9a5d39",
+  "allocation": {
+    "head": 96,
+    "neck": 32,
+    "chest": 210,
+    "abdomen": 60,
+    "pelvis": 54,
+    "left_shoulder": 44,
+    "left_upper_arm": 46,
+    "left_forearm": 48,
+    "left_fist": 44,
+    "left_thigh": 34,
+    "left_shin": 30,
+    "left_foot": 28,
+    "right_shoulder": 44,
+    "right_upper_arm": 46,
+    "right_forearm": 48,
+    "right_fist": 44,
+    "right_thigh": 34,
+    "right_shin": 30,
+    "right_foot": 28
+  },
+  "volumes": [
+    {
+      "region": "chest",
+      "center": [
+        0,
+        15,
+        0
+      ],
+      "radius": [
+        6.2,
+        2.9,
+        3
+      ]
+    },
+    {
+      "region": "abdomen",
+      "center": [
+        0,
+        11.4,
+        0
+      ],
+      "radius": [
+        3.6,
+        2.0,
+        2.4
+      ]
+    },
+    {
+      "region": "pelvis",
+      "center": [
+        0,
+        8,
+        0
+      ],
+      "radius": [
+        3.7,
+        1.5,
+        2.3
+      ]
+    },
+    {
+      "region": "neck",
+      "center": [
+        0,
+        18.2,
+        0
+      ],
+      "radius": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "region": "head",
+      "center": [
+        0,
+        20.7,
+        -0.5
+      ],
+      "radius": [
+        2.4,
+        2.1,
+        2.2
+      ]
+    },
+    {
+      "region": "left_shoulder",
+      "center": [
+        -6.4,
+        15.8,
+        0
+      ],
+      "radius": [
+        2.3,
+        1.8,
+        2
+      ]
+    },
+    {
+      "region": "left_upper_arm",
+      "center": [
+        -8,
+        13.1,
+        0
+      ],
+      "radius": [
+        1.8,
+        2.0,
+        1.8
+      ]
+    },
+    {
+      "region": "left_forearm",
+      "center": [
+        -9,
+        10.5,
+        -0.4
+      ],
+      "radius": [
+        2.0,
+        1.9,
+        1.9
+      ]
+    },
+    {
+      "region": "left_fist",
+      "center": [
+        -9,
+        8.0,
+        -0.8
+      ],
+      "radius": [
+        2.3,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "region": "left_thigh",
+      "center": [
+        -2.4,
+        5.9,
+        0
+      ],
+      "radius": [
+        1.8,
+        1.8,
+        1.8
+      ]
+    },
+    {
+      "region": "left_shin",
+      "center": [
+        -2.4,
+        3.4,
+        0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.7
+      ]
+    },
+    {
+      "region": "left_foot",
+      "center": [
+        -2.4,
+        1,
+        -1.0
+      ],
+      "radius": [
+        2.2,
+        0.85,
+        2.5
+      ]
+    },
+    {
+      "region": "right_shoulder",
+      "center": [
+        6.4,
+        15.8,
+        0
+      ],
+      "radius": [
+        2.3,
+        1.8,
+        2
+      ]
+    },
+    {
+      "region": "right_upper_arm",
+      "center": [
+        8,
+        13.1,
+        0
+      ],
+      "radius": [
+        1.8,
+        2.0,
+        1.8
+      ]
+    },
+    {
+      "region": "right_forearm",
+      "center": [
+        9,
+        10.5,
+        -0.4
+      ],
+      "radius": [
+        2.0,
+        1.9,
+        1.9
+      ]
+    },
+    {
+      "region": "right_fist",
+      "center": [
+        9,
+        8.0,
+        -0.8
+      ],
+      "radius": [
+        2.3,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "region": "right_thigh",
+      "center": [
+        2.4,
+        5.9,
+        0
+      ],
+      "radius": [
+        1.8,
+        1.8,
+        1.8
+      ]
+    },
+    {
+      "region": "right_shin",
+      "center": [
+        2.4,
+        3.4,
+        0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.7
+      ]
+    },
+    {
+      "region": "right_foot",
+      "center": [
+        2.4,
+        1,
+        -1.0
+      ],
+      "radius": [
+        2.2,
+        0.85,
+        2.5
+      ]
+    }
+  ],
+  "rig": {
+    "pivot": [
+      0,
+      8,
+      0
+    ],
+    "shoulder": [
+      6.3,
+      15.8,
+      0
+    ],
+    "elbow": [
+      8.5,
+      12,
+      -0.2
+    ],
+    "hand": [
+      9,
+      8,
+      -0.8
+    ],
+    "hip": [
+      2.4,
+      8,
+      0
+    ],
+    "knee": [
+      2.4,
+      4.8,
+      0
+    ],
+    "foot": [
+      2.4,
+      1,
+      -1
+    ],
+    "idle_hand": [
+      7.3,
+      11,
+      -4.5
+    ],
+    "head": [
+      0,
+      20.7,
+      -2.6
+    ],
+    "head_pivot": [
+      0,
+      18.2,
+      0
+    ],
+    "torso": [
+      0,
+      15,
+      -2.8
+    ],
+    "guard": [
+      4,
+      18,
+      -4
+    ],
+    "stance_lean": -0.06
+  },
+  "behavior": {
+    "speed": 2.15,
+    "acceleration": 0.85,
+    "turn_rate": 0.44,
+    "turn_acceleration": 0.6,
+    "step_seconds": 1.05,
+    "balance": 1.25,
+    "preferred_range": 9.2,
+    "retreat": 0.12,
+    "circle": 0.12,
+    "pursuit": 1.0,
+    "aggression": 0.85,
+    "evade": 0.18,
+    "reposition_seconds": 3.8,
+    "reposition_interval": 9.0,
+    "charge_weight": 0.0,
+    "charge_distance": 18.0
+  },
+  "attacks": {
+    "crush_hook": {
+      "base": "heavy_hook",
+      "label": "CRUSHING HOOK",
+      "weight": 2.6,
+      "range": 11.3,
+      "force": 24,
+      "radius": 2.6,
+      "trajectory": "hook"
+    },
+    "body_shot": {
+      "base": "left_punch",
+      "label": "BODY SHOT",
+      "weight": 1.1,
+      "range": 10.8,
+      "force": 16,
+      "radius": 1.9,
+      "trajectory": "straight"
+    },
+    "pile_hammer": {
+      "base": "heavy_hook",
+      "label": "PILE HAMMER",
+      "weight": 1.1,
+      "range": 11.0,
+      "force": 26,
+      "radius": 2.55,
+      "trajectory": "overhead",
+      "wind": 1.35,
+      "recover": 1.8
+    },
+    "shove": {
+      "base": "body_charge",
+      "label": "SHOULDER SHOVE",
+      "weight": 0.8,
+      "range": 9.8,
+      "force": 22,
+      "radius": 2.2,
+      "trajectory": "drive"
+    },
+    "short_kick": {
+      "base": "kick",
+      "label": "GROUND BREAKER",
+      "weight": 0.45,
+      "range": 10.4,
+      "force": 18,
+      "radius": 2.0,
+      "trajectory": "kick"
+    }
+  },
+  "weakpoints": {
+    "shoulder": 0.25,
+    "thigh": 0.21,
+    "shin": 0.16,
+    "foot": 0.17,
+    "neck": 0.17,
+    "head": 0.17,
+    "torso": 0.277
+  }
+}

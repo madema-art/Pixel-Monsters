@@ -7,6 +7,13 @@ var environment: Environment
 var sun: DirectionalLight3D
 var rim: DirectionalLight3D
 
+func zone(p: Vector3) -> String:
+	if p.z<-38: return "WAREHOUSE GATES"
+	if p.z<-12: return "INDUSTRIAL AVENUE"
+	if p.z<18: return "CENTRAL INTERSECTION"
+	if p.z<46: return "CIVIC PLAZA"
+	return "WATERFRONT APPROACH"
+
 func box(p: Vector3, size: Vector3, color: Color, emissive: bool=false) -> void:
 	var key := color.to_html()+str(emissive)
 	if not batches.has(key): batches[key]={"color":color,"emissive":emissive,"transforms":[]}
@@ -43,8 +50,8 @@ func _ready() -> void:
 	ground.position.y=-0.3
 	ground.add_child(collision)
 	add_child(ground)
-	box(Vector3(0,0.015,0),Vector3(24,0.03,160),Color("242b30"))
-	box(Vector3(0,0.035,16),Vector3(160,0.03,8),Color("242b30"))
+	box(Vector3(0,0.015,0),Vector3(40,0.03,160),Color("242b30"))
+	box(Vector3(0,0.035,16),Vector3(160,0.03,20),Color("242b30"))
 	for side in [-1,1]:
 		box(Vector3(side*15.5,0.10,0),Vector3(3,0.2,150),Color("687074"))
 		box(Vector3(side*17.1,0.18,32),Vector3(0.3,0.36,85),Color("959487"))
@@ -55,12 +62,12 @@ func _ready() -> void:
 		box(Vector3(0,0.04,z),Vector3(0.15,0.02,2),Color("b4ada0"))
 	for s in [-1,1]:
 		for z in range(-64,65,16):
-			var x: float=s*18.0
+			var x: float=s*25.0
 			box(Vector3(x,2,z),Vector3(0.12,4,0.12),Color("788489"))
 			box(Vector3(x-s*0.65,3.9,z),Vector3(1.5,0.1,0.1),Color("788489"))
 			box(Vector3(x-s*1.2,3.8,z),Vector3(0.5,0.12,0.25),Color("ffd29d"),true)
 		for j in 9:
-			var x: float=s*(28+(j%3)*14)
+			var x: float=s*(38+(j%3)*14)
 			var z: float=-58+floor(j/3.0)*36
 			var h: float=3+(j*5)%7
 			occluders.append(AABB(Vector3(x-4.7,0,z-6.2),Vector3(9.4,h+.4,12.4)))
@@ -80,6 +87,14 @@ func _ready() -> void:
 	for x in [-21,21]:
 		for z in range(-10,17,4):
 			box(Vector3(x,0.5,z),Vector3(1,1,2.6),Color("969891"))
+	# Open civic plaza and warehouse apron connect to the avenue.
+	box(Vector3(0,.03,34),Vector3(48,.04,26),Color("4d5558"))
+	box(Vector3(0,.03,-52),Vector3(46,.04,24),Color("3e494d"))
+	for side in [-1,1]:
+		box(Vector3(side*30,6,42),Vector3(2,12,2),Color("8c8a79"))
+		box(Vector3(side*30,12.4,42),Vector3(4,.8,4),Color("b7a583"))
+		box(Vector3(side*32,10,-57),Vector3(1,20,1),Color("747f82"))
+		box(Vector3(side*32-5,19,-57),Vector3(12,.8,.8),Color("747f82"))
 	scale_details()
 	render_batches()
 	var world := WorldEnvironment.new()

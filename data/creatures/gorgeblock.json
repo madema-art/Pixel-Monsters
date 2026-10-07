@@ -1,0 +1,8441 @@
+{
+  "id": "gorgeblock",
+  "name": "GORGEBLOCK",
+  "kind": "brute",
+  "palette": "9a5d39",
+  "allocation": {
+    "head": 96,
+    "neck": 32,
+    "chest": 210,
+    "abdomen": 60,
+    "pelvis": 54,
+    "left_shoulder": 44,
+    "left_upper_arm": 46,
+    "left_forearm": 48,
+    "left_fist": 44,
+    "left_thigh": 34,
+    "left_shin": 30,
+    "left_foot": 28,
+    "right_shoulder": 44,
+    "right_upper_arm": 46,
+    "right_forearm": 48,
+    "right_fist": 44,
+    "right_thigh": 34,
+    "right_shin": 30,
+    "right_foot": 28
+  },
+  "volumes": [
+    {
+      "region": "chest",
+      "center": [
+        0.0,
+        15.0,
+        -0.0
+      ],
+      "radius": [
+        6.199999809265137,
+        2.9000000953674316,
+        3.0
+      ]
+    },
+    {
+      "region": "abdomen",
+      "center": [
+        0.0,
+        11.399999618530273,
+        -0.0
+      ],
+      "radius": [
+        3.5999999046325684,
+        2.0,
+        2.4000000953674316
+      ]
+    },
+    {
+      "region": "pelvis",
+      "center": [
+        0.0,
+        8.0,
+        -0.0
+      ],
+      "radius": [
+        3.700000047683716,
+        1.5,
+        2.299999952316284
+      ]
+    },
+    {
+      "region": "neck",
+      "center": [
+        0.0,
+        18.200000762939453,
+        -0.0
+      ],
+      "radius": [
+        2.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "region": "head",
+      "center": [
+        0.0,
+        20.700000762939453,
+        -0.5
+      ],
+      "radius": [
+        2.4000000953674316,
+        2.0999999046325684,
+        2.200000047683716
+      ]
+    },
+    {
+      "region": "left_shoulder",
+      "center": [
+        -6.400000095367432,
+        15.800000190734863,
+        -0.0
+      ],
+      "radius": [
+        2.299999952316284,
+        1.7999999523162842,
+        2.0
+      ]
+    },
+    {
+      "region": "left_upper_arm",
+      "center": [
+        -8.0,
+        13.100000381469727,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        2.0,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "left_forearm",
+      "center": [
+        -9.0,
+        10.5,
+        -0.4000000059604645
+      ],
+      "radius": [
+        2.0,
+        1.899999976158142,
+        1.899999976158142
+      ]
+    },
+    {
+      "region": "left_fist",
+      "center": [
+        -9.0,
+        8.0,
+        -0.800000011920929
+      ],
+      "radius": [
+        2.299999952316284,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "region": "left_thigh",
+      "center": [
+        -2.4000000953674316,
+        5.900000095367432,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        1.7999999523162842,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "left_shin",
+      "center": [
+        -2.4000000953674316,
+        3.4000000953674316,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.7000000476837158
+      ]
+    },
+    {
+      "region": "left_foot",
+      "center": [
+        -2.4000000953674316,
+        1.0,
+        -1.0
+      ],
+      "radius": [
+        2.200000047683716,
+        0.8500000238418579,
+        2.5
+      ]
+    },
+    {
+      "region": "right_shoulder",
+      "center": [
+        6.400000095367432,
+        15.800000190734863,
+        -0.0
+      ],
+      "radius": [
+        2.299999952316284,
+        1.7999999523162842,
+        2.0
+      ]
+    },
+    {
+      "region": "right_upper_arm",
+      "center": [
+        8.0,
+        13.100000381469727,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        2.0,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "right_forearm",
+      "center": [
+        9.0,
+        10.5,
+        -0.4000000059604645
+      ],
+      "radius": [
+        2.0,
+        1.899999976158142,
+        1.899999976158142
+      ]
+    },
+    {
+      "region": "right_fist",
+      "center": [
+        9.0,
+        8.0,
+        -0.800000011920929
+      ],
+      "radius": [
+        2.299999952316284,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "region": "right_thigh",
+      "center": [
+        2.4000000953674316,
+        5.900000095367432,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        1.7999999523162842,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "right_shin",
+      "center": [
+        2.4000000953674316,
+        3.4000000953674316,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.7000000476837158
+      ]
+    },
+    {
+      "region": "right_foot",
+      "center": [
+        2.4000000953674316,
+        1.0,
+        -1.0
+      ],
+      "radius": [
+        2.200000047683716,
+        0.8500000238418579,
+        2.5
+      ]
+    }
+  ],
+  "rig": {
+    "pivot": [
+      0.0,
+      8.0,
+      -0.0
+    ],
+    "shoulder": [
+      6.300000190734863,
+      15.800000190734863,
+      -0.0
+    ],
+    "elbow": [
+      8.5,
+      12.0,
+      -0.20000000298023224
+    ],
+    "hand": [
+      9.0,
+      8.0,
+      -0.800000011920929
+    ],
+    "hip": [
+      2.4000000953674316,
+      8.0,
+      -0.0
+    ],
+    "knee": [
+      2.4000000953674316,
+      4.800000190734863,
+      -0.0
+    ],
+    "foot": [
+      2.4000000953674316,
+      1.0,
+      -1.0
+    ],
+    "idle_hand": [
+      7.300000190734863,
+      11.0,
+      -4.5
+    ],
+    "head": [
+      0.0,
+      20.700000762939453,
+      -2.5999999046325684
+    ],
+    "head_pivot": [
+      0.0,
+      18.200000762939453,
+      -0.0
+    ],
+    "torso": [
+      0.0,
+      15.0,
+      -2.799999952316284
+    ],
+    "guard": [
+      4.0,
+      18.0,
+      -4.0
+    ],
+    "stance_lean": -0.06
+  },
+  "behavior": {
+    "speed": 2.15,
+    "acceleration": 0.85,
+    "turn_rate": 0.44,
+    "turn_acceleration": 0.6,
+    "step_seconds": 1.05,
+    "balance": 1.25,
+    "preferred_range": 9.2,
+    "retreat": 0.12,
+    "circle": 0.12,
+    "pursuit": 1.0,
+    "aggression": 0.85,
+    "evade": 0.18,
+    "reposition_seconds": 3.8,
+    "reposition_interval": 9.0,
+    "charge_weight": 0.0,
+    "charge_distance": 18.0
+  },
+  "attacks": {
+    "crush_hook": {
+      "base": "heavy_hook",
+      "label": "CRUSHING HOOK",
+      "weight": 2.6,
+      "range": 11.3,
+      "force": 24,
+      "radius": 2.6,
+      "trajectory": "hook",
+      "sound_pitch": 0.82
+    },
+    "body_shot": {
+      "base": "left_punch",
+      "label": "BODY SHOT",
+      "weight": 1.1,
+      "range": 10.8,
+      "force": 16,
+      "radius": 1.9,
+      "trajectory": "straight",
+      "sound_pitch": 1.0
+    },
+    "pile_hammer": {
+      "base": "heavy_hook",
+      "label": "PILE HAMMER",
+      "weight": 1.1,
+      "range": 11.0,
+      "force": 26,
+      "radius": 2.55,
+      "trajectory": "overhead",
+      "wind": 1.35,
+      "recover": 1.8,
+      "sound_pitch": 0.82
+    },
+    "shove": {
+      "base": "body_charge",
+      "label": "SHOULDER SHOVE",
+      "weight": 0.8,
+      "range": 9.8,
+      "force": 22,
+      "radius": 2.2,
+      "trajectory": "drive",
+      "sound_pitch": 1.0
+    },
+    "short_kick": {
+      "base": "kick",
+      "label": "GROUND BREAKER",
+      "weight": 0.45,
+      "range": 10.4,
+      "force": 18,
+      "radius": 2.0,
+      "trajectory": "kick",
+      "sound_pitch": 1.0
+    }
+  },
+  "weakpoints": {
+    "shoulder": 0.25,
+    "thigh": 0.21,
+    "shin": 0.16,
+    "foot": 0.17,
+    "neck": 0.17,
+    "head": 0.17,
+    "torso": 0.277
+  },
+  "blender_source": "art/creatures/gorgeblock.blend",
+  "priority_targets": [
+    "left_thigh",
+    "right_thigh",
+    "chest"
+  ],
+  "cells": [
+    {
+      "cell": [
+        0,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -2,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        2,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        15,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        15,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        14,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        16,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -3,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        13,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        13,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        17,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        3,
+        17,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        15,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        15,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -5,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        14,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        14,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        16,
+        -1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        5,
+        16,
+        1
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        13,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        17,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        13,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        13,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        17,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        17,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -6,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        6,
+        15,
+        0
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        13,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        13,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        17,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -1,
+        17,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        13,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        13,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        17,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        1,
+        17,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        14,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        16,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        -4,
+        16,
+        2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        4,
+        14,
+        -2
+      ],
+      "region": "chest"
+    },
+    {
+      "cell": [
+        0,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        12,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        12,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        12,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        12,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        12,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        12,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        10,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        10,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        10,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        12,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        12,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        12,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        12,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        10,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        10,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        11,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        11,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -3,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        3,
+        11,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        10,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        10,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        10,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        10,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        12,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        12,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -3,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        3,
+        12,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -2,
+        10,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        2,
+        10,
+        0
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        11,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        11,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        11,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        11,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        12,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -1,
+        12,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        12,
+        -2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        1,
+        12,
+        2
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -3,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        -3,
+        11,
+        1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        3,
+        11,
+        -1
+      ],
+      "region": "abdomen"
+    },
+    {
+      "cell": [
+        0,
+        9,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        7,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        7,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        9,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        7,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        9,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        7,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        7,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        9,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        9,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -3,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        3,
+        8,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        7,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        7,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        9,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        9,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        7,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        7,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        9,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        9,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        7,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        9,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        7,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        9,
+        0
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        8,
+        -2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        8,
+        2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        8,
+        -2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -1,
+        8,
+        2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        8,
+        -2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        1,
+        8,
+        2
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -3,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -3,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        3,
+        8,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        3,
+        8,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        7,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        7,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        9,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        -2,
+        9,
+        1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        2,
+        7,
+        -1
+      ],
+      "region": "pelvis"
+    },
+    {
+      "cell": [
+        0,
+        18,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        18,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        18,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        18,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        18,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        18,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        18,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        18,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        18,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        19,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        19,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        19,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        19,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        19,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -2,
+        18,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        18,
+        -2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        18,
+        2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        2,
+        18,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        19,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        19,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        19,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        19,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -2,
+        18,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -2,
+        18,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        18,
+        -2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -1,
+        18,
+        2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        18,
+        -2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        1,
+        18,
+        2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        2,
+        18,
+        -1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        2,
+        18,
+        1
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        -2,
+        19,
+        0
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        19,
+        -2
+      ],
+      "region": "neck"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        22,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        22,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        22,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        22,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        22,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        22,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        22,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        22,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        22,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        22,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        22,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        22,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        21,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        21,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        21,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        21,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        23,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        23,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        20,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        20,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        20,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        20,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        19,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        19,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        21,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        19,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        19,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        19,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        20,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        23,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        23,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        23,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        23,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        21,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        21,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        22,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        22,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        22,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        2,
+        22,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -1,
+        20,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        1,
+        20,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -3,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -3,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        3,
+        21,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        3,
+        21,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        23,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        23,
+        1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        -3
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        0,
+        22,
+        2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -3,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -3,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        3,
+        20,
+        -1
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        3,
+        20,
+        0
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -2,
+        19,
+        -2
+      ],
+      "region": "head"
+    },
+    {
+      "cell": [
+        -6,
+        16,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        16,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        15,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        16,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        16,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        16,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        16,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        17,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        15,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        15,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        16,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        17,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        15,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        15,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        15,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        17,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        17,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        16,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        16,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        17,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        17,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -5,
+        17,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        17,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        15,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        15,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        16,
+        -2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        16,
+        2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -5,
+        17,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -5,
+        17,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        14,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        14,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        16,
+        -2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        16,
+        2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        17,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        17,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        15,
+        -2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        15,
+        2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        15,
+        -2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        15,
+        2
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        14,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -6,
+        14,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -9,
+        16,
+        0
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        14,
+        -1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -7,
+        14,
+        1
+      ],
+      "region": "left_shoulder"
+    },
+    {
+      "cell": [
+        -8,
+        14,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        13,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        12,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        13,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        13,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        13,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        13,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        14,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        14,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        14,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        12,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        12,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        12,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        12,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        13,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        13,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        13,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        13,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        14,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        14,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        12,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        12,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        12,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        12,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        11,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        15,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -10,
+        13,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        13,
+        -2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        13,
+        2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -6,
+        13,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        11,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        11,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        11,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -7,
+        11,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -10,
+        14,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        14,
+        -2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        14,
+        2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        15,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        15,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -10,
+        12,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        12,
+        -2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -8,
+        12,
+        2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -6,
+        12,
+        0
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -10,
+        13,
+        -1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -10,
+        13,
+        1
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        13,
+        -2
+      ],
+      "region": "left_upper_arm"
+    },
+    {
+      "cell": [
+        -9,
+        10,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        10,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        11,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        10,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        11,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        10,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        10,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        11,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        10,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        10,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        11,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        9,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        9,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        10,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        11,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        10,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        11,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        10,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        9,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        9,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        9,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        12,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        9,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        10,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        11,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        10,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        11,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        10,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        11,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -7,
+        10,
+        0
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        9,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        10,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        11,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -7,
+        10,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -7,
+        11,
+        -1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        9,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        12,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        9,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        12,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        9,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        9,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -10,
+        12,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -8,
+        9,
+        -2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        10,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -11,
+        11,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -7,
+        10,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -7,
+        11,
+        1
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        10,
+        2
+      ],
+      "region": "left_forearm"
+    },
+    {
+      "cell": [
+        -9,
+        8,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        8,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        8,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        8,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        8,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        8,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        8,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        7,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        8,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        8,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        7,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        7,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        7,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        8,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        8,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        7,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        7,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        7,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        8,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        8,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        8,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        7,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        7,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        8,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        8,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        8,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        8,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        8,
+        -3
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        7,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        9,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        7,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        9,
+        -1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -9,
+        7,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        7,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        9,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        7,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        9,
+        0
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        8,
+        -3
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        8,
+        -3
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -10,
+        7,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -8,
+        7,
+        1
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        7,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -11,
+        9,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -7,
+        7,
+        -2
+      ],
+      "region": "left_fist"
+    },
+    {
+      "cell": [
+        -2,
+        6,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        6,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        5,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        5,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        6,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        6,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        6,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        6,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        7,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        5,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        5,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        6,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        5,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        5,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        6,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        7,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        7,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        5,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        6,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        6,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        5,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        6,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        6,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        7,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        5,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -1,
+        5,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        4,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        4,
+        0
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        6,
+        -2
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        6,
+        2
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        5,
+        -1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -4,
+        5,
+        1
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        6,
+        -2
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -3,
+        6,
+        2
+      ],
+      "region": "left_thigh"
+    },
+    {
+      "cell": [
+        -2,
+        3,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        3,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        3,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        3,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        3,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        3,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        4,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        4,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        4,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        4,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        2,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        3,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        2,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        4,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -4,
+        3,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        2,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        2,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        3,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        3,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -4,
+        4,
+        0
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        2,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        2,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        4,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -1,
+        4,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        3,
+        -2
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        3,
+        2
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -4,
+        3,
+        -1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -4,
+        3,
+        1
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        3,
+        -2
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -3,
+        3,
+        2
+      ],
+      "region": "left_shin"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        -2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        0
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        -2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        0
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -1,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -4,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -1,
+        1,
+        -2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -1,
+        1,
+        0
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        -3
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -4,
+        1,
+        -2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -4,
+        1,
+        0
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        -3
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -1,
+        1,
+        -3
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -1,
+        1,
+        1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -4,
+        1,
+        -3
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -4,
+        1,
+        1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        0,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        0,
+        1,
+        -2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        0,
+        1,
+        0
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -5,
+        1,
+        -1
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        -4
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -2,
+        1,
+        2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        -4
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        -3,
+        1,
+        2
+      ],
+      "region": "left_foot"
+    },
+    {
+      "cell": [
+        6,
+        16,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        16,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        15,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        16,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        16,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        16,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        16,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        17,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        15,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        15,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        16,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        17,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        15,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        15,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        15,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        17,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        17,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        16,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        16,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        17,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        17,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        5,
+        17,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        17,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        15,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        15,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        16,
+        -2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        16,
+        2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        5,
+        17,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        5,
+        17,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        14,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        14,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        16,
+        -2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        16,
+        2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        17,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        17,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        15,
+        -2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        15,
+        2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        15,
+        -2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        15,
+        2
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        14,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        6,
+        14,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        9,
+        16,
+        0
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        14,
+        -1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        7,
+        14,
+        1
+      ],
+      "region": "right_shoulder"
+    },
+    {
+      "cell": [
+        8,
+        14,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        13,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        12,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        13,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        13,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        13,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        13,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        14,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        14,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        14,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        12,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        12,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        12,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        12,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        13,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        13,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        13,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        13,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        14,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        14,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        12,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        12,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        12,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        12,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        11,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        15,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        6,
+        13,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        13,
+        -2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        13,
+        2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        10,
+        13,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        11,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        11,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        11,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        11,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        14,
+        -2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        14,
+        2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        10,
+        14,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        15,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        15,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        6,
+        12,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        12,
+        -2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        8,
+        12,
+        2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        10,
+        12,
+        0
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        6,
+        13,
+        -1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        6,
+        13,
+        1
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        7,
+        13,
+        -2
+      ],
+      "region": "right_upper_arm"
+    },
+    {
+      "cell": [
+        9,
+        10,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        10,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        11,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        10,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        10,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        11,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        10,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        10,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        11,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        10,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        11,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        9,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        9,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        10,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        11,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        10,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        10,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        11,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        9,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        9,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        9,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        9,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        12,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        10,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        11,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        10,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        11,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        7,
+        10,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        10,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        11,
+        0
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        9,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        7,
+        10,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        7,
+        11,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        10,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        11,
+        -1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        9,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        12,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        9,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        9,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        12,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        8,
+        9,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        9,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        10,
+        12,
+        -2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        7,
+        10,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        7,
+        11,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        10,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        11,
+        11,
+        1
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        10,
+        2
+      ],
+      "region": "right_forearm"
+    },
+    {
+      "cell": [
+        9,
+        8,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        8,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        8,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        8,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        8,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        8,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        8,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        7,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        8,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        8,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        7,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        7,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        7,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        8,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        8,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        7,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        7,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        7,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        8,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        8,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        8,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        7,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        7,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        8,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        8,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        8,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        8,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        8,
+        -3
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        7,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        9,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        7,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        9,
+        -1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        9,
+        7,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        7,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        9,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        7,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        9,
+        0
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        8,
+        -3
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        8,
+        -3
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        8,
+        7,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        10,
+        7,
+        1
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        7,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        7,
+        9,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        11,
+        7,
+        -2
+      ],
+      "region": "right_fist"
+    },
+    {
+      "cell": [
+        2,
+        6,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        6,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        5,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        6,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        6,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        5,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        6,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        6,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        7,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        5,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        5,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        6,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        5,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        5,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        7,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        7,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        7,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        6,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        5,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        6,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        6,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        5,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        6,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        6,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        7,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        5,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        1,
+        5,
+        1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        4,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        4,
+        0
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        6,
+        -2
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        6,
+        2
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        6,
+        -2
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        3,
+        6,
+        2
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        4,
+        5,
+        -1
+      ],
+      "region": "right_thigh"
+    },
+    {
+      "cell": [
+        2,
+        3,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        3,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        3,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        3,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        4,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        4,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        3,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        3,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        4,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        4,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        3,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        2,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        4,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        2,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        4,
+        3,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        3,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        3,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        2,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        2,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        4,
+        4,
+        0
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        4,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        1,
+        4,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        2,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        3,
+        2,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        3,
+        -2
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        3,
+        2
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        4,
+        3,
+        -1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        4,
+        3,
+        1
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        4,
+        -2
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        4,
+        2
+      ],
+      "region": "right_shin"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        -1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        -1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        -2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        0
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        -2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        0
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        1,
+        1,
+        -1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        4,
+        1,
+        -1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        1,
+        1,
+        -2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        1,
+        1,
+        0
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        -3
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        4,
+        1,
+        -2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        4,
+        1,
+        0
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        -3
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        1,
+        1,
+        -3
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        1,
+        1,
+        1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        4,
+        1,
+        -3
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        4,
+        1,
+        1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        5,
+        1,
+        -1
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        -4
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        1,
+        2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        -4
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        3,
+        1,
+        2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        5,
+        1,
+        -2
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        5,
+        1,
+        0
+      ],
+      "region": "right_foot"
+    },
+    {
+      "cell": [
+        2,
+        2,
+        -2
+      ],
+      "region": "right_foot"
+    }
+  ],
+  "bounds": {
+    "min": [
+      -11,
+      1,
+      -4
+    ],
+    "max": [
+      11,
+      23,
+      2
+    ]
+  },
+  "geometry_sha256": "3475381ac7be177f09d2379d4db08a897313c841b90726166ddacdfdcd405da8"
+}

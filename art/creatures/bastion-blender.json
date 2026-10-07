@@ -1,0 +1,435 @@
+{
+  "id": "bastion",
+  "name": "BASTION",
+  "kind": "headbutter",
+  "palette": "7a8050",
+  "allocation": {
+    "head": 248,
+    "neck": 64,
+    "chest": 204,
+    "abdomen": 64,
+    "pelvis": 56,
+    "left_shoulder": 24,
+    "left_upper_arm": 16,
+    "left_forearm": 18,
+    "left_fist": 12,
+    "left_thigh": 48,
+    "left_shin": 40,
+    "left_foot": 24,
+    "right_shoulder": 24,
+    "right_upper_arm": 16,
+    "right_forearm": 18,
+    "right_fist": 12,
+    "right_thigh": 48,
+    "right_shin": 40,
+    "right_foot": 24
+  },
+  "volumes": [
+    {
+      "region": "chest",
+      "center": [
+        0.0,
+        14.699999809265137,
+        -0.0
+      ],
+      "radius": [
+        5.0,
+        2.700000047683716,
+        3.299999952316284
+      ]
+    },
+    {
+      "region": "abdomen",
+      "center": [
+        0.0,
+        10.899999618530273,
+        -0.0
+      ],
+      "radius": [
+        3.0,
+        2.0,
+        2.4000000953674316
+      ]
+    },
+    {
+      "region": "pelvis",
+      "center": [
+        0.0,
+        8.0,
+        -0.0
+      ],
+      "radius": [
+        3.299999952316284,
+        1.7999999523162842,
+        2.200000047683716
+      ]
+    },
+    {
+      "region": "neck",
+      "center": [
+        0.0,
+        18.0,
+        -0.5
+      ],
+      "radius": [
+        3.200000047683716,
+        1.5,
+        2.700000047683716
+      ]
+    },
+    {
+      "region": "head",
+      "center": [
+        0.0,
+        22.0,
+        -2.5
+      ],
+      "radius": [
+        4.800000190734863,
+        3.5,
+        4.400000095367432
+      ]
+    },
+    {
+      "region": "left_shoulder",
+      "center": [
+        -5.699999809265137,
+        15.199999809265137,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    {
+      "region": "left_upper_arm",
+      "center": [
+        -6.300000190734863,
+        13.399999618530273,
+        -0.0
+      ],
+      "radius": [
+        1.0,
+        1.399999976158142,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "left_forearm",
+      "center": [
+        -6.400000095367432,
+        11.600000381469727,
+        -0.30000001192092896
+      ],
+      "radius": [
+        1.100000023841858,
+        1.2999999523162842,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "left_fist",
+      "center": [
+        -6.400000095367432,
+        10.0,
+        -0.800000011920929
+      ],
+      "radius": [
+        1.2000000476837158,
+        0.800000011920929,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "left_thigh",
+      "center": [
+        -2.700000047683716,
+        5.900000095367432,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        2.0,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "left_shin",
+      "center": [
+        -2.700000047683716,
+        3.5,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.600000023841858,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "left_foot",
+      "center": [
+        -2.700000047683716,
+        1.0,
+        -1.0
+      ],
+      "radius": [
+        2.0,
+        0.8500000238418579,
+        2.299999952316284
+      ]
+    },
+    {
+      "region": "right_shoulder",
+      "center": [
+        5.699999809265137,
+        15.199999809265137,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    },
+    {
+      "region": "right_upper_arm",
+      "center": [
+        6.300000190734863,
+        13.399999618530273,
+        -0.0
+      ],
+      "radius": [
+        1.0,
+        1.399999976158142,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "right_forearm",
+      "center": [
+        6.400000095367432,
+        11.600000381469727,
+        -0.30000001192092896
+      ],
+      "radius": [
+        1.100000023841858,
+        1.2999999523162842,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "right_fist",
+      "center": [
+        6.400000095367432,
+        10.0,
+        -0.800000011920929
+      ],
+      "radius": [
+        1.2000000476837158,
+        0.800000011920929,
+        1.2000000476837158
+      ]
+    },
+    {
+      "region": "right_thigh",
+      "center": [
+        2.700000047683716,
+        5.900000095367432,
+        -0.0
+      ],
+      "radius": [
+        1.7999999523162842,
+        2.0,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "right_shin",
+      "center": [
+        2.700000047683716,
+        3.5,
+        -0.0
+      ],
+      "radius": [
+        1.5,
+        1.600000023841858,
+        1.7999999523162842
+      ]
+    },
+    {
+      "region": "right_foot",
+      "center": [
+        2.700000047683716,
+        1.0,
+        -1.0
+      ],
+      "radius": [
+        2.0,
+        0.8500000238418579,
+        2.299999952316284
+      ]
+    }
+  ],
+  "rig": {
+    "pivot": [
+      0.0,
+      8.0,
+      -0.0
+    ],
+    "shoulder": [
+      5.699999809265137,
+      15.199999809265137,
+      -0.0
+    ],
+    "elbow": [
+      6.400000095367432,
+      12.699999809265137,
+      -0.0
+    ],
+    "hand": [
+      6.400000095367432,
+      10.0,
+      -0.800000011920929
+    ],
+    "hip": [
+      2.700000047683716,
+      8.0,
+      -0.0
+    ],
+    "knee": [
+      2.700000047683716,
+      4.800000190734863,
+      -0.0
+    ],
+    "foot": [
+      2.700000047683716,
+      1.0,
+      -1.0
+    ],
+    "idle_hand": [
+      5.800000190734863,
+      12.0,
+      -3.700000047683716
+    ],
+    "head": [
+      0.0,
+      21.200000762939453,
+      -5.900000095367432
+    ],
+    "head_pivot": [
+      0.0,
+      18.0,
+      -0.5
+    ],
+    "torso": [
+      0.0,
+      14.699999809265137,
+      -3.0
+    ],
+    "guard": [
+      4.800000190734863,
+      18.0,
+      -4.0
+    ],
+    "stance_lean": -0.08
+  },
+  "behavior": {
+    "speed": 2.1,
+    "acceleration": 0.8,
+    "turn_rate": 0.44,
+    "turn_acceleration": 0.6,
+    "step_seconds": 1.05,
+    "balance": 1.4,
+    "preferred_range": 9.7,
+    "retreat": 0.6,
+    "circle": 0.2,
+    "pursuit": 1.0,
+    "aggression": 0.85,
+    "evade": 0.18,
+    "reposition_seconds": 3.8,
+    "reposition_interval": 8.0,
+    "charge_weight": 1.0,
+    "charge_distance": 19.0
+  },
+  "attacks": {
+    "ram_charge": {
+      "base": "headbutt",
+      "label": "BASTION RAM",
+      "weight": 2.4,
+      "range": 21,
+      "force": 28,
+      "radius": 2.7,
+      "trajectory": "charge",
+      "wind": 1.25,
+      "commit": 1.6,
+      "follow": 0.35,
+      "recover": 2.0,
+      "min_range": 13,
+      "charge_speed": 6.0,
+      "collider": 2.2,
+      "sound_pitch": 0.76
+    },
+    "skull_crash": {
+      "base": "headbutt",
+      "label": "SKULL CRASH",
+      "weight": 2.2,
+      "range": 10.5,
+      "force": 23,
+      "radius": 1.8,
+      "trajectory": "head",
+      "recover": 1.55,
+      "sound_pitch": 0.76
+    },
+    "shoulder_check": {
+      "base": "body_charge",
+      "label": "SHOULDER CHECK",
+      "weight": 1.6,
+      "range": 10.8,
+      "force": 25,
+      "radius": 2.1,
+      "trajectory": "drive",
+      "sound_pitch": 1.0
+    },
+    "stub_hook": {
+      "base": "heavy_hook",
+      "label": "SHORT ANCHOR HOOK",
+      "weight": 0.6,
+      "range": 10.5,
+      "force": 15,
+      "radius": 1.85,
+      "trajectory": "hook",
+      "sound_pitch": 1.0
+    },
+    "push_kick": {
+      "base": "kick",
+      "label": "BRACING KICK",
+      "weight": 0.5,
+      "range": 10.8,
+      "force": 17,
+      "radius": 2,
+      "trajectory": "kick",
+      "sound_pitch": 1.0
+    }
+  },
+  "weakpoints": {
+    "shoulder": 0.25,
+    "thigh": 0.21,
+    "shin": 0.16,
+    "foot": 0.17,
+    "neck": 0.17,
+    "head": 0.17,
+    "torso": 0.277
+  },
+  "blender_source": "art/creatures/bastion.blend",
+  "revision": 2,
+  "revision_note": "Bastion: extend skull prow forward after observing ram contacts in Godot; arms remain secondary.",
+  "priority_targets": [
+    "head",
+    "neck",
+    "chest"
+  ],
+  "balance_note": "Short skull/shoulder contacts use smaller local fracture radii than the arena-space ram. Initial matrix overwhelmed the small-headed brute."
+}

@@ -1,0 +1,124 @@
+{
+	"arguments": [
+		"--scene",
+		"res://scenes/battle.tscn"
+	],
+	"debug_build": true,
+	"executable": "D:/Godot/Godot.exe",
+	"snapshot": {
+		"active_debris": 8,
+		"ai_ms": 0.202,
+		"audio_events": 74,
+		"audio_ms": 0.039,
+		"collision_bodies": 193,
+		"coverage": 0.829491198876556,
+		"debris_script_ms": 0.094,
+		"director": true,
+		"director_ms": 0.059,
+		"finished": false,
+		"fps": 60.0,
+		"frame_ms": 15.555,
+		"gpu_ms": 1.99600005149841,
+		"impact_tiers": [
+			6,
+			3,
+			0
+		],
+		"midpoint_path": 23.0506520764429,
+		"midpoint_span": [
+			2.16369295120239,
+			16.5514600276947
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.089,
+				"archetype": "needlemantle",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 7,
+				"cubes": 912,
+				"defeated": false,
+				"hits": 6,
+				"legs": [
+					"DAMAGED",
+					"DAMAGED"
+				],
+				"motor_ms": 0.063,
+				"movement": {
+					"distance": 44.6378580013879,
+					"lateral_distance": 0.0,
+					"max_displacement": 19.6677913665771,
+					"pursuit_distance": 6.00736705772579,
+					"retreat_distance": 15.8804671969265,
+					"stationary_seconds": 3.41666666666666,
+					"zones": [
+						"INDUSTRIAL AVENUE",
+						"CENTRAL INTERSECTION"
+					]
+				},
+				"name": "NEEDLEMANTLE",
+				"position": [
+					-1.74636888504028,
+					-0.615625023841858,
+					-24.9497661590576
+				],
+				"reason": "",
+				"speed": 0.69375,
+				"state": "GIVE GROUND",
+				"structure_ms": 1.053
+			},
+			{
+				"animation_ms": 0.07,
+				"archetype": "bastion",
+				"arms": [
+					false,
+					false
+				],
+				"commands": 4,
+				"cubes": 958,
+				"defeated": false,
+				"hits": 3,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.082,
+				"movement": {
+					"distance": 52.5431310779531,
+					"lateral_distance": 8.71496200561523,
+					"max_displacement": 35.6644706726074,
+					"pursuit_distance": 9.0732421875,
+					"retreat_distance": 6.68109149049269,
+					"stationary_seconds": 3.76666666666666,
+					"zones": [
+						"CIVIC PLAZA",
+						"CENTRAL INTERSECTION"
+					]
+				},
+				"name": "BASTION",
+				"position": [
+					-2.3834855556488,
+					-0.600000023841858,
+					-7.2477593421936
+				],
+				"reason": "",
+				"speed": 1.0,
+				"state": "BASTION RAM · COMMIT",
+				"structure_ms": 1.07
+			}
+		],
+		"music": "early",
+		"physics_ms": 3.598,
+		"render_cpu_ms": 0.462999999523163,
+		"rubble": 122,
+		"seed": 1203,
+		"shot": "TWO_SHOT",
+		"sweep_ms": 2.002,
+		"time": 35.4,
+		"vfx_events": 54,
+		"vfx_ms": 0.016,
+		"winner": ""
+	}
+}

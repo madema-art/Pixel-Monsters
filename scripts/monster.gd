@@ -24,6 +24,17 @@ var pose_transforms := {}
 var pose_index_ready := false
 var region_centers := {}
 var support_height := 10.0
+var generation_ms := 0.0
+var archetype := {}
+const Archetypes = preload("res://scripts/combat/archetypes.gd")
+
+func rig_point(key: String, fallback: Vector3, side: String="") -> Vector3:
+	if archetype.is_empty(): return fallback
+	var p: Array=archetype.rig[key]
+	return Vector3((-absf(p[0]) if side=="left" else absf(p[0])) if side!="" else p[0],p[1],p[2])
+
+func behavior(key: String, fallback: float) -> float:
+	return float(archetype.behavior.get(key,fallback)) if not archetype.is_empty() else fallback
 
 func initialize(color: Color, debris_manager: Node3D) -> void:
 	tint = color
@@ -32,6 +43,7 @@ func initialize(color: Color, debris_manager: Node3D) -> void:
 	reset_body()
 
 func reset_body() -> void:
+	var generated := Time.get_ticks_usec()
 	for child in get_children(): child.queue_free()
 	renders.clear()
 	render_ids.clear()
@@ -39,7 +51,7 @@ func reset_body() -> void:
 	region_centers.clear()
 	pose_index_ready=false
 	grid.clear()
-	cubes = BodyLayout.generate()
+	cubes = BodyLayout.generate() if archetype.is_empty() else Archetypes.body_cells(archetype)
 	var material := StandardMaterial3D.new()
 	material.vertex_color_use_as_albedo = true
 	material.roughness = 0.58
@@ -53,11 +65,11 @@ func reset_body() -> void:
 		c.pose = c.position
 		c.pose_basis=Basis.IDENTITY
 		c.color = tint.lightened(float(posmod(i*47,17))/80.0).darkened(float(posmod(i*31,11))/55.0)
-		if c.region == "head" and c.cell.y == 26 and c.cell.z <= -1 and absi(c.cell.x)==1:
+		if c.region == "head" and c.cell.y == (26 if archetype.is_empty() else roundi(archetype.rig.head[1])+1) and c.cell.z <= -1 and absi(c.cell.x)==1:
 			c.color = Color("fff0b1")
-		elif c.region=="head" and c.cell.y>=27:
+		elif c.region=="head" and c.cell.y>=(27 if archetype.is_empty() else roundi(archetype.rig.head[1])+2):
 			c.color=tint.darkened(.30)
-		elif c.region=="head" and c.cell.y<=24 and c.cell.z<0:
+		elif c.region=="head" and c.cell.y<=(24 if archetype.is_empty() else roundi(archetype.rig.head[1])-1) and c.cell.z<0:
 			c.color=tint.lightened(.24)
 		elif c.region in ["abdomen","pelvis"]:
 			c.color=c.color.darkened(.13)
@@ -74,6 +86,8 @@ func reset_body() -> void:
 			instance.multimesh.mesh = mesh
 			add_child(instance)
 			renders[render_key] = instance
+	structure.proportional=not archetype.is_empty()
+	structure.weakpoints={} if archetype.is_empty() else archetype.weakpoints
 	structure.build(cubes)
 	rebuild()
 	reaction = 0
@@ -82,6 +96,7 @@ func reset_body() -> void:
 	structure_ms=0
 	last_direct_ids.clear()
 	last_detached=0
+	generation_ms=(Time.get_ticks_usec()-generated)/1000.0
 	position = home
 
 func rebuild() -> void:

@@ -1,5 +1,6 @@
 extends RefCounted
 
+var follow_center := Vector3.ZERO
 var shot := "ESTABLISHING"
 var age := 0.0
 var cuts := 0
@@ -73,6 +74,10 @@ func choose(camera: Camera3D) -> void:
 		center.y=0
 		aim=center+Vector3.UP*maxf(5,survivor.region_target("head").y*0.48)
 		specs=[["AFTERMATH",Vector3(11,5,35),48.0],["AFTERMATH_WIDE",Vector3(-10,13,47),48.0]]
+	if not battle.monsters[0].archetype.is_empty():
+		var axis: Vector3=battle.monsters[1].position-battle.monsters[0].position
+		var orientation := atan2(axis.z,axis.x)
+		for spec in specs: spec[1]=spec[1].rotated(Vector3.UP,orientation)
 	var selected: Array=[]
 	var best := -1000.0
 	for i in specs.size():
@@ -96,8 +101,9 @@ func choose(camera: Camera3D) -> void:
 		if preference>best:
 			best=preference
 			selected=[spec[0],at,aim,spec[2]]
-	if selected.is_empty(): selected=["SAFE_WIDE",Vector3(0,36,76),aim,54.0]
+	if selected.is_empty(): selected=["SAFE_WIDE",center+Vector3(0,36,76),aim,54.0]
 	shot=selected[0]
+	follow_center=center
 	position_goal=selected[1]
 	look_goal=selected[2]
 	lens=selected[3]
@@ -126,6 +132,17 @@ func update(dt: float, camera: Camera3D) -> void:
 	if battle.finished:
 		var survivor= battle.monsters[0] if not battle.monsters[0].defeated else battle.monsters[1]
 		center=survivor.region_target("chest")
+	if not battle.monsters[0].archetype.is_empty():
+		var current_middle: Vector3=(battle.monsters[0].position+battle.monsters[1].position)*.5
+		current_middle.y=0
+		if battle.finished:
+			current_middle=battle.monsters[0].position if not battle.monsters[0].defeated else battle.monsters[1].position
+			current_middle.y=0
+		var shift := current_middle-follow_center
+		position_goal+=shift
+		look_goal+=shift
+		follow_center=current_middle
+		if age>2 and (coverage(position_goal,look_goal,lens)>1.05 or blocked(position_goal,center)): choose(camera)
 	var aim := look_goal.lerp(center,0.15)
 	var drift := Vector3(sin(age*0.10)*0.8,0,0)
 	var frame := coverage(position_goal+drift,aim,lens)

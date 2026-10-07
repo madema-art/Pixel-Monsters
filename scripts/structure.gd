@@ -1,6 +1,8 @@
 class_name MonsterStructure
 extends RefCounted
 
+var weakpoints := {}
+var proportional := false
 var joint_ids := {}
 var intact_counts := {}
 var disabled := {"left_arm":false,"right_arm":false}
@@ -30,7 +32,8 @@ func material(region: String) -> int:
 
 func leg_quality(side: String) -> float:
 	if disabled.get(side+"_leg",false): return 0
-	return minf(material(side+"_leg")/120.0,minf(material(side+"_shin")/44.0,material(side+"_thigh")/52.0))
+	var total: float=intact_counts[side+"_thigh"]+intact_counts[side+"_shin"]+intact_counts[side+"_foot"]
+	return minf(material(side+"_leg")/total,minf(material(side+"_shin")/float(intact_counts[side+"_shin"]),material(side+"_thigh")/float(intact_counts[side+"_thigh"])))
 
 func leg_state(side: String) -> String:
 	var quality := leg_quality(side)
@@ -39,11 +42,19 @@ func leg_state(side: String) -> String:
 	if quality<0.8: return "DAMAGED"
 	return "HEALTHY"
 
+func threshold(region: String, fraction: float, legacy: int) -> int:
+	if not proportional: return legacy
+	var part := region.trim_prefix("left_").trim_prefix("right_")
+	fraction=float(weakpoints.get(part,fraction))
+	var total: int=intact_counts.get(region,0)
+	if region=="torso": total=intact_counts.chest+intact_counts.abdomen+intact_counts.pelvis
+	return maxi(1,int(total*fraction))
+
 func fatal_reason() -> String:
-	if material("neck")<=4: return "NECK CONNECTION FAILED"
-	if material("head")<=20: return "HEAD DESTROYED"
-	if material("torso")<=104: return "TORSO STRUCTURE FAILED"
-	if material("pelvis")<=10 and material("abdomen")<=18: return "CORE SUPPORT FAILED"
+	if material("neck")<=threshold("neck",.17,4): return "NECK CONNECTION FAILED"
+	if material("head")<=threshold("head",.17,20): return "HEAD DESTROYED"
+	if material("torso")<=threshold("torso",.277,104): return "TORSO STRUCTURE FAILED"
+	if material("pelvis")<=threshold("pelvis",.12,10) and material("abdomen")<=threshold("abdomen",.20,18): return "CORE SUPPORT FAILED"
 	return ""
 
 func remaining(cubes: Array[Dictionary], region: String) -> int:
@@ -63,13 +74,13 @@ func failures(cubes: Array[Dictionary]) -> Array[String]:
 		for id in joint_ids[shoulder]:
 			if cubes[id].alive: count += 1
 		# Regional load-bearing approximation; no hidden health damage.
-		if count <= 8:
+		if count <= threshold(shoulder,.25,8):
 			disabled[arm] = true
 			lost.append(arm)
 	for side in ["left","right"]:
 		var leg: String=side+"_leg"
 		if disabled[leg]: continue
-		if material(side+"_thigh")<=11 or material(side+"_shin")<=7 or material(side+"_foot")<=4:
+		if material(side+"_thigh")<=11 or material(side+"_shin")<=7 or material(side+"_foot")<=threshold("neck",.17,4):
 			disabled[leg]=true
 			lost.append(leg)
 	return lost

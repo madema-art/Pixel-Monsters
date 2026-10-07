@@ -43,26 +43,32 @@
 				"hits": 14,
 				"snapshot": {
 					"active_debris": 192,
-					"ai_ms": 0.018,
+					"ai_ms": 0.017,
 					"audio_events": 126,
-					"audio_ms": 0.268,
+					"audio_ms": 0.745,
 					"collision_bodies": 193,
 					"coverage": 0.586731384605635,
-					"debris_script_ms": 1.717,
+					"debris_script_ms": 1.362,
 					"director": true,
-					"director_ms": 0.024,
+					"director_ms": 0.023,
 					"finished": false,
-					"fps": 10.0,
-					"frame_ms": 88.55,
+					"fps": 13.0,
+					"frame_ms": 97.237,
 					"gpu_ms": 0.0,
 					"impact_tiers": [
 						22,
 						5,
 						2
 					],
+					"midpoint_path": 17.2994101091208,
+					"midpoint_span": [
+						4.93400204181671,
+						0.146518014371395
+					],
 					"monsters": [
 						{
-							"animation_ms": 0.047,
+							"animation_ms": 0.061,
+							"archetype": "legacy",
 							"arms": [
 								true,
 								true
@@ -70,20 +76,38 @@
 							"commands": 17,
 							"cubes": 380,
 							"defeated": false,
+							"generation_ms": 108.431,
 							"hits": 14,
 							"legs": [
 								"LOST",
 								"DAMAGED"
 							],
-							"motor_ms": 0.013,
+							"motor_ms": 0.017,
+							"movement": {
+								"distance": 35.5243785926359,
+								"lateral_distance": 0.0,
+								"max_displacement": 20.0250110626221,
+								"pursuit_distance": 0.0,
+								"retreat_distance": 0.0,
+								"stationary_seconds": 47.6333333333332,
+								"zones": [
+									"CENTRAL INTERSECTION"
+								]
+							},
 							"name": "TITAN",
+							"position": [
+								-0.603057503700256,
+								-3.5,
+								0.196891993284225
+							],
 							"reason": "",
 							"speed": 0.246153846153846,
 							"state": "STAGGERED",
-							"structure_ms": 0.528
+							"structure_ms": 0.476
 						},
 						{
-							"animation_ms": 0.045,
+							"animation_ms": 0.05,
+							"archetype": "legacy",
 							"arms": [
 								false,
 								false
@@ -91,21 +115,39 @@
 							"commands": 17,
 							"cubes": 746,
 							"defeated": false,
+							"generation_ms": 108.854,
 							"hits": 15,
 							"legs": [
 								"DAMAGED",
 								"LOST"
 							],
-							"motor_ms": 0.017,
+							"motor_ms": 0.024,
+							"movement": {
+								"distance": 29.9482186669302,
+								"lateral_distance": 0.0,
+								"max_displacement": 16.3775043487549,
+								"pursuit_distance": 0.0,
+								"retreat_distance": 0.0,
+								"stationary_seconds": 56.1999999999994,
+								"zones": [
+									"CENTRAL INTERSECTION"
+								]
+							},
 							"name": "COLOSSUS",
+							"position": [
+								7.90962409973145,
+								-3.5,
+								0.00535161327570677
+							],
 							"reason": "",
 							"speed": 0.232727272727273,
 							"state": "HEADBUTT · RECOVER",
-							"structure_ms": 0.862
+							"structure_ms": 0.904
 						}
 					],
 					"music": "desperate",
-					"physics_ms": 1.966,
+					"navigation_ms": 0.0,
+					"physics_ms": 1.62,
 					"render_cpu_ms": 0.0,
 					"rubble": 682,
 					"seed": 8801,
@@ -113,7 +155,7 @@
 					"sweep_ms": 0.002,
 					"time": 82.0,
 					"vfx_events": 63,
-					"vfx_ms": 0.014,
+					"vfx_ms": 0.011,
 					"winner": ""
 				}
 			},
@@ -145,26 +187,32 @@
 				"hits": 12,
 				"snapshot": {
 					"active_debris": 192,
-					"ai_ms": 0.017,
+					"ai_ms": 0.016,
 					"audio_events": 101,
-					"audio_ms": 0.228,
+					"audio_ms": 0.227,
 					"collision_bodies": 193,
-					"coverage": 0.510732136715455,
-					"debris_script_ms": 1.813,
+					"coverage": 0.510732071614577,
+					"debris_script_ms": 1.533,
 					"director": true,
-					"director_ms": 0.021,
+					"director_ms": 0.023,
 					"finished": true,
-					"fps": 10.0,
-					"frame_ms": 68.159,
+					"fps": 16.0,
+					"frame_ms": 72.55,
 					"gpu_ms": 0.0,
 					"impact_tiers": [
 						13,
 						11,
 						0
 					],
+					"midpoint_path": 27.5711638955618,
+					"midpoint_span": [
+						12.5648307800293,
+						0.303544640541077
+					],
 					"monsters": [
 						{
-							"animation_ms": 0.05,
+							"animation_ms": 0.055,
+							"archetype": "legacy",
 							"arms": [
 								true,
 								true
@@ -172,20 +220,38 @@
 							"commands": 15,
 							"cubes": 226,
 							"defeated": true,
+							"generation_ms": 106.524,
 							"hits": 12,
 							"legs": [
 								"LOST",
 								"LOST"
 							],
-							"motor_ms": 0.018,
+							"motor_ms": 0.023,
+							"movement": {
+								"distance": 20.2185622232573,
+								"lateral_distance": 0.0,
+								"max_displacement": 12.6777057647705,
+								"pursuit_distance": 0.0,
+								"retreat_distance": 0.0,
+								"stationary_seconds": 41.6666666666669,
+								"zones": [
+									"CENTRAL INTERSECTION"
+								]
+							},
 							"name": "TITAN",
+							"position": [
+								-7.32512998580933,
+								-10.1300001144409,
+								-0.268175959587097
+							],
 							"reason": "HEAD DESTROYED",
 							"speed": 0.12,
 							"state": "COLLAPSING",
-							"structure_ms": 0.35
+							"structure_ms": 0.335
 						},
 						{
-							"animation_ms": 0.048,
+							"animation_ms": 0.051,
+							"archetype": "legacy",
 							"arms": [
 								false,
 								false
@@ -193,26 +259,44 @@
 							"commands": 15,
 							"cubes": 776,
 							"defeated": false,
+							"generation_ms": 106.385,
 							"hits": 12,
 							"legs": [
 								"COMPROMISED",
 								"COMPROMISED"
 							],
-							"motor_ms": 0.024,
+							"motor_ms": 0.035,
+							"movement": {
+								"distance": 42.7941459239009,
+								"lateral_distance": 0.0,
+								"max_displacement": 28.2798976898193,
+								"pursuit_distance": 0.0,
+								"retreat_distance": 0.0,
+								"stationary_seconds": 36.8000000000005,
+								"zones": [
+									"CENTRAL INTERSECTION"
+								]
+							},
 							"name": "COLOSSUS",
+							"position": [
+								1.33389401435852,
+								-1.58076918125153,
+								-0.338913321495056
+							],
 							"reason": "",
 							"speed": 0.307692307692308,
 							"state": "VICTORIOUS",
-							"structure_ms": 0.836
+							"structure_ms": 0.803
 						}
 					],
 					"music": "severe",
-					"physics_ms": 2.811,
+					"navigation_ms": 0.0,
+					"physics_ms": 2.43,
 					"render_cpu_ms": 0.0,
 					"rubble": 806,
 					"seed": 8803,
 					"shot": "ESTABLISHING",
-					"sweep_ms": 1.888,
+					"sweep_ms": 1.818,
 					"time": 73.9,
 					"vfx_events": 50,
 					"vfx_ms": 0.012,
