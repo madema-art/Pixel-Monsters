@@ -20,10 +20,14 @@ static func make_material(rim: Color=Color("73a0cc"), rim_strength: float=0.55) 
 static func part_of(region: String) -> String:
 	return region if not (region.begins_with("left_") or region.begins_with("right_")) else region.split("_",true,1)[1]
 
-static func palette_for(id: String) -> Dictionary:
-	var source: Dictionary=PALETTES.get(id,{})
+static func palette_for(id: String, archetype: Dictionary={}) -> Dictionary:
+	var source: Dictionary=archetype.get("look",PALETTES.get(id,{}))
 	var result := {}
-	for key in source: result[key]=Color(source[key])
+	for key in source:
+		if source[key] is String: result[key]=Color(source[key])
+	result["tones"]=source.get("tones",{})
+	result["face"]=source.get("face",true)
+	result["interior_glow"]=float(source.get("interior_glow",0.0))
 	return result
 
 # Deterministic low-frequency tonal drift: neighbouring cubes differ slightly, large planes stay coherent.
@@ -32,9 +36,16 @@ static func drift(cell: Vector3i) -> float:
 	var band := sin(cell.y*0.55+cell.x*0.21)*0.5
 	return (h-0.5)*0.07+band*0.025
 
-static func cube_color(palette: Dictionary, region: String, cell: Vector3i, head_y: int) -> Color:
+static func cube_color(palette: Dictionary, region: String, cell: Vector3i, head_y: int, tag: String="", authored_face: bool=true) -> Color:
 	var part := part_of(region)
 	var base: Color=palette.skin
+	var tones: Dictionary=palette.get("tones",{})
+	if tag=="glow": return palette.glow
+	if tones.has(region) or tones.has(part):
+		base=palette[tones.get(region,tones.get(part))]
+		var d0 := drift(cell)
+		var tinted := base.lightened(maxf(d0,0.0)).darkened(maxf(-d0,0.0))
+		return tinted.darkened(.35) if tag=="dark" else tinted.lerp(palette.accent,.5) if tag=="accent" else tinted
 	match part:
 		"upper_arm","forearm","thigh","shin": base=palette.limb
 		"shoulder","fist","foot": base=palette.joint
@@ -47,7 +58,9 @@ static func cube_color(palette: Dictionary, region: String, cell: Vector3i, head
 		elif region.ends_with("shoulder") and cell.y>=roundi(head_y*0.62): base=base.lerp(palette.accent,.35)
 	var d := drift(cell)
 	var color := base.lightened(maxf(d,0.0)).darkened(maxf(-d,0.0))
-	if part=="head":
+	if tag=="dark": return color.darkened(.4)
+	if tag=="accent": return color.lerp(palette.accent,.55)
+	if part=="head" and authored_face:
 		var eye_y := head_y+1
 		if cell.z<=-1:
 			if cell.y==eye_y and absi(cell.x)==1: return palette.glow

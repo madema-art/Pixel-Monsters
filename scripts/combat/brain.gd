@@ -109,6 +109,13 @@ func choose_move(body: CombatMonster, distance: float) -> String:
 	return "body_charge"
 
 func choose_target(body: CombatMonster, opponent: CombatMonster, move: String) -> String:
+	if opponent.regen!=null and opponent.regen.loose_count()>=10 and rng.randf()<0.55: return "_loose"
+	var custom: Array=opponent.archetype.get("target_regions",[])
+	if not custom.is_empty():
+		var open: Array[String]=[]
+		for region in custom:
+			if opponent.structure.fraction(region)>0.12: open.append(region)
+		return open[rng.randi_range(0,open.size()-1)] if not open.is_empty() else String(custom[0])
 	var candidates: Array[String]=[]
 	if move=="kick": candidates=["left_thigh","right_thigh","left_shin","right_shin","abdomen"]
 	elif move=="heavy_hook": candidates=["left_shoulder","right_shoulder","chest","head"]
@@ -145,7 +152,14 @@ func tick_archetype(dt: float, body: CombatMonster, opponent: CombatMonster, bat
 	var forward := delta.normalized()
 	var tangent := forward.rotated(Vector3.UP,circle_sign*PI/2)
 	var facing := atan2(-forward.x,-forward.z)
-	var hands := int(MonsterMoves.functional_arm(body,"left"))+int(MonsterMoves.functional_arm(body,"right"))
+	if body.hold_target!=null or body.held_by!=null:
+		body.request_move(Vector3.ZERO,facing)
+		return
+	if body.flight!=null:
+		var wings: FlightState=body.flight
+		if wings.state=="GROUNDED" and distance>body.behavior("takeoff_distance",17) and not body.attack_motion.running: wings.request_takeoff(body)
+		elif wings.state=="FLYING" and not body.attack_motion.running and (wings.airtime>wings.flight_budget()*0.8 or distance<body.behavior("land_distance",7.5)): wings.request_landing()
+	var hands := 2 if body.rig_type!="biped" or not body.structure.has_biped else int(MonsterMoves.functional_arm(body,"left"))+int(MonsterMoves.functional_arm(body,"right"))
 	var preferred := body.behavior("preferred_range",10)
 	if hands<2 and body.behavior("charge_weight",0)==0: preferred-=2.0*(2-hands)
 	preferred=maxf(8.65,preferred-minf(body.missed_attacks*.55,3.5))
@@ -215,6 +229,7 @@ func choose_archetype_move(body: CombatMonster, distance: float, charge_ready: b
 		if not MonsterMoves.available(body,move) or distance>profile.range or distance<profile.get("min_range",0): continue
 		if profile.get("trajectory","")=="charge" and not charge_ready: continue
 		var weight: float=profile.weight*pow(.45,body.attack_history.count(move))
+		if distance<float(profile.get("close_distance",0.0)): weight*=float(profile.get("close_weight",0.15))
 		if charge_ready and profile.get("trajectory","")=="charge": weight*=8
 		weights[move]=weight
 		total+=weight

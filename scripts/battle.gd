@@ -23,6 +23,7 @@ var brains: Array[MonsterBrain]=[]
 var debris: CubeDebris
 var camera: ObserverCamera
 var sound: BattleSound
+var ranged: RangedManager
 var elapsed := 0.0
 var battle_seed := 0
 var paused := false
@@ -60,6 +61,10 @@ func _ready() -> void:
 	sound=BattleSound.new()
 	sound.process_mode=Node.PROCESS_MODE_PAUSABLE
 	add_child(sound)
+	ranged=RangedManager.new()
+	ranged.battle=self
+	ranged.process_mode=Node.PROCESS_MODE_PAUSABLE
+	add_child(ranged)
 	for i in 2:
 		var fighter := CombatMonster.new()
 		fighter.name="TITAN" if i==0 else "COLOSSUS"
@@ -108,6 +113,7 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	samples.clear()
 	stages.clear()
 	debris.clear()
+	ranged.clear()
 	effects.clear()
 	sound.clear()
 	music.reset()
@@ -119,8 +125,11 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	if chosen.is_empty() and not legacy:
 		var random := RandomNumberGenerator.new()
 		random.seed=battle_seed
-		var first := random.randi_range(0,2)
-		chosen=[Archetypes.IDS[first],Archetypes.IDS[(first+random.randi_range(1,2))%3]]
+		var pool: Array=Archetypes.available_roster()
+		if pool.size()<2: pool=Archetypes.IDS
+		var count: int=pool.size()
+		var first := random.randi_range(0,count-1)
+		chosen=[pool[first],pool[(first+random.randi_range(1,count-1))%count]]
 	movement.clear()
 	for i in 2: monsters[i].name="Combatant_"+str(i)
 	for i in 2:
@@ -149,7 +158,10 @@ func simulate_step(dt: float) -> void:
 	for fighter in monsters:
 		var previous_step := fighter.stepping
 		fighter.update_motor(dt)
+		fighter.update_hold(dt,self)
 		if previous_step!="" and fighter.stepping=="" and not fighter.defeated:
+			var other: CombatMonster=monsters[1-monsters.find(fighter)]
+			if other.regen!=null: other.regen.shatter_near(fighter.feet[previous_step],2.6)
 			sound.footfall(fighter.feet[previous_step])
 			effects.burst(fighter.feet[previous_step]+Vector3.UP*.15,0,true)
 			camera.impulse(fighter.feet[previous_step],.018)
@@ -161,7 +173,8 @@ func simulate_step(dt: float) -> void:
 			if not stages.has("collapse"): stages["collapse"]=snapshot()
 	var delta := monsters[1].position-monsters[0].position
 	delta.y=0
-	var minimum := 8.5
+	var minimum := minf(monsters[0].behavior("min_separation",8.5),monsters[1].behavior("min_separation",8.5))
+	if monsters[0].hold_target!=null or monsters[1].hold_target!=null: minimum=minf(minimum,5.0)
 	if delta.length()<minimum and not finished:
 		var correction := delta.normalized()*(minimum-delta.length())*0.5
 		monsters[0].position-=correction
@@ -182,6 +195,11 @@ func simulate_step(dt: float) -> void:
 	last_midpoint=middle
 	midpoint_min=midpoint_min.min(middle)
 	midpoint_max=midpoint_max.max(middle)
+	for i in 2:
+		var big: CombatMonster=monsters[i]
+		var small: CombatMonster=monsters[1-i]
+		if small.regen!=null and tick_index%12==0: small.regen.crush_check(big.position,big.behavior("crush_radius",3.4))
+	ranged.step(dt)
 	for fighter in monsters: fighter.update_pose()
 	var begin := Time.get_ticks_usec()
 	for i in 2:
@@ -206,6 +224,11 @@ func simulate_step(dt: float) -> void:
 
 func _physics_process(dt: float) -> void:
 	if not paused: simulate_step(dt)
+
+func apply_status(source: CombatMonster, victim: CombatMonster, data: Dictionary) -> void:
+	for key in data:
+		if key=="tether": victim.status.tether=source
+		else: victim.status[key]=data[key]
 
 func on_impact(attacker: CombatMonster, victim: CombatMonster, move: String, at: Vector3, report: Dictionary, power: float) -> void:
 	attacker.connected_hits+=1

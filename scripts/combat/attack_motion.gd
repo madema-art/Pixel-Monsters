@@ -17,6 +17,7 @@ var hit := false
 var phase := "READY"
 var progress := 0.0
 var reach := 0.0
+var fired := false
 
 func begin(body: Node3D, opponent: Node3D, command: String, selected: String, selected_side: String) -> void:
 	move=command
@@ -32,6 +33,7 @@ func begin(body: Node3D, opponent: Node3D, command: String, selected: String, se
 	phase="WIND-UP"
 	age=0
 	hit=false
+	fired=false
 	running=true
 
 func cancel() -> void:
@@ -41,7 +43,7 @@ func cancel() -> void:
 
 func update(dt: float, body: Node3D) -> void:
 	if not running: return
-	if not MonsterMoves.available(body,move): cancel(); return
+	if not MonsterMoves.available(body,move,true): cancel(); return
 	if profile.limb=="arm" and not MonsterMoves.functional_arm(body,side): cancel(); return
 	if profile.limb=="leg" and body.structure.leg_quality(side)<=0.45: cancel(); return
 	age+=dt
@@ -49,6 +51,9 @@ func update(dt: float, body: Node3D) -> void:
 	var c: float=profile.commit
 	var f: float=profile.follow
 	var r: float=profile.recover
+	if body.hold_target!=null and age>w+c+f:
+		age=w+c+f-0.0001
+		aim=target.region_target(region)
 	if age<w:
 		phase="WIND-UP"
 		progress=smoothstep(0,w,age)
@@ -69,8 +74,9 @@ func update(dt: float, body: Node3D) -> void:
 	# Target tracks during wind-up, then the committed stroke cannot home in.
 	if phase=="WIND-UP": aim=target.region_target(region)
 	# Head/body attacks commit a deliberate weight transfer into close contact.
-	if phase in ["COMMIT","FOLLOW-THROUGH"] and profile.get("base",move) in ["headbutt","body_charge"] and profile.get("trajectory","")!="charge":
-		body.position-=body.global_basis.z*dt*(1.3 if profile.get("base",move)=="headbutt" else 1.8)
+	var lunge := float(profile.get("lunge",1.3 if profile.get("base",move)=="headbutt" else 1.8 if profile.get("base",move)=="body_charge" else 0.0))
+	if phase in ["COMMIT","FOLLOW-THROUGH"] and lunge>0.0 and profile.get("trajectory","")!="charge":
+		body.position-=body.global_basis.z*dt*lunge
 	var trajectory: String=profile.get("trajectory","")
 	var sign_side := -1.0 if side=="left" else 1.0
 	var desired := aim
@@ -93,8 +99,19 @@ func update(dt: float, body: Node3D) -> void:
 	endpoint=desired
 
 func resolve(body: Node3D, battle: Node3D) -> void:
-	if not running or phase!="COMMIT" or hit or body.defeated: return
+	if not running or body.defeated: return
+	if profile.has("ranged"):
+		if phase=="COMMIT" and not fired:
+			fired=true
+			battle.ranged.fire(body,target,profile,move)
+		return
+	if phase!="COMMIT" and phase!="FOLLOW-THROUGH": return
 	var current: Vector3=body.effector(move,side)
+	# Loose bone pixels (Skeleton reassembly) are smashed by anything swinging through them.
+	if target.regen!=null and phase=="COMMIT": target.regen.shatter_near(current,profile.radius*0.9+0.8)
+	if phase!="COMMIT" or hit:
+		previous=current
+		return
 	var contact: Dictionary=target.sweep(previous,current,profile.collider)
 	previous=current
 	if contact.is_empty(): return
@@ -104,4 +121,6 @@ func resolve(body: Node3D, battle: Node3D) -> void:
 	var escalation := 1.0+clampf((battle.elapsed-35)/140.0,0,0.32)
 	var report: Dictionary=target.damage(contact.point,profile.radius*escalation,force)
 	if report.direct==0: return
+	if profile.has("status"): battle.apply_status(body,target,profile.status)
+	if profile.has("hold") and body.hold_target==null: body.begin_hold(target,profile,move,side)
 	battle.on_impact(body,target,move,contact.point,report,profile.force)

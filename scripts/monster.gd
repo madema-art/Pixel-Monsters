@@ -29,12 +29,21 @@ var archetype := {}
 var palette := {}
 var cell_ids := {}
 var wound_count := -1
+var aim_from := Vector3.ZERO
+var regen: BoneRegen
+var rig_type := "biped"
+var move_cd := {}
+var held_by: PixelMonster
+var hold_target: PixelMonster
+var flight: FlightState
+var reassembling := false
+var fist_away := {}
 const FACE_STEPS := [Vector3i(1,0,0),Vector3i(-1,0,0),Vector3i(0,1,0),Vector3i(0,-1,0),Vector3i(0,0,1),Vector3i(0,0,-1)]
 const Look = preload("res://scripts/cinema/look.gd")
 const Archetypes = preload("res://scripts/combat/archetypes.gd")
 
 func rig_point(key: String, fallback: Vector3, side: String="") -> Vector3:
-	if archetype.is_empty(): return fallback
+	if archetype.is_empty() or not archetype.rig.has(key): return fallback
 	var p: Array=archetype.rig[key]
 	return Vector3((-absf(p[0]) if side=="left" else absf(p[0])) if side!="" else p[0],p[1],p[2])
 
@@ -61,20 +70,22 @@ func reset_body() -> void:
 	var mesh: Mesh=load("res://meshes/body_cube.obj")
 	mesh=mesh.duplicate()
 	mesh.surface_set_material(0,material)
-	palette=Look.palette_for(String(archetype.get("id",""))) if not archetype.is_empty() else {}
+	palette=Look.palette_for(String(archetype.get("id","")),archetype) if not archetype.is_empty() else {}
 	var authored_look := palette.has("skin")
 	if not authored_look: palette={"interior":tint.darkened(.78),"glow":Color("fff0b1")}
 	cell_ids.clear()
 	for i in cubes.size(): cell_ids[cubes[i].cell]=i
 	wound_count=-1
-	var head_y: int=(26 if archetype.is_empty() else roundi(archetype.rig.head[1]))
+	var head_y: int=(26 if archetype.is_empty() else roundi(archetype.rig.get("head",[0,26,0])[1]))
+	rig_type=String(archetype.get("rig_type","biped"))
 	for i in cubes.size():
 		var c: Dictionary = cubes[i]
 		c.alive = true
+		c.state = 0
 		c.pose = c.position
 		c.pose_basis=Basis.IDENTITY
 		if authored_look:
-			c.color=Look.cube_color(palette,c.region,c.cell,head_y)
+			c.color=Look.cube_color(palette,c.region,c.cell,head_y,c.get("tag",""),palette.get("face",true))
 		else:
 			c.color = tint.lightened(float(posmod(i*47,17))/80.0).darkened(float(posmod(i*31,11))/55.0)
 			if c.region == "head" and c.cell.y == head_y+(0 if archetype.is_empty() else 1) and c.cell.z <= -1 and absi(c.cell.x)==1:
@@ -109,7 +120,13 @@ func reset_body() -> void:
 			renders[render_key] = instance
 	structure.proportional=not archetype.is_empty()
 	structure.weakpoints={} if archetype.is_empty() else archetype.weakpoints
+	structure.configure(archetype)
 	structure.build(cubes)
+	if regen!=null: regen.queue_free(); regen=null
+	if structure.regenerative:
+		regen=BoneRegen.new()
+		regen.setup(self,archetype.special.regen)
+		add_child(regen)
 	rebuild()
 	reaction = 0
 	last_query_ms=0
@@ -143,6 +160,7 @@ func update_wound_look() -> void:
 			c.glow=0.5
 		else:
 			c.render_color=c.color.lerp(interior,minf(0.9,(0.82 if c.enclosed else 0.36)+0.06*dead))
+			if c.enclosed and float(palette.get("interior_glow",0.0))>0.0: c.glow=float(palette.interior_glow)
 
 func rebuild() -> void:
 	update_wound_look()
@@ -206,8 +224,18 @@ func alive_count() -> int:
 	return count
 
 func region_target(region: String) -> Vector3:
+	var aliases: Dictionary=archetype.get("aliases",{})
+	region=aliases.get(region,region)
+	if rig_type=="swarm": return swarm_target()
+	if region=="_loose" and regen!=null: return regen.nearest_loose_point(aim_from if aim_from!=Vector3.ZERO else global_position)
 	if dynamic_pose:
-		return to_global(pose_transforms.get(region,Transform3D.IDENTITY)*region_centers.get(region,Vector3(0,18,0)))
+		if region_centers.has(region): return to_global(pose_transforms.get(region,Transform3D.IDENTITY)*region_centers[region])
+		var sum := Vector3.ZERO
+		var n := 0
+		for key in region_centers:
+			sum+=to_global(pose_transforms.get(key,Transform3D.IDENTITY)*region_centers[key])
+			n+=1
+		return sum/n if n>0 else global_position+Vector3.UP*10
 	var sum := Vector3.ZERO
 	var count := 0
 	for c in cubes:
@@ -215,6 +243,19 @@ func region_target(region: String) -> Vector3:
 			sum += c.pose
 			count += 1
 	return to_global(sum/maxi(1,count))
+
+# Army entrants: aim at the surviving unit nearest the attacker (units fight as independent bodies).
+func swarm_target() -> Vector3:
+	var best := Vector3.ZERO
+	var best_d := INF
+	var origin := aim_from if aim_from!=Vector3.ZERO else global_position
+	for key in region_centers:
+		var p := to_global(pose_transforms.get(key,Transform3D.IDENTITY)*region_centers[key])
+		var d := p.distance_squared_to(origin)
+		if key.ends_with("_body") and d<best_d:
+			best_d=d
+			best=p
+	return best if best_d<INF else global_position+Vector3.UP*4
 
 # Swept sphere against actual surviving cube AABBs, in body space.
 # No broad-phase body collider can register a hit inside an existing cavity.
@@ -265,6 +306,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 	ensure_pose_index()
 	var started := Time.get_ticks_usec()
 	var local := to_local(contact)
+	if regen!=null: regen.shatter_near(contact,radius*0.8)
 	last_direct_ids.clear()
 	last_detached = 0
 	# Integer spatial index: enumerate only cells inside the impact bounds.
@@ -285,7 +327,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 	var structural_start := Time.get_ticks_usec()
 	for arm in structure.failures(cubes):
 		for i in cubes.size():
-			if cubes[i].alive and cubes[i].major==arm:
+			if cubes[i].alive and structure.owns(cubes[i],arm):
 				remove_cube(i,contact,force*0.35)
 				last_detached+=1
 	if last_detached>0: structure.refresh(cubes)
@@ -300,6 +342,11 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 func remove_cube(id: int, contact: Vector3, force: Vector3) -> void:
 	var c: Dictionary = cubes[id]
 	c.alive = false
+	if regen!=null:
+		c.state=1
+		regen.detach(id,to_global(c.pose),contact,force)
+		return
+	c.state=2
 	debris.spawn_cube(to_global(c.pose),c.render_color,contact,force)
 
 func align_bone(from: Vector3, to: Vector3) -> Basis:

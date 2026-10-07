@@ -17,6 +17,42 @@ func solve(root: Vector3, goal: Vector3, upper: float, lower: float, bend_hint: 
 	if bend.length()<0.01: bend=Vector3.RIGHT.cross(direction)
 	return [root+direction*along+bend.normalized()*height,root+direction*distance]
 
+# Chained secondary parts (tails, wings, capes): each segment rotates about its own joint.
+func apply_extras(body: Node3D, transforms: Dictionary) -> void:
+	var attack: MonsterAttack=body.attack_motion
+	for entry in body.archetype.extras:
+		var parent: Transform3D=transforms.get(entry.get("parent","torso"),transforms.torso)
+		var chain := parent
+		var regions: Array=entry.regions
+		var pivots: Array=entry.pivots
+		var axis := Vector3(entry.axis[0],entry.axis[1],entry.axis[2]).normalized()
+		var side_sign := float(entry.get("sign",1.0))
+		var amplitude := 0.0
+		var speed := 1.0
+		var lag := 0.5
+		if entry.has("flap"):
+			var air := 0.0
+			if body.flight!=null: air=1.0 if body.flight.state in ["FLYING","TAKEOFF"] else 0.5 if body.flight.state=="LANDING" else 0.0
+			var flap: Dictionary=entry.flap
+			amplitude=lerpf(float(flap.ground),float(flap.air),air)
+			speed=float(flap.speed)*(1.0+air*0.6)
+			lag=float(flap.get("lag",0.35))
+		elif entry.has("sway"):
+			var sway_data: Dictionary=entry.sway
+			amplitude=float(sway_data.amp)*(0.6+min(body.velocity.length(),3.0)*0.2)
+			speed=float(sway_data.speed)
+			lag=float(sway_data.get("lag",0.55))
+		for i in regions.size():
+			var angle := side_sign*amplitude*sin(body.clock*speed-i*lag)*(1.0+0.3*i)
+			if entry.has("flap"): angle+=side_sign*float(entry.flap.get("rest",0.0))
+			var pivot := Vector3(pivots[i][0],pivots[i][1],pivots[i][2])
+			var rotation_basis := Basis(axis,angle)
+			chain=chain*Transform3D(rotation_basis,pivot-rotation_basis*pivot)
+			transforms[regions[i]]=chain
+		if entry.has("tip"):
+			var tip: Array=entry.tip
+			effectors[entry.get("effector",entry.id+"_tip")]=body.to_global(chain*Vector3(tip[0],tip[1],tip[2]))
+
 func apply(body: Node3D) -> void:
 	var started := Time.get_ticks_usec()
 	var attack: MonsterAttack=body.attack_motion
@@ -73,9 +109,12 @@ func apply(body: Node3D) -> void:
 		var head_pivot: Vector3=transforms.head*body.rig_point("head_pivot",Vector3(0,22,0))
 		var snap := Basis(Vector3.RIGHT,body.head_recoil*0.10)
 		transforms.head=Transform3D(snap,head_pivot-snap*head_pivot)*transforms.head
+	if not body.archetype.is_empty() and body.archetype.has("extras"): apply_extras(body,transforms)
+	var follow: Dictionary={} if body.archetype.is_empty() else body.archetype.get("follow",{})
 	body.pose_transforms.clear()
 	for region in body.renders:
-		body.pose_transforms[region]=transforms.get(region,transforms.torso if region in ["neck","chest","abdomen","pelvis","left_shoulder","right_shoulder"] else Transform3D.IDENTITY)
+		var source: String=follow.get(region,region)
+		body.pose_transforms[region]=transforms.get(source,transforms.torso if region in ["neck","chest","abdomen","pelvis","left_shoulder","right_shoulder"] else Transform3D.IDENTITY)
 	effectors.head=body.to_global(transforms.head*body.rig_point("head",Vector3(0,25,-1.4)))
 	effectors.torso=body.to_global(transforms.torso*body.rig_point("torso",Vector3(0,18,-2.4)))
 	body.sync_pose()
