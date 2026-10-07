@@ -10,13 +10,19 @@ float noise(vec3 p) {
 void sky() {
  float elevation=max(0.0,EYEDIR.y);
  vec3 horizon=vec3(.29,.20,.18);
- vec3 zenith=vec3(.025,.048,.095);
+ vec3 zenith=vec3(.04,.07,.125);
  vec3 base=mix(horizon,zenith,pow(elevation,.42));
  vec3 p=EYEDIR*vec3(9.0,18.0,9.0)+vec3(TIME*.002,0.0,0.0);
  float f=noise(p)*.57+noise(p*2.03)*.28+noise(p*4.13)*.15;
  float cloud=smoothstep(.45,.67,f)*smoothstep(.015,.10,elevation)*(1.0-smoothstep(.58,.9,elevation));
  vec3 cloud_color=mix(vec3(.16,.12,.14),vec3(.065,.08,.115),elevation);
  COLOR=mix(base,cloud_color,cloud*.65);
+ if(LIGHT0_ENABLED){
+  float sun_side=max(0.0,dot(EYEDIR,-LIGHT0_DIRECTION));
+  float band=exp(-elevation*7.0);
+  COLOR+=vec3(.55,.28,.13)*pow(sun_side,6.0)*band*.85+vec3(.2,.09,.05)*pow(sun_side,1.5)*band*.35;
+  COLOR=mix(COLOR,cloud_color*vec3(1.6,1.0,.8),cloud*pow(sun_side,3.0)*.25);
+ }
  if(EYEDIR.y<0.0) COLOR=mix(horizon,vec3(.045,.07,.09),min(1.0,-EYEDIR.y*4.0));
  COLOR=pow(COLOR,vec3(2.2));
 }

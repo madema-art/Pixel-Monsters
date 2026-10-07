@@ -13,20 +13,25 @@ var physical_renderer: MultiMeshInstance3D
 var born := 0
 var peak_active := 0
 var physics_script_ms := 0.0
-var material: StandardMaterial3D
+var material: ShaderMaterial
+const Look = preload("res://scripts/cinema/look.gd")
 
 func _ready() -> void:
-	material = StandardMaterial3D.new()
-	material.vertex_color_use_as_albedo = true
-	material.roughness = 0.8
-	var mesh: Mesh=load("res://meshes/body_cube.obj")
-	mesh=mesh.duplicate()
+	# Flying cubes keep the body material; settled rubble is dusted so it reads as heavy fallen masonry.
+	material = Look.make_material(Color("73a0cc"),0.22)
+	var source: Mesh=load("res://meshes/body_cube.obj")
+	var mesh: Mesh=source.duplicate()
 	mesh.surface_set_material(0,material)
+	var rubble_material: ShaderMaterial=Look.make_material(Color("73a0cc"),0.1)
+	rubble_material.set_shader_parameter("dust",0.22)
+	rubble_material.set_shader_parameter("ground_grime",0.18)
+	var rubble_mesh: Mesh=source.duplicate()
+	rubble_mesh.surface_set_material(0,rubble_material)
 	renderer = MultiMeshInstance3D.new()
 	renderer.multimesh = MultiMesh.new()
 	renderer.multimesh.transform_format = MultiMesh.TRANSFORM_3D
 	renderer.multimesh.use_colors = true
-	renderer.multimesh.mesh = mesh
+	renderer.multimesh.mesh = rubble_mesh
 	add_child(renderer)
 	physical_renderer=MultiMeshInstance3D.new()
 	physical_renderer.multimesh=MultiMesh.new()
@@ -69,7 +74,7 @@ func spawn_cube(p: Vector3, color: Color, contact: Vector3, force: Vector3) -> v
 	var outward := (p-contact).normalized()
 	if outward.length_squared()<0.1: outward=Vector3.UP
 	body.linear_velocity = force+outward*randf_range(3,9)+Vector3.UP*randf_range(3,8)
-	body.angular_velocity = Vector3(randf_range(-8,8),randf_range(-8,8),randf_range(-8,8))
+	body.angular_velocity = Vector3(randf_range(-5,5),randf_range(-4,4),randf_range(-5,5))
 	active.append({"body":body,"age":0.0,"color":color})
 	born+=1
 	peak_active=maxi(peak_active,active.size())

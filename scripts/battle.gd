@@ -72,6 +72,7 @@ func _ready() -> void:
 	camera.name="Observer"
 	camera.fov=55
 	camera.far=400
+	camera.near=0.2
 	add_child(camera)
 	camera.current=true
 	camera.director.battle=self

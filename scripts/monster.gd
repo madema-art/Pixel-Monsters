@@ -26,6 +26,11 @@ var region_centers := {}
 var support_height := 10.0
 var generation_ms := 0.0
 var archetype := {}
+var palette := {}
+var cell_ids := {}
+var wound_count := -1
+const FACE_STEPS := [Vector3i(1,0,0),Vector3i(-1,0,0),Vector3i(0,1,0),Vector3i(0,-1,0),Vector3i(0,0,1),Vector3i(0,0,-1)]
+const Look = preload("res://scripts/cinema/look.gd")
 const Archetypes = preload("res://scripts/combat/archetypes.gd")
 
 func rig_point(key: String, fallback: Vector3, side: String="") -> Vector3:
@@ -52,29 +57,44 @@ func reset_body() -> void:
 	pose_index_ready=false
 	grid.clear()
 	cubes = BodyLayout.generate() if archetype.is_empty() else Archetypes.body_cells(archetype)
-	var material := StandardMaterial3D.new()
-	material.vertex_color_use_as_albedo = true
-	material.roughness = 0.58
-	material.metallic = 0.08
+	var material := Look.make_material()
 	var mesh: Mesh=load("res://meshes/body_cube.obj")
 	mesh=mesh.duplicate()
 	mesh.surface_set_material(0,material)
+	palette=Look.palette_for(String(archetype.get("id",""))) if not archetype.is_empty() else {}
+	var authored_look := palette.has("skin")
+	if not authored_look: palette={"interior":tint.darkened(.78),"glow":Color("fff0b1")}
+	cell_ids.clear()
+	for i in cubes.size(): cell_ids[cubes[i].cell]=i
+	wound_count=-1
+	var head_y: int=(26 if archetype.is_empty() else roundi(archetype.rig.head[1]))
 	for i in cubes.size():
 		var c: Dictionary = cubes[i]
 		c.alive = true
 		c.pose = c.position
 		c.pose_basis=Basis.IDENTITY
-		c.color = tint.lightened(float(posmod(i*47,17))/80.0).darkened(float(posmod(i*31,11))/55.0)
-		if c.region == "head" and c.cell.y == (26 if archetype.is_empty() else roundi(archetype.rig.head[1])+1) and c.cell.z <= -1 and absi(c.cell.x)==1:
-			c.color = Color("fff0b1")
-		elif c.region=="head" and c.cell.y>=(27 if archetype.is_empty() else roundi(archetype.rig.head[1])+2):
-			c.color=tint.darkened(.30)
-		elif c.region=="head" and c.cell.y<=(24 if archetype.is_empty() else roundi(archetype.rig.head[1])-1) and c.cell.z<0:
-			c.color=tint.lightened(.24)
-		elif c.region in ["abdomen","pelvis"]:
-			c.color=c.color.darkened(.13)
-		elif c.region.contains("shoulder"):
-			c.color=c.color.lightened(.10)
+		if authored_look:
+			c.color=Look.cube_color(palette,c.region,c.cell,head_y)
+		else:
+			c.color = tint.lightened(float(posmod(i*47,17))/80.0).darkened(float(posmod(i*31,11))/55.0)
+			if c.region == "head" and c.cell.y == head_y+(0 if archetype.is_empty() else 1) and c.cell.z <= -1 and absi(c.cell.x)==1:
+				c.color = Color("fff0b1")
+			elif c.region=="head" and c.cell.y>=head_y+(1 if archetype.is_empty() else 2):
+				c.color=tint.darkened(.30)
+			elif c.region=="head" and c.cell.y<=head_y-(2 if archetype.is_empty() else 1) and c.cell.z<0:
+				c.color=tint.lightened(.24)
+			elif c.region in ["abdomen","pelvis"]:
+				c.color=c.color.darkened(.13)
+			elif c.region.contains("shoulder"):
+				c.color=c.color.lightened(.10)
+		c.glow=1.0 if c.color==palette.glow else 0.0
+		c.render_color=c.color
+		c.wound=0.0
+		c.cavity=0.0
+		var enclosed := true
+		for step in FACE_STEPS:
+			if not cell_ids.has(c.cell+step): enclosed=false; break
+		c.enclosed=enclosed
 		grid[c.cell] = i
 		var render_key: String=c.region if dynamic_pose else c.major
 		if not renders.has(render_key):
@@ -83,6 +103,7 @@ func reset_body() -> void:
 			instance.multimesh = MultiMesh.new()
 			instance.multimesh.transform_format = MultiMesh.TRANSFORM_3D
 			instance.multimesh.use_colors = true
+			instance.multimesh.use_custom_data = true
 			instance.multimesh.mesh = mesh
 			add_child(instance)
 			renders[render_key] = instance
@@ -99,7 +120,32 @@ func reset_body() -> void:
 	generation_ms=(Time.get_ticks_usec()-generated)/1000.0
 	position = home
 
+# Presentation only: cubes bordering lost material darken into excavated, rougher tissue.
+# Enclosed cubes that become exposed show interior material instead of skin.
+func update_wound_look() -> void:
+	var alive := 0
+	for c in cubes:
+		if c.alive: alive+=1
+	if alive==wound_count: return
+	wound_count=alive
+	var interior: Color=palette.get("interior",Color("201815"))
+	for c in cubes:
+		if not c.alive: continue
+		var dead := 0
+		for step in FACE_STEPS:
+			var neighbour: int=cell_ids.get(c.cell+step,-1)
+			if neighbour>=0 and not cubes[neighbour].alive: dead+=1
+		if dead==0: continue
+		c.wound=minf(1.0,0.45+0.2*dead)
+		c.cavity=minf(0.5,0.08+0.1*dead)
+		if c.glow>0.0:
+			c.render_color=c.color.darkened(.5)
+			c.glow=0.5
+		else:
+			c.render_color=c.color.lerp(interior,minf(0.9,(0.82 if c.enclosed else 0.36)+0.06*dead))
+
 func rebuild() -> void:
+	update_wound_look()
 	region_centers.clear()
 	var region_counts := {}
 	var grouped_ids := {}
@@ -121,7 +167,8 @@ func rebuild() -> void:
 		for slot in ids.size():
 			var c: Dictionary = cubes[ids[slot]]
 			mm.set_instance_transform(slot,Transform3D(Basis.IDENTITY,c.position) if dynamic_pose else Transform3D(c.pose_basis,c.pose))
-			mm.set_instance_color(slot,c.color)
+			mm.set_instance_color(slot,c.render_color)
+			mm.set_instance_custom_data(slot,Color(c.wound,c.glow,c.cavity,0))
 	if dynamic_pose: pose_index_ready=false
 
 func update_pose_index() -> void:
@@ -253,7 +300,7 @@ func damage(contact: Vector3, radius: float, force: Vector3) -> Dictionary:
 func remove_cube(id: int, contact: Vector3, force: Vector3) -> void:
 	var c: Dictionary = cubes[id]
 	c.alive = false
-	debris.spawn_cube(to_global(c.pose),c.color,contact,force)
+	debris.spawn_cube(to_global(c.pose),c.render_color,contact,force)
 
 func align_bone(from: Vector3, to: Vector3) -> Basis:
 	return Basis(Quaternion(from.normalized(),to.normalized()))
