@@ -1,5 +1,7 @@
 class_name MonsterRig
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterAttack = preload("res://scripts/combat/attack_motion.gd")
 
 var effectors := {}
 

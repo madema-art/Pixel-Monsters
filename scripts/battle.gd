@@ -1,4 +1,13 @@
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BattleSound = preload("res://scripts/combat/sound.gd")
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
+const CubeDebris = preload("res://scripts/debris.gd")
+const MiniatureArena = preload("res://scripts/arena.gd")
+const MonsterBrain = preload("res://scripts/combat/brain.gd")
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
+const ObserverCamera = preload("res://scripts/observer.gd")
+const RangedManager = preload("res://scripts/combat/ranged.gd")
 
 const Archetypes = preload("res://scripts/combat/archetypes.gd")
 var movement := []
@@ -13,6 +22,10 @@ var music: Node
 var hud: CanvasLayer
 var hud_off := false
 var help_visible := false
+var last_pairing: Array=[]
+var intro_box: VBoxContainer
+var intro_names: Array[Label]=[]
+var intro_vs: Label
 var notice := ""
 var notice_until := 0
 var collapse_seen := {}
@@ -123,13 +136,8 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	show_notice("V director / free camera · F1 controls · H hide interface")
 	var chosen := matchup.duplicate()
 	if chosen.is_empty() and not legacy:
-		var random := RandomNumberGenerator.new()
-		random.seed=battle_seed
-		var pool: Array=Archetypes.available_roster()
-		if pool.size()<2: pool=Archetypes.IDS
-		var count: int=pool.size()
-		var first := random.randi_range(0,count-1)
-		chosen=[pool[first],pool[(first+random.randi_range(1,count-1))%count]]
+		chosen=pick_pairing(battle_seed)
+	if not legacy: last_pairing=[chosen[0],chosen[1]]
 	movement.clear()
 	for i in 2: monsters[i].name="Combatant_"+str(i)
 	for i in 2:
@@ -284,6 +292,36 @@ func build_hud() -> void:
 	bottom.position=Vector2(24,-66)
 	canvas.add_child(bottom)
 	controls=text_label(bottom,"",14)
+	var intro_layer := CenterContainer.new()
+	intro_layer.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	intro_layer.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	canvas.add_child(intro_layer)
+	intro_box=VBoxContainer.new()
+	intro_box.alignment=BoxContainer.ALIGNMENT_CENTER
+	intro_box.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	intro_layer.add_child(intro_box)
+	intro_names.append(text_label(intro_box,"",46))
+	intro_vs=text_label(intro_box,"VS",24)
+	intro_names.append(text_label(intro_box,"",46))
+	for item in intro_names+[intro_vs]:
+		item.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+		item.add_theme_color_override("font_color",Color("f3e3c0"))
+	intro_vs.add_theme_color_override("font_color",Color("c9a56a"))
+
+# Two different entrants from the 16-monster tournament roster; avoids repeating the previous pairing.
+func pick_pairing(seed_value: int) -> Array:
+	var pool: Array=Archetypes.available_roster()
+	var random := RandomNumberGenerator.new()
+	random.seed=seed_value
+	var count: int=pool.size()
+	var pair: Array=[]
+	for attempt in 12:
+		var first := random.randi_range(0,count-1)
+		var second := (first+random.randi_range(1,count-1))%count
+		pair=[pool[first],pool[second]]
+		var same_as_last: bool=last_pairing.size()==2 and ((pair[0]==last_pairing[0] and pair[1]==last_pairing[1]) or (pair[0]==last_pairing[1] and pair[1]==last_pairing[0]))
+		if not same_as_last: break
+	return pair
 
 func show_notice(message: String) -> void:
 	notice=message
@@ -291,6 +329,12 @@ func show_notice(message: String) -> void:
 
 func _process(_dt: float) -> void:
 	hud.visible=not hud_off
+	# Restrained match intro: fades in, holds, fades out by about 3 s of fight time.
+	var intro_alpha := clampf(minf(elapsed/0.45,(3.1-elapsed)/0.7),0.0,1.0)
+	intro_box.visible=intro_alpha>0.0
+	intro_box.modulate.a=intro_alpha
+	intro_names[0].text=str(monsters[0].name)
+	intro_names[1].text=str(monsters[1].name)
 	header.modulate.a=clampf(1.0-(elapsed-3)/3,0,1)
 	caption.modulate.a=header.modulate.a
 	caption.text=str(monsters[0].name)+"  /  "+str(monsters[1].name)
@@ -299,12 +343,16 @@ func _process(_dt: float) -> void:
 		caption.modulate.a=clampf(1-(elapsed-finish_time-7)/5,0,1)
 	controls.text="PAUSED · SPACE resume" if paused else notice if Time.get_ticks_msec()<notice_until else ""
 	if help_visible:
-		controls.text="WASD fly · Q/E yaw · RMB look · Z/X rise/drop · Shift boost · +/- speed · Wheel lens\nV director · C home · Space pause · L slow motion · R new fight · M music · K shake · H HUD · F1 help · F3 diagnostics"
+		controls.text="WASD fly · Q/E yaw · RMB look · Z/X rise/drop · Shift boost · +/- speed · Wheel lens\nV director · C home · Space pause · L slow motion · R new fight · M music · K shake · H HUD · F1 help · F3 diagnostics\nPAD: L stick move · R stick look · RB/LB up/down · L3 boost · Y new fight · Back director"
 	metrics.visible=diagnostics
 	if diagnostics:
 		metrics.text="%.1fs · seed %d · %d FPS · debris %d/%d\n%s %d · %s\n%s %d · %s\nAI %.3fms · rig %.2fms · contact %.2fms\n%s · score %s · TAB target %s · 1/2 arms · 3 leg · 4 core · F hook" % [elapsed,battle_seed,Engine.get_frames_per_second(),debris.active.size(),debris.max_physical,monsters[0].name,monsters[0].alive_count(),monsters[0].state,monsters[1].name,monsters[1].alive_count(),monsters[1].state,brains[0].think_ms+brains[1].think_ms,monsters[0].animation_ms+monsters[1].animation_ms,sweep_ms,camera.director.shot,music.STATES[maxi(0,music.state)],monsters[debug_target].name]
 
 func _unhandled_input(event: InputEvent) -> void:
+	# R and controller Y (action observer_new_fight) start a fresh random roster fight.
+	if event.is_action_pressed("observer_new_fight"):
+		restart()
+		return
 	if not event is InputEventKey or not event.pressed or event.echo: return
 	match event.keycode:
 		KEY_SPACE:
@@ -319,7 +367,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		KEY_M:
 			music.enabled=not music.enabled
 			show_notice("Music on" if music.enabled else "Music muted")
-		KEY_R: restart()
 		KEY_C: camera.reset_view()
 		KEY_F3: diagnostics=not diagnostics
 		KEY_TAB:

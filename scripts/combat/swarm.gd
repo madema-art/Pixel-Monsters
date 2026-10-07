@@ -1,5 +1,7 @@
 class_name SwarmUnits
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
 
 # Army of Ten: ten independent 100-cube fighters inside one entrant. Each unit has its own position,
 # gait, climb state and strike timer; unit death is decided by that unit's own surviving cubes.

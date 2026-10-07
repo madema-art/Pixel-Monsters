@@ -1,5 +1,8 @@
 @tool
 extends "res://addons/godot_ai/testing/test_suite.gd"
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BodyLayout = preload("res://scripts/body_layout.gd")
+const PixelMonster = preload("res://scripts/monster.gd")
 
 class DebrisSink:
 	extends Node3D

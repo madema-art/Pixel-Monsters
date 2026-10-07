@@ -1,4 +1,6 @@
 extends SceneTree
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
 # Rendered action stills: ranged streams, projectiles, reassembly, swarm climb. Needs a display / software GL.
 var battle: Node3D
 

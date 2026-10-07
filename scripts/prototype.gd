@@ -1,4 +1,10 @@
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CubeDebris = preload("res://scripts/debris.gd")
+const MeleeStrike = preload("res://scripts/strike.gd")
+const MiniatureArena = preload("res://scripts/arena.gd")
+const ObserverCamera = preload("res://scripts/observer.gd")
+const PixelMonster = preload("res://scripts/monster.gd")
 
 var monsters: Array[PixelMonster] = []
 var debris: CubeDebris

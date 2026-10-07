@@ -1,5 +1,7 @@
 class_name FlightState
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const PixelMonster = preload("res://scripts/monster.gd")
 
 # Wing-driven flight for the Flying Dragon. All numbers derive from surviving wing cubes.
 var state := "GROUNDED"

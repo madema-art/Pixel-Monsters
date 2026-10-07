@@ -1,5 +1,7 @@
 class_name RigSerpent
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterAttack = preload("res://scripts/combat/attack_motion.gd")
 
 # True serpentine locomotion: the head leads and every segment follows the recorded trail with a
 # slithering wave. Each segment is its own rigid group (and structure limb); no legs, no hidden biped.

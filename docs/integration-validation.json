@@ -1,0 +1,77 @@
+{
+	"checks": [
+		{
+			"check": "res://scenes/battle.tscn: normal startup uses two different roster entrants",
+			"passed": true
+		},
+		{
+			"check": "res://scenes/battle.tscn: legacy archetypes are not default fighters",
+			"passed": true
+		},
+		{
+			"check": "res://scenes/battle.tscn: both bodies are exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "res://scenes/prototype.tscn: normal startup uses two different roster entrants",
+			"passed": true
+		},
+		{
+			"check": "res://scenes/prototype.tscn: legacy archetypes are not default fighters",
+			"passed": true
+		},
+		{
+			"check": "res://scenes/prototype.tscn: both bodies are exactly 1,000 cubes",
+			"passed": true
+		},
+		{
+			"check": "R starts fresh roster fights (always two different entrants)",
+			"passed": true
+		},
+		{
+			"check": "R avoids repeating the identical pairing back to back",
+			"passed": true
+		},
+		{
+			"check": "R eventually cycles most of the roster",
+			"passed": true
+		},
+		{
+			"check": "controller Y (observer_new_fight) starts a new fight",
+			"passed": true
+		},
+		{
+			"check": "stick drift below the deadzone does not move the camera or take over the director",
+			"passed": true
+		},
+		{
+			"check": "left stick moves the camera forward",
+			"passed": true
+		},
+		{
+			"check": "left stick is analog (half deflection moves less than full)",
+			"passed": true
+		},
+		{
+			"check": "stick input hands the camera over from the director like WASD",
+			"passed": true
+		},
+		{
+			"check": "right stick yaws continuously (look right turns right)",
+			"passed": true
+		},
+		{
+			"check": "right stick is analog",
+			"passed": true
+		},
+		{
+			"check": "pitch is clamped (no flip)",
+			"passed": true
+		},
+		{
+			"check": "controller Back toggles director/free camera",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

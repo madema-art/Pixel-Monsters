@@ -1,4 +1,8 @@
 extends SceneTree
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
+const MonsterBrain = preload("res://scripts/combat/brain.gd")
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
 
 var checks := []
 var failures := 0

@@ -1,5 +1,7 @@
 class_name BoneRegen
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const PixelMonster = preload("res://scripts/monster.gd")
 
 # Skeleton reassembly. Detached original cubes stay recoverable until something shatters them.
 # States on the cube dictionary: 0 attached, 1 loose/recoverable, 2 shattered (permanent).

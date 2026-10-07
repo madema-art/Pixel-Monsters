@@ -1,5 +1,8 @@
 class_name RangedManager
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
+const MonsterAttack = preload("res://scripts/combat/attack_motion.gd")
 
 # Projectiles, sustained streams (flame / gaze beam), telegraphed meteors and web bolts.
 # Every ranged attack is a physical object or a swept volume that must touch surviving cubes.

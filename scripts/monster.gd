@@ -1,5 +1,10 @@
 class_name PixelMonster
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BodyLayout = preload("res://scripts/body_layout.gd")
+const BoneRegen = preload("res://scripts/combat/regen.gd")
+const FlightState = preload("res://scripts/combat/flight.gd")
+const MonsterStructure = preload("res://scripts/structure.gd")
 
 signal impacted(contact: Vector3, removed: int)
 var cubes: Array[Dictionary] = []

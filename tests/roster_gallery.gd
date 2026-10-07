@@ -1,4 +1,6 @@
 extends SceneTree
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
 # Rendered contact sheet of all 16 entrants (needs a display / GPU or software GL):
 #   godot --path . --script res://tests/roster_gallery.gd   (PM_OUT=/path/dir PM_STEPS=150)
 var battle: Node3D

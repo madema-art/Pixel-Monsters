@@ -1,5 +1,7 @@
 class_name MonsterAttack
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
 
 var charge_heading := Vector3.ZERO
 var running := false

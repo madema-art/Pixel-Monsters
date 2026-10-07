@@ -1,5 +1,7 @@
 class_name MonsterMoves
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const PixelMonster = preload("res://scripts/monster.gd")
 
 # Commands are shared by autonomous controllers and any future human controller.
 const MOVES := {

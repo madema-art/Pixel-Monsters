@@ -1,4 +1,6 @@
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BodyLayout = preload("res://scripts/body_layout.gd")
 
 const IDS := ["gorgeblock","needlemantle","bastion"]
 # Tournament roster (Milestone 5 build-out), in bracket-seed order.

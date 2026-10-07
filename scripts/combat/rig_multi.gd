@@ -1,5 +1,7 @@
 class_name RigMulti
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterAttack = preload("res://scripts/combat/attack_motion.gd")
 
 # Data-driven multi-limb rig: a rigid body mass, N planted two-bone chains (legs / tentacles / arms),
 # rigid weapons (lance) and optional squash. Used by the Tarantula, Dark Knight Rider, Eyeball Beast and Blob.

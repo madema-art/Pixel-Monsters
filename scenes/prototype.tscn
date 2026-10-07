@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dh5siydc6e38c"]
 
-[ext_resource type="Script" uid="uid://dc67fhhyvbu1b" path="res://scripts/prototype.gd" id="1"]
+[ext_resource type="Script" uid="uid://e4vk10ccx6yd" path="res://scripts/battle.gd" id="1"]
 
 [node name="PixelMonsters" type="Node3D" unique_id=1473463361]
 script = ExtResource("1")

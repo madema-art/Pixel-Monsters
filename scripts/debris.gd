@@ -1,5 +1,7 @@
 class_name CubeDebris
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BodyLayout = preload("res://scripts/body_layout.gd")
 
 @export var max_physical := 192
 @export var simulation_seconds := 3.5

@@ -1,5 +1,8 @@
 class_name MeleeStrike
 extends Node3D
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const ObserverCamera = preload("res://scripts/observer.gd")
+const PixelMonster = preload("res://scripts/monster.gd")
 
 signal connected(result: Dictionary)
 var attacker: PixelMonster

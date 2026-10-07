@@ -1,5 +1,7 @@
 class_name RigSwarm
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const SwarmUnits = preload("res://scripts/combat/swarm.gd")
 
 var effectors := {}
 

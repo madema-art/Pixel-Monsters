@@ -1,5 +1,11 @@
 class_name CombatMonster
-extends PixelMonster
+extends "res://scripts/monster.gd"
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterAttack = preload("res://scripts/combat/attack_motion.gd")
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
+const MonsterRig = preload("res://scripts/combat/rig.gd")
+const PixelMonster = preload("res://scripts/monster.gd")
+const SwarmUnits = preload("res://scripts/combat/swarm.gd")
 
 var rig = MonsterRig.new()
 var attack_motion := MonsterAttack.new()

@@ -1,4 +1,9 @@
 extends SceneTree
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const BoneRegen = preload("res://scripts/combat/regen.gd")
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
+const FlightState = preload("res://scripts/combat/flight.gd")
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
 # Anatomy / architecture checks for all 16 tournament entrants. Writes docs/roster-validation.json.
 const Archetypes = preload("res://scripts/combat/archetypes.gd")
 var checks := []

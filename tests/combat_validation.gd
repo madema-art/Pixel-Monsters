@@ -1,4 +1,6 @@
 extends SceneTree
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
 
 var results: Array[Dictionary]=[]
 var battle: Node3D

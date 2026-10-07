@@ -12,7 +12,7 @@ The cinematic director starts automatically. V toggles director/free camera; mov
 
 Milestone 3 adds dusk atmosphere, a detailed miniature city, Blender beveled cube surfaces, tiered GPU dust, layered original positional Foley, and six original YuE2 orchestral cues. The aftermath persists until R. Music responds to damage and mobility loss with hysteresis and smooth crossfades. Slow motion leaves the score at its natural tempo.
 
-`scenes/prototype.tscn` preserves the Milestone 1 destruction lab. Its vertical camera keys are now Z/X.
+`scenes/battle.tscn` (project main scene) and `scenes/prototype.tscn` both launch the autonomous 16-entrant tournament game. The Milestone 1 destruction lab now lives in `scenes/destruction_lab.tscn`. Its vertical camera keys are now Z/X.
 
 See [Milestone 3](docs/MILESTONE_03.md) for the cinematic presentation, soundtrack, camera, performance and validation report. [Milestone 2](docs/MILESTONE_02.md) covers combat architecture; [Milestone 1](docs/MILESTONE_01.md) documents the original body/destruction system. Raw measurements are in docs/.
 
@@ -29,3 +29,16 @@ Six seeded complete fights at 60 Hz: `Godot.exe --headless --path this-project-f
 Export: `Godot.exe --headless --path this-project-folder --export-release "Windows Desktop" "D:\Pixel Monsters\Pixel Monsters.exe"`.
 
 Optional verification recorder: set `PIXEL_MONSTERS_VERIFY_DIR` to a local output directory before launching. It saves release identity, telemetry and real framebuffer images. `PIXEL_MONSTERS_VERIFY_UNCAPPED=1` disables VSync for that verification run. Neither variable is supplied by the normal BAT.
+
+## Controls (observer-first)
+
+| Action | Keyboard / mouse | Controller (XInput) | InputMap action |
+|---|---|---|---|
+| New random roster fight | R | Y / Triangle | `observer_new_fight` |
+| Move | WASD | Left stick (analog) | `observer_forward/back/left/right` |
+| Look | RMB + mouse, Q/E yaw | Right stick (analog) | `observer_look_left/right/up/down` |
+| Rise / drop | Z / X (Ctrl) | RB / LB (or RT / LT) | `observer_up` / `observer_down` |
+| Fast camera | Shift | Left stick click | `observer_fast` |
+| Director / free camera | V | Back / Select | `observer_toggle_director` |
+
+Gamepad tuning lives on `ObserverCamera` exports: `stick_deadzone` (0.16 radial), `stick_response`, `pad_move_scale`, `pad_yaw_speed`, `pad_pitch_speed`, `pad_fast_multiplier`, `pad_invert_pitch`. Manual stick input hands the camera over from the director exactly like WASD / RMB; V or Back returns to it.

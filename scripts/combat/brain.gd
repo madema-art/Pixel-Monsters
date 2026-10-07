@@ -1,5 +1,9 @@
 class_name MonsterBrain
 extends RefCounted
+# Explicit preloads: no dependence on the editor-generated global class cache.
+const CombatMonster = preload("res://scripts/combat/combatant.gd")
+const FlightState = preload("res://scripts/combat/flight.gd")
+const MonsterMoves = preload("res://scripts/combat/moves.gd")
 
 var tactic_age := 0.0
 var reposition_wait := 5.0
