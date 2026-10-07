@@ -111,6 +111,12 @@ func apply(body: Node3D) -> void:
 		transforms.head=Transform3D(snap,head_pivot-snap*head_pivot)*transforms.head
 	if not body.archetype.is_empty() and body.archetype.has("extras"): apply_extras(body,transforms)
 	var follow: Dictionary={} if body.archetype.is_empty() else body.archetype.get("follow",{})
+	if not body.archetype.is_empty() and body.archetype.has("tips"):
+		for key in body.archetype.tips:
+			var tip: Dictionary=body.archetype.tips[key]
+			var source: String=tip.follow
+			var point: Array=tip.point
+			effectors[key]=body.to_global(transforms.get(source,transforms.torso)*Vector3(point[0],point[1],point[2]))
 	body.pose_transforms.clear()
 	for region in body.renders:
 		var source: String=follow.get(region,region)

@@ -114,7 +114,7 @@ func update(dt: float) -> void:
 				item.vel.x*=0.65
 				item.vel.z*=0.65
 				item.spin*=0.5
-			item.basis=Basis(item.spin.normalized(),item.spin.length()*dt)*item.basis if item.spin.length()>0.05 else item.basis
+			if item.spin.length()>0.05: item.basis=(Basis(item.spin.normalized(),item.spin.length()*dt)*item.basis).orthonormalized()
 			if item.age>delay and not body.defeated and return_budget>=1.0:
 				return_budget-=1.0
 				item.mode="RETURNING"
@@ -122,7 +122,7 @@ func update(dt: float) -> void:
 				item.hop=params.get("twitch",0.7)
 		else:
 			returning+=1
-			item.basis=item.basis.slerp(Basis.IDENTITY,minf(1.0,dt*3.0))
+			item.basis=item.basis.orthonormalized().slerp(Basis.IDENTITY,minf(1.0,dt*3.0))
 			if item.hop>0.0:
 				item.hop-=dt
 				item.pos.y+=sin(item.age*40.0)*0.04+dt*2.2

@@ -18,6 +18,7 @@ var phase := "READY"
 var progress := 0.0
 var reach := 0.0
 var fired := false
+var quaked := false
 
 func begin(body: Node3D, opponent: Node3D, command: String, selected: String, selected_side: String) -> void:
 	move=command
@@ -34,6 +35,7 @@ func begin(body: Node3D, opponent: Node3D, command: String, selected: String, se
 	age=0
 	hit=false
 	fired=false
+	quaked=false
 	running=true
 
 func cancel() -> void:
@@ -105,6 +107,18 @@ func resolve(body: Node3D, battle: Node3D) -> void:
 			fired=true
 			battle.ranged.fire(body,target,profile,move)
 		return
+	if profile.has("quake") and phase=="COMMIT" and progress>=0.85 and not quaked:
+		quaked=true
+		var planar := Vector2(target.position.x-body.position.x,target.position.z-body.position.z).length()
+		var foot: Vector3=body.effector(move,side)
+		battle.camera.impulse(foot,0.32)
+		battle.effects.burst(Vector3(foot.x,0.3,foot.z),2,true)
+		battle.sound.layer(foot,"body",-6,0.75)
+		if planar<float(profile.quake.radius):
+			target.stagger=maxf(target.stagger,0.9)
+			if planar<7.5:
+				var report_q: Dictionary=target.damage(Vector3(target.global_position.x,0.7,target.global_position.z),2.3,Vector3.UP*6.0)
+				if report_q.direct>0: battle.on_impact(body,target,move,Vector3(target.global_position.x,0.7,target.global_position.z),report_q,12.0)
 	if phase!="COMMIT" and phase!="FOLLOW-THROUGH": return
 	var current: Vector3=body.effector(move,side)
 	# Loose bone pixels (Skeleton reassembly) are smashed by anything swinging through them.

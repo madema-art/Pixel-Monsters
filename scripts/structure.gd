@@ -16,12 +16,14 @@ var fatal_rules: Array = []
 var regenerative := false
 var has_biped := true
 var proportional_limbs := false
+var leg_fail := {"thigh":0.22,"shin":0.18,"foot":0.12}
 
 func configure(archetype: Dictionary) -> void:
 	limbs=archetype.get("limbs",[])
 	fatal_rules=archetype.get("fatal",[])
 	regenerative=archetype.get("special",{}).has("regen")
 	proportional_limbs=archetype.get("proportional_limbs",false)
+	leg_fail=archetype.get("leg_fail",{"thigh":0.22,"shin":0.18,"foot":0.12})
 	limb_regions.clear()
 	for limb in limbs: limb_regions[limb.id]=limb.regions
 
@@ -153,7 +155,7 @@ func failures(cubes: Array[Dictionary]) -> Array[String]:
 			var was_leg: bool=disabled[leg]
 			if regenerative: disabled[leg]=false
 			elif was_leg: continue
-			var broken := (fraction(side+"_thigh")<=.22 or fraction(side+"_shin")<=.18 or fraction(side+"_foot")<=.12) if proportional_limbs else (material(side+"_thigh")<=11 or material(side+"_shin")<=7 or material(side+"_foot")<=threshold("neck",.17,4))
+			var broken := (fraction(side+"_thigh")<=float(leg_fail.thigh) or fraction(side+"_shin")<=float(leg_fail.shin) or fraction(side+"_foot")<=float(leg_fail.foot)) if proportional_limbs else (material(side+"_thigh")<=11 or material(side+"_shin")<=7 or material(side+"_foot")<=threshold("neck",.17,4))
 			if broken:
 				disabled[leg]=true
 				if not was_leg: lost.append(leg)

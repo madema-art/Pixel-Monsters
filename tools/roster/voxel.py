@@ -137,6 +137,7 @@ def scale_design(spec,s):
     for e in spec.get('extras',[]):
         e['pivots']=[sp(p,s) for p in e['pivots']]
         if 'tip' in e: e['tip']=sp(e['tip'],s)
+    for key_t,tip in spec.get('tips',{}).items(): tip['point']=sp(tip['point'],s)
     for key in ('legs_rig','limb_rig'):
         if key in spec:
             for limb in spec[key]:

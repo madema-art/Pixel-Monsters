@@ -25,6 +25,7 @@ static func profile(body: PixelMonster, move: String) -> Dictionary:
 static func needs_met(body: PixelMonster, prof: Dictionary) -> bool:
 	for key in prof.get("needs",{}):
 		if body.structure.fraction(key)<float(prof.needs[key]) or body.structure.disabled.get(key,false): return false
+	if prof.get("both_arms",false) and body.structure.has_biped and not (functional_arm(body,"left") and functional_arm(body,"right")): return false
 	var mode: String=prof.get("flight","")
 	if mode!="" and body.flight!=null:
 		if mode=="air" and not body.flight.airborne(): return false

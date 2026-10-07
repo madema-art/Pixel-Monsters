@@ -1,0 +1,9269 @@
+{
+ "rig_type": "biped",
+ "proportional_limbs": true,
+ "rig": {
+  "shoulder": [
+   6.079,
+   17.028,
+   0.0
+  ],
+  "elbow": [
+   7.553,
+   13.527,
+   -1.474
+  ],
+  "hand": [
+   7.83,
+   8.922,
+   -2.763
+  ],
+  "hip": [
+   2.948,
+   8.001,
+   0.0
+  ],
+  "knee": [
+   2.948,
+   4.685,
+   0.0
+  ],
+  "foot": [
+   2.948,
+   1.0,
+   -1.105
+  ],
+  "idle_hand": [
+   6.655,
+   11.317,
+   -4.974
+  ],
+  "guard": [
+   2.763,
+   23.568,
+   -3.5
+  ],
+  "pivot": [
+   0.0,
+   12.238,
+   0.0
+  ],
+  "head": [
+   0.0,
+   23.107,
+   -4.569
+  ],
+  "head_pivot": [
+   0.0,
+   18.778,
+   0.0
+  ],
+  "torso": [
+   0.0,
+   16.291,
+   -4.237
+  ],
+  "stance_lean": 0.0
+ },
+ "weakpoints": {
+  "shoulder": 0.25,
+  "thigh": 0.21,
+  "shin": 0.16,
+  "foot": 0.17,
+  "neck": 0.17,
+  "head": 0.17,
+  "torso": 0.277
+ },
+ "fatal": [
+  {
+   "regions": [
+    "head",
+    "neck"
+   ],
+   "fraction": 0.14,
+   "reason": "HEAD AND NECK DESTROYED"
+  },
+  {
+   "regions": [
+    "torso"
+   ],
+   "fraction": 0.26,
+   "reason": "TORSO STRUCTURE FAILED"
+  }
+ ],
+ "id": "diaper_baby",
+ "name": "GIANT DIAPER BABY",
+ "kind": "toddler",
+ "palette": "d9a58f",
+ "slim": 0.78,
+ "look": {
+  "skin": "d9a58f",
+  "limb": "d2a08a",
+  "joint": "bd8b78",
+  "head": "e0b09a",
+  "accent": "f0a8a0",
+  "interior": "6a2a2a",
+  "glow": "ffd070",
+  "diaper": "f1ede2",
+  "face": false,
+  "tones": {
+   "diaper": "diaper"
+  }
+ },
+ "behavior": {
+  "speed": 2.3,
+  "acceleration": 0.8,
+  "turn_rate": 0.5,
+  "turn_acceleration": 0.65,
+  "step_seconds": 0.95,
+  "preferred_range": 9.8,
+  "retreat": 0.1,
+  "circle": 0.7,
+  "reposition_interval": 6.5,
+  "reposition_seconds": 3.4,
+  "charge_weight": 0.5,
+  "charge_distance": 17.0,
+  "crush_radius": 3.8
+ },
+ "attacks": {
+  "slap": {
+   "base": "right_punch",
+   "label": "SLAP",
+   "weight": 1.8,
+   "range": 10.6,
+   "force": 15,
+   "radius": 2.4,
+   "trajectory": "hook"
+  },
+  "tantrum_stomp": {
+   "base": "kick",
+   "label": "TANTRUM STOMP",
+   "weight": 1.2,
+   "range": 10.8,
+   "force": 24,
+   "radius": 3.0,
+   "quake": {
+    "radius": 10.0
+   },
+   "wind": 1.0,
+   "sound_pitch": 0.8
+  },
+  "baby_headbutt": {
+   "base": "headbutt",
+   "label": "HEADBUTT",
+   "weight": 1.2,
+   "range": 9.8,
+   "force": 24,
+   "radius": 3.0,
+   "sound_pitch": 0.8
+  },
+  "wild_pounding": {
+   "base": "heavy_hook",
+   "label": "WILD POUNDING",
+   "weight": 1.5,
+   "range": 10.8,
+   "force": 25,
+   "radius": 3.0,
+   "trajectory": "overhead",
+   "both_arms": true,
+   "wind": 0.95,
+   "sound_pitch": 0.85
+  },
+  "belly_flop": {
+   "base": "body_charge",
+   "label": "BELLY FLOP",
+   "weight": 1.4,
+   "range": 14.5,
+   "min_range": 8.5,
+   "force": 34,
+   "radius": 4.4,
+   "trajectory": "leap",
+   "charge_speed": 10.5,
+   "hop": 5.2,
+   "wind": 1.2,
+   "commit": 0.8,
+   "recover": 2.4,
+   "cooldown": 12.0,
+   "sound_pitch": 0.7
+  },
+  "waddle_charge": {
+   "base": "body_charge",
+   "label": "WADDLING CHARGE",
+   "weight": 1.0,
+   "range": 12.5,
+   "force": 27,
+   "radius": 3.2,
+   "trajectory": "charge",
+   "charge_speed": 8.5,
+   "commit": 0.9,
+   "sound_pitch": 0.8
+  }
+ },
+ "priority_targets": [
+  "head",
+  "chest"
+ ],
+ "notes": "Unfair advantage: physically enormous impacts. Sacrifice: short reach and a huge, easy-to-hit head.",
+ "allocation": {
+  "pelvis": 12,
+  "abdomen": 123,
+  "chest": 113,
+  "neck": 6,
+  "head": 221,
+  "left_thigh": 70,
+  "left_shin": 15,
+  "left_foot": 11,
+  "left_shoulder": 10,
+  "left_upper_arm": 43,
+  "left_forearm": 24,
+  "left_fist": 18,
+  "right_thigh": 70,
+  "right_shin": 15,
+  "right_foot": 11,
+  "right_shoulder": 10,
+  "right_upper_arm": 43,
+  "right_forearm": 24,
+  "right_fist": 18,
+  "diaper": 143
+ },
+ "majors": {
+  "pelvis": "torso",
+  "abdomen": "torso",
+  "chest": "torso",
+  "neck": "head",
+  "head": "head",
+  "left_thigh": "left_leg",
+  "left_shin": "left_leg",
+  "left_foot": "left_leg",
+  "left_shoulder": "left_arm",
+  "left_upper_arm": "left_arm",
+  "left_forearm": "left_arm",
+  "left_fist": "left_arm",
+  "right_thigh": "right_leg",
+  "right_shin": "right_leg",
+  "right_foot": "right_leg",
+  "right_shoulder": "right_arm",
+  "right_upper_arm": "right_arm",
+  "right_forearm": "right_arm",
+  "right_fist": "right_arm",
+  "diaper": "torso"
+ },
+ "cells": [
+  {
+   "cell": [
+    -1,
+    9,
+    -1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    1
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    0
+   ],
+   "region": "pelvis",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -3
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -2
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -1
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    0
+   ],
+   "region": "abdomen",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -3
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -2
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    -1
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    0
+   ],
+   "region": "chest",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -1
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    0
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -1
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    0
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -1
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    0
+   ],
+   "region": "neck",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -4
+   ],
+   "region": "head",
+   "major": "head",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -4
+   ],
+   "region": "head",
+   "major": "head",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -4
+   ],
+   "region": "head",
+   "major": "head",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    23,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    23,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    23,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    23,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    23,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    24,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -4
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    24,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    24,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    24,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    24,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    24,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    4,
+    24,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -3,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    25,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -2,
+    25,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    25,
+    -3
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    2,
+    25,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    25,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    25,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    3,
+    25,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    -2
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    -1
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    0
+   ],
+   "region": "head",
+   "major": "head"
+  },
+  {
+   "cell": [
+    -4,
+    3,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -5,
+    4,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -5,
+    5,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    -2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    2
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    0
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    1
+   ],
+   "region": "left_thigh",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    2,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    2,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    -2
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    3,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    3,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    -2
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    -1
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    0
+   ],
+   "region": "left_shin",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    1,
+    -2
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    1,
+    -1
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -4,
+    1,
+    0
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    -3
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    -2
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    -1
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    0
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    1
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    -2
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    -1
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    0
+   ],
+   "region": "left_foot",
+   "major": "left_leg"
+  },
+  {
+   "cell": [
+    -5,
+    16,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    17,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    17,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -5,
+    17,
+    -1
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -5,
+    17,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -5,
+    17,
+    1
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -4,
+    17,
+    -1
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    18,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    18,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -5,
+    18,
+    0
+   ],
+   "region": "left_shoulder",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    13,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    13,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    13,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    13,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    13,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    13,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    13,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    14,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    14,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    14,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    14,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    14,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    14,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    14,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    14,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    14,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    14,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    14,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    16,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    16,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    -2
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    0
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    17,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    17,
+    1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    17,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    17,
+    1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    18,
+    -1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    18,
+    1
+   ],
+   "region": "left_upper_arm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -1
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -1
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -1
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    12,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    -1
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    12,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    12,
+    -2
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    12,
+    -1
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    13,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    13,
+    -3
+   ],
+   "region": "left_forearm",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -4
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -4
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -4
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -4
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -2
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -3
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -4
+   ],
+   "region": "left_fist",
+   "major": "left_arm"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    3,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    5,
+    4,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    -2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    2
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    5,
+    5,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    1
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    0
+   ],
+   "region": "right_thigh",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    -2
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    2,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    2,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    -2
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    3,
+    -1
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    3,
+    0
+   ],
+   "region": "right_shin",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    -2
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    -1
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    0
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    -3
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    -2
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    -1
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    0
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    1
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    1,
+    -2
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    1,
+    -1
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    4,
+    1,
+    0
+   ],
+   "region": "right_foot",
+   "major": "right_leg"
+  },
+  {
+   "cell": [
+    5,
+    16,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    4,
+    17,
+    -1
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    5,
+    17,
+    -1
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    5,
+    17,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    5,
+    17,
+    1
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    17,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    17,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    5,
+    18,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    18,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    18,
+    0
+   ],
+   "region": "right_shoulder",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    13,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    13,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    13,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    13,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    13,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    13,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    13,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    14,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    14,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    14,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    14,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    14,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    14,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    14,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    14,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    14,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    14,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    14,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    -2
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    16,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    16,
+    0
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    17,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    17,
+    1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    17,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    17,
+    1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    18,
+    -1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    18,
+    1
+   ],
+   "region": "right_upper_arm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -1
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -1
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -1
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    12,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    12,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    12,
+    -1
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    -1
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    12,
+    -2
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    13,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    13,
+    -3
+   ],
+   "region": "right_forearm",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -4
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -4
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -4
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -4
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -3
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -2
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -4
+   ],
+   "region": "right_fist",
+   "major": "right_arm"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -4
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    4
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    3
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    0
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    1
+   ],
+   "region": "diaper",
+   "major": "torso"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    2
+   ],
+   "region": "diaper",
+   "major": "torso"
+  }
+ ],
+ "bounds": {
+  "min": [
+   -9,
+   1,
+   -4
+  ],
+  "max": [
+   9,
+   26,
+   4
+  ]
+ },
+ "fit_scale": 0.921,
+ "geometry_sha256": "f8a538661056030d0839ced975fa7f3d9a14b58c6ea06551a85b909cf86b81a1"
+}
