@@ -166,7 +166,7 @@ func average(values: Array[float]) -> float:
 	return sum/maxi(1,values.size())
 
 func snapshot() -> Dictionary:
-	return {"counts":[monsters[0].alive_count(),monsters[1].alive_count()],"destroyed":2000-monsters[0].alive_count()-monsters[1].alive_count(),"physical_debris":debris.active.size(),"peak_debris":debris.peak_active,"rubble":debris.rubble.size(),"fps":Engine.get_frames_per_second(),"frame_ms":average(frame_ms),"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"render_objects":Performance.get_monitor(Performance.RENDER_TOTAL_OBJECTS_IN_FRAME),"physics_active":Performance.get_monitor(Performance.PHYSICS_3D_ACTIVE_OBJECTS),"query_ms":monsters[target_index].last_query_ms,"event_ms":monsters[target_index].last_event_ms,"arms":[monsters[0].structure.disabled,monsters[1].structure.disabled],"last_hit":last_hit}
+	return {"counts":[monsters[0].alive_count(),monsters[1].alive_count()],"destroyed":2000-monsters[0].alive_count()-monsters[1].alive_count(),"physical_debris":debris.active.size(),"peak_debris":debris.peak_active,"active_collision_bodies":debris.active.size()+1,"rubble":debris.rubble.size(),"fps":Engine.get_frames_per_second(),"frame_ms":average(frame_ms),"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"render_objects":Performance.get_monitor(Performance.RENDER_TOTAL_OBJECTS_IN_FRAME),"physics_active_monitor":Performance.get_monitor(Performance.PHYSICS_3D_ACTIVE_OBJECTS),"query_ms":monsters[target_index].last_query_ms,"event_ms":monsters[target_index].last_event_ms,"arms":[monsters[0].structure.disabled,monsters[1].structure.disabled],"last_hit":last_hit}
 
 func sample_performance(seconds: float=3.0) -> Dictionary:
 	var samples: Array[float]=[]

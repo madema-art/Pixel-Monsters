@@ -1,0 +1,44 @@
+{
+	"failed": 0,
+	"fresh_process": true,
+	"passed": 6,
+	"results": [
+		{
+			"assertions": 1020,
+			"message": "",
+			"passed": true,
+			"test": "test_exact_unique_allocation"
+		},
+		{
+			"assertions": 1,
+			"message": "",
+			"passed": true,
+			"test": "test_layout_is_connected"
+		},
+		{
+			"assertions": 60,
+			"message": "",
+			"passed": true,
+			"test": "test_localized_damage_and_persistent_hole"
+		},
+		{
+			"assertions": 2,
+			"message": "",
+			"passed": true,
+			"test": "test_sweep_uses_surviving_geometry"
+		},
+		{
+			"assertions": 8,
+			"message": "",
+			"passed": true,
+			"test": "test_arm_failure_is_local_and_nonfatal"
+		},
+		{
+			"assertions": 2,
+			"message": "",
+			"passed": true,
+			"test": "test_render_count_matches_body"
+		}
+	],
+	"total": 6
+}

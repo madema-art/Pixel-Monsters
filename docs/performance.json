@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-07",
+  "engine": "Godot 4.7.2",
+  "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+  "cpu": "Intel Core i7-10700F",
+  "viewport": [
+    1152,
+    648
+  ],
+  "vsync": "Disabled during these samples; restored to enabled for handoff",
+  "sample_seconds": 3,
+  "pristine": {
+    "result": {
+      "active_collision_bodies": 1,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": false,
+          "right_arm": false
+        }
+      ],
+      "counts": [
+        1000,
+        1000
+      ],
+      "destroyed": 0,
+      "draw_calls": 144,
+      "event_ms": 0,
+      "fps": 740,
+      "frame_ms": 1.2935875,
+      "last_hit": {},
+      "mean_draw_calls": 144,
+      "mean_fps": 760.928726342633,
+      "mean_ms": 1.3141835304424,
+      "p95_ms": 2.003,
+      "peak_debris": 0,
+      "physical_debris": 0,
+      "physics_active_monitor": 0,
+      "query_ms": 0,
+      "render_objects": 557,
+      "rubble": 0,
+      "sample_frames": 2283,
+      "sample_peak_physical": 0,
+      "sample_seconds": 3
+    },
+    "source": "game"
+  },
+  "stress25": {
+    "result": {
+      "active_collision_bodies": 193,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": false,
+          "right_arm": false
+        }
+      ],
+      "counts": [
+        724,
+        772
+      ],
+      "destroyed": 504,
+      "draw_calls": 150,
+      "event_ms": 2.166,
+      "fps": 732,
+      "frame_ms": 1.66605,
+      "last_hit": {},
+      "max_event_ms": 2.407,
+      "mean_event_ms": 2.26586666666667,
+      "mean_query_ms": 0.187066666666667,
+      "peak_debris": 192,
+      "physical_debris": 192,
+      "physics_active_monitor": 0,
+      "query_ms": 0.2,
+      "render_objects": 567,
+      "rubble": 312,
+      "stress_hits": 15
+    },
+    "source": "game"
+  },
+  "destruction25": {
+    "result": {
+      "active_collision_bodies": 175,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": false,
+          "right_arm": false
+        }
+      ],
+      "counts": [
+        724,
+        772
+      ],
+      "destroyed": 504,
+      "draw_calls": 153,
+      "event_ms": 2.166,
+      "fps": 673,
+      "frame_ms": 1.47822083333333,
+      "last_hit": {},
+      "mean_draw_calls": 151.924063116371,
+      "mean_fps": 675.826988290996,
+      "mean_ms": 1.47966863905326,
+      "p95_ms": 2.95,
+      "peak_debris": 192,
+      "physical_debris": 174,
+      "physics_active_monitor": 0,
+      "query_ms": 0.2,
+      "render_objects": 570,
+      "rubble": 330,
+      "sample_frames": 2028,
+      "sample_peak_physical": 192,
+      "sample_seconds": 3
+    },
+    "source": "game"
+  },
+  "stress50": {
+    "result": {
+      "active_collision_bodies": 193,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": false,
+          "right_arm": true
+        }
+      ],
+      "counts": [
+        522,
+        458
+      ],
+      "destroyed": 1020,
+      "draw_calls": 152,
+      "event_ms": 1.887,
+      "fps": 673,
+      "frame_ms": 1.78692083333333,
+      "last_hit": {},
+      "max_event_ms": 2.633,
+      "mean_event_ms": 2.0290625,
+      "mean_query_ms": 0.182875,
+      "peak_debris": 192,
+      "physical_debris": 192,
+      "physics_active_monitor": 0,
+      "query_ms": 0.237,
+      "render_objects": 572,
+      "rubble": 828,
+      "stress_hits": 16
+    },
+    "source": "game"
+  },
+  "destruction50": {
+    "result": {
+      "active_collision_bodies": 190,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": false,
+          "right_arm": true
+        }
+      ],
+      "counts": [
+        522,
+        458
+      ],
+      "destroyed": 1020,
+      "draw_calls": 154,
+      "event_ms": 1.887,
+      "fps": 652,
+      "frame_ms": 1.51383333333333,
+      "last_hit": {},
+      "mean_draw_calls": 152.976637887252,
+      "mean_fps": 656.155077870511,
+      "mean_ms": 1.52402996444896,
+      "p95_ms": 3.53,
+      "peak_debris": 192,
+      "physical_debris": 189,
+      "physics_active_monitor": 0,
+      "query_ms": 0.237,
+      "render_objects": 574,
+      "rubble": 831,
+      "sample_frames": 1969,
+      "sample_peak_physical": 192,
+      "sample_seconds": 3
+    },
+    "source": "game"
+  },
+  "large_melee": {
+    "result": {
+      "active_collision_bodies": 119,
+      "arms": [
+        {
+          "left_arm": false,
+          "right_arm": false
+        },
+        {
+          "left_arm": true,
+          "right_arm": false
+        }
+      ],
+      "counts": [
+        1000,
+        869
+      ],
+      "destroyed": 131,
+      "draw_calls": 150,
+      "event_ms": 3.04,
+      "fps": 646,
+      "frame_ms": 1.3798,
+      "last_hit": {
+        "contact": {
+          "x": 3.21087455749512,
+          "y": 19.71875,
+          "z": 6.43796062469482
+        },
+        "detached": 68,
+        "direct": 63,
+        "event_ms": 3.04,
+        "query_ms": 0.374,
+        "region": "left_shoulder",
+        "remaining": 869
+      },
+      "mean_draw_calls": 151.448559670782,
+      "mean_fps": 647.888563167135,
+      "mean_ms": 1.54347530864198,
+      "p95_ms": 4.334,
+      "peak_debris": 131,
+      "physical_debris": 118,
+      "physics_active_monitor": 0,
+      "query_ms": 0.374,
+      "render_objects": 583,
+      "rubble": 13,
+      "sample_frames": 1944,
+      "sample_peak_physical": 131,
+      "sample_seconds": 3
+    },
+    "source": "game"
+  },
+  "notes": "Wall-clock process-frame samples, not isolated GPU timing. Includes HUD and arena. Jolt generic active-object monitor returned zero; active_collision_bodies is pool occupancy plus the floor. Physical tick rate is 60 Hz. Three-second snapshots on one PC."
+}
