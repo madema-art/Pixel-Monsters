@@ -23,7 +23,7 @@ var quaked := false
 func begin(body: Node3D, opponent: Node3D, command: String, selected: String, selected_side: String) -> void:
 	move=command
 	profile=MonsterMoves.profile(body,move)
-	charge_heading=(opponent.position-body.position).normalized()
+	charge_heading=(opponent.focus_point(body.position)-body.position).normalized()
 	side=selected_side
 	region=selected
 	target=opponent

@@ -119,7 +119,7 @@ func reset_body() -> void:
 			add_child(instance)
 			renders[render_key] = instance
 	structure.proportional=not archetype.is_empty()
-	structure.weakpoints={} if archetype.is_empty() else archetype.weakpoints
+	structure.weakpoints={} if archetype.is_empty() else archetype.get("weakpoints",{})
 	structure.configure(archetype)
 	structure.build(cubes)
 	if regen!=null: regen.queue_free(); regen=null

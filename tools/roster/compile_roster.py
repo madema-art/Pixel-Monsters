@@ -19,8 +19,12 @@ def all_specs():
     return out
 
 def build(spec):
-    regions = voxel.slim_regions(spec["regions"], spec.get("slim", 1.0))
-    live, s = voxel.compile_regions(regions, expect_components=spec.get("expect_components", 1))
+    if "custom_build" in spec:
+        live, regions, s = spec["custom_build"]()
+        spec = {k: v for k, v in spec.items() if k != "custom_build"}
+    else:
+        regions = voxel.slim_regions(spec["regions"], spec.get("slim", 1.0))
+        live, s = voxel.compile_regions(regions, expect_components=spec.get("expect_components", 1))
     if "tags_fn" in spec:
         spec = dict(spec); spec["tags"] = spec.pop("tags_fn")(live)
     data = voxel.finish({k: v for k, v in spec.items() if k != "tags_fn"}, live, s, regions)

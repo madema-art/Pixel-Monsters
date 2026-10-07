@@ -142,6 +142,8 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 		movement.append({"distance":0.0,"stationary_seconds":0.0,"pursuit_distance":0.0,"retreat_distance":0.0,"lateral_distance":0.0,"zones":[],"max_displacement":0.0})
 		fighter.reset_body()
 		fighter.reset_motion()
+	monsters[0].opponent=monsters[1]
+	monsters[1].opponent=monsters[0]
 	brains[0].initialize(battle_seed,{"aggression":0.87,"hook":1.7,"kick":0.65,"evade":0.18})
 	brains[1].initialize(battle_seed+997,{"aggression":0.78,"hook":0.85,"kick":1.6,"evade":0.28})
 	last_midpoint=(monsters[0].position+monsters[1].position)*.5

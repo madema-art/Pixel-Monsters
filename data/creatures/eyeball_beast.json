@@ -1,0 +1,9571 @@
+{
+ "id": "eyeball_beast",
+ "name": "GIANT EYEBALL BEAST",
+ "kind": "gazer",
+ "palette": "d8cfae",
+ "rig_type": "multi",
+ "slim": 1.0,
+ "proportional_limbs": false,
+ "rig": {
+  "head": [
+   0.0,
+   14.152,
+   -5.824
+  ],
+  "torso": [
+   0.0,
+   13.212,
+   -4.697
+  ],
+  "stance_y": -0.6,
+  "sag": 1.0
+ },
+ "rig_multi": {
+  "pivot": [
+   0,
+   12,
+   0
+  ],
+  "chains": [
+   {
+    "id": "tent_fl",
+    "role": "leg",
+    "regions": [
+     "tent_fl_u",
+     "tent_fl_l"
+    ],
+    "root": [
+     -3.4,
+     11.0,
+     -2.8
+    ],
+    "mid": [
+     -7.4,
+     8.0,
+     -4.76
+    ],
+    "end": [
+     -9.2,
+     1.0,
+     -7.0
+    ],
+    "bend": [
+     -0.4,
+     1,
+     0
+    ],
+    "foot_height": 0.0
+   },
+   {
+    "id": "tent_fr",
+    "role": "leg",
+    "regions": [
+     "tent_fr_u",
+     "tent_fr_l"
+    ],
+    "root": [
+     3.4,
+     11.0,
+     -2.8
+    ],
+    "mid": [
+     7.4,
+     8.0,
+     -4.76
+    ],
+    "end": [
+     9.2,
+     1.0,
+     -7.0
+    ],
+    "bend": [
+     0.4,
+     1,
+     0
+    ],
+    "foot_height": 0.0
+   },
+   {
+    "id": "tent_bl",
+    "role": "leg",
+    "regions": [
+     "tent_bl_u",
+     "tent_bl_l"
+    ],
+    "root": [
+     -3.4,
+     11.0,
+     3.0
+    ],
+    "mid": [
+     -7.4,
+     8.0,
+     5.1
+    ],
+    "end": [
+     -9.2,
+     1.0,
+     7.5
+    ],
+    "bend": [
+     -0.4,
+     1,
+     0
+    ],
+    "foot_height": 0.0
+   },
+   {
+    "id": "tent_br",
+    "role": "leg",
+    "regions": [
+     "tent_br_u",
+     "tent_br_l"
+    ],
+    "root": [
+     3.4,
+     11.0,
+     3.0
+    ],
+    "mid": [
+     7.4,
+     8.0,
+     5.1
+    ],
+    "end": [
+     9.2,
+     1.0,
+     7.5
+    ],
+    "bend": [
+     0.4,
+     1,
+     0
+    ],
+    "foot_height": 0.0
+   },
+   {
+    "id": "tent_al",
+    "role": "arm",
+    "regions": [
+     "tent_al_u",
+     "tent_al_l"
+    ],
+    "root": [
+     -5.0,
+     16.4,
+     -1.0
+    ],
+    "mid": [
+     -9.4,
+     17.0,
+     -5.2
+    ],
+    "end": [
+     -12.5,
+     12.0,
+     -9.6
+    ],
+    "idle": [
+     -10.5,
+     15.0,
+     -7.0
+    ],
+    "wave": 1.1,
+    "phase": 0.0,
+    "bend": [
+     -0.3,
+     1,
+     0
+    ]
+   },
+   {
+    "id": "tent_ar",
+    "role": "arm",
+    "regions": [
+     "tent_ar_u",
+     "tent_ar_l"
+    ],
+    "root": [
+     5.0,
+     16.4,
+     -1.0
+    ],
+    "mid": [
+     9.4,
+     17.0,
+     -5.2
+    ],
+    "end": [
+     12.5,
+     12.0,
+     -9.6
+    ],
+    "idle": [
+     10.5,
+     15.0,
+     -7.0
+    ],
+    "wave": 1.1,
+    "phase": 2.1,
+    "bend": [
+     0.3,
+     1,
+     0
+    ]
+   }
+  ],
+  "gait": {
+   "step_seconds": 0.55,
+   "threshold": 1.8,
+   "max_simultaneous": 2,
+   "lift": 1.2
+  },
+  "attack_lean": 0.08,
+  "head_region": "sclera"
+ },
+ "aliases": {
+  "head": "eye",
+  "chest": "sclera"
+ },
+ "target_regions": [
+  "sclera",
+  "eye",
+  "tent_al",
+  "tent_ar",
+  "tent_fl",
+  "tent_fr"
+ ],
+ "limbs": [
+  {
+   "id": "tent_fl",
+   "regions": [
+    "tent_fl_u",
+    "tent_fl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.28
+  },
+  {
+   "id": "tent_fr",
+   "regions": [
+    "tent_fr_u",
+    "tent_fr_l"
+   ],
+   "kind": "leg",
+   "fail": 0.28
+  },
+  {
+   "id": "tent_bl",
+   "regions": [
+    "tent_bl_u",
+    "tent_bl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.28
+  },
+  {
+   "id": "tent_br",
+   "regions": [
+    "tent_br_u",
+    "tent_br_l"
+   ],
+   "kind": "leg",
+   "fail": 0.28
+  },
+  {
+   "id": "tent_al",
+   "regions": [
+    "tent_al_u",
+    "tent_al_l"
+   ],
+   "kind": "arm",
+   "fail": 0.28
+  },
+  {
+   "id": "tent_ar",
+   "regions": [
+    "tent_ar_u",
+    "tent_ar_l"
+   ],
+   "kind": "arm",
+   "fail": 0.28
+  },
+  {
+   "id": "gaze",
+   "regions": [
+    "eye",
+    "pupil"
+   ],
+   "kind": "eye",
+   "fail": 0.0
+  }
+ ],
+ "locomotion": {
+  "type": "legs",
+  "legs": [
+   "tent_fl",
+   "tent_fr",
+   "tent_bl",
+   "tent_br"
+  ],
+  "power": 1.15
+ },
+ "fatal": [
+  {
+   "regions": [
+    "sclera",
+    "eye",
+    "pupil"
+   ],
+   "fraction": 0.3,
+   "reason": "EYE DESTROYED"
+  }
+ ],
+ "look": {
+  "skin": "d8cfae",
+  "limb": "8a3a6a",
+  "joint": "5a2244",
+  "head": "d8cfae",
+  "accent": "c23a3a",
+  "interior": "4a1a2a",
+  "glow": "ff9a2a",
+  "face": false,
+  "tones": {
+   "eye": "head",
+   "pupil": "joint",
+   "crown": "limb",
+   "tent_fl_u": "limb",
+   "tent_fr_u": "limb"
+  }
+ },
+ "behavior": {
+  "speed": 2.5,
+  "acceleration": 1.3,
+  "turn_rate": 0.75,
+  "turn_acceleration": 1.0,
+  "step_seconds": 0.6,
+  "preferred_range": 12.0,
+  "retreat": 0.4,
+  "circle": 1.9,
+  "reposition_interval": 4.0,
+  "reposition_seconds": 2.6,
+  "crush_radius": 3.2
+ },
+ "attacks": {
+  "tentacle_strike": {
+   "base": "custom",
+   "label": "TENTACLE STRIKE",
+   "weight": 2.0,
+   "range": 16.0,
+   "force": 18,
+   "radius": 1.9,
+   "effector": "tent_ar",
+   "trajectory": "straight",
+   "needs": {
+    "tent_ar": 0.4
+   },
+   "wind": 0.7,
+   "recover": 1.1,
+   "sound_pitch": 1.1
+  },
+  "tentacle_lash": {
+   "base": "custom",
+   "label": "TENTACLE LASH",
+   "weight": 1.8,
+   "range": 16.0,
+   "force": 17,
+   "radius": 1.9,
+   "effector": "tent_al",
+   "trajectory": "hook",
+   "needs": {
+    "tent_al": 0.4
+   },
+   "wind": 0.7,
+   "recover": 1.1,
+   "sound_pitch": 1.1
+  },
+  "tentacle_grab": {
+   "base": "custom",
+   "label": "TENTACLE GRAB",
+   "weight": 1.2,
+   "range": 15.0,
+   "force": 12,
+   "radius": 1.9,
+   "effector": "tent_ar",
+   "trajectory": "straight",
+   "needs": {
+    "tent_ar": 0.45
+   },
+   "cooldown": 14.0,
+   "requires_free": true,
+   "hold": {
+    "label": "ENTANGLED",
+    "duration": 2.4,
+    "tick": 0.6,
+    "tick_radius": 1.5,
+    "tick_force": 7.0,
+    "region": "chest",
+    "end": "drop",
+    "distance": 7.0
+   }
+  },
+  "body_ram": {
+   "base": "custom",
+   "label": "BODY RAM",
+   "weight": 0.9,
+   "range": 11.0,
+   "force": 23,
+   "radius": 2.9,
+   "effector": "torso",
+   "lunge": 2.6,
+   "wind": 1.0
+  },
+  "gaze_beam": {
+   "base": "ranged",
+   "label": "GAZE BEAM",
+   "ranged": "stream",
+   "weight": 2.6,
+   "range": 32.0,
+   "min_range": 9.0,
+   "close_distance": 9.0,
+   "close_weight": 0.5,
+   "wind": 1.6,
+   "commit": 2.4,
+   "follow": 0.3,
+   "recover": 1.9,
+   "duration": 2.4,
+   "cooldown": 15.0,
+   "muzzle": "head",
+   "depends": [
+    "gaze"
+   ],
+   "needs": {
+    "gaze": 0.3
+   },
+   "tick": 0.18,
+   "tick_radius": 1.25,
+   "force": 5.0,
+   "track": 0.85,
+   "arc_error": 0.2,
+   "beam": true,
+   "beam_color": "ff3df0",
+   "beam_radius": 0.4,
+   "charge_orb": true,
+   "orb": 1.4,
+   "orb_color": "ff3df0",
+   "aim_region": "chest"
+  }
+ },
+ "priority_targets": [
+  "eye"
+ ],
+ "notes": "Unfair advantage: unpredictable multidirectional movement and a tracking gaze beam. Sacrifice: the eye is a big target, and each eye hit weakens the beam.",
+ "allocation": {
+  "sclera": 535,
+  "eye": 54,
+  "pupil": 4,
+  "crown": 23,
+  "tent_fl_u": 34,
+  "tent_fl_l": 27,
+  "tent_fr_u": 34,
+  "tent_fr_l": 27,
+  "tent_bl_u": 37,
+  "tent_bl_l": 28,
+  "tent_br_u": 37,
+  "tent_br_l": 28,
+  "tent_al_u": 30,
+  "tent_al_l": 36,
+  "tent_ar_u": 30,
+  "tent_ar_l": 36
+ },
+ "majors": {
+  "sclera": "eye",
+  "eye": "eye",
+  "pupil": "eye",
+  "crown": "eye",
+  "tent_fl_u": "tent_fl",
+  "tent_fl_l": "tent_fl",
+  "tent_fr_u": "tent_fr",
+  "tent_fr_l": "tent_fr",
+  "tent_bl_u": "tent_bl",
+  "tent_bl_l": "tent_bl",
+  "tent_br_u": "tent_br",
+  "tent_br_l": "tent_br",
+  "tent_al_u": "tent_al",
+  "tent_al_l": "tent_al",
+  "tent_ar_u": "tent_ar",
+  "tent_ar_l": "tent_ar"
+ },
+ "cells": [
+  {
+   "cell": [
+    0,
+    9,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    12,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    12,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    12,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    12,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    12,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    13,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    13,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    13,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    13,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -5,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    5
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    14,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    14,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    14,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -5,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    5,
+    15,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    16,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    16,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    16,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    16,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    4
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    17,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    17,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    17,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    17,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -3,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    18,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    3
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    -2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    18,
+    2
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    18,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    18,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    18,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    19,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    1
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    19,
+    0
+   ],
+   "region": "sclera",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -5
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -4
+   ],
+   "region": "eye",
+   "major": "eye",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -5
+   ],
+   "region": "pupil",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -5
+   ],
+   "region": "pupil",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -5
+   ],
+   "region": "pupil",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -5
+   ],
+   "region": "pupil",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    19,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    19,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    20,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    20,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    22,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    23,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -4,
+    23,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    23,
+    1
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    4,
+    23,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    2
+   ],
+   "region": "crown",
+   "major": "eye"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    7,
+    -5
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    7,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -5
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -5
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -5
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -5
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    -4
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    -2
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -2
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    -2
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -3
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -2
+   ],
+   "region": "tent_fl_u",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -9,
+    1,
+    -7
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -9,
+    1,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    1,
+    -7
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    1,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    -7
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    -7
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    -7
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    -6
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    -4
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    -5
+   ],
+   "region": "tent_fl_l",
+   "major": "tent_fl"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    -5
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -5
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -5
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -5
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -5
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -2
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    -2
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    -4
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -2
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    -3
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    -2
+   ],
+   "region": "tent_fr_u",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    1,
+    -7
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    1,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    9,
+    1,
+    -7
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    9,
+    1,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    -7
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    -7
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    -7
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    -4
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    -6
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -5
+   ],
+   "region": "tent_fr_l",
+   "major": "tent_fr"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    7,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    7,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    6
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    5
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    2
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    10,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    2
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    4
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    2
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -4,
+    11,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    2
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    3
+   ],
+   "region": "tent_bl_u",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    1,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    1,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    1,
+    8
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    1,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    7
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    5
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    6
+   ],
+   "region": "tent_bl_l",
+   "major": "tent_bl"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    6
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    5
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    2
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    2
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    10,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    4
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    2
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    2
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    4,
+    11,
+    3
+   ],
+   "region": "tent_br_u",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    1,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    1,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    1,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    1,
+    8
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    7
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    6
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    5
+   ],
+   "region": "tent_br_l",
+   "major": "tent_br"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    -5
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    15,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    15,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    15,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    15,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    15,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    15,
+    0
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    16,
+    -5
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    16,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    16,
+    -5
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    16,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    16,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -7,
+    16,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    -3
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -6,
+    16,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    16,
+    -2
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    16,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -5,
+    16,
+    0
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -4,
+    16,
+    -1
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    17,
+    -5
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -8,
+    17,
+    -4
+   ],
+   "region": "tent_al_u",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    10,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    10,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -13,
+    11,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    11,
+    -10
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    11,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    11,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    11,
+    -10
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    11,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    11,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -13,
+    12,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    12,
+    -10
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    12,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -12,
+    12,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    12,
+    -10
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    12,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    12,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    12,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    13,
+    -9
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    13,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    13,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    13,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    13,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    14,
+    -8
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -11,
+    14,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    14,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    14,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    14,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    14,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    15,
+    -7
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    15,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    15,
+    -5
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    15,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    15,
+    -5
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    16,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -10,
+    16,
+    -5
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    -9,
+    16,
+    -6
+   ],
+   "region": "tent_al_l",
+   "major": "tent_al"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    15,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    15,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    15,
+    0
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    15,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    15,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    -5
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    15,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    4,
+    16,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    16,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    16,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    5,
+    16,
+    0
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    6,
+    16,
+    -1
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    7,
+    16,
+    -2
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    16,
+    -5
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    16,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    16,
+    -3
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    16,
+    -5
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    16,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    8,
+    17,
+    -4
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    17,
+    -5
+   ],
+   "region": "tent_ar_u",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    10,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    10,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    11,
+    -10
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    11,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    11,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    11,
+    -10
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    11,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    11,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    13,
+    11,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    12,
+    -10
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    12,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    12,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    12,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    12,
+    -10
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    12,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    12,
+    12,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    13,
+    12,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    13,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    13,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    13,
+    -9
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    13,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    13,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    14,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    14,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    14,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    14,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    14,
+    -8
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    11,
+    14,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    15,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    15,
+    -5
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    15,
+    -7
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    15,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    15,
+    -5
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    9,
+    16,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    16,
+    -6
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  },
+  {
+   "cell": [
+    10,
+    16,
+    -5
+   ],
+   "region": "tent_ar_l",
+   "major": "tent_ar"
+  }
+ ],
+ "bounds": {
+  "min": [
+   -13,
+   1,
+   -10
+  ],
+  "max": [
+   13,
+   25,
+   8
+  ]
+ },
+ "fit_scale": 0.939,
+ "geometry_sha256": "d819bf94ebf931af152550876fe43d946db09c6b87d25a48b3c4b93f4ec21da2"
+}

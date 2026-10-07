@@ -1,0 +1,9622 @@
+{
+ "id": "giant_tarantula",
+ "name": "GIANT TARANTULA",
+ "kind": "skitterer",
+ "palette": "3a2c24",
+ "rig_type": "multi",
+ "slim": 0.95,
+ "rig": {
+  "head": [
+   0.0,
+   6.643,
+   -6.421
+  ],
+  "torso": [
+   0.0,
+   7.226,
+   -3.502
+  ],
+  "stance_y": -0.6,
+  "sag": 1.8
+ },
+ "rig_multi": {
+  "pivot": [
+   0,
+   7,
+   0
+  ],
+  "chains": [
+   {
+    "id": "leg_fl",
+    "role": "leg",
+    "regions": [
+     "leg_fl_u",
+     "leg_fl_l"
+    ],
+    "root": [
+     -3.2,
+     8.0,
+     -2.6
+    ],
+    "mid": [
+     -8.0,
+     11.4,
+     -4.1
+    ],
+    "end": [
+     -11.2,
+     1.0,
+     -6.0
+    ],
+    "bend": [
+     -0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_fr",
+    "role": "leg",
+    "regions": [
+     "leg_fr_u",
+     "leg_fr_l"
+    ],
+    "root": [
+     3.2,
+     8.0,
+     -2.6
+    ],
+    "mid": [
+     8.0,
+     11.4,
+     -4.1
+    ],
+    "end": [
+     11.2,
+     1.0,
+     -6.0
+    ],
+    "bend": [
+     0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_al",
+    "role": "leg",
+    "regions": [
+     "leg_al_u",
+     "leg_al_l"
+    ],
+    "root": [
+     -3.2,
+     8.0,
+     -0.4
+    ],
+    "mid": [
+     -8.4,
+     11.4,
+     -0.8
+    ],
+    "end": [
+     -12.0,
+     1.0,
+     -1.4
+    ],
+    "bend": [
+     -0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_ar",
+    "role": "leg",
+    "regions": [
+     "leg_ar_u",
+     "leg_ar_l"
+    ],
+    "root": [
+     3.2,
+     8.0,
+     -0.4
+    ],
+    "mid": [
+     8.4,
+     11.4,
+     -0.8
+    ],
+    "end": [
+     12.0,
+     1.0,
+     -1.4
+    ],
+    "bend": [
+     0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_bl",
+    "role": "leg",
+    "regions": [
+     "leg_bl_u",
+     "leg_bl_l"
+    ],
+    "root": [
+     -3.2,
+     8.0,
+     1.8
+    ],
+    "mid": [
+     -8.8,
+     11.4,
+     1.0
+    ],
+    "end": [
+     -12.799999999999999,
+     1.0,
+     3.2
+    ],
+    "bend": [
+     -0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_br",
+    "role": "leg",
+    "regions": [
+     "leg_br_u",
+     "leg_br_l"
+    ],
+    "root": [
+     3.2,
+     8.0,
+     1.8
+    ],
+    "mid": [
+     8.8,
+     11.4,
+     1.0
+    ],
+    "end": [
+     12.799999999999999,
+     1.0,
+     3.2
+    ],
+    "bend": [
+     0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_hl",
+    "role": "leg",
+    "regions": [
+     "leg_hl_u",
+     "leg_hl_l"
+    ],
+    "root": [
+     -3.2,
+     8.0,
+     4.0
+    ],
+    "mid": [
+     -9.2,
+     11.4,
+     2.8
+    ],
+    "end": [
+     -13.6,
+     1.0,
+     7.6
+    ],
+    "bend": [
+     -0.5,
+     1.2,
+     0
+    ]
+   },
+   {
+    "id": "leg_hr",
+    "role": "leg",
+    "regions": [
+     "leg_hr_u",
+     "leg_hr_l"
+    ],
+    "root": [
+     3.2,
+     8.0,
+     4.0
+    ],
+    "mid": [
+     9.2,
+     11.4,
+     2.8
+    ],
+    "end": [
+     13.6,
+     1.0,
+     7.6
+    ],
+    "bend": [
+     0.5,
+     1.2,
+     0
+    ]
+   }
+  ],
+  "gait": {
+   "step_seconds": 0.42,
+   "threshold": 1.5,
+   "max_simultaneous": 4,
+   "lift": 1.1
+  },
+  "attack_lean": 0.1
+ },
+ "aliases": {
+  "chest": "thorax"
+ },
+ "target_regions": [
+  "thorax",
+  "head",
+  "abdomen",
+  "leg_fl",
+  "leg_fr"
+ ],
+ "limbs": [
+  {
+   "id": "leg_fl",
+   "regions": [
+    "leg_fl_u",
+    "leg_fl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_fr",
+   "regions": [
+    "leg_fr_u",
+    "leg_fr_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_al",
+   "regions": [
+    "leg_al_u",
+    "leg_al_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_ar",
+   "regions": [
+    "leg_ar_u",
+    "leg_ar_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_bl",
+   "regions": [
+    "leg_bl_u",
+    "leg_bl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_br",
+   "regions": [
+    "leg_br_u",
+    "leg_br_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_hl",
+   "regions": [
+    "leg_hl_u",
+    "leg_hl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_hr",
+   "regions": [
+    "leg_hr_u",
+    "leg_hr_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  }
+ ],
+ "locomotion": {
+  "type": "legs",
+  "legs": [
+   "leg_fl",
+   "leg_fr",
+   "leg_al",
+   "leg_ar",
+   "leg_bl",
+   "leg_br",
+   "leg_hl",
+   "leg_hr"
+  ],
+  "power": 1.3
+ },
+ "fatal": [
+  {
+   "regions": [
+    "thorax",
+    "head"
+   ],
+   "fraction": 0.28,
+   "reason": "CARAPACE CRUSHED"
+  },
+  {
+   "regions": [
+    "abdomen"
+   ],
+   "fraction": 0.12,
+   "reason": "ABDOMEN DESTROYED"
+  }
+ ],
+ "look": {
+  "skin": "3a2c24",
+  "limb": "4a382c",
+  "joint": "241a14",
+  "head": "4a382c",
+  "accent": "b4472a",
+  "interior": "2a1a12",
+  "glow": "ff3a2a",
+  "face": false,
+  "tones": {
+   "fangs": "accent",
+   "abdomen": "skin"
+  }
+ },
+ "behavior": {
+  "speed": 3.3,
+  "acceleration": 1.6,
+  "turn_rate": 0.65,
+  "turn_acceleration": 0.9,
+  "preferred_range": 11.0,
+  "retreat": 0.25,
+  "circle": 1.8,
+  "reposition_interval": 5.0,
+  "reposition_seconds": 2.8,
+  "min_separation": 8.0,
+  "crush_radius": 4.5
+ },
+ "attacks": {
+  "pounce": {
+   "base": "custom",
+   "label": "POUNCE",
+   "weight": 1.8,
+   "range": 19.0,
+   "min_range": 9.0,
+   "force": 24,
+   "radius": 3.2,
+   "effector": "torso",
+   "trajectory": "leap",
+   "charge_speed": 15.0,
+   "hop": 3.4,
+   "wind": 0.8,
+   "commit": 0.7,
+   "recover": 1.5,
+   "cooldown": 8.0,
+   "sound_pitch": 0.9
+  },
+  "tarantula_bite": {
+   "base": "custom",
+   "label": "BITE",
+   "weight": 1.6,
+   "range": 10.5,
+   "force": 21,
+   "radius": 2.1,
+   "effector": "head",
+   "lunge": 2.2,
+   "needs": {
+    "head": 0.4
+   },
+   "wind": 0.7,
+   "sound_pitch": 1.0
+  },
+  "leg_strike": {
+   "base": "custom",
+   "label": "LEG STRIKE",
+   "weight": 1.6,
+   "range": 14.0,
+   "force": 17,
+   "radius": 1.8,
+   "effector": "leg_fr",
+   "trajectory": "straight",
+   "needs": {
+    "leg_fr": 0.45
+   },
+   "wind": 0.65,
+   "recover": 1.0,
+   "sound_pitch": 1.1
+  },
+  "leg_jab": {
+   "base": "custom",
+   "label": "LEG JAB",
+   "weight": 1.4,
+   "range": 14.0,
+   "force": 16,
+   "radius": 1.8,
+   "effector": "leg_fl",
+   "trajectory": "straight",
+   "needs": {
+    "leg_fl": 0.45
+   },
+   "wind": 0.65,
+   "recover": 1.0,
+   "sound_pitch": 1.1
+  },
+  "leg_sweep": {
+   "base": "custom",
+   "label": "LEG SWEEP",
+   "weight": 1.0,
+   "range": 13.0,
+   "force": 22,
+   "radius": 2.7,
+   "effector": "leg_fr",
+   "trajectory": "hook",
+   "needs": {
+    "leg_fr": 0.45
+   },
+   "sound_pitch": 1.0
+  },
+  "pounce_and_pin": {
+   "base": "custom",
+   "label": "POUNCE AND PIN",
+   "weight": 1.5,
+   "range": 12.5,
+   "min_range": 7.0,
+   "force": 14,
+   "radius": 2.6,
+   "effector": "torso",
+   "lunge": 2.4,
+   "wind": 0.9,
+   "cooldown": 14.0,
+   "requires_free": true,
+   "hold": {
+    "label": "PINNED",
+    "duration": 2.8,
+    "tick": 0.55,
+    "tick_radius": 1.7,
+    "tick_force": 8.0,
+    "region": "chest",
+    "end": "drop",
+    "distance": 5.6
+   }
+  },
+  "web_spray": {
+   "base": "ranged",
+   "label": "WEB SPRAY",
+   "ranged": "web",
+   "weight": 2.0,
+   "range": 30.0,
+   "min_range": 9.0,
+   "close_distance": 9.0,
+   "close_weight": 0.4,
+   "wind": 1.1,
+   "commit": 0.3,
+   "follow": 0.2,
+   "recover": 1.2,
+   "cooldown": 13.0,
+   "muzzle": "head",
+   "speed": 30.0,
+   "shape": "cube4",
+   "scale": 0.85,
+   "tint": "e8e8de",
+   "glow": 0.25,
+   "hit_radius": 2.2,
+   "radius": 1.8,
+   "force": 4.0,
+   "status": {
+    "web": 6.5,
+    "web_slow": 0.42,
+    "tether": true
+   },
+   "status_reach": 10.0,
+   "charge_orb": false,
+   "life": 3.0,
+   "aim_region": "chest"
+  }
+ },
+ "priority_targets": [
+  "thorax",
+  "head"
+ ],
+ "notes": "Unfair advantage: speed, stability and web control. Sacrifice: thin individually-killable legs and a soft abdomen.",
+ "allocation": {
+  "thorax": 139,
+  "head": 46,
+  "fangs": 8,
+  "abdomen": 380,
+  "leg_fl_u": 26,
+  "leg_fl_l": 30,
+  "leg_fr_u": 26,
+  "leg_fr_l": 30,
+  "leg_al_u": 24,
+  "leg_al_l": 22,
+  "leg_ar_u": 25,
+  "leg_ar_l": 22,
+  "leg_bl_u": 24,
+  "leg_bl_l": 31,
+  "leg_br_u": 24,
+  "leg_br_l": 31,
+  "leg_hl_u": 25,
+  "leg_hl_l": 31,
+  "leg_hr_u": 25,
+  "leg_hr_l": 31
+ },
+ "majors": {
+  "thorax": "body",
+  "head": "body",
+  "fangs": "body",
+  "abdomen": "body",
+  "leg_fl_u": "leg_fl",
+  "leg_fl_l": "leg_fl",
+  "leg_fr_u": "leg_fr",
+  "leg_fr_l": "leg_fr",
+  "leg_al_u": "leg_al",
+  "leg_al_l": "leg_al",
+  "leg_ar_u": "leg_ar",
+  "leg_ar_l": "leg_ar",
+  "leg_bl_u": "leg_bl",
+  "leg_bl_l": "leg_bl",
+  "leg_br_u": "leg_br",
+  "leg_br_l": "leg_br",
+  "leg_hl_u": "leg_hl",
+  "leg_hl_l": "leg_hl",
+  "leg_hr_u": "leg_hr",
+  "leg_hr_l": "leg_hr"
+ },
+ "cells": [
+  {
+   "cell": [
+    -2,
+    5,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -3
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -2
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    0
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -1
+   ],
+   "region": "thorax",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -3
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -6
+   ],
+   "region": "head",
+   "major": "body",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -3
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -6
+   ],
+   "region": "head",
+   "major": "body",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -6
+   ],
+   "region": "head",
+   "major": "body",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -6
+   ],
+   "region": "head",
+   "major": "body",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -6
+   ],
+   "region": "head",
+   "major": "body",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -6
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -5
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -4
+   ],
+   "region": "head",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -7
+   ],
+   "region": "fangs",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    2
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    2
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    12
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    3
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    11
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    4
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body",
+   "tag": "accent"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    10
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    5
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    6
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    7
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    8
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    9
+   ],
+   "region": "abdomen",
+   "major": "body"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -2
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -2
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -2
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -2
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -5
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -3
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -6,
+    11,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    -4
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    1,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    1,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    1,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    2,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    2,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    2,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    2,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    3,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    3,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    6,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -5
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -4
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -2
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -2
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -2
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -2
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    6,
+    11,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -5
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -3
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    -4
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    1,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    1,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    1,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    2,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    2,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    2,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    2,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    3,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    3,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    6,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -5
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    -4
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    0
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    -1
+   ],
+   "region": "leg_al_u",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -12,
+    1,
+    -2
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -12,
+    1,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    1,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -12,
+    2,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    2,
+    -2
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    2,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -2
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -2
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -8,
+    9,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    -1
+   ],
+   "region": "leg_al_l",
+   "major": "leg_al"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    0
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    -1
+   ],
+   "region": "leg_ar_u",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    1,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    12,
+    1,
+    -2
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    12,
+    1,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    2,
+    -2
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    2,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    12,
+    2,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -2
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -2
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    8,
+    9,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    -1
+   ],
+   "region": "leg_ar_l",
+   "major": "leg_ar"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    2
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -5,
+    10,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    12,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -8,
+    12,
+    1
+   ],
+   "region": "leg_bl_u",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -13,
+    1,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    1,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -13,
+    2,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    2,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    2,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    3
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -11,
+    7,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    9,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -10,
+    9,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    1
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    2
+   ],
+   "region": "leg_bl_l",
+   "major": "leg_bl"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    5,
+    10,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    2
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    8,
+    12,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    12,
+    1
+   ],
+   "region": "leg_br_u",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    1,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    13,
+    1,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    2,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    2,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    13,
+    2,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    3
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    9,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    10,
+    9,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    1
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    2
+   ],
+   "region": "leg_br_l",
+   "major": "leg_br"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -5,
+    9,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -8,
+    10,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -7,
+    10,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -6,
+    10,
+    4
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    2
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    11,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    2
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -8,
+    11,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -7,
+    11,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    12,
+    3
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -14,
+    1,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -13,
+    1,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -13,
+    1,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -13,
+    2,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    2,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -13,
+    3,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -13,
+    3,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    7
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    5,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    5,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -12,
+    6,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    6
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    7,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    7,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -11,
+    8,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    5
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    9,
+    3
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    9,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    9,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    10,
+    3
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -10,
+    10,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    3
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -9,
+    10,
+    4
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    5,
+    9,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    6,
+    10,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    7,
+    10,
+    4
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    8,
+    10,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    7,
+    11,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    2
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    8,
+    11,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    2
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    11,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    12,
+    3
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    13,
+    1,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    13,
+    1,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    14,
+    1,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    2,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    13,
+    2,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    13,
+    3,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    13,
+    3,
+    7
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    5,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    5,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    6
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    12,
+    6,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    5
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    11,
+    8,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    9,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    9,
+    3
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    9,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    3
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    9,
+    10,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    10,
+    3
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    10,
+    10,
+    4
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  }
+ ],
+ "bounds": {
+  "min": [
+   -14,
+   1,
+   -7
+  ],
+  "max": [
+   14,
+   12,
+   12
+  ]
+ },
+ "fit_scale": 0.973,
+ "geometry_sha256": "4a8086eeadb441a3d1cd21444b552c2992ceb493d4140c0191d998898515c087"
+}

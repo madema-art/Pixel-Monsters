@@ -1,0 +1,9407 @@
+{
+ "id": "blob",
+ "name": "BLOB",
+ "kind": "mass",
+ "palette": "4fae3a",
+ "rig_type": "multi",
+ "slim": 0.72,
+ "rig": {
+  "head": [
+   0.0,
+   11.579,
+   -5.73
+  ],
+  "torso": [
+   0.0,
+   7.171,
+   -4.849
+  ],
+  "stance_y": -0.6,
+  "sag": 2.0
+ },
+ "rig_multi": {
+  "pivot": [
+   0,
+   2,
+   0
+  ],
+  "chains": [
+   {
+    "id": "pseud_l",
+    "role": "arm",
+    "regions": [
+     "pseud_l_u",
+     "pseud_l_l"
+    ],
+    "root": [
+     -7.0,
+     9.0,
+     -2.5
+    ],
+    "mid": [
+     -11.0,
+     8.0,
+     -7.0
+    ],
+    "end": [
+     -13.0,
+     4.0,
+     -11.5
+    ],
+    "idle": [
+     -11.5,
+     5.0,
+     -9.5
+    ],
+    "wave": 0.9,
+    "phase": 0.0,
+    "bend": [
+     -0.4,
+     1,
+     0.2
+    ]
+   },
+   {
+    "id": "pseud_r",
+    "role": "arm",
+    "regions": [
+     "pseud_r_u",
+     "pseud_r_l"
+    ],
+    "root": [
+     7.0,
+     9.0,
+     -2.5
+    ],
+    "mid": [
+     11.0,
+     8.0,
+     -7.0
+    ],
+    "end": [
+     13.0,
+     4.0,
+     -11.5
+    ],
+    "idle": [
+     11.5,
+     5.0,
+     -9.5
+    ],
+    "wave": 0.9,
+    "phase": 2.5,
+    "bend": [
+     0.4,
+     1,
+     0.2
+    ]
+   }
+  ],
+  "squash": {
+   "amp": 0.05,
+   "speed": 1.9
+  },
+  "attack_lean": 0.12,
+  "gait": {}
+ },
+ "aliases": {
+  "head": "face",
+  "chest": "core"
+ },
+ "target_regions": [
+  "core",
+  "crest",
+  "face",
+  "lobe_f",
+  "lobe_l",
+  "lobe_r",
+  "lobe_b"
+ ],
+ "limbs": [
+  {
+   "id": "blob_mass",
+   "regions": [
+    "core",
+    "lobe_f",
+    "lobe_b",
+    "lobe_l",
+    "lobe_r",
+    "crest",
+    "face"
+   ],
+   "kind": "mass",
+   "fail": 0.0
+  },
+  {
+   "id": "pseud_l",
+   "regions": [
+    "pseud_l_u",
+    "pseud_l_l"
+   ],
+   "kind": "arm",
+   "fail": 0.25
+  },
+  {
+   "id": "pseud_r",
+   "regions": [
+    "pseud_r_u",
+    "pseud_r_l"
+   ],
+   "kind": "arm",
+   "fail": 0.25
+  }
+ ],
+ "locomotion": {
+  "type": "mass",
+  "group": "blob_mass"
+ },
+ "fatal": [
+  {
+   "regions": [
+    "blob_mass"
+   ],
+   "fraction": 0.24,
+   "reason": "MASS DISPERSED"
+  }
+ ],
+ "look": {
+  "skin": "4fae3a",
+  "limb": "3e9a30",
+  "joint": "2c7424",
+  "head": "6fcc50",
+  "accent": "9aff6a",
+  "interior": "1c4a18",
+  "interior_glow": 0.55,
+  "glow": "b6ff6a",
+  "face": false,
+  "tones": {
+   "face": "head",
+   "crest": "head",
+   "lobe_f": "limb",
+   "lobe_b": "limb"
+  }
+ },
+ "behavior": {
+  "speed": 1.7,
+  "acceleration": 0.55,
+  "turn_rate": 0.34,
+  "turn_acceleration": 0.5,
+  "preferred_range": 10.2,
+  "retreat": 0.05,
+  "circle": 0.6,
+  "reposition_interval": 8.0,
+  "reposition_seconds": 3.0,
+  "charge_weight": 0.6,
+  "charge_distance": 16.0,
+  "min_separation": 7.5,
+  "crush_radius": 5.0
+ },
+ "attacks": {
+  "body_slam": {
+   "base": "custom",
+   "label": "BODY SLAM",
+   "weight": 1.6,
+   "range": 13.0,
+   "min_range": 7.0,
+   "force": 27,
+   "radius": 3.8,
+   "effector": "torso",
+   "trajectory": "leap",
+   "charge_speed": 8.0,
+   "hop": 3.2,
+   "wind": 1.1,
+   "commit": 0.8,
+   "recover": 2.0,
+   "cooldown": 8.0,
+   "sound_pitch": 0.7
+  },
+  "engulf": {
+   "base": "custom",
+   "label": "ENGULF",
+   "weight": 1.7,
+   "range": 10.5,
+   "force": 10,
+   "radius": 2.8,
+   "effector": "torso",
+   "lunge": 2.6,
+   "wind": 1.0,
+   "cooldown": 15.0,
+   "requires_free": true,
+   "hold": {
+    "label": "ENGULFED",
+    "duration": 3.2,
+    "tick": 0.5,
+    "tick_radius": 2.3,
+    "tick_force": 7.0,
+    "region": "abdomen",
+    "end": "drop",
+    "distance": 3.4,
+    "drag": 3.2
+   },
+   "sound_pitch": 0.7
+  },
+  "smother": {
+   "base": "custom",
+   "label": "SMOTHER",
+   "weight": 0.9,
+   "range": 10.0,
+   "force": 12,
+   "radius": 3.0,
+   "effector": "torso",
+   "lunge": 2.2,
+   "wind": 0.9,
+   "cooldown": 18.0,
+   "requires_free": true,
+   "hold": {
+    "label": "SMOTHERED",
+    "duration": 2.4,
+    "tick": 0.4,
+    "tick_radius": 2.0,
+    "tick_force": 8.0,
+    "region": "chest",
+    "end": "slam",
+    "end_radius": 3.0,
+    "distance": 3.2
+   },
+   "sound_pitch": 0.7
+  },
+  "rolling_crush": {
+   "base": "custom",
+   "label": "ROLLING CRUSH",
+   "weight": 1.2,
+   "range": 14.0,
+   "force": 28,
+   "radius": 3.6,
+   "effector": "torso",
+   "trajectory": "charge",
+   "charge_speed": 9.0,
+   "wind": 1.2,
+   "commit": 1.1,
+   "recover": 2.2,
+   "sound_pitch": 0.65
+  },
+  "shove": {
+   "base": "custom",
+   "label": "SHOVE",
+   "weight": 1.4,
+   "range": 13.5,
+   "force": 24,
+   "radius": 2.5,
+   "effector": "pseud_r",
+   "trajectory": "straight",
+   "needs": {
+    "pseud_r": 0.4
+   },
+   "wind": 0.9,
+   "sound_pitch": 0.8
+  }
+ },
+ "priority_targets": [
+  "core"
+ ],
+ "notes": "Unfair advantage: engulfing holds and a mass that shrugs off limb loss. Sacrifice: slow, huge target; every lost cube is permanent.",
+ "allocation": {
+  "core": 391,
+  "lobe_f": 73,
+  "lobe_b": 78,
+  "lobe_l": 74,
+  "lobe_r": 74,
+  "crest": 132,
+  "face": 39,
+  "pseud_l_u": 35,
+  "pseud_l_l": 34,
+  "pseud_r_u": 36,
+  "pseud_r_l": 34
+ },
+ "majors": {
+  "core": "mass",
+  "lobe_f": "mass",
+  "lobe_b": "mass",
+  "lobe_l": "mass",
+  "lobe_r": "mass",
+  "crest": "mass",
+  "face": "mass",
+  "pseud_l_u": "pseud_l",
+  "pseud_l_l": "pseud_l",
+  "pseud_r_u": "pseud_r",
+  "pseud_r_l": "pseud_r"
+ },
+ "cells": [
+  {
+   "cell": [
+    -2,
+    3,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    4,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -4,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    4
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    5,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    5,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -4
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    4
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    6,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    6,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    6,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -5,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    7,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    7,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -4
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    7,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    7,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    7,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    5,
+    7,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    4
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    9,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -3
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    2
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    9,
+    3
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    2
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    0
+   ],
+   "region": "core",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    1
+   ],
+   "region": "core",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    -5
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    -5
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -9
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -6
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    6,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -8
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    6,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    6,
+    -7
+   ],
+   "region": "lobe_f",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    2,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    2,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    2,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    3,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    3,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    3,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    4,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    5
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    4,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    4,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    5,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    5
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    5,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    6
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    5,
+    9
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    7
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    8
+   ],
+   "region": "lobe_b",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    2,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    2,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    2,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    3,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    3,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    3,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    3,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    3,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    3,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    3,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    3,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    3,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    3,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    4,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    4,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -7,
+    4,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -6,
+    4,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -6,
+    4,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -6,
+    4,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    5,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    5,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    -2
+   ],
+   "region": "lobe_l",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    5,
+    2
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -6,
+    5,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    6,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    6,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -9,
+    6,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    -1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -8,
+    6,
+    1
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -7,
+    6,
+    0
+   ],
+   "region": "lobe_l",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    2,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    2,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    2,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    3,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    3,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    3,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    3,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    3,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    3,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    3,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    3,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    3,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    3,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    6,
+    4,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    6,
+    4,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    6,
+    4,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    4,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    4,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    4,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    6,
+    5,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    5,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    8,
+    5,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    -2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    5,
+    2
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    7,
+    6,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    8,
+    6,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    6,
+    -1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    6,
+    0
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    9,
+    6,
+    1
+   ],
+   "region": "lobe_r",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    1
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -3
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    0
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    14,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -4,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    0
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -2
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    0
+   ],
+   "region": "crest",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    4,
+    15,
+    -1
+   ],
+   "region": "crest",
+   "major": "mass",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    10,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -6
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    10,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -5
+   ],
+   "region": "face",
+   "major": "mass",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -6
+   ],
+   "region": "face",
+   "major": "mass",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -6
+   ],
+   "region": "face",
+   "major": "mass",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -6
+   ],
+   "region": "face",
+   "major": "mass",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -5
+   ],
+   "region": "face",
+   "major": "mass",
+   "tag": "dark"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -6
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -6
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -6
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -5
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -4
+   ],
+   "region": "face",
+   "major": "mass"
+  },
+  {
+   "cell": [
+    -11,
+    7,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -7
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    7,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    7,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    7,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    7,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    -7
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    8,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    8,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -6
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -8,
+    8,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -5
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -4
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    8,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    8,
+    -1
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -5,
+    8,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -7,
+    9,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -3
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -6,
+    9,
+    -2
+   ],
+   "region": "pseud_l_u",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    -11
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    3,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -11
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    3,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -13,
+    4,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    -11
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    4,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -11
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    4,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    4,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -12,
+    5,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    -10
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    5,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    5,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    -9
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    6,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    6,
+    -6
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -9,
+    6,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -11,
+    7,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    -8
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    -10,
+    7,
+    -7
+   ],
+   "region": "pseud_l_l",
+   "major": "pseud_l"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    7,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    7,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    7,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -7
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    7,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    5,
+    8,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    8,
+    -1
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    8,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    8,
+    8,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -5
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    8,
+    -4
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    -7
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    8,
+    -6
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    6,
+    9,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -3
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    7,
+    9,
+    -2
+   ],
+   "region": "pseud_r_u",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -11
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    3,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    -11
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    3,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    4,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -11
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    4,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    -11
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    4,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    13,
+    4,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    5,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    -10
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    5,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    12,
+    5,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    9,
+    6,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    6,
+    -6
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    -9
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    6,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    -8
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    10,
+    7,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    -7
+   ],
+   "region": "pseud_r_l",
+   "major": "pseud_r"
+  }
+ ],
+ "bounds": {
+  "min": [
+   -13,
+   2,
+   -11
+  ],
+  "max": [
+   13,
+   15,
+   9
+  ]
+ },
+ "fit_scale": 0.882,
+ "geometry_sha256": "1bf23bb71e373b054eabbac8f448765084e6533f08309d3c684ccaba0fd966a8"
+}

@@ -44,6 +44,7 @@ var hold_side := ""
 var knock_decay := 1.2
 var hop_offset := 0.0
 var swarm: SwarmUnits
+var opponent: CombatMonster
 const RigMultiScript = preload("res://scripts/combat/rig_multi.gd")
 const RigSerpentScript = preload("res://scripts/combat/rig_serpent.gd")
 const RigSwarmScript = preload("res://scripts/combat/rig_swarm.gd")
@@ -138,6 +139,8 @@ func mobility() -> float:
 			return clampf(pow(total/maxi(1,n),float(locomotion.get("power",1.3))),0.12,1.0)
 		"swarm":
 			return clampf(float(swarm.alive_count())/10.0+0.2,0.25,1.0) if swarm!=null else 1.0
+		"mass":
+			return clampf(structure.fraction(String(locomotion.group))*1.2,0.2,1.0)
 	return biped_mobility()
 
 func biped_mobility() -> float:
@@ -146,6 +149,10 @@ func biped_mobility() -> float:
 	if left==0 and right==0: return 0.12
 	if left==0 or right==0: return 0.32*maxf(left,right)
 	return clampf((left+right)*0.5,0.25,1)
+
+func focus_point(from: Vector3) -> Vector3:
+	if rig_type=="swarm" and swarm!=null: return swarm.nearest_point(from)
+	return position
 
 func request_move(world_velocity: Vector3, facing: float) -> void:
 	desired_velocity=world_velocity
@@ -274,6 +281,7 @@ func update_motor(dt: float) -> void:
 	sway=sin(clock*2.2)*0.012*velocity.length()+sin(clock*7)*stagger*0.025
 	bob=sin(clock*2.2)*0.08*velocity.length()+sin(clock*0.8)*0.025
 	if rig_type=="biped": update_feet(dt)
+	elif rig.has_method("update_gait"): rig.update_gait(self,dt)
 	var was_running := attack_motion.running
 	attack_motion.update(dt,self)
 	if was_running and not attack_motion.running:

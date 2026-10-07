@@ -1,0 +1,9479 @@
+{
+ "id": "dark_knight_rider",
+ "name": "DARK KNIGHT RIDER",
+ "kind": "cavalry",
+ "palette": "22242c",
+ "rig_type": "multi",
+ "slim": 0.9,
+ "rig": {
+  "head": [
+   0.0,
+   28.486,
+   0.55
+  ],
+  "torso": [
+   0.0,
+   21.01,
+   -1.649
+  ],
+  "stance_y": -0.6,
+  "sag": 1.0
+ },
+ "rig_multi": {
+  "pivot": [
+   0,
+   12,
+   1
+  ],
+  "chains": [
+   {
+    "id": "leg_fl",
+    "role": "leg",
+    "regions": [
+     "leg_fl_u",
+     "leg_fl_l"
+    ],
+    "root": [
+     -2.4,
+     9.8,
+     -5.6
+    ],
+    "mid": [
+     -2.6,
+     5.8,
+     -6.5
+    ],
+    "end": [
+     -2.5,
+     1.0,
+     -6.0
+    ],
+    "bend": [
+     0,
+     0,
+     -1
+    ]
+   },
+   {
+    "id": "leg_fr",
+    "role": "leg",
+    "regions": [
+     "leg_fr_u",
+     "leg_fr_l"
+    ],
+    "root": [
+     2.4,
+     9.8,
+     -5.6
+    ],
+    "mid": [
+     2.6,
+     5.8,
+     -6.5
+    ],
+    "end": [
+     2.5,
+     1.0,
+     -6.0
+    ],
+    "bend": [
+     0,
+     0,
+     -1
+    ]
+   },
+   {
+    "id": "leg_hl",
+    "role": "leg",
+    "regions": [
+     "leg_hl_u",
+     "leg_hl_l"
+    ],
+    "root": [
+     -2.4,
+     9.8,
+     6.8
+    ],
+    "mid": [
+     -2.6,
+     5.8,
+     8.0
+    ],
+    "end": [
+     -2.5,
+     1.0,
+     7.3999999999999995
+    ],
+    "bend": [
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "leg_hr",
+    "role": "leg",
+    "regions": [
+     "leg_hr_u",
+     "leg_hr_l"
+    ],
+    "root": [
+     2.4,
+     9.8,
+     6.8
+    ],
+    "mid": [
+     2.6,
+     5.8,
+     8.0
+    ],
+    "end": [
+     2.5,
+     1.0,
+     7.3999999999999995
+    ],
+    "bend": [
+     0,
+     0,
+     1
+    ]
+   }
+  ],
+  "head_region": "rider_head",
+  "gait": {
+   "step_seconds": 0.38,
+   "threshold": 1.9,
+   "max_simultaneous": 2,
+   "lift": 1.0
+  },
+  "parts": [
+   {
+    "regions": [
+     "rider_torso",
+     "rider_head",
+     "rider_arms"
+    ],
+    "pivot": [
+     0,
+     17,
+     1
+    ],
+    "lean_gain": 0.25
+   },
+   {
+    "regions": [
+     "horse_head",
+     "horse_neck"
+    ],
+    "pivot": [
+     0,
+     15,
+     -6
+    ],
+    "recoil": 0.1
+   }
+  ],
+  "weapons": [
+   {
+    "regions": [
+     "lance"
+    ],
+    "tip": [
+     3.6,
+     19.9,
+     -22.0
+    ],
+    "thrust": [
+     0,
+     0,
+     -1
+    ],
+    "length": 4.5,
+    "effector": "lance_tip"
+   }
+  ],
+  "attack_lean": 0.08
+ },
+ "aliases": {
+  "head": "rider_head",
+  "chest": "horse_body"
+ },
+ "target_regions": [
+  "horse_body",
+  "horse_chest",
+  "rider_torso",
+  "rider_head",
+  "horse_neck",
+  "leg_fl",
+  "leg_fr",
+  "leg_hl",
+  "leg_hr"
+ ],
+ "limbs": [
+  {
+   "id": "leg_fl",
+   "regions": [
+    "leg_fl_u",
+    "leg_fl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_fr",
+   "regions": [
+    "leg_fr_u",
+    "leg_fr_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_hl",
+   "regions": [
+    "leg_hl_u",
+    "leg_hl_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "leg_hr",
+   "regions": [
+    "leg_hr_u",
+    "leg_hr_l"
+   ],
+   "kind": "leg",
+   "fail": 0.3
+  },
+  {
+   "id": "lance",
+   "regions": [
+    "lance"
+   ],
+   "kind": "weapon",
+   "fail": 0.3
+  },
+  {
+   "id": "rider",
+   "regions": [
+    "rider_torso",
+    "rider_head",
+    "rider_arms"
+   ],
+   "kind": "rider",
+   "fail": 0.0
+  },
+  {
+   "id": "horse_core",
+   "regions": [
+    "horse_body",
+    "horse_chest",
+    "horse_neck",
+    "horse_head"
+   ],
+   "kind": "horse",
+   "fail": 0.0
+  }
+ ],
+ "locomotion": {
+  "type": "legs",
+  "legs": [
+   "leg_fl",
+   "leg_fr",
+   "leg_hl",
+   "leg_hr"
+  ],
+  "power": 1.1
+ },
+ "fatal": [
+  {
+   "regions": [
+    "rider"
+   ],
+   "fraction": 0.22,
+   "reason": "RIDER DESTROYED"
+  },
+  {
+   "regions": [
+    "horse_core"
+   ],
+   "fraction": 0.22,
+   "reason": "WARHORSE COLLAPSED"
+  }
+ ],
+ "look": {
+  "skin": "2b2d36",
+  "limb": "3a3c46",
+  "joint": "16171c",
+  "head": "3a3c46",
+  "accent": "a8aab6",
+  "interior": "1c1114",
+  "glow": "ff3a3a",
+  "face": false,
+  "tones": {
+   "rider_torso": "joint",
+   "rider_head": "joint",
+   "rider_arms": "joint",
+   "lance": "accent",
+   "horse_tail": "joint",
+   "horse_head": "head"
+  }
+ },
+ "behavior": {
+  "speed": 3.4,
+  "acceleration": 1.3,
+  "turn_rate": 0.6,
+  "turn_acceleration": 0.8,
+  "preferred_range": 13.5,
+  "retreat": 0.35,
+  "circle": 1.3,
+  "reposition_interval": 7.0,
+  "reposition_seconds": 3.4,
+  "charge_weight": 1.5,
+  "charge_distance": 23.0,
+  "min_separation": 8.5,
+  "crush_radius": 4.2
+ },
+ "attacks": {
+  "lance_thrust": {
+   "base": "custom",
+   "label": "LANCE THRUST",
+   "weight": 2.0,
+   "range": 18.5,
+   "force": 21,
+   "radius": 1.7,
+   "effector": "lance_tip",
+   "trajectory": "straight",
+   "needs": {
+    "lance": 0.4
+   },
+   "wind": 0.85,
+   "recover": 1.3,
+   "sound_pitch": 1.1
+  },
+  "lance_charge": {
+   "base": "custom",
+   "label": "LANCE CHARGE",
+   "weight": 2.4,
+   "range": 30.0,
+   "min_range": 15.0,
+   "force": 32,
+   "radius": 2.5,
+   "effector": "lance_tip",
+   "trajectory": "charge",
+   "charge_speed": 16.5,
+   "needs": {
+    "lance": 0.4
+   },
+   "wind": 1.0,
+   "commit": 1.1,
+   "recover": 1.9,
+   "sound_pitch": 0.9
+  },
+  "trample": {
+   "base": "custom",
+   "label": "TRAMPLE",
+   "weight": 1.2,
+   "range": 11.5,
+   "force": 24,
+   "radius": 3.1,
+   "effector": "torso",
+   "lunge": 2.6,
+   "wind": 0.9,
+   "sound_pitch": 0.8
+  },
+  "horse_kick": {
+   "base": "custom",
+   "label": "HORSE KICK",
+   "weight": 1.0,
+   "range": 11.0,
+   "force": 22,
+   "radius": 2.3,
+   "effector": "leg_hr",
+   "trajectory": "straight",
+   "needs": {
+    "leg_hr": 0.5
+   },
+   "wind": 0.8,
+   "sound_pitch": 0.9
+  },
+  "mounted_strike": {
+   "base": "custom",
+   "label": "MOUNTED STRIKE",
+   "weight": 1.2,
+   "range": 15.5,
+   "force": 22,
+   "radius": 2.5,
+   "effector": "lance_tip",
+   "trajectory": "hook",
+   "needs": {
+    "lance": 0.4
+   },
+   "wind": 0.9,
+   "sound_pitch": 1.0
+  }
+ },
+ "priority_targets": [
+  "rider_torso",
+  "horse_body"
+ ],
+ "notes": "Unfair advantage: charge setup and the longest melee reach. Sacrifice: lance and horse are separate, breakable cube groups; no ranged answer.",
+ "allocation": {
+  "horse_body": 345,
+  "horse_chest": 156,
+  "horse_neck": 92,
+  "horse_head": 57,
+  "horse_tail": 16,
+  "leg_fl_u": 31,
+  "leg_fl_l": 15,
+  "leg_fr_u": 31,
+  "leg_fr_l": 15,
+  "leg_hl_u": 35,
+  "leg_hl_l": 15,
+  "leg_hr_u": 35,
+  "leg_hr_l": 15,
+  "rider_torso": 51,
+  "rider_head": 27,
+  "rider_arms": 28,
+  "lance": 36
+ },
+ "majors": {
+  "horse_body": "horse",
+  "horse_chest": "horse",
+  "horse_neck": "horse",
+  "horse_head": "horse",
+  "horse_tail": "horse",
+  "leg_fl_u": "leg_fl",
+  "leg_fl_l": "leg_fl",
+  "leg_fr_u": "leg_fr",
+  "leg_fr_l": "leg_fr",
+  "leg_hl_u": "leg_hl",
+  "leg_hl_l": "leg_hl",
+  "leg_hr_u": "leg_hr",
+  "leg_hr_l": "leg_hr",
+  "rider_torso": "rider",
+  "rider_head": "rider",
+  "rider_arms": "rider",
+  "lance": "lance"
+ },
+ "cells": [
+  {
+   "cell": [
+    0,
+    10,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    12,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    8
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    8
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    7
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    6
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    4
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    5
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    0
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    1
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    2
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    3
+   ],
+   "region": "horse_body",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    12,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    12,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    12,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    12,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    13,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    13,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    13,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    13,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    13,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    14,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    14,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    14,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    14,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    14,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    15,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    15,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    15,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -8
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    15,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    15,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -3,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    16,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -3
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    16,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    3,
+    16,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -2,
+    17,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -4
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -7
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    2,
+    17,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -6
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -5
+   ],
+   "region": "horse_chest",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    16,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    16,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    16,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    17,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    17,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    18,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    18,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    -7
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    -8
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -11
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -9
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -10
+   ],
+   "region": "horse_neck",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    24,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -17
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    24,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    -11
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    -11
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -16
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    -11
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -12
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    -15
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    -14
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    -13
+   ],
+   "region": "horse_head",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    8,
+    14
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    13
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    9,
+    14
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    12
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    10,
+    13
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    11
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    12
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    11,
+    13
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    11
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    12,
+    12
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    10
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    13,
+    11
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    9
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    14,
+    10
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    8
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    0,
+    15,
+    9
+   ],
+   "region": "horse_tail",
+   "major": "horse"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -8
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -8
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -8
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -8
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    -5
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -7
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    -6
+   ],
+   "region": "leg_fl_u",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    -6
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    -7
+   ],
+   "region": "leg_fl_l",
+   "major": "leg_fl"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -8
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -8
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -8
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -8
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -7
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -6
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    -5
+   ],
+   "region": "leg_fr_u",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    -6
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    -7
+   ],
+   "region": "leg_fr_l",
+   "major": "leg_fr"
+  },
+  {
+   "cell": [
+    -4,
+    6,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    6,
+    10
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    6,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    7,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    7,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    7,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    8,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    8,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    8,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -4,
+    9,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    9,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    9,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    10,
+    9
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    10,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    11,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    11,
+    8
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -1,
+    11,
+    7
+   ],
+   "region": "leg_hl_u",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    1,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    1,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    2,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    2,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    3,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    3,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    4,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    4,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    8
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -3,
+    5,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    -2,
+    5,
+    9
+   ],
+   "region": "leg_hl_l",
+   "major": "leg_hl"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    6,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    6,
+    10
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    6,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    7,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    7,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    7,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    8,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    8,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    8,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    9,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    9,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    4,
+    9,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    10,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    10,
+    9
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    1,
+    11,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    11,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    7
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    11,
+    8
+   ],
+   "region": "leg_hr_u",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    1,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    1,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    2,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    2,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    3,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    3,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    4,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    4,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    2,
+    5,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    8
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    3,
+    5,
+    9
+   ],
+   "region": "leg_hr_l",
+   "major": "leg_hr"
+  },
+  {
+   "cell": [
+    1,
+    17,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    18,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    19,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    19,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    19,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -2,
+    20,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    20,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    20,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    20,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    2,
+    20,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -2,
+    21,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    21,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    21,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    21,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    2,
+    21,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    22,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    22,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    22,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    2,
+    22,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    23,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    23,
+    2
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    0
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    23,
+    1
+   ],
+   "region": "rider_torso",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    24,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider",
+   "tag": "glow"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    25,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    25,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    25,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    26,
+    2
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    -1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    26,
+    2
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    26,
+    2
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    27,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -1,
+    27,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    27,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    27,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    27,
+    2
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    27,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    1,
+    27,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    28,
+    0
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    28,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    0,
+    29,
+    1
+   ],
+   "region": "rider_head",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -4,
+    20,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    20,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    20,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    4,
+    20,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -4,
+    21,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -4,
+    21,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    21,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    -3
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    21,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    0
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    22,
+    1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -2,
+    22,
+    0
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    0
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    22,
+    1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -2
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    0
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    -3,
+    23,
+    1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    0
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    3,
+    23,
+    1
+   ],
+   "region": "rider_arms",
+   "major": "rider"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -20
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -19
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -18
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -17
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -16
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -15
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -14
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -13
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -12
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -11
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -10
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -9
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -8
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -7
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -6
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -5
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -4
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -3
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    21,
+    -2
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -24
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -23
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -22
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -21
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -20
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -19
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -18
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -17
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -16
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -15
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -14
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -13
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -12
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -11
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -10
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -9
+   ],
+   "region": "lance",
+   "major": "lance"
+  },
+  {
+   "cell": [
+    4,
+    22,
+    -8
+   ],
+   "region": "lance",
+   "major": "lance"
+  }
+ ],
+ "bounds": {
+  "min": [
+   -4,
+   1,
+   -24
+  ],
+  "max": [
+   4,
+   29,
+   14
+  ]
+ },
+ "fit_scale": 1.099,
+ "geometry_sha256": "e61a43ae7bdfea4def222531e2869c6f4fc7acf160d2892ddb75b1659e3954f5"
+}

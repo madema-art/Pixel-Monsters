@@ -146,7 +146,8 @@ func tick_archetype(dt: float, body: CombatMonster, opponent: CombatMonster, bat
 		body.request_move(Vector3.ZERO,body.rotation.y)
 		if not body.defeated: body.state="VICTORIOUS"
 		return
-	var delta := opponent.position-body.position
+	if body.rig_type=="swarm": return
+	var delta := opponent.focus_point(body.position)-body.position
 	delta.y=0
 	var distance := delta.length()
 	var forward := delta.normalized()
