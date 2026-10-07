@@ -80,8 +80,13 @@ func apply(body: Node3D) -> void:
 		var shoulder: Vector3=torso*shoulder_rest
 		var goal: Vector3= torso*body.rig_point("idle_hand",Vector3(s*4.8,17.7,-3.1),side)
 		if body.guarding: goal=torso*body.rig_point("guard",Vector3(s*3.0,23.0,-3.5),side)
-		if attack.running and attack.side==side and attack.profile.limb in ["arm",side+"_arm"]:
+		var paired: bool=body.archetype.get("rig",{}).get("paired_smash",false) and attack.profile.get("both_arms",false)
+		if attack.running and (attack.side==side or paired) and attack.profile.limb in ["arm",side+"_arm"]:
 			goal=body.to_local(attack.endpoint)
+			if paired:
+				# Meet at the target with both fists; do not cross the off-hand
+				# into the selected arm's lateral hook curve.
+				goal.x=s*lerpf(absf(hand_rest.x),1.5,0.45+maxf(0,attack.reach)*0.55)
 		var pair := solve(shoulder,goal,shoulder_rest.distance_to(elbow_rest),elbow_rest.distance_to(hand_rest),Vector3(s*0.5,-1,1))
 		var elbow: Vector3=pair[0]
 		var hand: Vector3=pair[1]

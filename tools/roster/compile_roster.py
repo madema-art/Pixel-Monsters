@@ -19,6 +19,14 @@ def all_specs():
     return out
 
 def build(spec):
+    authored = ROOT / "art/creatures" / f"{spec['id']}.authored.json"
+    if authored.exists():
+        # Blender-authored creatures must never fall back to obsolete proxy volumes.
+        data = json.loads(authored.read_text(encoding="utf-8"))
+        assert data["id"] == spec["id"] and len(data["cells"]) == 1000
+        (ROOT / "data/creatures" / f"{spec['id']}.json").write_text(
+            json.dumps(data, indent=1) + "\n", encoding="utf-8")
+        return data
     if "custom_build" in spec:
         live, regions, s = spec["custom_build"]()
         spec = {k: v for k, v in spec.items() if k != "custom_build"}

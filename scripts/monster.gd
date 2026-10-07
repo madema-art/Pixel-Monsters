@@ -74,7 +74,8 @@ func reset_body() -> void:
 	pose_index_ready=false
 	grid.clear()
 	cubes = BodyLayout.generate() if archetype.is_empty() else Archetypes.body_cells(archetype)
-	var material := Look.make_material()
+	var look_config: Dictionary=archetype.get("look",{})
+	var material := Look.make_material(Color(look_config.get("rim_color","73a0cc")),float(look_config.get("rim_strength",0.55)))
 	var mesh: Mesh=load("res://meshes/body_cube.obj")
 	mesh=mesh.duplicate()
 	mesh.surface_set_material(0,material)

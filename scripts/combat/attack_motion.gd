@@ -88,7 +88,10 @@ func update(dt: float, body: Node3D) -> void:
 	var windup := start-direction*1.3+Vector3.UP*2.8
 	if profile.get("base",move)=="heavy_hook": windup=start+body.global_basis*Vector3(sign_side*3,4.5,0.8)
 	if profile.get("base",move)=="kick": windup=start+Vector3.UP*4+body.global_basis*Vector3(0,0,1.4)
-	if trajectory=="overhead": windup=start+Vector3.UP*7+body.global_basis*Vector3(0,0,1)
+	if trajectory=="overhead":
+		# Long ground-reaching arms need an authored lift to clear their own head.
+		var lift: float=body.archetype.get("rig",{}).get("overhead_lift",7.0)
+		windup=start+Vector3.UP*lift+body.global_basis*Vector3(0,0,1)
 	if trajectory=="backhand": windup=start+body.global_basis*Vector3(-sign_side*5,2,-1)
 	if phase=="WIND-UP": desired=start.lerp(windup,progress)
 	elif phase=="COMMIT":

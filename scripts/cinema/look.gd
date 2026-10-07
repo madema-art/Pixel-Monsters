@@ -41,6 +41,9 @@ static func cube_color(palette: Dictionary, region: String, cell: Vector3i, head
 	var base: Color=palette.skin
 	var tones: Dictionary=palette.get("tones",{})
 	if tag=="glow": return palette.glow
+	# Optional authored per-cube palette entries, e.g. physical teeth/muzzle cubes.
+	if tag!="" and tag not in ["dark","accent"] and palette.get(tag) is Color:
+		return palette[tag]
 	if tones.has(region) or tones.has(part):
 		base=palette[tones.get(region,tones.get(part))]
 		var d0 := drift(cell)
