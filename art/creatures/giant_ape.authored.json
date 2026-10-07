@@ -79,7 +79,8 @@
   ],
   "stance_lean": -0.04,
   "paired_smash": true,
-  "overhead_lift": 18.0
+  "overhead_lift": 18.0,
+  "fist_ground_clearance": 0.06
  },
  "weakpoints": {
   "shoulder": 0.25,
@@ -125,9 +126,9 @@
   "nose": "272320",
   "mouth": "3f1614",
   "face_color": "877c68",
-  "face": false,
   "rim_color": "c7b8a0",
-  "rim_strength": 0.12
+  "rim_strength": 0.12,
+  "face": false
  },
  "behavior": {
   "speed": 2.7,

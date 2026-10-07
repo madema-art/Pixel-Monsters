@@ -70,6 +70,14 @@ func run() -> void:
 	for stage in ["walk","turn","pursuit","hammer_fist","ape_hook","two_hand_smash","grab_throw","leap_attack","throw","damage"]:
 		var result: Dictionary=Review.stage(b,stage)
 		check("Runtime stage "+stage,result.alive>0)
+		var actor=b.monsters[0]
+		actor.ensure_pose_index()
+		var bottom:=INF
+		for c in actor.cubes:
+			if c.alive and c.region.ends_with("fist"):
+				var axes: Basis=actor.global_basis*c.pose_basis
+				bottom=minf(bottom,actor.to_global(c.pose).y-.48*(absf(axes.x.y)+absf(axes.y.y)+absf(axes.z.y)))
+		check("Fist clears floor during "+stage,bottom>=0)
 		if stage=="leap_attack":check("Leap lifts the actual actor",result.hop>0)
 		if stage=="throw":check("Throw gives victim momentum",b.monsters[1].knock_velocity.length()>10)
 	var file=FileAccess.open("res://docs/giant-ape-validation.json",FileAccess.WRITE)

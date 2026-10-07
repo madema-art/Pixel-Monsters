@@ -32,7 +32,6 @@ static func stage(b: Node3D, label: String) -> Dictionary:
 		ape.attack_motion.begin(ape,other,label,"chest","right")
 		var seconds: float=ape.attack_motion.profile.wind+ape.attack_motion.profile.commit*.65
 		for i in int(seconds*60):
-			ape.attack_motion.update(1.0/60,ape)
 			ape.update_motor(1.0/60)
 			ape.update_pose()
 			ape.attack_motion.resolve(ape,b)

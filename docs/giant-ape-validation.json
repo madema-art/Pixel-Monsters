@@ -1,0 +1,209 @@
+{
+	"checks": [
+		{
+			"check": "Actual roster actor has 1000 cubes",
+			"passed": true
+		},
+		{
+			"check": "Unique physical cells",
+			"passed": true
+		},
+		{
+			"check": "Every cube has an exposed face; no enclosed filler",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor head",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor neck",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor shoulder",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor elbow",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor wrist",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor fist",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor hip",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor knee",
+			"passed": true
+		},
+		{
+			"check": "Anatomical anchor foot",
+			"passed": true
+		},
+		{
+			"check": "Neutral fist remains above ground",
+			"passed": true
+		},
+		{
+			"check": "Local physical destruction: chest",
+			"passed": true
+		},
+		{
+			"check": "Persistent missing cubes: chest",
+			"passed": true
+		},
+		{
+			"check": "Local physical destruction: face",
+			"passed": true
+		},
+		{
+			"check": "Persistent missing cubes: face",
+			"passed": true
+		},
+		{
+			"check": "Local physical destruction: shoulder",
+			"passed": true
+		},
+		{
+			"check": "Persistent missing cubes: shoulder",
+			"passed": true
+		},
+		{
+			"check": "Local physical destruction: fist",
+			"passed": true
+		},
+		{
+			"check": "Persistent missing cubes: fist",
+			"passed": true
+		},
+		{
+			"check": "Local physical destruction: back",
+			"passed": true
+		},
+		{
+			"check": "Persistent missing cubes: back",
+			"passed": true
+		},
+		{
+			"check": "Arm loss disables paired smash",
+			"passed": true
+		},
+		{
+			"check": "Surviving right fist retains hammer",
+			"passed": true
+		},
+		{
+			"check": "Both arm loss disables hammer/hook/grab",
+			"passed": true
+		},
+		{
+			"check": "Headbutt remains with intact head",
+			"passed": true
+		},
+		{
+			"check": "Leg loss reduces mobility",
+			"passed": true
+		},
+		{
+			"check": "Both leg loss disables kick",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage walk",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during walk",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage turn",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during turn",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage pursuit",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during pursuit",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage hammer_fist",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during hammer_fist",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage ape_hook",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during ape_hook",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage two_hand_smash",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during two_hand_smash",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage grab_throw",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during grab_throw",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage leap_attack",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during leap_attack",
+			"passed": true
+		},
+		{
+			"check": "Leap lifts the actual actor",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage throw",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during throw",
+			"passed": true
+		},
+		{
+			"check": "Throw gives victim momentum",
+			"passed": true
+		},
+		{
+			"check": "Runtime stage damage",
+			"passed": true
+		},
+		{
+			"check": "Fist clears floor during damage",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

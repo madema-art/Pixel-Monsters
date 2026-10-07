@@ -38,6 +38,7 @@ for o in s.objects:
 d['rig']['stance_lean']=float(s['stance_lean'])
 d['rig']['paired_smash']=True
 d['rig']['overhead_lift']=18.0
+d['rig']['fist_ground_clearance']=0.06
 d['look'].update(skin='393632',limb='302e2b',joint='302e2b',head='393632',face='877c68',chest='968975',teeth='ead8a8',nose='272320',mouth='3f1614',glow='ff452b')
 # Explicit cube tags replace the old automatic, painted face. Keep face_color
 # separate from the boolean face flag understood by the renderer.

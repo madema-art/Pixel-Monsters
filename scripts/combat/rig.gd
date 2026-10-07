@@ -88,6 +88,22 @@ func apply(body: Node3D) -> void:
 				# into the selected arm's lateral hook curve.
 				goal.x=s*lerpf(absf(hand_rest.x),1.5,0.45+maxf(0,attack.reach)*0.55)
 		var pair := solve(shoulder,goal,shoulder_rest.distance_to(elbow_rest),elbow_rest.distance_to(hand_rest),Vector3(s*0.5,-1,1))
+		var clearance: float=body.archetype.get("rig",{}).get("fist_ground_clearance",-1.0)
+		if clearance>=0:
+			# Check the actual fist sculpture, including rotation, rather than
+			# clamping its centre and leaving low knuckles through the street.
+			for correction in 4:
+				var fist_basis := bone(hand_rest-elbow_rest,pair[1]-pair[0])
+				var fist_transform := Transform3D(fist_basis,pair[0]-fist_basis*elbow_rest)
+				var world_basis: Basis=body.global_basis*fist_basis
+				var half := .48*(absf(world_basis.x.y)+absf(world_basis.y.y)+absf(world_basis.z.y))
+				var bottom := INF
+				for cube_id in body.render_ids.get(side+"_fist",[]):
+					var cube: Dictionary=body.cubes[cube_id]
+					bottom=minf(bottom,body.to_global(fist_transform*cube.position).y-half)
+				if bottom>=clearance: break
+				goal.y+=clearance-bottom+.025
+				pair=solve(shoulder,goal,shoulder_rest.distance_to(elbow_rest),elbow_rest.distance_to(hand_rest),Vector3(s*0.5,-1,1))
 		var elbow: Vector3=pair[0]
 		var hand: Vector3=pair[1]
 		var upper_basis := bone(elbow_rest-shoulder_rest,elbow-shoulder)
