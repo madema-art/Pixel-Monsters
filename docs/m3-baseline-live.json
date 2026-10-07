@@ -1,0 +1,58 @@
+{
+	"active_debris": 30,
+	"ai_ms": 0.042,
+	"collision_bodies": 193,
+	"finished": false,
+	"fps": 1003.0,
+	"frame_ms": 5.064,
+	"monsters": [
+		{
+			"animation_ms": 0.067,
+			"arms": [
+				false,
+				false
+			],
+			"commands": 3,
+			"cubes": 968,
+			"defeated": false,
+			"hits": 3,
+			"legs": [
+				"HEALTHY",
+				"HEALTHY"
+			],
+			"motor_ms": 0.035,
+			"name": "TITAN",
+			"reason": "",
+			"speed": 1.0,
+			"state": "HEAVY HOOK · RECOVER",
+			"structure_ms": 1.064
+		},
+		{
+			"animation_ms": 0.081,
+			"arms": [
+				false,
+				false
+			],
+			"commands": 4,
+			"cubes": 956,
+			"defeated": false,
+			"hits": 4,
+			"legs": [
+				"HEALTHY",
+				"HEALTHY"
+			],
+			"motor_ms": 0.034,
+			"name": "COLOSSUS",
+			"reason": "",
+			"speed": 1.0,
+			"state": "LEFT PUNCH · RECOVER",
+			"structure_ms": 1.23
+		}
+	],
+	"physics_ms": 3.008,
+	"rubble": 46,
+	"seed": 1622408,
+	"sweep_ms": 0.005,
+	"time": 27.2,
+	"winner": ""
+}

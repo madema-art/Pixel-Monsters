@@ -1,0 +1,2453 @@
+{
+	"finish_time": 0.0,
+	"hits": [
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 27,
+			"event_ms": 2.622,
+			"move": "body_charge",
+			"query_ms": 0.181,
+			"region": "chest",
+			"remaining": 973,
+			"structure_ms": 0.855,
+			"time": 11.25,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 7,
+			"event_ms": 2.338,
+			"move": "left_punch",
+			"query_ms": 0.067,
+			"region": "head",
+			"remaining": 993,
+			"structure_ms": 0.844,
+			"time": 11.3,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 7,
+			"event_ms": 2.438,
+			"move": "right_punch",
+			"query_ms": 0.075,
+			"region": "head",
+			"remaining": 986,
+			"structure_ms": 0.866,
+			"time": 14.72,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 11,
+			"event_ms": 2.393,
+			"move": "left_punch",
+			"query_ms": 0.116,
+			"region": "abdomen",
+			"remaining": 962,
+			"structure_ms": 0.835,
+			"time": 17.13,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 7,
+			"event_ms": 2.392,
+			"move": "kick",
+			"query_ms": 0.14,
+			"region": "right_shin",
+			"remaining": 979,
+			"structure_ms": 0.838,
+			"time": 18.9,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 4,
+			"event_ms": 2.364,
+			"move": "right_punch",
+			"query_ms": 0.065,
+			"region": "abdomen",
+			"remaining": 958,
+			"structure_ms": 0.838,
+			"time": 21.4,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 5,
+			"event_ms": 2.287,
+			"move": "left_punch",
+			"query_ms": 0.048,
+			"region": "abdomen",
+			"remaining": 974,
+			"structure_ms": 0.837,
+			"time": 22.92,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 14,
+			"event_ms": 2.485,
+			"move": "heavy_hook",
+			"query_ms": 0.205,
+			"region": "left_shoulder",
+			"remaining": 944,
+			"structure_ms": 0.829,
+			"time": 25.23,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 20,
+			"event_ms": 2.455,
+			"move": "heavy_hook",
+			"query_ms": 0.109,
+			"region": "right_shoulder",
+			"remaining": 954,
+			"structure_ms": 0.848,
+			"time": 27.15,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 10,
+			"event_ms": 2.433,
+			"move": "right_punch",
+			"query_ms": 0.105,
+			"region": "chest",
+			"remaining": 934,
+			"structure_ms": 0.86,
+			"time": 29.32,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 5,
+			"event_ms": 2.342,
+			"move": "left_punch",
+			"query_ms": 0.086,
+			"region": "head",
+			"remaining": 949,
+			"structure_ms": 0.846,
+			"time": 31.38,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 5,
+			"event_ms": 2.275,
+			"move": "left_punch",
+			"query_ms": 0.071,
+			"region": "abdomen",
+			"remaining": 929,
+			"structure_ms": 0.815,
+			"time": 32.75,
+			"victim": "COLOSSUS"
+		},
+		{
+			"attacker": "COLOSSUS",
+			"detached": 0,
+			"direct": 8,
+			"event_ms": 2.338,
+			"move": "right_punch",
+			"query_ms": 0.078,
+			"region": "head",
+			"remaining": 941,
+			"structure_ms": 0.856,
+			"time": 34.73,
+			"victim": "TITAN"
+		},
+		{
+			"attacker": "TITAN",
+			"detached": 0,
+			"direct": 6,
+			"event_ms": 2.361,
+			"move": "kick",
+			"query_ms": 0.142,
+			"region": "left_shin",
+			"remaining": 923,
+			"structure_ms": 0.836,
+			"time": 36.38,
+			"victim": "COLOSSUS"
+		}
+	],
+	"samples": [
+		{
+			"active_debris": 0,
+			"ai_ms": 0.0,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 1.0,
+			"frame_ms": 0.0,
+			"monsters": [
+				{
+					"animation_ms": 0.039,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.014,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.036,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.01,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.0,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.001,
+			"time": 0.1,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.0,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 399.0,
+			"frame_ms": 86.264,
+			"monsters": [
+				{
+					"animation_ms": 0.057,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.027,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.042,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.015,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.79,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 1.1,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.0,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 954.0,
+			"frame_ms": 4.556,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.027,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.042,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.014,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.465,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 2.1,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.03,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 958.0,
+			"frame_ms": 4.562,
+			"monsters": [
+				{
+					"animation_ms": 0.065,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.022,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.042,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.014,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.571,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 3.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 947.0,
+			"frame_ms": 4.767,
+			"monsters": [
+				{
+					"animation_ms": 0.057,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.031,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.043,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.486,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 4.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 960.0,
+			"frame_ms": 4.476,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.031,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.043,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.801,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 5.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.033,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 855.0,
+			"frame_ms": 5.152,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.034,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 59.545,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 6.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 936.0,
+			"frame_ms": 4.596,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.031,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.043,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.617,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 7.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 957.0,
+			"frame_ms": 4.468,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.032,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.042,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.515,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 8.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 957.0,
+			"frame_ms": 4.463,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.031,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.492,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 9.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 955.0,
+			"frame_ms": 4.975,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.031,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.043,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.019,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.514,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 10.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 963.0,
+			"frame_ms": 4.594,
+			"monsters": [
+				{
+					"animation_ms": 0.06,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.267,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "BODY DRIVE · WIND-UP",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.047,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.038,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · WIND-UP",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.882,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 2.698,
+			"time": 11.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 34,
+			"ai_ms": 0.033,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 853.0,
+			"frame_ms": 4.907,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 993,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.042,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "BODY DRIVE · COMMIT",
+					"structure_ms": 0.844
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 973,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.028,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.855
+				}
+			],
+			"physics_ms": 45.012,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 12.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 34,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 908.0,
+			"frame_ms": 4.346,
+			"monsters": [
+				{
+					"animation_ms": 0.073,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 993,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.039,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "BODY DRIVE · RECOVER",
+					"structure_ms": 0.844
+				},
+				{
+					"animation_ms": 0.05,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 973,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.016,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RESETTING FOOTING",
+					"structure_ms": 0.855
+				}
+			],
+			"physics_ms": 8.765,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 13.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 34,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 918.0,
+			"frame_ms": 4.738,
+			"monsters": [
+				{
+					"animation_ms": 0.062,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 993,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.033,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "BODY DRIVE · RECOVER",
+					"structure_ms": 0.844
+				},
+				{
+					"animation_ms": 0.052,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 973,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.046,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · WIND-UP",
+					"structure_ms": 0.855
+				}
+			],
+			"physics_ms": 0.916,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 14.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 7,
+			"ai_ms": 0.038,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 815.0,
+			"frame_ms": 87.762,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 986,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.028,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STAGGERED",
+					"structure_ms": 0.866
+				},
+				{
+					"animation_ms": 0.049,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 973,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.027,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · FOLLOW-THROUGH",
+					"structure_ms": 0.855
+				}
+			],
+			"physics_ms": 4.849,
+			"rubble": 34,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 15.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 7,
+			"ai_ms": 0.024,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 928.0,
+			"frame_ms": 4.622,
+			"monsters": [
+				{
+					"animation_ms": 0.055,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 1,
+					"cubes": 986,
+					"defeated": false,
+					"hits": 1,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.035,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CIRCLING",
+					"structure_ms": 0.866
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 973,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.026,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.855
+				}
+			],
+			"physics_ms": 0.846,
+			"rubble": 34,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 16.2,
+			"winner": ""
+		},
+		{
+			"active_debris": 18,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 933.0,
+			"frame_ms": 4.625,
+			"monsters": [
+				{
+					"animation_ms": 0.06,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 986,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.033,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · COMMIT",
+					"structure_ms": 0.866
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 962,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.015,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STAGGERED",
+					"structure_ms": 0.835
+				}
+			],
+			"physics_ms": 0.81,
+			"rubble": 34,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 17.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 11,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 907.0,
+			"frame_ms": 4.392,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 986,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.039,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.866
+				},
+				{
+					"animation_ms": 0.047,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 962,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.023,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "KICK · WIND-UP",
+					"structure_ms": 0.835
+				}
+			],
+			"physics_ms": 4.611,
+			"rubble": 41,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 18.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 18,
+			"ai_ms": 0.03,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 909.0,
+			"frame_ms": 5.062,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 979,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.027,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "STAGGERED",
+					"structure_ms": 0.838
+				},
+				{
+					"animation_ms": 0.047,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 962,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.025,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "KICK · COMMIT",
+					"structure_ms": 0.835
+				}
+			],
+			"physics_ms": 2.163,
+			"rubble": 41,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 19.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 18,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 920.0,
+			"frame_ms": 4.981,
+			"monsters": [
+				{
+					"animation_ms": 0.057,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 2,
+					"cubes": 979,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.028,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "CIRCLING",
+					"structure_ms": 0.838
+				},
+				{
+					"animation_ms": 0.047,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 962,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.026,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "KICK · RECOVER",
+					"structure_ms": 0.835
+				}
+			],
+			"physics_ms": 4.575,
+			"rubble": 41,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 20.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 7,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 927.0,
+			"frame_ms": 4.923,
+			"monsters": [
+				{
+					"animation_ms": 0.06,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 979,
+					"defeated": false,
+					"hits": 2,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.033,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH · WIND-UP",
+					"structure_ms": 0.838
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 962,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.014,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "KICK · RECOVER",
+					"structure_ms": 0.835
+				}
+			],
+			"physics_ms": 0.883,
+			"rubble": 52,
+			"seed": 1119604,
+			"sweep_ms": 1.383,
+			"time": 21.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 8,
+			"ai_ms": 0.1,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 912.0,
+			"frame_ms": 4.993,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 979,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.038,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.838
+				},
+				{
+					"animation_ms": 0.045,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 958,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.023,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH",
+					"structure_ms": 0.838
+				}
+			],
+			"physics_ms": 4.525,
+			"rubble": 55,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 22.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 9,
+			"ai_ms": 0.03,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 923.0,
+			"frame_ms": 4.532,
+			"monsters": [
+				{
+					"animation_ms": 0.055,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 3,
+					"cubes": 974,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.024,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "STAGGERED",
+					"structure_ms": 0.837
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 958,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.023,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · COMMIT",
+					"structure_ms": 0.838
+				}
+			],
+			"physics_ms": 2.062,
+			"rubble": 59,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 23.3,
+			"winner": ""
+		},
+		{
+			"active_debris": 9,
+			"ai_ms": 0.033,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 920.0,
+			"frame_ms": 4.975,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 974,
+					"defeated": false,
+					"hits": 3,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.044,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "HEAVY HOOK · WIND-UP",
+					"structure_ms": 0.837
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 958,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.021,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.838
+				}
+			],
+			"physics_ms": 4.38,
+			"rubble": 59,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 24.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 19,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 930.0,
+			"frame_ms": 5.067,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 974,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.042,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "HEAVY HOOK · COMMIT",
+					"structure_ms": 0.837
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 944,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.015,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.829
+				}
+			],
+			"physics_ms": 0.762,
+			"rubble": 63,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 25.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 17,
+			"ai_ms": 0.033,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 908.0,
+			"frame_ms": 4.922,
+			"monsters": [
+				{
+					"animation_ms": 0.06,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 974,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.053,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "HEAVY HOOK · RECOVER",
+					"structure_ms": 0.837
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 944,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.025,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "HEAVY HOOK · WIND-UP",
+					"structure_ms": 0.829
+				}
+			],
+			"physics_ms": 4.579,
+			"rubble": 65,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 26.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 34,
+			"ai_ms": 0.04,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 929.0,
+			"frame_ms": 4.975,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 4,
+					"cubes": 954,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.043,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "HEAVY HOOK · RECOVER",
+					"structure_ms": 0.848
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 944,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.024,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "HEAVY HOOK · COMMIT",
+					"structure_ms": 0.829
+				}
+			],
+			"physics_ms": 0.819,
+			"rubble": 68,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 27.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 34,
+			"ai_ms": 0.095,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 907.0,
+			"frame_ms": 4.965,
+			"monsters": [
+				{
+					"animation_ms": 0.066,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 954,
+					"defeated": false,
+					"hits": 4,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.042,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH",
+					"structure_ms": 0.848
+				},
+				{
+					"animation_ms": 0.048,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 944,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.024,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "HEAVY HOOK · RECOVER",
+					"structure_ms": 0.829
+				}
+			],
+			"physics_ms": 4.638,
+			"rubble": 68,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 28.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 30,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 921.0,
+			"frame_ms": 4.404,
+			"monsters": [
+				{
+					"animation_ms": 0.09,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 954,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.04,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH · COMMIT",
+					"structure_ms": 0.848
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 934,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.014,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "HEAVY HOOK · RECOVER",
+					"structure_ms": 0.86
+				}
+			],
+			"physics_ms": 0.898,
+			"rubble": 82,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 29.4,
+			"winner": ""
+		},
+		{
+			"active_debris": 30,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 864.0,
+			"frame_ms": 4.614,
+			"monsters": [
+				{
+					"animation_ms": 0.062,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 954,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.039,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.848
+				},
+				{
+					"animation_ms": 0.044,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 934,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.015,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STAGGERED",
+					"structure_ms": 0.86
+				}
+			],
+			"physics_ms": 4.705,
+			"rubble": 82,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 30.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 15,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 915.0,
+			"frame_ms": 4.629,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 5,
+					"cubes": 949,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.036,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.846
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 934,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.026,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · COMMIT",
+					"structure_ms": 0.86
+				}
+			],
+			"physics_ms": 0.946,
+			"rubble": 102,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 31.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 15,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 897.0,
+			"frame_ms": 4.578,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 949,
+					"defeated": false,
+					"hits": 5,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.041,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "LEFT PUNCH · WIND-UP",
+					"structure_ms": 0.846
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 934,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.02,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.86
+				}
+			],
+			"physics_ms": 4.569,
+			"rubble": 102,
+			"seed": 1119604,
+			"sweep_ms": 0.002,
+			"time": 32.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 10,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 899.0,
+			"frame_ms": 4.746,
+			"monsters": [
+				{
+					"animation_ms": 0.058,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 949,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.039,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "LEFT PUNCH · FOLLOW-THROUGH",
+					"structure_ms": 0.846
+				},
+				{
+					"animation_ms": 0.041,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 929,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.015,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "CLOSING DISTANCE",
+					"structure_ms": 0.815
+				}
+			],
+			"physics_ms": 4.499,
+			"rubble": 112,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 33.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 10,
+			"ai_ms": 0.032,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 927.0,
+			"frame_ms": 4.492,
+			"monsters": [
+				{
+					"animation_ms": 0.059,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 6,
+					"cubes": 949,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.028,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "LEFT PUNCH · RECOVER",
+					"structure_ms": 0.846
+				},
+				{
+					"animation_ms": 0.049,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 929,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.026,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · WIND-UP",
+					"structure_ms": 0.815
+				}
+			],
+			"physics_ms": 0.908,
+			"rubble": 112,
+			"seed": 1119604,
+			"sweep_ms": 1.379,
+			"time": 34.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 13,
+			"ai_ms": 0.031,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 897.0,
+			"frame_ms": 4.605,
+			"monsters": [
+				{
+					"animation_ms": 0.061,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 941,
+					"defeated": false,
+					"hits": 6,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.039,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "KICK · WIND-UP",
+					"structure_ms": 0.856
+				},
+				{
+					"animation_ms": 0.046,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 929,
+					"defeated": false,
+					"hits": 7,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.024,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.815
+				}
+			],
+			"physics_ms": 4.512,
+			"rubble": 117,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 35.5,
+			"winner": ""
+		},
+		{
+			"active_debris": 14,
+			"ai_ms": 0.034,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 927.0,
+			"frame_ms": 4.958,
+			"monsters": [
+				{
+					"animation_ms": 0.06,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 941,
+					"defeated": false,
+					"hits": 7,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.035,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "KICK · COMMIT",
+					"structure_ms": 0.856
+				},
+				{
+					"animation_ms": 0.045,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 923,
+					"defeated": false,
+					"hits": 7,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.017,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 0.943181818181818,
+					"state": "RIGHT PUNCH · RECOVER",
+					"structure_ms": 0.836
+				}
+			],
+			"physics_ms": 0.863,
+			"rubble": 122,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 36.6,
+			"winner": ""
+		},
+		{
+			"active_debris": 14,
+			"ai_ms": 0.102,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 889.0,
+			"frame_ms": 4.562,
+			"monsters": [
+				{
+					"animation_ms": 0.064,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 7,
+					"cubes": 941,
+					"defeated": false,
+					"hits": 7,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.038,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.920454545454545,
+					"state": "KICK · RECOVER",
+					"structure_ms": 0.856
+				},
+				{
+					"animation_ms": 0.047,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 8,
+					"cubes": 923,
+					"defeated": false,
+					"hits": 7,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.023,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 0.943181818181818,
+					"state": "KICK",
+					"structure_ms": 0.836
+				}
+			],
+			"physics_ms": 4.619,
+			"rubble": 122,
+			"seed": 1119604,
+			"sweep_ms": 0.003,
+			"time": 37.6,
+			"winner": ""
+		}
+	],
+	"stages": {
+		"pristine": {
+			"active_debris": 0,
+			"ai_ms": 0.0,
+			"collision_bodies": 193,
+			"finished": false,
+			"fps": 1.0,
+			"frame_ms": 0.0,
+			"monsters": [
+				{
+					"animation_ms": 0.054,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.0,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				},
+				{
+					"animation_ms": 0.054,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 0,
+					"cubes": 1000,
+					"defeated": false,
+					"hits": 0,
+					"legs": [
+						"HEALTHY",
+						"HEALTHY"
+					],
+					"motor_ms": 0.0,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 1.0,
+					"state": "STANDOFF",
+					"structure_ms": 0.0
+				}
+			],
+			"physics_ms": 0.0,
+			"rubble": 0,
+			"seed": 1119604,
+			"sweep_ms": 0.0,
+			"time": 0.0,
+			"winner": ""
+		}
+	}
+}

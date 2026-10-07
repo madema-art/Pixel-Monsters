@@ -1,0 +1,80 @@
+{
+	"arguments": [],
+	"debug_build": false,
+	"executable": "D:/Pixel Monsters/Pixel Monsters.exe",
+	"snapshot": {
+		"active_debris": 0,
+		"ai_ms": 0.0,
+		"audio_events": 0,
+		"audio_ms": 0.0,
+		"collision_bodies": 193,
+		"coverage": 0.485827829985426,
+		"debris_script_ms": 0.0,
+		"director": true,
+		"director_ms": 0.0,
+		"finished": false,
+		"fps": 1.0,
+		"frame_ms": 0.0,
+		"gpu_ms": 0.0,
+		"impact_tiers": [
+			0,
+			0,
+			0
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.056,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"name": "TITAN",
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			},
+			{
+				"animation_ms": 0.057,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"name": "COLOSSUS",
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			}
+		],
+		"music": "opening",
+		"physics_ms": 0.0,
+		"render_cpu_ms": 0.0,
+		"rubble": 0,
+		"seed": 211,
+		"shot": "ESTABLISHING",
+		"sweep_ms": 0.0,
+		"time": 0.0,
+		"vfx_events": 0,
+		"vfx_ms": 0.0,
+		"winner": ""
+	}
+}

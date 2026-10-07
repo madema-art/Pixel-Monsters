@@ -1,0 +1,85 @@
+{
+	"checks": [
+		{
+			"check": "Exactly 1000 cubes in each cinematic body",
+			"passed": true
+		},
+		{
+			"check": "Director enabled on launch",
+			"passed": true
+		},
+		{
+			"check": "Opening framing clear of buildings",
+			"passed": true
+		},
+		{
+			"check": "Opening full-body coverage",
+			"passed": true
+		},
+		{
+			"check": "Movement immediately overrides director",
+			"passed": true
+		},
+		{
+			"check": "Override preserves current camera position",
+			"passed": true
+		},
+		{
+			"check": "Camera speed adjustment",
+			"passed": true
+		},
+		{
+			"check": "Pause freezes battle clock",
+			"passed": true
+		},
+		{
+			"check": "Free camera continues during pause",
+			"passed": true
+		},
+		{
+			"check": "Pause freezes GPU dust simulation",
+			"passed": true
+		},
+		{
+			"check": "Half speed",
+			"passed": true
+		},
+		{
+			"check": "Quarter speed",
+			"passed": true
+		},
+		{
+			"check": "Slow motion keeps impact pitch natural",
+			"passed": true
+		},
+		{
+			"check": "HUD off removes canvas",
+			"passed": true
+		},
+		{
+			"check": "Director can be restored",
+			"passed": true
+		},
+		{
+			"check": "Restart restores time and pristine body",
+			"passed": true
+		},
+		{
+			"check": "Early battle cue",
+			"passed": true
+		},
+		{
+			"check": "Collapse does not trigger spurious desperate cue",
+			"passed": true
+		},
+		{
+			"check": "Aftermath cue after collapse breathing room",
+			"passed": true
+		},
+		{
+			"check": "Director holds collapse until four seconds",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

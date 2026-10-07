@@ -1,0 +1,80 @@
+{
+	"arguments": [
+		"--scene",
+		"res://tests/rendered_suite.tscn"
+	],
+	"debug_build": true,
+	"executable": "D:/Godot/Godot.exe",
+	"snapshot": {
+		"active_debris": 0,
+		"ai_ms": 0.036,
+		"audio_events": 596,
+		"audio_ms": 0.261,
+		"collision_bodies": 193,
+		"coverage": 0.936753453459515,
+		"director": true,
+		"director_ms": 0.019,
+		"finished": false,
+		"fps": 581.0,
+		"frame_ms": 8.008,
+		"impact_tiers": [
+			0,
+			0,
+			0
+		],
+		"monsters": [
+			{
+				"animation_ms": 0.069,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"name": "TITAN",
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			},
+			{
+				"animation_ms": 0.066,
+				"arms": [
+					false,
+					false
+				],
+				"commands": 0,
+				"cubes": 1000,
+				"defeated": false,
+				"hits": 0,
+				"legs": [
+					"HEALTHY",
+					"HEALTHY"
+				],
+				"motor_ms": 0.0,
+				"name": "COLOSSUS",
+				"reason": "",
+				"speed": 1.0,
+				"state": "STANDOFF",
+				"structure_ms": 0.0
+			}
+		],
+		"music": "opening",
+		"physics_ms": 1.702,
+		"rubble": 0,
+		"seed": 9929,
+		"shot": "ESTABLISHING",
+		"sweep_ms": 0.004,
+		"time": 0.0,
+		"vfx_events": 257,
+		"vfx_ms": 0.027,
+		"winner": ""
+	}
+}

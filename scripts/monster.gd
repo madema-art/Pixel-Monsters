@@ -42,11 +42,11 @@ func reset_body() -> void:
 	cubes = BodyLayout.generate()
 	var material := StandardMaterial3D.new()
 	material.vertex_color_use_as_albedo = true
-	material.roughness = 0.7
-	material.metallic = 0.18
-	var mesh := BoxMesh.new()
-	mesh.size = Vector3.ONE * BodyLayout.CUBE_SIZE
-	mesh.material = material
+	material.roughness = 0.58
+	material.metallic = 0.08
+	var mesh: Mesh=load("res://meshes/body_cube.obj")
+	mesh=mesh.duplicate()
+	mesh.surface_set_material(0,material)
 	for i in cubes.size():
 		var c: Dictionary = cubes[i]
 		c.alive = true
@@ -55,6 +55,14 @@ func reset_body() -> void:
 		c.color = tint.lightened(float(posmod(i*47,17))/80.0).darkened(float(posmod(i*31,11))/55.0)
 		if c.region == "head" and c.cell.y == 26 and c.cell.z <= -1 and absi(c.cell.x)==1:
 			c.color = Color("fff0b1")
+		elif c.region=="head" and c.cell.y>=27:
+			c.color=tint.darkened(.30)
+		elif c.region=="head" and c.cell.y<=24 and c.cell.z<0:
+			c.color=tint.lightened(.24)
+		elif c.region in ["abdomen","pelvis"]:
+			c.color=c.color.darkened(.13)
+		elif c.region.contains("shoulder"):
+			c.color=c.color.lightened(.10)
 		grid[c.cell] = i
 		var render_key: String=c.region if dynamic_pose else c.major
 		if not renders.has(render_key):

@@ -1,0 +1,154 @@
+{
+  "release_duration": 156.750000000017,
+  "sampled_fps_median": 697.0,
+  "sampled_fps_min": 518.0,
+  "baseline_early_fps_median": 920.0,
+  "m3_early_fps_median": 713.5,
+  "stages": {
+    "pristine": {
+      "samples": 7,
+      "fps": 745.0,
+      "gpu_ms": 0.647,
+      "render_cpu_ms": 0.339,
+      "physics_ms": 0.652,
+      "ai_ms": 0.028,
+      "debris_script_ms": 0.005,
+      "director_ms": 0.016,
+      "audio_ms": 0.005,
+      "vfx_ms": 0.018,
+      "active_debris": 0.0,
+      "rubble": 0.0
+    },
+    "25_percent": {
+      "samples": 4,
+      "fps": 696.0,
+      "gpu_ms": 0.962,
+      "render_cpu_ms": 0.322,
+      "physics_ms": 1.562,
+      "ai_ms": 0.0305,
+      "debris_script_ms": 0.4005,
+      "director_ms": 0.0195,
+      "audio_ms": 0.0355,
+      "vfx_ms": 0.0215,
+      "active_debris": 65.0,
+      "rubble": 473.0
+    },
+    "50_percent": {
+      "samples": 4,
+      "fps": 656.0,
+      "gpu_ms": 0.7585,
+      "render_cpu_ms": 0.3105,
+      "physics_ms": 2.021,
+      "ai_ms": 0.0305,
+      "debris_script_ms": 0.683,
+      "director_ms": 0.018,
+      "audio_ms": 0.039,
+      "vfx_ms": 0.022,
+      "active_debris": 58.5,
+      "rubble": 999.0
+    },
+    "late_fight": {
+      "samples": 12,
+      "fps": 700.5,
+      "gpu_ms": 0.625,
+      "render_cpu_ms": 0.324,
+      "physics_ms": 2.141,
+      "ai_ms": 0.031,
+      "debris_script_ms": 0.579,
+      "director_ms": 0.018,
+      "audio_ms": 0.0325,
+      "vfx_ms": 0.0125,
+      "active_debris": 27.0,
+      "rubble": 1186.0
+    },
+    "limb_loss": {
+      "samples": 4,
+      "fps": 697.5,
+      "gpu_ms": 0.69,
+      "render_cpu_ms": 0.321,
+      "physics_ms": 1.035,
+      "ai_ms": 0.0305,
+      "debris_script_ms": 0.2035,
+      "director_ms": 0.0175,
+      "audio_ms": 0.0375,
+      "vfx_ms": 0.0225,
+      "active_debris": 68.5,
+      "rubble": 269.5
+    },
+    "large_debris": {
+      "samples": 4,
+      "fps": 697.5,
+      "gpu_ms": 0.69,
+      "render_cpu_ms": 0.321,
+      "physics_ms": 1.035,
+      "ai_ms": 0.0305,
+      "debris_script_ms": 0.2035,
+      "director_ms": 0.0175,
+      "audio_ms": 0.0375,
+      "vfx_ms": 0.0225,
+      "active_debris": 68.5,
+      "rubble": 269.5
+    },
+    "collapse": {
+      "samples": 1,
+      "fps": 659.0,
+      "gpu_ms": 0.633,
+      "render_cpu_ms": 0.327,
+      "physics_ms": 4.86,
+      "ai_ms": 0.029,
+      "debris_script_ms": 1.543,
+      "director_ms": 0.018,
+      "audio_ms": 0.036,
+      "vfx_ms": 0.028,
+      "active_debris": 192.0,
+      "rubble": 1468.0
+    },
+    "aftermath": {
+      "samples": 14,
+      "fps": 698.5,
+      "gpu_ms": 0.7255,
+      "render_cpu_ms": 0.303,
+      "physics_ms": 1.1875,
+      "ai_ms": 0.029,
+      "debris_script_ms": 0.658,
+      "director_ms": 0.015,
+      "audio_ms": 0.033,
+      "vfx_ms": 0.028,
+      "active_debris": 0.0,
+      "rubble": 1660.0
+    }
+  },
+  "music": [
+    {
+      "damage": 0.0,
+      "state": "opening",
+      "time": 0.1
+    },
+    {
+      "damage": 0.00449999999999995,
+      "state": "early",
+      "time": 12.2
+    },
+    {
+      "damage": 0.1925,
+      "state": "mid",
+      "time": 73.2
+    },
+    {
+      "damage": 0.381,
+      "state": "severe",
+      "time": 98.1
+    },
+    {
+      "damage": 0.54,
+      "state": "desperate",
+      "time": 122.4
+    },
+    {
+      "damage": 0.83,
+      "state": "aftermath",
+      "time": 158.8
+    }
+  ],
+  "max_pre_defeat_coverage": 0.925766720330172
+}

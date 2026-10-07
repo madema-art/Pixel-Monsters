@@ -1,0 +1,79 @@
+[
+	{
+		"configuration": "full",
+		"cpu_render_median_ms": 0.354999989271164,
+		"director_median_ms": 0.024,
+		"fps": 836.0,
+		"frame_median_ms": 0.971,
+		"frame_p95_ms": 2.762,
+		"gpu_median_ms": 0.699999988079071,
+		"resolution": "(1152, 648)",
+		"samples": 3252
+	},
+	{
+		"configuration": "no_vfx",
+		"cpu_render_median_ms": 0.328999996185303,
+		"director_median_ms": 0.024,
+		"fps": 889.0,
+		"frame_median_ms": 0.901,
+		"frame_p95_ms": 2.603,
+		"gpu_median_ms": 0.683000028133392,
+		"resolution": "(1152, 648)",
+		"samples": 3528
+	},
+	{
+		"configuration": "no_audio",
+		"cpu_render_median_ms": 0.349000006914139,
+		"director_median_ms": 0.024,
+		"fps": 834.0,
+		"frame_median_ms": 0.938,
+		"frame_p95_ms": 2.935,
+		"gpu_median_ms": 0.704999983310699,
+		"resolution": "(1152, 648)",
+		"samples": 3348
+	},
+	{
+		"configuration": "no_director",
+		"cpu_render_median_ms": 0.349999994039536,
+		"director_median_ms": 0.0,
+		"fps": 840.0,
+		"frame_median_ms": 0.924,
+		"frame_p95_ms": 2.989,
+		"gpu_median_ms": 0.703999996185303,
+		"resolution": "(1152, 648)",
+		"samples": 3347
+	},
+	{
+		"configuration": "no_shadows",
+		"cpu_render_median_ms": 0.232999995350838,
+		"director_median_ms": 0.024,
+		"fps": 957.0,
+		"frame_median_ms": 0.79,
+		"frame_p95_ms": 2.934,
+		"gpu_median_ms": 0.574000000953674,
+		"resolution": "(1152, 648)",
+		"samples": 3826
+	},
+	{
+		"configuration": "no_directional_lights",
+		"cpu_render_median_ms": 0.231000006198883,
+		"director_median_ms": 0.024,
+		"fps": 976.0,
+		"frame_median_ms": 0.768,
+		"frame_p95_ms": 2.701,
+		"gpu_median_ms": 0.540000021457672,
+		"resolution": "(1152, 648)",
+		"samples": 3911
+	},
+	{
+		"configuration": "no_haze",
+		"cpu_render_median_ms": 0.349999994039536,
+		"director_median_ms": 0.024,
+		"fps": 834.0,
+		"frame_median_ms": 0.939,
+		"frame_p95_ms": 2.803,
+		"gpu_median_ms": 0.703999996185303,
+		"resolution": "(1152, 648)",
+		"samples": 3338
+	}
+]

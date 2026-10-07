@@ -12,15 +12,16 @@ var renderer: MultiMeshInstance3D
 var physical_renderer: MultiMeshInstance3D
 var born := 0
 var peak_active := 0
+var physics_script_ms := 0.0
 var material: StandardMaterial3D
 
 func _ready() -> void:
 	material = StandardMaterial3D.new()
 	material.vertex_color_use_as_albedo = true
 	material.roughness = 0.8
-	var mesh := BoxMesh.new()
-	mesh.size = Vector3.ONE*BodyLayout.CUBE_SIZE
-	mesh.material = material
+	var mesh: Mesh=load("res://meshes/body_cube.obj")
+	mesh=mesh.duplicate()
+	mesh.surface_set_material(0,material)
 	renderer = MultiMeshInstance3D.new()
 	renderer.multimesh = MultiMesh.new()
 	renderer.multimesh.transform_format = MultiMesh.TRANSFORM_3D
@@ -36,7 +37,7 @@ func _ready() -> void:
 	physical_renderer.multimesh.visible_instance_count=0
 	add_child(physical_renderer)
 	var shape := BoxShape3D.new()
-	shape.size = mesh.size
+	shape.size = Vector3.ONE*BodyLayout.CUBE_SIZE
 	for i in max_physical:
 		var body := RigidBody3D.new()
 		body.mass = 60.0
@@ -86,6 +87,7 @@ func retire(index: int) -> void:
 	active.remove_at(index)
 
 func _physics_process(dt: float) -> void:
+	var begin := Time.get_ticks_usec()
 	var dirty := false
 	for i in range(active.size()-1,-1,-1):
 		active[i].age+=dt
@@ -126,6 +128,7 @@ func _physics_process(dt: float) -> void:
 	for i in active.size():
 		physical_mm.set_instance_transform(i,active[i].body.global_transform)
 		physical_mm.set_instance_color(i,active[i].color)
+	physics_script_ms=(Time.get_ticks_usec()-begin)/1000.0
 
 func clear() -> void:
 	while not active.is_empty(): retire(0)

@@ -1,0 +1,839 @@
+[
+	{
+		"director": [
+			{
+				"blocked": false,
+				"coverage": 0.531983491558773,
+				"position": "(8.0, 10.0, 66.0)",
+				"shot": "ESTABLISHING",
+				"time": 0.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.699203618474215,
+				"position": "(-11.79833, 29.0, 43.0)",
+				"shot": "ELEVATED",
+				"time": 10.2
+			},
+			{
+				"blocked": false,
+				"coverage": 0.829845103689195,
+				"position": "(16.76713, 7.0, 32.01232)",
+				"shot": "RIM_SIDE",
+				"time": 20.3
+			},
+			{
+				"blocked": false,
+				"coverage": 0.826638164109107,
+				"position": "(-9.874282, 11.0, 39.00493)",
+				"shot": "TWO_SHOT",
+				"time": 30.5
+			},
+			{
+				"blocked": false,
+				"coverage": 0.70425940761712,
+				"position": "(-10.89527, 29.0, 43.03557)",
+				"shot": "ELEVATED",
+				"time": 40.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.841100351260457,
+				"position": "(18.18824, 7.0, 32.02991)",
+				"shot": "RIM_SIDE",
+				"time": 50.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.826987757627953,
+				"position": "(-19.15046, 18.25247, 27.91811)",
+				"shot": "OVER_SHOULDER",
+				"time": 60.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.830782311232464,
+				"position": "(-8.243195, 11.0, 39.09979)",
+				"shot": "TWO_SHOT",
+				"time": 70.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.698548726430401,
+				"position": "(-11.89653, 29.0, 43.15714)",
+				"shot": "ELEVATED",
+				"time": 81.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.836971942770334,
+				"position": "(20.42906, 6.141006, 36.00258)",
+				"shot": "RIM_SIDE",
+				"time": 92.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.8346940912182,
+				"position": "(-10.05215, 10.61675, 44.39936)",
+				"shot": "TWO_SHOT",
+				"time": 102.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.730537683729281,
+				"position": "(-9.533782, 29.0, 43.21986)",
+				"shot": "ELEVATED",
+				"time": 114.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.832654023736804,
+				"position": "(25.8217, 4.604962, 45.42463)",
+				"shot": "RIM_SIDE",
+				"time": 125.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.828529337637695,
+				"position": "(-13.64484, 10.10868, 57.0672)",
+				"shot": "TWO_SHOT",
+				"time": 135.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.804190416390737,
+				"position": "(4.319307, -1.151216, 54.47898)",
+				"shot": "STREET",
+				"time": 145.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.712915574889408,
+				"position": "(-14.58708, 13.0, 46.73624)",
+				"shot": "AFTERMATH_WIDE",
+				"time": 160.8
+			}
+		],
+		"duration": 156.750000000017,
+		"finished": true,
+		"music": [
+			{
+				"damage": 0.0,
+				"state": "opening",
+				"time": 0.1
+			},
+			{
+				"damage": 0.00449999999999995,
+				"state": "early",
+				"time": 12.0
+			},
+			{
+				"damage": 0.1925,
+				"state": "mid",
+				"time": 73.0
+			},
+			{
+				"damage": 0.381,
+				"state": "severe",
+				"time": 98.0
+			},
+			{
+				"damage": 0.54,
+				"state": "desperate",
+				"time": 122.4
+			},
+			{
+				"damage": 0.83,
+				"state": "aftermath",
+				"time": 158.8
+			}
+		],
+		"seed": 211,
+		"snapshot": {
+			"active_debris": 0,
+			"ai_ms": 0.034,
+			"audio_events": 222,
+			"audio_ms": 0.35,
+			"collision_bodies": 193,
+			"coverage": 0.724542790580209,
+			"director": true,
+			"director_ms": 0.024,
+			"finished": true,
+			"fps": 680.0,
+			"frame_ms": 10.747,
+			"impact_tiers": [
+				34,
+				15,
+				6
+			],
+			"monsters": [
+				{
+					"animation_ms": 0.074,
+					"arms": [
+						true,
+						false
+					],
+					"commands": 39,
+					"cubes": 340,
+					"defeated": false,
+					"hits": 29,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.021,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.12,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.48
+				},
+				{
+					"animation_ms": 0.056,
+					"arms": [
+						true,
+						false
+					],
+					"commands": 36,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 26,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.02,
+					"name": "COLOSSUS",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.428
+				}
+			],
+			"music": "aftermath",
+			"physics_ms": 1.26,
+			"rubble": 1660,
+			"seed": 211,
+			"shot": "AFTERMATH_WIDE",
+			"sweep_ms": 0.004,
+			"time": 166.0,
+			"vfx_events": 93,
+			"vfx_ms": 0.033,
+			"winner": "TITAN"
+		}
+	},
+	{
+		"director": [
+			{
+				"blocked": false,
+				"coverage": 0.531797950025758,
+				"position": "(8.0, 10.0, 66.0)",
+				"shot": "ESTABLISHING",
+				"time": 0.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.700756930511347,
+				"position": "(-12.20167, 29.0, 43.0)",
+				"shot": "ELEVATED",
+				"time": 10.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.833425101171891,
+				"position": "(18.71886, 7.0, 31.90844)",
+				"shot": "RIM_SIDE",
+				"time": 20.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.823899775384684,
+				"position": "(-18.92428, 18.294, 27.81464)",
+				"shot": "OVER_SHOULDER",
+				"time": 30.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.706170310844564,
+				"position": "(-8.954027, 29.0, 42.44394)",
+				"shot": "ELEVATED",
+				"time": 40.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.839805217462157,
+				"position": "(20.03978, 7.0, 31.4447)",
+				"shot": "RIM_SIDE",
+				"time": 50.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.810936462960234,
+				"position": "(-18.91235, 18.44029, 29.01233)",
+				"shot": "OVER_SHOULDER",
+				"time": 61.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.709324117735318,
+				"position": "(-8.661002, 29.0, 42.52548)",
+				"shot": "ELEVATED",
+				"time": 72.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.834199313330253,
+				"position": "(6.478155, 3.5, 35.50847)",
+				"shot": "STREET",
+				"time": 83.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.84061170668913,
+				"position": "(20.67653, 7.0, 31.53798)",
+				"shot": "RIM_SIDE",
+				"time": 94.4
+			},
+			{
+				"blocked": false,
+				"coverage": 0.834035608907166,
+				"position": "(-17.45651, 18.40667, 28.50494)",
+				"shot": "OVER_SHOULDER",
+				"time": 105.2
+			},
+			{
+				"blocked": false,
+				"coverage": 0.710130430061541,
+				"position": "(-6.776549, 29.0, 42.30975)",
+				"shot": "ELEVATED",
+				"time": 115.2
+			},
+			{
+				"blocked": false,
+				"coverage": 0.85164361514887,
+				"position": "(21.75925, 7.0, 31.39199)",
+				"shot": "RIM_SIDE",
+				"time": 125.3
+			},
+			{
+				"blocked": false,
+				"coverage": 0.835142088364191,
+				"position": "(-15.20057, 18.36966, 27.90847)",
+				"shot": "OVER_SHOULDER",
+				"time": 136.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.706566480692258,
+				"position": "(-6.307585, 29.0, 42.20559)",
+				"shot": "ELEVATED",
+				"time": 146.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.870519640386209,
+				"position": "(12.12763, 5.0, 35.30465)",
+				"shot": "AFTERMATH",
+				"time": 151.7
+			}
+		],
+		"duration": 147.65000000001,
+		"finished": true,
+		"music": [
+			{
+				"damage": 0.0,
+				"state": "opening",
+				"time": 0.0
+			},
+			{
+				"damage": 0.00700000000000001,
+				"state": "early",
+				"time": 12.0
+			},
+			{
+				"damage": 0.18,
+				"state": "mid",
+				"time": 79.6
+			},
+			{
+				"damage": 0.396,
+				"state": "severe",
+				"time": 118.7
+			},
+			{
+				"damage": 0.792,
+				"state": "aftermath",
+				"time": 149.7
+			}
+		],
+		"seed": 617,
+		"snapshot": {
+			"active_debris": 0,
+			"ai_ms": 0.113,
+			"audio_events": 444,
+			"audio_ms": 0.261,
+			"collision_bodies": 193,
+			"coverage": 0.822290285382408,
+			"director": true,
+			"director_ms": 0.021,
+			"finished": true,
+			"fps": 585.0,
+			"frame_ms": 10.367,
+			"impact_tiers": [
+				38,
+				17,
+				2
+			],
+			"monsters": [
+				{
+					"animation_ms": 0.071,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 33,
+					"cubes": 416,
+					"defeated": false,
+					"hits": 27,
+					"legs": [
+						"COMPROMISED",
+						"DAMAGED"
+					],
+					"motor_ms": 0.032,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.422202797202797,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.558
+				},
+				{
+					"animation_ms": 0.056,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 36,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 30,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.032,
+					"name": "COLOSSUS",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.61
+				}
+			],
+			"music": "aftermath",
+			"physics_ms": 1.32,
+			"rubble": 1584,
+			"seed": 617,
+			"shot": "AFTERMATH",
+			"sweep_ms": 0.004,
+			"time": 156.8,
+			"vfx_events": 187,
+			"vfx_ms": 0.03,
+			"winner": "TITAN"
+		}
+	},
+	{
+		"director": [
+			{
+				"blocked": false,
+				"coverage": 0.531814325501827,
+				"position": "(8.0, 10.0, 66.0)",
+				"shot": "ESTABLISHING",
+				"time": 0.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.700944023250729,
+				"position": "(-12.14667, 29.0, 43.0)",
+				"shot": "ELEVATED",
+				"time": 10.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.833774387296374,
+				"position": "(17.98033, 7.0, 32.05371)",
+				"shot": "RIM_SIDE",
+				"time": 20.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.820237574622341,
+				"position": "(-9.066658, 11.0, 39.09689)",
+				"shot": "TWO_SHOT",
+				"time": 31.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.707491172161714,
+				"position": "(-12.20072, 29.0, 43.12751)",
+				"shot": "ELEVATED",
+				"time": 41.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.837120813239693,
+				"position": "(17.7993, 7.0, 32.14002)",
+				"shot": "RIM_SIDE",
+				"time": 51.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.816107598156692,
+				"position": "(-20.57912, 18.4004, 29.00181)",
+				"shot": "OVER_SHOULDER",
+				"time": 61.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.84100178849467,
+				"position": "(-8.989798, 11.0, 38.96986)",
+				"shot": "TWO_SHOT",
+				"time": 71.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.702554657880236,
+				"position": "(-11.7761, 29.0, 43.05549)",
+				"shot": "ELEVATED",
+				"time": 82.9
+			},
+			{
+				"blocked": false,
+				"coverage": 0.859757258737622,
+				"position": "(16.4623, 7.0, 32.01467)",
+				"shot": "RIM_SIDE",
+				"time": 94.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.75452086670526,
+				"position": "(-5.749175, 13.0, 46.74641)",
+				"shot": "AFTERMATH_WIDE",
+				"time": 99.9
+			}
+		],
+		"duration": 95.8833333333292,
+		"finished": true,
+		"music": [
+			{
+				"damage": 0.0,
+				"state": "opening",
+				"time": 0.0
+			},
+			{
+				"damage": 0.011,
+				"state": "early",
+				"time": 12.0
+			},
+			{
+				"damage": 0.1845,
+				"state": "mid",
+				"time": 63.3
+			},
+			{
+				"damage": 0.6925,
+				"state": "aftermath",
+				"time": 97.9
+			}
+		],
+		"seed": 7907,
+		"snapshot": {
+			"active_debris": 0,
+			"ai_ms": 0.036,
+			"audio_events": 596,
+			"audio_ms": 0.261,
+			"collision_bodies": 193,
+			"coverage": 0.718381695021786,
+			"director": true,
+			"director_ms": 0.019,
+			"finished": true,
+			"fps": 581.0,
+			"frame_ms": 8.008,
+			"impact_tiers": [
+				27,
+				11,
+				1
+			],
+			"monsters": [
+				{
+					"animation_ms": 0.072,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 21,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 19,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.038,
+					"name": "TITAN",
+					"reason": "NECK CONNECTION FAILED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.804
+				},
+				{
+					"animation_ms": 0.073,
+					"arms": [
+						false,
+						true
+					],
+					"commands": 22,
+					"cubes": 615,
+					"defeated": false,
+					"hits": 20,
+					"legs": [
+						"DAMAGED",
+						"COMPROMISED"
+					],
+					"motor_ms": 0.028,
+					"name": "COLOSSUS",
+					"reason": "",
+					"speed": 0.461538461538462,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.737
+				}
+			],
+			"music": "aftermath",
+			"physics_ms": 1.702,
+			"rubble": 1385,
+			"seed": 7907,
+			"shot": "AFTERMATH_WIDE",
+			"sweep_ms": 0.004,
+			"time": 105.1,
+			"vfx_events": 257,
+			"vfx_ms": 0.027,
+			"winner": "COLOSSUS"
+		}
+	},
+	{
+		"director": [
+			{
+				"blocked": false,
+				"coverage": 0.531781129575049,
+				"position": "(8.0, 10.0, 66.0)",
+				"shot": "ESTABLISHING",
+				"time": 0.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.701222194812247,
+				"position": "(-11.74333, 29.0, 43.0)",
+				"shot": "ELEVATED",
+				"time": 10.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.838966085136107,
+				"position": "(18.61411, 7.0, 32.0845)",
+				"shot": "RIM_SIDE",
+				"time": 20.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.821932383693481,
+				"position": "(-9.384557, 11.0, 39.08924)",
+				"shot": "TWO_SHOT",
+				"time": 30.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.702072261177726,
+				"position": "(-11.27492, 29.0, 43.08706)",
+				"shot": "ELEVATED",
+				"time": 40.8
+			},
+			{
+				"blocked": false,
+				"coverage": 0.833293982464433,
+				"position": "(17.20739, 7.0, 32.05044)",
+				"shot": "RIM_SIDE",
+				"time": 51.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.808345575550353,
+				"position": "(-21.13608, 18.50533, 29.88539)",
+				"shot": "OVER_SHOULDER",
+				"time": 61.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.838066385745086,
+				"position": "(-9.195528, 11.0, 39.09016)",
+				"shot": "TWO_SHOT",
+				"time": 71.2
+			},
+			{
+				"blocked": false,
+				"coverage": 0.696089302771153,
+				"position": "(-12.26463, 29.0, 43.21178)",
+				"shot": "ELEVATED",
+				"time": 81.5
+			},
+			{
+				"blocked": false,
+				"coverage": 0.857053976704509,
+				"position": "(15.52234, 7.0, 32.24488)",
+				"shot": "RIM_SIDE",
+				"time": 92.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.845586784724173,
+				"position": "(-12.85791, 11.0, 39.28482)",
+				"shot": "TWO_SHOT",
+				"time": 102.0
+			},
+			{
+				"blocked": false,
+				"coverage": 0.682284893279922,
+				"position": "(-14.96942, 29.0, 43.28801)",
+				"shot": "ELEVATED",
+				"time": 112.4
+			},
+			{
+				"blocked": false,
+				"coverage": 0.873785161269882,
+				"position": "(12.87751, 7.0, 32.32087)",
+				"shot": "RIM_SIDE",
+				"time": 122.6
+			},
+			{
+				"blocked": false,
+				"coverage": 0.839796171457815,
+				"position": "(-17.38373, 10.67681, 43.45622)",
+				"shot": "TWO_SHOT",
+				"time": 135.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.679627712378961,
+				"position": "(-18.19297, 29.0, 43.37975)",
+				"shot": "ELEVATED",
+				"time": 145.1
+			},
+			{
+				"blocked": false,
+				"coverage": 0.745852249079099,
+				"position": "(-22.95576, 13.0, 47.57174)",
+				"shot": "AFTERMATH_WIDE",
+				"time": 160.3
+			}
+		],
+		"duration": 156.316666666683,
+		"finished": true,
+		"music": [
+			{
+				"damage": 0.0,
+				"state": "opening",
+				"time": 0.0
+			},
+			{
+				"damage": 0.02,
+				"state": "early",
+				"time": 12.0
+			},
+			{
+				"damage": 0.2345,
+				"state": "mid",
+				"time": 75.1
+			},
+			{
+				"damage": 0.3835,
+				"state": "severe",
+				"time": 118.6
+			},
+			{
+				"damage": 0.703,
+				"state": "aftermath",
+				"time": 158.3
+			}
+		],
+		"seed": 9929,
+		"snapshot": {
+			"active_debris": 0,
+			"ai_ms": 0.031,
+			"audio_events": 819,
+			"audio_ms": 0.255,
+			"collision_bodies": 193,
+			"coverage": 0.705388885720471,
+			"director": true,
+			"director_ms": 0.017,
+			"finished": true,
+			"fps": 577.0,
+			"frame_ms": 10.965,
+			"impact_tiers": [
+				35,
+				17,
+				1
+			],
+			"monsters": [
+				{
+					"animation_ms": 0.072,
+					"arms": [
+						false,
+						false
+					],
+					"commands": 36,
+					"cubes": 594,
+					"defeated": false,
+					"hits": 30,
+					"legs": [
+						"COMPROMISED",
+						"DAMAGED"
+					],
+					"motor_ms": 0.036,
+					"name": "TITAN",
+					"reason": "",
+					"speed": 0.409090909090909,
+					"state": "VICTORIOUS",
+					"structure_ms": 0.82
+				},
+				{
+					"animation_ms": 0.054,
+					"arms": [
+						true,
+						false
+					],
+					"commands": 35,
+					"cubes": 0,
+					"defeated": true,
+					"hits": 23,
+					"legs": [
+						"LOST",
+						"LOST"
+					],
+					"motor_ms": 0.018,
+					"name": "COLOSSUS",
+					"reason": "HEAD DESTROYED",
+					"speed": 0.12,
+					"state": "COLLAPSING",
+					"structure_ms": 0.515
+				}
+			],
+			"music": "aftermath",
+			"physics_ms": 1.14,
+			"rubble": 1406,
+			"seed": 9929,
+			"shot": "AFTERMATH_WIDE",
+			"sweep_ms": 0.003,
+			"time": 165.4,
+			"vfx_events": 363,
+			"vfx_ms": 0.031,
+			"winner": "TITAN"
+		}
+	}
+]

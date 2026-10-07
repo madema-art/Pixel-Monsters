@@ -43,14 +43,26 @@
 				"hits": 14,
 				"snapshot": {
 					"active_debris": 192,
-					"ai_ms": 0.014,
+					"ai_ms": 0.018,
+					"audio_events": 126,
+					"audio_ms": 0.268,
 					"collision_bodies": 193,
+					"coverage": 0.586731384605635,
+					"debris_script_ms": 1.717,
+					"director": true,
+					"director_ms": 0.024,
 					"finished": false,
-					"fps": 12.0,
-					"frame_ms": 94.705,
+					"fps": 10.0,
+					"frame_ms": 88.55,
+					"gpu_ms": 0.0,
+					"impact_tiers": [
+						22,
+						5,
+						2
+					],
 					"monsters": [
 						{
-							"animation_ms": 0.046,
+							"animation_ms": 0.047,
 							"arms": [
 								true,
 								true
@@ -63,15 +75,15 @@
 								"LOST",
 								"DAMAGED"
 							],
-							"motor_ms": 0.014,
+							"motor_ms": 0.013,
 							"name": "TITAN",
 							"reason": "",
 							"speed": 0.246153846153846,
 							"state": "STAGGERED",
-							"structure_ms": 0.497
+							"structure_ms": 0.528
 						},
 						{
-							"animation_ms": 0.044,
+							"animation_ms": 0.045,
 							"arms": [
 								false,
 								false
@@ -84,19 +96,24 @@
 								"DAMAGED",
 								"LOST"
 							],
-							"motor_ms": 0.016,
+							"motor_ms": 0.017,
 							"name": "COLOSSUS",
 							"reason": "",
 							"speed": 0.232727272727273,
 							"state": "HEADBUTT · RECOVER",
-							"structure_ms": 0.787
+							"structure_ms": 0.862
 						}
 					],
-					"physics_ms": 1.783,
+					"music": "desperate",
+					"physics_ms": 1.966,
+					"render_cpu_ms": 0.0,
 					"rubble": 682,
 					"seed": 8801,
-					"sweep_ms": 0.003,
+					"shot": "ESTABLISHING",
+					"sweep_ms": 0.002,
 					"time": 82.0,
+					"vfx_events": 63,
+					"vfx_ms": 0.014,
 					"winner": ""
 				}
 			},
@@ -128,14 +145,26 @@
 				"hits": 12,
 				"snapshot": {
 					"active_debris": 192,
-					"ai_ms": 0.015,
+					"ai_ms": 0.017,
+					"audio_events": 101,
+					"audio_ms": 0.228,
 					"collision_bodies": 193,
+					"coverage": 0.510732136715455,
+					"debris_script_ms": 1.813,
+					"director": true,
+					"director_ms": 0.021,
 					"finished": true,
-					"fps": 16.0,
-					"frame_ms": 76.293,
+					"fps": 10.0,
+					"frame_ms": 68.159,
+					"gpu_ms": 0.0,
+					"impact_tiers": [
+						13,
+						11,
+						0
+					],
 					"monsters": [
 						{
-							"animation_ms": 0.051,
+							"animation_ms": 0.05,
 							"arms": [
 								true,
 								true
@@ -148,15 +177,15 @@
 								"LOST",
 								"LOST"
 							],
-							"motor_ms": 0.017,
+							"motor_ms": 0.018,
 							"name": "TITAN",
 							"reason": "HEAD DESTROYED",
 							"speed": 0.12,
 							"state": "COLLAPSING",
-							"structure_ms": 0.347
+							"structure_ms": 0.35
 						},
 						{
-							"animation_ms": 0.046,
+							"animation_ms": 0.048,
 							"arms": [
 								false,
 								false
@@ -169,19 +198,24 @@
 								"COMPROMISED",
 								"COMPROMISED"
 							],
-							"motor_ms": 0.025,
+							"motor_ms": 0.024,
 							"name": "COLOSSUS",
 							"reason": "",
 							"speed": 0.307692307692308,
 							"state": "VICTORIOUS",
-							"structure_ms": 0.862
+							"structure_ms": 0.836
 						}
 					],
-					"physics_ms": 2.468,
+					"music": "severe",
+					"physics_ms": 2.811,
+					"render_cpu_ms": 0.0,
 					"rubble": 806,
 					"seed": 8803,
-					"sweep_ms": 1.796,
+					"shot": "ESTABLISHING",
+					"sweep_ms": 1.888,
 					"time": 73.9,
+					"vfx_events": 50,
+					"vfx_ms": 0.012,
 					"winner": "COLOSSUS"
 				}
 			},
