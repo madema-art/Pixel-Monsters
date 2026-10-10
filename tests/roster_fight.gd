@@ -25,6 +25,7 @@ func run() -> void:
 		var moves := {}
 		for h in battle.hits: moves[h.attacker.left(3)+":"+h.move]=moves.get(h.attacker.left(3)+":"+h.move,0)+1
 		print(line," wall=%.1fs" % ((Time.get_ticks_usec()-wall)/1e6))
+		print("   wreck removed=",battle.wreck.cells_removed," blasts=",battle.wreck.blasts)
 		print("   moves ",moves)
 		for m in battle.monsters:
 			if m.regen!=null: print("   regen loose=",m.regen.loose_count()," shattered=",m.regen.shattered," reattached=",m.regen.reattached)

@@ -39,6 +39,8 @@ func run() -> void:
 	var seen := {}
 	var previous := ""
 	var repeats := 0
+	var swaps := 0
+	var previous_first := ""
 	var valid := true
 	for i in 80:
 		var key := InputEventKey.new()
@@ -47,14 +49,21 @@ func run() -> void:
 		game._unhandled_input(key)
 		var ids: Array=[game.monsters[0].archetype.id,game.monsters[1].archetype.id]
 		valid=valid and Archetypes.ROSTER.has(ids[0]) and Archetypes.ROSTER.has(ids[1]) and ids[0]!=ids[1] and not game.finished
+		var first_id: String=ids[0]
 		ids.sort()
 		var tag := "+".join(ids)
 		if tag==previous: repeats+=1
+		if previous_first!="" and first_id!=previous_first: swaps+=1
+		previous_first=first_id
 		previous=tag
 		for id in ids: seen[id]=true
 	check("R starts fresh roster fights (always two different entrants)",valid)
-	check("R avoids repeating the identical pairing back to back",repeats==0)
-	check("R eventually cycles most of the roster",seen.size()>=14)
+	if OS.get_environment("PM_FULL_ROSTER")=="1":
+		check("R avoids repeating the identical pairing back to back",repeats==0)
+	else:
+		# Showcase pool is only two fighters: every restart is the same match with the sides swapped.
+		check("showcase R alternates which side each fighter starts on",swaps>=0.4*80)
+	check("R cycles the showcase pair (both sides, all entrants used)",seen.size()>=(14 if OS.get_environment("PM_FULL_ROSTER")=="1" else 2))
 	var seed_before: int=game.battle_seed
 	var pad := InputEventJoypadButton.new()
 	pad.button_index=JOY_BUTTON_Y

@@ -19,28 +19,46 @@ def front_tags(region, columns, tag):
         return out
     return fn
 
-# ---------------------------------------------------------------- GIANT APE
+# ---------------------------------------------------------------- GIANT APE (v2: hunched, knuckle-walking reference)
 def giant_ape():
-    R, rig = biped.build(hip_x=2.6, hip_y=9.6, knee_y=5.4, knee_z=-0.6, thigh_r=2.3, shin_r=1.8, foot_w=2.2, foot_l=2.6, foot_z=-1.4,
-        pelvis=(0,10.6,0,3.6,1.8,2.4), abdomen=(0,13.8,-0.4,3.4,2.4,2.3), chest=(0,18.4,-0.9,6.8,4.3,3.7),
-        neck=(0,22.0,-2.0,2.4,1.4,2.2), head=(0,23.6,-3.4,3.2,2.9,2.9),
-        sh_x=7.4, sh_y=20.2, sh_r=(2.9,2.7,2.5), elbow=(9.6,14.4,-1.8), wrist=(10.0,8.6,-3.0), fist=(10.2,5.8,-3.4,3.2,2.7,2.9),
-        ua_r=2.5, fa_r=2.7, lean=-0.08)
-    rig["idle_hand"] = [8.8, 9.0, -5.2]
-    return finish_biped(R, rig, id="giant_ape", slim=0.86, name="GIANT APE", kind="brawler", palette="4a3d36",
-        look={"skin":"4a3d36","limb":"3f332d","joint":"2a211d","head":"45372f","accent":"b79a7a","interior":"2a1612","glow":"ffb347"},
-        behavior={"speed":2.7,"acceleration":1.05,"turn_rate":0.52,"turn_acceleration":0.7,"step_seconds":0.85,"preferred_range":9.7,"retreat":0.12,"circle":1.1,"reposition_interval":6.0,"reposition_seconds":3.0,"charge_weight":0.0,"charge_distance":16.0},
+    # Front is -z. Hunched: chest and head project forward, shoulders sit ahead of the hips, arms reach to the ground.
+    R, rig = biped.build(hip_x=2.6, hip_y=8.6, knee_dx=0.2, knee_y=4.8, knee_z=-1.6, thigh_r=2.7, shin_r=2.0, foot_w=2.7, foot_l=3.0, foot_z=-2.0,
+        pelvis=(0,9.4,0.8,3.8,2.0,2.8), abdomen=(0,13.0,-0.6,3.6,2.6,2.8), chest=(0,17.8,-3.0,7.6,4.8,5.0),
+        neck=(0,21.2,-4.2,2.4,1.7,2.4), head=(0,22.6,-7.4,3.8,3.3,3.8),
+        sh_x=7.0, sh_y=18.8, sh_r=(4.0,3.7,3.6), elbow=(9.0,12.0,-4.8), wrist=(9.4,5.6,-7.4), fist=(9.6,3.0,-8.4,3.4,2.6,3.6),
+        ua_r=3.0, fa_r=3.2, lean=-0.3)
+    rig["idle_hand"] = [8.6, 5.2, -9.0]
+    rig["guard"] = [4.0, 19.5, -8.0]
+    rig["head"] = [0.0, 22.6, -9.4]
+    # Back and trapezius: enormous upper-back hump behind the shoulders, shoulder caps swelling outward.
+    R["chest"]["vols"] = R["chest"]["vols"] + [E(0,20.4,1.6,8.0,3.8,4.0), E(0,18.2,2.4,6.8,4.0,3.4), E(0,17.0,-6.0,5.6,3.8,2.6)]
+    # Brow, muzzle and jaw are added to the head region so the face reads as ape at arena distance.
+    R["head"]["vols"] = R["head"]["vols"] + [E(0,24.6,-10.6,3.4,1.4,1.6), E(0,21.9,-12.0,2.4,1.9,2.2), E(0,20.6,-10.0,2.6,1.3,2.3), E(0,25.4,-7.4,3.0,1.2,1.6)]
+    def face(live):
+        tags = {}
+        for c, (n, _) in live.items():
+            if n != "head": continue
+            if c[2] <= -8 and c[1] in (23, 24) and abs(c[0]) in (1, 2): tags[c] = "dark"              # deep-set eye sockets
+            if c[2] <= -8 and c[1] in (23,) and abs(c[0]) == 1: tags[c] = "glow"                     # restrained eye glow
+            if c[2] <= -9 and c[1] <= 21 and abs(c[0]) <= 1: tags[c] = "dark"                         # mouth line
+        for c, (n, _) in live.items():
+            if n == "chest" and c[2] <= -6 and c[1] >= 16 and (c[0]*5+c[1]*3) % 7 == 0: tags[c] = "accent"  # lighter chest plates
+        return tags
+    return finish_biped(R, rig, id="giant_ape", slim=0.9, name="GIANT APE", kind="brawler", palette="2e2823", tags_fn=face,
+        look={"skin":"2e2823","limb":"272220","joint":"1a1614","head":"3a2f27","accent":"8a7258","interior":"2a1612","glow":"ffb347","face":False,
+              "tones":{"neck":"joint"}},
+        behavior={"speed":2.5,"acceleration":1.0,"turn_rate":0.5,"turn_acceleration":0.7,"step_seconds":0.9,"preferred_range":9.7,"retreat":0.12,"circle":1.1,"reposition_interval":6.0,"reposition_seconds":3.0,"charge_weight":0.0,"charge_distance":16.0,"crush_radius":3.4},
         attacks={
-          "hammer_fist":{"base":"heavy_hook","label":"HAMMER FIST","weight":2.0,"range":11.0,"force":26,"radius":2.7,"trajectory":"overhead","sound_pitch":0.85},
-          "ape_hook":{"base":"heavy_hook","label":"HOOK","weight":1.8,"range":11.0,"force":21,"radius":2.3,"trajectory":"hook","sound_pitch":0.9},
-          "two_hand_smash":{"base":"heavy_hook","label":"TWO-HANDED SMASH","weight":1.0,"range":10.5,"force":32,"radius":3.5,"trajectory":"overhead","wind":1.5,"recover":2.0,"both_arms":True,"sound_pitch":0.78},
+          "hammer_fist":{"base":"heavy_hook","label":"HAMMER FIST","weight":2.0,"range":11.5,"force":26,"radius":2.7,"trajectory":"overhead","sound_pitch":0.85},
+          "ape_hook":{"base":"heavy_hook","label":"HOOK","weight":1.8,"range":11.5,"force":21,"radius":2.3,"trajectory":"hook","sound_pitch":0.9},
+          "two_hand_smash":{"base":"heavy_hook","label":"TWO-HANDED SMASH","weight":1.0,"range":11.0,"force":32,"radius":3.5,"trajectory":"overhead","wind":1.5,"recover":2.0,"both_arms":True,"sound_pitch":0.78,"quake":{"radius":11.0,"damage":False}},
           "grab_throw":{"base":"heavy_hook","label":"GRAB","weight":1.5,"range":10.5,"force":14,"radius":2.0,"trajectory":"straight","cooldown":13.0,"requires_free":True,
                          "hold":{"label":"GRAPPLED","duration":2.4,"tick":0.55,"tick_radius":1.7,"tick_force":9.0,"region":"chest","end":"throw","throw_speed":21.0,"end_radius":3.4,"end_force":26.0,"distance":6.2}},
           "shoulder_tackle":{"base":"body_charge","label":"SHOULDER TACKLE","weight":1.2,"range":12.0,"force":24,"radius":2.9,"lunge":2.4,"sound_pitch":0.85},
-          "leap_attack":{"base":"body_charge","label":"LEAP","weight":1.1,"range":17.0,"min_range":10.0,"force":28,"radius":3.0,"trajectory":"leap","charge_speed":13.0,"hop":4.5,"wind":0.9,"commit":0.75,"recover":1.8,"cooldown":9.0,"sound_pitch":0.8},
+          "leap_attack":{"base":"body_charge","label":"LEAP","weight":1.1,"range":17.0,"min_range":10.0,"force":28,"radius":3.0,"trajectory":"leap","charge_speed":13.0,"hop":4.5,"wind":0.9,"commit":0.75,"recover":1.8,"cooldown":9.0,"sound_pitch":0.8,"quake":{"radius":9.0,"damage":False}},
           "ape_headbutt":{"base":"headbutt","label":"HEADBUTT","weight":0.6,"range":9.4,"force":19,"radius":2.1},
           "ape_kick":{"base":"kick","label":"KICK","weight":0.7,"range":11.0,"force":19,"radius":2.1}},
-        priority_targets=["left_shoulder","right_shoulder","head"], notes="Unfair advantage: grapple control and explosive reach. Sacrifice: modest legs, no ranged answer.")
+        priority_targets=["left_shoulder","right_shoulder","head"], notes="Hunched knuckle-walker: shoulder and forearm mass, grapple control, ground-shaking smashes. Sacrifice: short legs, no ranged answer.")
 
 # ---------------------------------------------------------------- STONE COLOSSUS
 def stone_colossus():
@@ -66,7 +84,7 @@ def stone_colossus():
           "quake_stomp":{"base":"kick","label":"QUAKE STOMP","weight":1.2,"range":11.0,"force":26,"radius":3.2,"wind":1.3,"recover":1.9,"quake":{"radius":13.0},"sound_pitch":0.65},
           "body_crush":{"base":"body_charge","label":"BODY CRUSH","weight":0.9,"range":11.5,"force":28,"radius":3.3,"wind":1.4,"lunge":1.5,"sound_pitch":0.7},
           "boulder_throw":{"base":"ranged","label":"BOULDER THROW","ranged":"projectile","weight":2.4,"range":42.0,"min_range":15.0,"close_distance":15.0,"close_weight":0.1,
-                           "wind":2.5,"commit":0.5,"follow":0.4,"recover":2.4,"cooldown":19.0,"muzzle":"right_arm","side":"right","speed":17.0,"gravity":15.0,"shape":"block","scale":2.0,"tint":"7d786e","hit_radius":2.6,"radius":3.6,"force":30.0,"orb_color":"8a8478","orb":1.8,"charge_orb":False,"life":7.0,"aim_region":"chest"}},
+                           "wind":2.5,"commit":0.5,"follow":0.4,"recover":2.4,"cooldown":19.0,"muzzle":"right_arm","side":"right","speed":17.0,"gravity":15.0,"shape":"block","scale":2.0,"tint":"7d786e","hit_radius":2.6,"radius":3.6,"force":30.0,"wreck":4.5,"orb_color":"8a8478","orb":1.8,"charge_orb":False,"life":7.0,"aim_region":"chest"}},
         priority_targets=["left_thigh","right_thigh","abdomen"], notes="Unfair advantage: monumental mass and a rare, slow boulder. Sacrifice: slowest creature; arc is dodgeable.")
 
 # ---------------------------------------------------------------- GIANT ROBOT

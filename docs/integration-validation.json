@@ -29,11 +29,11 @@
 			"passed": true
 		},
 		{
-			"check": "R avoids repeating the identical pairing back to back",
+			"check": "showcase R alternates which side each fighter starts on",
 			"passed": true
 		},
 		{
-			"check": "R eventually cycles most of the roster",
+			"check": "R cycles the showcase pair (both sides, all entrants used)",
 			"passed": true
 		},
 		{

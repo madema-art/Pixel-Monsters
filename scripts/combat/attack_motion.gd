@@ -111,18 +111,26 @@ func resolve(body: Node3D, battle: Node3D) -> void:
 		return
 	if profile.has("quake") and phase=="COMMIT" and progress>=0.85 and not quaked:
 		quaked=true
-		var planar := Vector2(target.position.x-body.position.x,target.position.z-body.position.z).length()
 		var foot: Vector3=body.effector(move,side)
+		var quake_radius := float(profile.quake.radius)
 		battle.camera.impulse(foot,0.32)
 		battle.effects.burst(Vector3(foot.x,0.3,foot.z),2,true)
 		battle.sound.layer(foot,"body",-6,0.75)
-		if planar<float(profile.quake.radius):
-			target.stagger=maxf(target.stagger,0.9)
-			if planar<7.5:
-				var report_q: Dictionary=target.damage(Vector3(target.global_position.x,0.7,target.global_position.z),2.3,Vector3.UP*6.0)
-				if report_q.direct>0: battle.on_impact(body,target,move,Vector3(target.global_position.x,0.7,target.global_position.z),report_q,12.0)
+		# Ground shock: knocks chunks out of nearby buildings and throws debris (buildings are not blockers).
+		battle.quake_ground(foot,minf(quake_radius*0.8,9.0),14.0)
+		# Stagger and damage only when the quake is marked to hit creatures (Stone Colossus, Diaper Baby).
+		if profile.quake.get("damage",true):
+			var planar := Vector2(target.position.x-body.position.x,target.position.z-body.position.z).length()
+			if planar<quake_radius:
+				target.stagger=maxf(target.stagger,0.9)
+				if planar<7.5:
+					var report_q: Dictionary=target.damage(Vector3(target.global_position.x,0.7,target.global_position.z),2.3,Vector3.UP*6.0)
+					if report_q.direct>0: battle.on_impact(body,target,move,Vector3(target.global_position.x,0.7,target.global_position.z),report_q,12.0)
 	if phase!="COMMIT" and phase!="FOLLOW-THROUGH": return
 	var current: Vector3=body.effector(move,side)
+	# Heavy limbs and tails chew through lane buildings they pass, whether or not they connect with a creature.
+	if phase=="COMMIT" and profile.radius>=2.0 and body.position.distance_to(current)>0.5:
+		battle.wreck.blast(current,profile.radius*0.55,profile.force*0.15)
 	# Loose bone pixels (Skeleton reassembly) are smashed by anything swinging through them.
 	if target.regen!=null and phase=="COMMIT": target.regen.shatter_near(current,profile.radius*0.9+0.8)
 	if phase!="COMMIT" or hit:

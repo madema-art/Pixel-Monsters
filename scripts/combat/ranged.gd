@@ -287,6 +287,8 @@ func step_stream(stream: Dictionary, dt: float) -> bool:
 		var t_ground := (origin.y-0.5)/-direction.y
 		if t_ground<length: end=origin+direction*t_ground
 	var contact := target.sweep(origin,end,float(profile.get("tick_radius",1.5)))
+	# Flame and beams burn through lane buildings along their whole length.
+	if profile.get("burns",false): battle.wreck.blast_line(origin,end,1.6,2.0)
 	var visual_end := end
 	if not contact.is_empty(): visual_end=contact.center
 	stream.end=visual_end
@@ -385,6 +387,7 @@ func impact_shot(shot: Dictionary, point: Vector3) -> void:
 	else:
 		battle.effects.burst(point,1 if profile.get("explosive",false) else 0,false,Vector3.UP)
 		battle.camera.impulse(point,0.12)
+	battle.wreck.blast(point,float(profile.get("wreck",3.0)),float(profile.get("force",18.0)))
 	if profile.get("explosive",false):
 		shooter_flash(point+Vector3.UP*2,10.0)
 		battle.effects.burst(Vector3(point.x,0.3,point.z),1)
@@ -413,6 +416,7 @@ func step_strike(strike: Dictionary, dt: float) -> bool:
 			battle.effects.burst(point,2)
 			battle.camera.impulse(point,0.3)
 		shooter_flash(point+Vector3.UP*3,16.0)
+		battle.wreck.blast(point,float(profile.get("aoe",5.0))*1.1,20.0)
 		battle.effects.burst(Vector3(point.x,0.3,point.z),2)
 		return true
 	return false

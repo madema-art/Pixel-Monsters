@@ -69,15 +69,26 @@ def giant_mantis():
 
 # ---------------------------------------------------------------- FIRE-BREATHING REPTILE
 def fire_reptile():
-    R, rig = biped.build(hip_x=3.4, hip_y=10.2, knee_dx=0.4, knee_y=5.8, knee_z=-1.0, thigh_r=3.0, shin_r=2.2, foot_w=3.0, foot_l=3.8, foot_z=-1.8,
-        pelvis=(0,11.2,0.6,4.0,2.0,3.2), abdomen=(0,14.8,0,4.4,2.5,3.5), chest=(0,19.4,-0.8,5.0,4.2,4.0),
-        neck=(0,23.4,-2.4,2.3,1.6,2.3), head=(0,25.6,-5.0,2.8,2.4,4.4),
-        sh_x=5.4, sh_y=20.4, sh_r=(1.9,1.8,1.8), elbow=(6.2,17.4,-3.2), wrist=(6.2,14.8,-5.2), fist=(6.2,13.6,-6.0,1.5,1.2,1.6), ua_r=1.4, fa_r=1.25, lean=-0.07)
-    R["tail_1"] = {"major":"tail","vols":[E(0,11.4,5.0,3.0,2.7,3.4)]}
-    R["tail_2"] = {"major":"tail","vols":[E(0,9.6,9.4,2.4,2.2,3.0)]}
-    R["tail_3"] = {"major":"tail","vols":[E(0,7.4,13.4,1.9,1.8,2.8)]}
-    R["tail_4"] = {"major":"tail","vols":[E(0,5.2,17.6,1.4,1.3,2.8)]}
-    R["dorsal"] = {"major":"torso","vols":[B(0,24.6,0.6,0.7,1.8,1.0),B(0,23.0,1.8,0.7,2.0,1.0),B(0,21.0,2.8,0.7,2.2,1.0),B(0,18.2,3.4,0.7,2.2,1.0),B(0,15.0,3.4,0.7,2.0,0.9)],"w":0.8}
+    # Upright atomic titan: deep barrel torso, heavy thighs, wide jaw-forward head, small arms, dorsal ridge and heavy tail.
+    R, rig = biped.build(hip_x=3.6, hip_y=10.2, knee_dx=0.4, knee_y=5.4, knee_z=-0.8, thigh_r=3.2, shin_r=2.4, foot_w=3.4, foot_l=4.2, foot_z=-2.2,
+        pelvis=(0,10.8,1.4,4.2,2.4,3.6), abdomen=(0,14.2,0.2,4.5,3.2,4.0), chest=(0,19.0,-1.6,6.2,4.8,5.6),
+        neck=(0,22.4,-3.8,2.6,2.2,2.6), head=(0,25.2,-6.4,3.5,3.1,4.6),
+        sh_x=6.4, sh_y=18.6, sh_r=(1.7,1.6,1.6), elbow=(7.4,14.4,-3.8), wrist=(7.0,11.8,-5.8), fist=(6.9,10.6,-6.6,1.6,1.3,1.6), ua_r=1.5, fa_r=1.35, lean=-0.1)
+    rig["head"] = [0.0, 25.2, -8.4]
+    # Heavy lower jaw and brow ridge: the head reads as a predator, not a box.
+    R["head"]["vols"] = R["head"]["vols"] + [E(0,22.8,-8.2,3.0,1.5,3.6), E(0,26.6,-5.6,2.6,1.0,2.6)]
+    # Dorsal ridge: a row of plates running from the neck down the back to the tail.
+    plates = []
+    for k in range(9):
+        z = -2.0 + k*1.7
+        h = 2.2 - 0.12*k
+        y = 23.6 - 0.9*k
+        plates.append(B(0.0, y, z, 0.6, h, 0.8))
+    R["dorsal"] = {"major":"torso","vols":plates,"w":0.8}
+    R["tail_1"] = {"major":"tail","vols":[E(0,10.6,5.4,3.4,3.0,3.8)]}
+    R["tail_2"] = {"major":"tail","vols":[E(0,9.2,10.0,2.8,2.5,3.4)]}
+    R["tail_3"] = {"major":"tail","vols":[E(0,7.6,14.6,2.2,2.0,3.2)]}
+    R["tail_4"] = {"major":"tail","vols":[E(0,6.2,19.0,1.6,1.5,3.2)]}
     def tags(live):
         t = front_tags("head", [(-2,26),(2,26)], "glow")(live)
         for c, (n, _) in live.items():
@@ -93,11 +104,11 @@ def fire_reptile():
         attacks={
           "bite":{"base":"headbutt","label":"BITE","weight":2.2,"range":13.0,"force":23,"radius":2.4,"lunge":2.4,"sound_pitch":0.9,"needs":{"head":0.4}},
           "claw":{"base":"right_punch","label":"CLAW","weight":1.0,"range":10.0,"force":14,"radius":1.7},
-          "stomp":{"base":"kick","label":"STOMP","weight":1.0,"range":11.0,"force":23,"radius":2.7,"sound_pitch":0.8},
+          "stomp":{"base":"kick","label":"STOMP","weight":1.0,"range":11.0,"force":23,"radius":2.7,"sound_pitch":0.8,"quake":{"radius":9.0,"damage":False}},
           "body_collision":{"base":"body_charge","label":"BODY COLLISION","weight":0.8,"range":11.5,"force":26,"radius":3.1,"lunge":1.8,"sound_pitch":0.75},
-          "tail_sweep":{"base":"custom","label":"TAIL SWEEP","weight":1.4,"range":15.5,"force":25,"radius":2.7,"effector":"tail_tip","trajectory":"spin","spin_turns":0.8,"wind":1.1,"commit":0.8,"follow":0.3,"recover":1.7,"needs":{"tail":0.4},"sound_pitch":0.8},
+          "tail_sweep":{"base":"custom","label":"TAIL SWEEP","weight":1.4,"range":15.5,"force":25,"radius":2.7,"burns":False,"effector":"tail_tip","trajectory":"spin","spin_turns":0.8,"wind":1.1,"commit":0.8,"follow":0.3,"recover":1.7,"needs":{"tail":0.4},"sound_pitch":0.8},
           "fire_breath":{"base":"ranged","label":"FIRE BREATH","ranged":"stream","weight":2.6,"range":27.0,"min_range":9.0,"close_distance":9.0,"close_weight":0.5,
-                         "wind":1.7,"commit":2.6,"follow":0.3,"recover":2.3,"duration":2.6,"cooldown":18.0,"muzzle":"head","depends":["head","neck"],"needs":{"head":0.45,"neck":0.35},
+                         "wind":1.7,"commit":2.6,"follow":0.3,"recover":2.3,"duration":2.6,"cooldown":18.0,"muzzle":"head","depends":["head","neck"],"burns":True,"needs":{"head":0.45,"neck":0.35},
                          "tick":0.2,"tick_radius":1.6,"force":9.0,"track":0.55,"arc_error":0.35,"charge_orb":True,"orb":1.6,"orb_color":"ffb02a","aim_region":"chest","sound_pitch":0.9}},
         priority_targets=["left_thigh","right_thigh","abdomen"], notes="Unfair advantage: sustained fire plus heavy tail sweep. Sacrifice: very slow turning and a long vulnerable wind-up.")
 
@@ -129,7 +140,7 @@ def shadow_flame_demon():
           "body_strike":{"base":"body_charge","label":"BODY STRIKE","weight":0.8,"range":11.5,"force":23,"radius":2.7},
           "fireball":{"base":"ranged","label":"FIREBALL","ranged":"projectile","weight":2.4,"range":38.0,"min_range":13.0,"close_distance":13.0,"close_weight":0.15,
                       "wind":1.9,"commit":0.4,"follow":0.3,"recover":1.9,"cooldown":14.0,"muzzle":"left_arm","side":"left","speed":16.0,"gravity":2.5,"shape":"sphere2","scale":1.05,"tint":"ff6a1c","glow":2.4,
-                      "explosive":True,"hit_radius":2.3,"radius":4.4,"force":28.0,"orb_color":"ff7a2a","orb":2.1,"life":6.0,"aim_region":"chest"}},
+                      "explosive":True,"hit_radius":2.3,"radius":4.4,"wreck":6.0,"force":28.0,"orb_color":"ff7a2a","orb":2.1,"life":6.0,"aim_region":"chest"}},
         priority_targets=["head","chest"], notes="Unfair advantage: long whip reach plus a telegraphed fireball. Sacrifice: slow fireball, mediocre mobility.")
 
 # ---------------------------------------------------------------- GIANT DIAPER BABY

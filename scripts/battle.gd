@@ -23,6 +23,7 @@ var hud: CanvasLayer
 var hud_off := false
 var help_visible := false
 var last_pairing: Array=[]
+var pairing_rng := RandomNumberGenerator.new()
 var intro_box: VBoxContainer
 var intro_names: Array[Label]=[]
 var intro_vs: Label
@@ -37,6 +38,7 @@ var debris: CubeDebris
 var camera: ObserverCamera
 var sound: BattleSound
 var ranged: RangedManager
+var wreck: Wreckage
 var elapsed := 0.0
 var battle_seed := 0
 var paused := false
@@ -58,6 +60,7 @@ var frame_ms: Array[float]=[]
 var sweep_ms := 0.0
 
 func _ready() -> void:
+	pairing_rng.randomize()
 	process_mode=Node.PROCESS_MODE_ALWAYS
 	RenderingServer.viewport_set_measure_render_time(get_viewport().get_viewport_rid(),true)
 	arena=MiniatureArena.new()
@@ -78,6 +81,19 @@ func _ready() -> void:
 	ranged.battle=self
 	ranged.process_mode=Node.PROCESS_MODE_PAUSABLE
 	add_child(ranged)
+	# Lane buildings beside the fight corridor, outside the fighters' walking clamp.
+	wreck=Wreckage.new()
+	wreck.process_mode=Node.PROCESS_MODE_PAUSABLE
+	add_child(wreck)
+	var placements: Array=[]
+	for side in [-1,1]:
+		# Blocks run the full fighting length along both lane edges, since fights migrate along the avenue.
+		for z in [-36.0,-24.0,-12.0,0.0,12.0,24.0,36.0,48.0]:
+			# Building faces start at the fighters' walking edge (x=24) so swings, tails and breath reach them.
+			var centre_x: float=side*28.5
+			placements.append({"origin":Vector3(centre_x-Wreckage.HALF.x,0,z-Wreckage.HALF.z),"tone":Color("5d6a72").lerp(Color("7c7a6e"),0.5 if z>0 else 0.0)})
+	wreck.setup(debris,placements)
+	for box in wreck.battle_occluders: arena.occluders.append(box)
 	for i in 2:
 		var fighter := CombatMonster.new()
 		fighter.name="TITAN" if i==0 else "COLOSSUS"
@@ -126,6 +142,7 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	samples.clear()
 	stages.clear()
 	debris.clear()
+	wreck.restore()
 	ranged.clear()
 	effects.clear()
 	sound.clear()
@@ -136,7 +153,7 @@ func restart(seed_value: int=0, matchup: Array=[], legacy: bool=false) -> void:
 	show_notice("V director / free camera · F1 controls · H hide interface")
 	var chosen := matchup.duplicate()
 	if chosen.is_empty() and not legacy:
-		chosen=pick_pairing(battle_seed)
+		chosen=pick_pairing(0 if seed_value==0 else battle_seed)
 	if not legacy: last_pairing=[chosen[0],chosen[1]]
 	movement.clear()
 	for i in 2: monsters[i].name="Combatant_"+str(i)
@@ -169,11 +186,17 @@ func simulate_step(dt: float) -> void:
 		var previous_step := fighter.stepping
 		fighter.update_motor(dt)
 		fighter.update_hold(dt,self)
+		# Bodies knocked hard (throws, slams, tackles) crash into the nearby lane buildings they are pushed toward.
+		var knock_speed := fighter.knock_velocity.length()
+		if knock_speed>5.0:
+			var push := fighter.knock_velocity.normalized()
+			wreck.blast(fighter.position+push*5.0+Vector3.UP*6.0,4.0,minf(knock_speed,22.0))
 		if previous_step!="" and fighter.stepping=="" and not fighter.defeated:
 			var other: CombatMonster=monsters[1-monsters.find(fighter)]
 			if other.regen!=null: other.regen.shatter_near(fighter.feet[previous_step],2.6)
 			if other.rig_type=="swarm" and other.swarm!=null: other.swarm.stomp(fighter.feet[previous_step],3.0)
 			sound.footfall(fighter.feet[previous_step])
+			wreck.blast(fighter.feet[previous_step],2.4,6.0)
 			effects.burst(fighter.feet[previous_step]+Vector3.UP*.15,0,true)
 			camera.impulse(fighter.feet[previous_step],.018)
 		if fighter.collapsed and not collapse_seen.has(fighter.name):
@@ -235,6 +258,10 @@ func simulate_step(dt: float) -> void:
 
 func _physics_process(dt: float) -> void:
 	if not paused: simulate_step(dt)
+
+# Presentation/destruction hook used by attacks that shake the ground.
+func quake_ground(point: Vector3, radius: float, force: float) -> void:
+	wreck.blast(Vector3(point.x,0.0,point.z)+Vector3.UP*1.5,radius,force)
 
 func apply_status(source: CombatMonster, victim: CombatMonster, data: Dictionary) -> void:
 	for key in data:
@@ -311,8 +338,9 @@ func build_hud() -> void:
 # Two different entrants from the 16-monster tournament roster; avoids repeating the previous pairing.
 func pick_pairing(seed_value: int) -> Array:
 	var pool: Array=Archetypes.available_roster()
-	var random := RandomNumberGenerator.new()
-	random.seed=seed_value
+	# A persistent generator keeps consecutive R presses independent; explicit seeds stay reproducible.
+	var random: RandomNumberGenerator=pairing_rng if seed_value==0 else RandomNumberGenerator.new()
+	if seed_value!=0: random.seed=seed_value
 	var count: int=pool.size()
 	var pair: Array=[]
 	for attempt in 12:
